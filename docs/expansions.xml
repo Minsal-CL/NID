@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="505f1cd0-a25c-492f-9f84-f6121268f470"/>
+  <meta>
+    <lastUpdated value="2023-07-04T10:12:16.412-04:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-PueblosOriginariosCS.html">Pueblos Originarios de Chile v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-01"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-01">01</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Mapuche</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-02"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-02">02</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Aymara</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-03"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-03">03</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Rapa Nui o pascuense</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-04"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-04">04</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Lickanatay</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-05"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-05">05</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Quechua</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-06"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-06">06</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Colla</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-07"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-07">07</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Diaguita</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-08"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-08">08</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Kaweskar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-09"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-09">09</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Yagan</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-10"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-10">10</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Chango</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-PueblosOriginariosCS-96"> </a>  
+                  <a href="CodeSystem-PueblosOriginariosCS.html#PueblosOriginariosCS-96">96</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</td>
+                <td>Otro (Especificar)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS"/>
+        <version value="0.1.0"/>
+        <name value="PueblosOriginariosVS"/>
+        <title value="Pueblos Originarios de Chile"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2023-07-04T10:12:16-04:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8dd5b768-e214-4905-b9f2-a999ba2ca853"/>
+          <timestamp value="2023-07-04T10:12:33-04:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="01"/>
+            <display value="Mapuche"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="02"/>
+            <display value="Aymara"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="03"/>
+            <display value="Rapa Nui o pascuense"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="04"/>
+            <display value="Lickanatay"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="05"/>
+            <display value="Quechua"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="06"/>
+            <display value="Colla"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="07"/>
+            <display value="Diaguita"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="08"/>
+            <display value="Kaweskar"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="09"/>
+            <display value="Yagan"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="10"/>
+            <display value="Chango"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
+            <code value="96"/>
+            <display value="Otro (Especificar)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSIdentidadDeGenero.html">IdentidadDeGenero v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-01"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-01">01</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>Masculino</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-02"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-02">02</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>Femenino</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-03"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-03">03</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>Transgénero masculino</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-04"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-04">04</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>Transgénero femenino</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-05"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-05">05</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>No binarie</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-06"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-06">06</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>otra</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSIdentidadDeGenero-07"> </a>  
+                  <a href="CodeSystem-CSIdentidadDeGenero.html#CSIdentidadDeGenero-07">07</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</td>
+                <td>No revelado</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero"/>
+        <version value="0.1.0"/>
+        <name value="VSIdentidadDeGenero"/>
+        <title value="IdentidadDeGenero"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:58432338-e6e5-4ef1-8e9f-0396ab5191f6"/>
+          <timestamp value="2023-07-04T10:12:37-04:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="01"/>
+            <display value="Masculino"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="02"/>
+            <display value="Femenino"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="03"/>
+            <display value="Transgénero masculino"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="04"/>
+            <display value="Transgénero femenino"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="05"/>
+            <display value="No binarie"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="06"/>
+            <display value="otra"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+            <code value="07"/>
+            <display value="No revelado"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSTipoIdentificador.html">Tipo Identificador v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-01"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-01">01</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Run</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-02"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-02">02</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Run materno/progenitor(a)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-03"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-03">03</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Número de Folio de comprobante de parto</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-04"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-04">04</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Número de pasaporte</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-05"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-05">05</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Número de documento identificador de país de origen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-06"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-06">06</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Número de identificador FONASA</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador"/>
+        <version value="0.1.0"/>
+        <name value="VSTipoIdentificador"/>
+        <title value="Tipo Identificador"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-07-03T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:72c6d4e8-275f-48fb-aa24-acb1c35a4824"/>
+          <timestamp value="2023-07-04T10:12:38-04:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="01"/>
+            <display value="Run"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="02"/>
+            <display value="Run materno/progenitor(a)"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="03"/>
+            <display value="Número de Folio de comprobante de parto"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="04"/>
+            <display value="Número de pasaporte"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="05"/>
+            <display value="Número de documento identificador de país de origen"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="06"/>
+            <display value="Número de identificador FONASA"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSEstadoCivil"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSEstadoCivil.html">EstadoCivil v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-01"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-01">01</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Soltero(a)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-02"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-02">02</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Casado(a)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-03"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-03">03</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Viudo(a)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-04"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-04">04</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Divorciado(a)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-05"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-05">05</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Separado(a) judicialmente</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-06"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-06">06</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Conviviente civil</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSEstadoCivil-99"> </a>  
+                  <a href="CodeSystem-CSEstadoCivil.html#CSEstadoCivil-99">99</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil</td>
+                <td>Desconocido</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSEstadoCivil"/>
+        <version value="0.1.0"/>
+        <name value="VSEstadoCivil"/>
+        <title value="EstadoCivil"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d21b25f5-c35a-434d-be67-d71a57ef8402"/>
+          <timestamp value="2023-07-04T10:12:38-04:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="01"/>
+            <display value="Soltero(a)"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="02"/>
+            <display value="Casado(a)"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="03"/>
+            <display value="Viudo(a)"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="04"/>
+            <display value="Divorciado(a)"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="05"/>
+            <display value="Separado(a) judicialmente"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="06"/>
+            <display value="Conviviente civil"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
+            <code value="99"/>
+            <display value="Desconocido"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

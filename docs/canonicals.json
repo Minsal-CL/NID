@@ -1,0 +1,114 @@
+[
+  {
+    "id" : "CSEstadoCivil",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil",
+    "version" : "0.1.0",
+    "name" : "CSEstadoCivil"
+  },
+  {
+    "id" : "CSIdentidadDeGenero",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero",
+    "version" : "0.1.0",
+    "name" : "CSIdentidadDeGenero"
+  },
+  {
+    "id" : "CSTipoIdentificador",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador",
+    "version" : "0.1.0",
+    "name" : "CSTipoIdentificador"
+  },
+  {
+    "id" : "PueblosOriginariosCS",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS",
+    "version" : "0.1.0",
+    "name" : "PueblosOriginariosCS"
+  },
+  {
+    "id" : "hl7.fhir.cl.minsal.mpi",
+    "type" : "ImplementationGuide",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi",
+    "version" : "0.1.0",
+    "name" : "Indicedemaestrodeprestadores"
+  },
+  {
+    "id" : "CoberturaMinsalMPI",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/CoberturaMinsalMPI",
+    "version" : "0.1.0",
+    "name" : "CoberturaMinsalMPI"
+  },
+  {
+    "id" : "IdentidadDeGenero",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero",
+    "version" : "0.1.0",
+    "name" : "IdentidadDeGenero"
+  },
+  {
+    "id" : "PacienteMinsalMPI",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI",
+    "version" : "0.1.0",
+    "name" : "PacienteMinsalMPI"
+  },
+  {
+    "id" : "PueblosOriginarios",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios",
+    "version" : "0.1.0",
+    "name" : "PueblosOriginarios"
+  },
+  {
+    "id" : "PueblosOriginariosPerteneciente",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente",
+    "version" : "0.1.0",
+    "name" : "PueblosOriginariosPerteneciente"
+  },
+  {
+    "id" : "SexoBiologico",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico",
+    "version" : "0.1.0",
+    "name" : "SexoBiologico"
+  },
+  {
+    "id" : "SituacionCalle",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionCalle",
+    "version" : "0.1.0",
+    "name" : "SituacionCalle"
+  },
+  {
+    "id" : "PueblosOriginariosVS",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS",
+    "version" : "0.1.0",
+    "name" : "PueblosOriginariosVS"
+  },
+  {
+    "id" : "VSEstadoCivil",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSEstadoCivil",
+    "version" : "0.1.0",
+    "name" : "VSEstadoCivil"
+  },
+  {
+    "id" : "VSIdentidadDeGenero",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero",
+    "version" : "0.1.0",
+    "name" : "VSIdentidadDeGenero"
+  },
+  {
+    "id" : "VSTipoIdentificador",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador",
+    "version" : "0.1.0",
+    "name" : "VSTipoIdentificador"
+  }
+]

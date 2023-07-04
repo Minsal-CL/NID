@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSIdentidadDeGenero"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSIdentidadDeGenero.html"><code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</code></a></li></ul></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero"/>
+  <version value="0.1.0"/>
+  <name value="VSIdentidadDeGenero"/>
+  <title value="IdentidadDeGenero"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-15"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="IdentidadDeGenero"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
+    </include>
+  </compose>
+</ValueSet>

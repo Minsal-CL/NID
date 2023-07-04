@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSTipoIdentificador"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="CSTipoIdentificador-01"> </a></td><td>Run</td></tr><tr><td style="white-space:nowrap">02<a name="CSTipoIdentificador-02"> </a></td><td>Run materno/progenitor(a)</td></tr><tr><td style="white-space:nowrap">03<a name="CSTipoIdentificador-03"> </a></td><td>Número de Folio de comprobante de parto</td></tr><tr><td style="white-space:nowrap">04<a name="CSTipoIdentificador-04"> </a></td><td>Número de pasaporte</td></tr><tr><td style="white-space:nowrap">05<a name="CSTipoIdentificador-05"> </a></td><td>Número de documento identificador de país de origen</td></tr><tr><td style="white-space:nowrap">06<a name="CSTipoIdentificador-06"> </a></td><td>Número de identificador FONASA</td></tr></table></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+  <version value="0.1.0"/>
+  <name value="CSTipoIdentificador"/>
+  <title value="Tipo Identificador"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-07-03T00:00:00-03:00"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Tipo Identificador"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="01"/>
+    <display value="Run"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Run materno/progenitor(a)"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Número de Folio de comprobante de parto"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Número de pasaporte"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Número de documento identificador de país de origen"/>
+  </concept>
+  <concept>
+    <code value="06"/>
+    <display value="Número de identificador FONASA"/>
+  </concept>
+</CodeSystem>
