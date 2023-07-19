@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "IdentidadDeGenero"] ; # 
   fhir:title [ fhir:v "Identidad De Genero"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-07-04T10:12:16-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-19T17:59:07-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MINSAL" ] ;

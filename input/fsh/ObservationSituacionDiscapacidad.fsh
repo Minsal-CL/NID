@@ -1,8 +1,12 @@
 Profile: SituacionDiscapacidad
 Parent: Observation
 Id: SituacionDiscapacidad
-Title: "Situacion Discapacidad"
-Description: "Situacion Discapacidad"
+Title: "Observacion - Situacion Discapacidad"
+Description: "Observacion - Situacion Discapacidad"
+
+
+*  status 
+
 
 * valueBoolean 1..1 MS
 * valueBoolean ^short = "aaaaa"

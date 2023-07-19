@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.cl.minsal.mpi"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Indicedemaestrodeprestadores</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi</pre><div><p>Indice de maestro de prestadores</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Indicedemaestrodepacientes</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi</pre><div><p>Indice de maestro de pacientes</p>
 </div></div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi"/>
   <version value="0.1.0"/>
-  <name value="Indicedemaestrodeprestadores"/>
-  <title value="Indice de maestro de prestadores"/>
+  <name value="Indicedemaestrodepacientes"/>
+  <title value="Indice de maestro de pacientes"/>
   <status value="draft"/>
-  <date value="2023-07-04T10:12:16-04:00"/>
+  <date value="2023-07-19T17:59:07-04:00"/>
   <publisher value="MINSAL"/>
   <contact>
     <name value="MINSAL"/>
@@ -20,7 +20,7 @@
       <value value="http://minsal.cl"/>
     </telecom>
   </contact>
-  <description value="Indice de maestro de prestadores"/>
+  <description value="Indice de maestro de pacientes"/>
   <packageId value="hl7.fhir.cl.minsal.mpi"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -504,10 +504,54 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SituacionDiscapacidad"/>
+      </reference>
+      <name value="Observacion - Situacion Discapacidad"/>
+      <description value="Observacion - Situacion Discapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSOrigenDiscapacidad"/>
+      </reference>
+      <name value="OrigenDiscapacidad"/>
+      <description value="OrigenDiscapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSOrigenDiscapacidad"/>
+      </reference>
+      <name value="OrigenDiscapacidad"/>
+      <description value="OrigenDiscapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PacienteMinsalMPI"/>
       </reference>
       <name value="Paciente definido para el Registro Maestro de Pacientes"/>
       <description value="Paciente definido para el Registro Maestro de Pacientes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PaisOrigenMPI"/>
+      </reference>
+      <name value="País de origen del paciente"/>
+      <description value="País de origen del paciente"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -548,10 +592,54 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/PueblosAfrodescendiente"/>
+      </reference>
+      <name value="PueblosAfrodescendiente"/>
+      <description value="PueblosAfrodescendiente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PueblosOriginariosPerteneciente"/>
       </reference>
       <name value="PueblosOriginariosPerteneciente"/>
       <description value="PueblosOriginariosPerteneciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSReligion"/>
+      </reference>
+      <name value="Religion"/>
+      <description value="Religion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSReligion"/>
+      </reference>
+      <name value="Religion"/>
+      <description value="Religion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Religion"/>
+      </reference>
+      <name value="Religión"/>
+      <description value="Religión"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -561,8 +649,8 @@
       <reference>
         <reference value="StructureDefinition/SexoBiologico"/>
       </reference>
-      <name value="SexoBiologico"/>
-      <description value="SexoBiologico"/>
+      <name value="Sexo Biologico del paciente"/>
+      <description value="Sexo Biologico del paciente"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

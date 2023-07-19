@@ -33,7 +33,9 @@ Description: "Tipo Identificador"
 * #04 "Número de pasaporte"
 * #05 "Número de documento identificador de país de origen"
 * #06 "Número de identificador FONASA"
-
+* #07 "Identificador Provisorio Escolar"
+* #08 "Identificador Provisorio Apoderado"
+* #09 "Registro Único de Contribuyentes"
 
 ValueSet: VSIdentidadDeGenero
 Id: VSIdentidadDeGenero
@@ -163,15 +165,15 @@ Description: "Religion"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Católica"
-* #02 "Evangélica"
-* #03 "Testigo de Jehová"
-* #04 "Judaica"
-* #05 "Mormón"
-* #06 "Musulmana"
-* #07 "Ortodoxa"
-* #08 "Otra religión o credo"
-* #09 "Ninguna, ateo, agnóstico"
+* #1 "Católica"
+* #2 "Evangélica"
+* #3 "Testigo de Jehová"
+* #4 "Judaica"
+* #5 "Mormón"
+* #6 "Musulmana"
+* #7 "Ortodoxa"
+* #8 "Otra religión o credo"
+* #9 "Ninguna, ateo, agnóstico"
 * #99 "Desconocido"
 
 ValueSet: VSOrigenDiscapacidad

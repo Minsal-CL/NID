@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="505f1cd0-a25c-492f-9f84-f6121268f470"/>
+  <id value="4b8ecb8b-a021-4292-9777-e07c376d6de2"/>
   <meta>
-    <lastUpdated value="2023-07-04T10:12:16.412-04:00"/>
+    <lastUpdated value="2023-07-19T17:59:07.661-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -126,10 +126,10 @@
         <title value="Pueblos Originarios de Chile"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-07-04T10:12:16-04:00"/>
+        <date value="2023-07-19T17:59:07-04:00"/>
         <expansion>
-          <identifier value="urn:uuid:8dd5b768-e214-4905-b9f2-a999ba2ca853"/>
-          <timestamp value="2023-07-04T10:12:33-04:00"/>
+          <identifier value="urn:uuid:cc66612b-9c4b-446a-a97b-4602b7d6ba3e"/>
+          <timestamp value="2023-07-19T17:59:21-04:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -193,6 +193,326 @@
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
             <code value="96"/>
             <display value="Otro (Especificar)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSOrigenDiscapacidad"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSOrigenDiscapacidad.html">OrigenDiscapacidad v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-01"> </a>  
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-01">01</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td>
+                <td>Origen Físico</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-02"> </a>  
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-02">02</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td>
+                <td>Origen sensorial visual </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-03"> </a>  
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-03">03</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td>
+                <td>Origen sensorial auditivo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-04"> </a>  
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-04">04</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td>
+                <td>Origen mental síquico </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-05"> </a>  
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-05">05</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td>
+                <td>Origen mental intelectual </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-06"> </a>  
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-06">06</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td>
+                <td>Origen múltiple</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSOrigenDiscapacidad"/>
+        <version value="0.1.0"/>
+        <name value="VSOrigenDiscapacidad"/>
+        <title value="OrigenDiscapacidad"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2c5d3670-671f-434e-adb3-4ea5727c223a"/>
+          <timestamp value="2023-07-19T17:59:22-04:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
+            <code value="01"/>
+            <display value="Origen Físico"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
+            <code value="02"/>
+            <display value="Origen sensorial visual "/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
+            <code value="03"/>
+            <display value="Origen sensorial auditivo"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
+            <code value="04"/>
+            <display value="Origen mental síquico "/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
+            <code value="05"/>
+            <display value="Origen mental intelectual "/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
+            <code value="06"/>
+            <display value="Origen múltiple"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSReligion"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 10 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSReligion.html">Religion v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-1"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-1">1</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Católica</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-2"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-2">2</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Evangélica</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-3"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-3">3</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Testigo de Jehová</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-4"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-4">4</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Judaica</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-5"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-5">5</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Mormón</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-6"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-6">6</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Musulmana</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-7"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-7">7</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Ortodoxa</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-8"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-8">8</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Otra religión o credo</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-9"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-9">9</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Ninguna, ateo, agnóstico</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-99"> </a>  
+                  <a href="CodeSystem-CSReligion.html#CSReligion-99">99</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td>
+                <td>Desconocido</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSReligion"/>
+        <version value="0.1.0"/>
+        <name value="VSReligion"/>
+        <title value="Religion"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2e1592e4-23c7-4c19-8ef4-295b6c65a381"/>
+          <timestamp value="2023-07-19T17:59:24-04:00"/>
+          <total value="10"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="1"/>
+            <display value="Católica"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="2"/>
+            <display value="Evangélica"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="3"/>
+            <display value="Testigo de Jehová"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="4"/>
+            <display value="Judaica"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="5"/>
+            <display value="Mormón"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="6"/>
+            <display value="Musulmana"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="7"/>
+            <display value="Ortodoxa"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="8"/>
+            <display value="Otra religión o credo"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="9"/>
+            <display value="Ninguna, ateo, agnóstico"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
+            <code value="99"/>
+            <display value="Desconocido"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -295,8 +615,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:58432338-e6e5-4ef1-8e9f-0396ab5191f6"/>
-          <timestamp value="2023-07-04T10:12:37-04:00"/>
+          <identifier value="urn:uuid:158e8670-7543-49be-ad28-d59930f6f9ba"/>
+          <timestamp value="2023-07-19T17:59:25-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -352,7 +672,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
+            <p>This value set contains 9 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSTipoIdentificador.html">Tipo Identificador v0.1.0 (CodeSystem)</a>
             </p>
@@ -416,6 +736,30 @@
                 <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
                 <td>Número de identificador FONASA</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-07"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-07">07</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Identificador Provisorio Escolar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-08"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-08">08</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Identificador Provisorio Apoderado</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-09"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-09">09</a>
+                </td>
+                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
+                <td>Registro Único de Contribuyentes</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -434,9 +778,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:72c6d4e8-275f-48fb-aa24-acb1c35a4824"/>
-          <timestamp value="2023-07-04T10:12:38-04:00"/>
-          <total value="6"/>
+          <identifier value="urn:uuid:988da092-664f-440b-bcc0-390221b74e90"/>
+          <timestamp value="2023-07-19T17:59:25-04:00"/>
+          <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -474,6 +818,21 @@
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
             <code value="06"/>
             <display value="Número de identificador FONASA"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="07"/>
+            <display value="Identificador Provisorio Escolar"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="08"/>
+            <display value="Identificador Provisorio Apoderado"/>
+          </contains>
+          <contains>
+            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
+            <code value="09"/>
+            <display value="Registro Único de Contribuyentes"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -576,8 +935,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d21b25f5-c35a-434d-be67-d71a57ef8402"/>
-          <timestamp value="2023-07-04T10:12:38-04:00"/>
+          <identifier value="urn:uuid:fffce343-2122-4013-9df0-5f1d629fdb1a"/>
+          <timestamp value="2023-07-19T17:59:25-04:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>

@@ -14,6 +14,9 @@
     <sch:rule context="f:Patient">
       <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises']) &gt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI']) &gt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico']) &gt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero': maximum cardinality of 'extension' is 1</sch:assert>
@@ -21,6 +24,7 @@
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente']) &gt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:telecom) &gt;= 1">telecom: minimum cardinality of 'telecom' is 1</sch:assert>
     </sch:rule>
@@ -66,17 +70,9 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Patient/f:telecom</sch:title>
-    <sch:rule context="f:Patient/f:telecom">
-      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
-      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>f:Patient/f:address</sch:title>
     <sch:rule context="f:Patient/f:address">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/geolocation']) &gt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/geolocation': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/geolocation']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/geolocation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionCalle']) &lt;= 1">extension with URL = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionCalle': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &gt;= 1">use: minimum cardinality of 'use' is 1</sch:assert>

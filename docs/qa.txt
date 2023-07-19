@@ -1,25 +1,33 @@
-﻿Indicedemaestrodeprestadores : Validation Results
+﻿Indicedemaestrodepacientes : Validation Results
 =========================================
 
-err = 9, warn = 19, info = 0
-IG Publisher Version: 1.3.22
-Generated Tue Jul 04 10:13:18 CLT 2023. FHIR version 4.0.1 for hl7.fhir.cl.minsal.mpi#0.1.0 (canonical = http://minsal.cl/fhir/ig/mpi)
+err = 13, warn = 29, info = 0
+IG Publisher Version: 1.3.22 Out of date - current version is 1.3.23
+Generated Wed Jul 19 18:00:00 CLT 2023. FHIR version 4.0.1 for hl7.fhir.cl.minsal.mpi#0.1.0 (canonical = http://minsal.cl/fhir/ig/mpi)
  Build Errors : 0 / 4 / 0
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/CodeSystem-CSEstadoCivil : 0 / 0 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/CodeSystem-CSIdentidadDeGenero : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/CodeSystem-CSOrigenDiscapacidad : 0 / 3 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/CodeSystem-CSReligion : 0 / 0 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/CodeSystem-CSTipoIdentificador : 0 / 0 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/CodeSystem-PueblosOriginariosCS : 0 / 1 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.minsal.mpi : 0 / 1 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-CoberturaMinsalMPI : 1 / 1 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-IdentidadDeGenero : 1 / 2 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-PacienteMinsalMPI : 3 / 1 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-PaisOrigenMPI : 1 / 2 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-PueblosAfrodescendiente : 1 / 2 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-PueblosOriginarios : 1 / 2 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-PueblosOriginariosPerteneciente : 1 / 2 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-Religion : 1 / 2 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-SexoBiologico : 1 / 2 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-SituacionCalle : 1 / 2 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/StructureDefinition-SituacionDiscapacidad : 1 / 1 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ValueSet-PueblosOriginariosVS : 0 / 1 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ValueSet-VSEstadoCivil : 0 / 0 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ValueSet-VSIdentidadDeGenero : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ValueSet-VSOrigenDiscapacidad : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ValueSet-VSReligion : 0 / 0 / 1
  /Users/jorgemansilla/IGs/MINSAL-MPI/fsh-generated/resources/ValueSet-VSTipoIdentificador : 0 / 0 / 1
 </table>
 == n/a ==
@@ -29,6 +37,11 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-CSEstadoCivil.json ==
 == fsh-generated/resources/CodeSystem-CSIdentidadDeGenero.json ==
+== fsh-generated/resources/CodeSystem-CSOrigenDiscapacidad.json ==
+WARNING: CodeSystem/CSOrigenDiscapacidad: CodeSystem.concept[1].display: value should not start or finish with whitespace 'Origen sensorial visual '
+WARNING: CodeSystem/CSOrigenDiscapacidad: CodeSystem.concept[3].display: value should not start or finish with whitespace 'Origen mental síquico '
+WARNING: CodeSystem/CSOrigenDiscapacidad: CodeSystem.concept[4].display: value should not start or finish with whitespace 'Origen mental intelectual '
+== fsh-generated/resources/CodeSystem-CSReligion.json ==
 == fsh-generated/resources/CodeSystem-CSTipoIdentificador.json ==
 == fsh-generated/resources/CodeSystem-PueblosOriginariosCS.json ==
 WARNING: CodeSystem.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
@@ -46,6 +59,14 @@ ERROR: Paciente definido para el Registro Maestro de Pacientes.Patient.identifie
 ERROR: StructureDefinition/PacienteMinsalMPI: StructureDefinition: Binding http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador is not a subset of binding https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PaisOrigenMPI.json ==
+WARNING: StructureDefinition/PaisOrigenMPI: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PueblosAfrodescendiente.json ==
+WARNING: StructureDefinition/PueblosAfrodescendiente: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-PueblosOriginarios.json ==
 WARNING: StructureDefinition/PueblosOriginarios: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
@@ -54,6 +75,10 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/Structure
 WARNING: StructureDefinition/PueblosOriginariosPerteneciente: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Religion.json ==
+WARNING: StructureDefinition/Religion: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-SexoBiologico.json ==
 WARNING: StructureDefinition/SexoBiologico: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
@@ -62,8 +87,13 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/Structure
 WARNING: StructureDefinition/SituacionCalle: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionCalle'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-SituacionDiscapacidad.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionDiscapacidad'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/ValueSet-PueblosOriginariosVS.json ==
 WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.cl.minsal.mpi, jurisdiction = urn:iso:std:iso:3166#CL) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#CL "null"')
 == fsh-generated/resources/ValueSet-VSEstadoCivil.json ==
 == fsh-generated/resources/ValueSet-VSIdentidadDeGenero.json ==
+== fsh-generated/resources/ValueSet-VSOrigenDiscapacidad.json ==
+== fsh-generated/resources/ValueSet-VSReligion.json ==
 == fsh-generated/resources/ValueSet-VSTipoIdentificador.json ==

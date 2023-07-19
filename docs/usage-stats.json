@@ -12,6 +12,31 @@
       ]
     },
     {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI",
+      "title": "País de origen del paciente",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente",
+      "title": "PueblosAfrodescendiente",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios",
       "title": "Pueblos Originarios",
       "types": [
@@ -38,8 +63,26 @@
       ]
     },
     {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion",
+      "title": "Religión",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico",
-      "title": "SexoBiologico",
+      "title": "Sexo Biologico del paciente",
       "types": [
         "CodeableConcept"
       ]
@@ -64,6 +107,12 @@
       {
         "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI",
         "title": "Paciente definido para el Registro Maestro de Pacientes"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionDiscapacidad",
+        "title": "Observacion - Situacion Discapacidad"
       }
     ]
   },
@@ -98,6 +147,9 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -106,6 +158,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -126,10 +181,19 @@
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero": [
       "Patient"
     ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI": [
+      "Patient"
+    ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente": [
+      "Patient"
+    ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios": [
       "Patient"
     ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente": [
+      "Patient"
+    ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion": [
       "Patient"
     ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico": [

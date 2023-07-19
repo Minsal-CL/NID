@@ -65,7 +65,7 @@
 -->
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Indice de maestro de prestadores</span>
+          <p><span style="font-size:12pt;font-weight:bold">Indice de maestro de pacientes</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -132,7 +132,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Indice de maestro de prestadores - Local Development build (v0.1.0). See the <a href="http://minsal.cl/fhir/ig/mpi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Indice de maestro de pacientes - Local Development build (v0.1.0). See the <a href="http://minsal.cl/fhir/ig/mpi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -181,6 +181,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-SituacionDiscapacidad.html"
+                     title="StructureDefinition/SituacionDiscapacidad">Observacion - Situacion Discapacidad</a>
+               </td>
+               <td>
+<p>Observacion - Situacion Discapacidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-PacienteMinsalMPI.html"
                      title="StructureDefinition/PacienteMinsalMPI">Paciente definido para el Registro Maestro de Pacientes</a>
                </td>
@@ -211,11 +220,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-PaisOrigenMPI.html"
+                     title="StructureDefinition/PaisOrigenMPI">País de origen del paciente</a>
+               </td>
+               <td>
+<p>País de origen del paciente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-PueblosOriginarios.html"
                      title="StructureDefinition/PueblosOriginarios">Pueblos Originarios</a>
                </td>
                <td>
 <p>Almacenar si el paciente pertenece a algun pueblo originario</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PueblosAfrodescendiente.html"
+                     title="StructureDefinition/PueblosAfrodescendiente">PueblosAfrodescendiente</a>
+               </td>
+               <td>
+<p>PueblosAfrodescendiente</p>
 </td>
             </tr>
             <tr>
@@ -229,11 +256,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-SexoBiologico.html"
-                     title="StructureDefinition/SexoBiologico">SexoBiologico</a>
+                  <a href="StructureDefinition-Religion.html"
+                     title="StructureDefinition/Religion">Religión</a>
                </td>
                <td>
-<p>SexoBiologico</p>
+<p>Religión</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SexoBiologico.html"
+                     title="StructureDefinition/SexoBiologico">Sexo Biologico del paciente</a>
+               </td>
+               <td>
+<p>Sexo Biologico del paciente</p>
 </td>
             </tr>
             <tr>
@@ -276,11 +312,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-VSOrigenDiscapacidad.html"
+                     title="ValueSet/VSOrigenDiscapacidad">OrigenDiscapacidad</a>
+               </td>
+               <td>
+<p>OrigenDiscapacidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-PueblosOriginariosVS.html"
                      title="ValueSet/PueblosOriginariosVS">Pueblos Originarios de Chile</a>
                </td>
                <td>
 <p>Pueblos Originarios de Chile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSReligion.html" title="ValueSet/VSReligion">Religion</a>
+               </td>
+               <td>
+<p>Religion</p>
 </td>
             </tr>
             <tr>
@@ -323,11 +376,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-CSOrigenDiscapacidad.html"
+                     title="CodeSystem/CSOrigenDiscapacidad">OrigenDiscapacidad</a>
+               </td>
+               <td>
+<p>OrigenDiscapacidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-PueblosOriginariosCS.html"
                      title="CodeSystem/PueblosOriginariosCS">Pueblos Originarios de Chile</a>
                </td>
                <td>
 <p>Pueblos Originarios de Chile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSReligion.html" title="CodeSystem/CSReligion">Religion</a>
+               </td>
+               <td>
+<p>Religion</p>
 </td>
             </tr>
             <tr>
@@ -366,7 +436,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://minsal.cl">MINSAL</a>.  Package hl7.fhir.cl.minsal.mpi#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 4, 2023 10:12-0400">2023-07-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://minsal.cl">MINSAL</a>.  Package hl7.fhir.cl.minsal.mpi#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 19, 2023 17:59-0400">2023-07-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

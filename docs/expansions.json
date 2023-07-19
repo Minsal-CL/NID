@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "505f1cd0-a25c-492f-9f84-f6121268f470",
+  "id" : "4b8ecb8b-a021-4292-9777-e07c376d6de2",
   "meta" : {
-    "lastUpdated" : "2023-07-04T10:12:16.412-04:00"
+    "lastUpdated" : "2023-07-19T17:59:07.661-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Pueblos Originarios de Chile",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2023-07-04T10:12:16-04:00",
+      "date" : "2023-07-19T17:59:07-04:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8dd5b768-e214-4905-b9f2-a999ba2ca853",
-        "timestamp" : "2023-07-04T10:12:33-04:00",
+        "identifier" : "urn:uuid:cc66612b-9c4b-446a-a97b-4602b7d6ba3e",
+        "timestamp" : "2023-07-19T17:59:21-04:00",
         "total" : 11,
         "parameter" : [{
           "name" : "excludeNested",
@@ -91,6 +91,160 @@
     }
   },
   {
+    "fullUrl" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSOrigenDiscapacidad",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CSOrigenDiscapacidad.html\">OrigenDiscapacidad v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-01\">01</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td><td>Origen Físico</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-02\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-02\">02</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td><td>Origen sensorial visual </td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-03\">03</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td><td>Origen sensorial auditivo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-04\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-04\">04</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td><td>Origen mental síquico </td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-05\">05</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td><td>Origen mental intelectual </td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSOrigenDiscapacidad-06\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSOrigenDiscapacidad.html#CSOrigenDiscapacidad-06\">06</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</td><td>Origen múltiple</td></tr></table></div>"
+      },
+      "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSOrigenDiscapacidad",
+      "version" : "0.1.0",
+      "name" : "VSOrigenDiscapacidad",
+      "title" : "OrigenDiscapacidad",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-01-15",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "CL",
+          "display" : "Chile"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2c5d3670-671f-434e-adb3-4ea5727c223a",
+        "timestamp" : "2023-07-19T17:59:22-04:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
+          "code" : "01",
+          "display" : "Origen Físico"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
+          "code" : "02",
+          "display" : "Origen sensorial visual "
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
+          "code" : "03",
+          "display" : "Origen sensorial auditivo"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
+          "code" : "04",
+          "display" : "Origen mental síquico "
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
+          "code" : "05",
+          "display" : "Origen mental intelectual "
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
+          "code" : "06",
+          "display" : "Origen múltiple"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSReligion",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 10 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CSReligion.html\">Religion v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-1\">1</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Católica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-2\">2</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Evangélica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-3\">3</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Testigo de Jehová</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-4\">4</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Judaica</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-5\">5</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Mormón</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-6\">6</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Musulmana</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-7\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-7\">7</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Ortodoxa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-8\">8</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Otra religión o credo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-9\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-9\">9</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Ninguna, ateo, agnóstico</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSReligion-99\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSReligion.html#CSReligion-99\">99</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion</td><td>Desconocido</td></tr></table></div>"
+      },
+      "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSReligion",
+      "version" : "0.1.0",
+      "name" : "VSReligion",
+      "title" : "Religion",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-01-15",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "CL",
+          "display" : "Chile"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:2e1592e4-23c7-4c19-8ef4-295b6c65a381",
+        "timestamp" : "2023-07-19T17:59:24-04:00",
+        "total" : 10,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "1",
+          "display" : "Católica"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "2",
+          "display" : "Evangélica"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "3",
+          "display" : "Testigo de Jehová"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "4",
+          "display" : "Judaica"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "5",
+          "display" : "Mormón"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "6",
+          "display" : "Musulmana"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "7",
+          "display" : "Ortodoxa"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "8",
+          "display" : "Otra religión o credo"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "9",
+          "display" : "Ninguna, ateo, agnóstico"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
+          "code" : "99",
+          "display" : "Desconocido"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -113,8 +267,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:58432338-e6e5-4ef1-8e9f-0396ab5191f6",
-        "timestamp" : "2023-07-04T10:12:37-04:00",
+        "identifier" : "urn:uuid:158e8670-7543-49be-ad28-d59930f6f9ba",
+        "timestamp" : "2023-07-19T17:59:25-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -168,7 +322,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CSTipoIdentificador.html\">Tipo Identificador v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-01\">01</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Run</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-02\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-02\">02</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Run materno/progenitor(a)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-03\">03</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de Folio de comprobante de parto</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-04\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-04\">04</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de pasaporte</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-05\">05</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de documento identificador de país de origen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-06\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-06\">06</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de identificador FONASA</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CSTipoIdentificador.html\">Tipo Identificador v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-01\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-01\">01</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Run</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-02\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-02\">02</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Run materno/progenitor(a)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-03\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-03\">03</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de Folio de comprobante de parto</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-04\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-04\">04</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de pasaporte</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-05\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-05\">05</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de documento identificador de país de origen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-06\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-06\">06</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Número de identificador FONASA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-07\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-07\">07</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Identificador Provisorio Escolar</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-08\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-08\">08</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Identificador Provisorio Apoderado</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-09\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-09\">09</a></td><td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td><td>Registro Único de Contribuyentes</td></tr></table></div>"
       },
       "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador",
       "version" : "0.1.0",
@@ -185,9 +339,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:72c6d4e8-275f-48fb-aa24-acb1c35a4824",
-        "timestamp" : "2023-07-04T10:12:38-04:00",
-        "total" : 6,
+        "identifier" : "urn:uuid:988da092-664f-440b-bcc0-390221b74e90",
+        "timestamp" : "2023-07-19T17:59:25-04:00",
+        "total" : 9,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -225,6 +379,21 @@
           "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador",
           "code" : "06",
           "display" : "Número de identificador FONASA"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador",
+          "code" : "07",
+          "display" : "Identificador Provisorio Escolar"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador",
+          "code" : "08",
+          "display" : "Identificador Provisorio Apoderado"
+        },
+        {
+          "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador",
+          "code" : "09",
+          "display" : "Registro Único de Contribuyentes"
         }]
       }
     }
@@ -252,8 +421,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d21b25f5-c35a-434d-be67-d71a57ef8402",
-        "timestamp" : "2023-07-04T10:12:38-04:00",
+        "identifier" : "urn:uuid:fffce343-2122-4013-9df0-5f1d629fdb1a",
+        "timestamp" : "2023-07-19T17:59:25-04:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",

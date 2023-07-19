@@ -3,14 +3,14 @@
   "id" : "hl7.fhir.cl.minsal.mpi",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Indicedemaestrodeprestadores</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi</pre><div><p>Indice de maestro de prestadores</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Indicedemaestrodepacientes</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi</pre><div><p>Indice de maestro de pacientes</p>\n</div></div>"
   },
   "url" : "http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi",
   "version" : "0.1.0",
-  "name" : "Indicedemaestrodeprestadores",
-  "title" : "Indice de maestro de prestadores",
+  "name" : "Indicedemaestrodepacientes",
+  "title" : "Indice de maestro de pacientes",
   "status" : "draft",
-  "date" : "2023-07-04T10:12:16-04:00",
+  "date" : "2023-07-19T17:59:07-04:00",
   "publisher" : "MINSAL",
   "contact" : [{
     "name" : "MINSAL",
@@ -19,7 +19,7 @@
       "value" : "http://minsal.cl"
     }]
   }],
-  "description" : "Indice de maestro de prestadores",
+  "description" : "Indice de maestro de pacientes",
   "packageId" : "hl7.fhir.cl.minsal.mpi",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -660,10 +660,58 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/SituacionDiscapacidad"
+      },
+      "name" : "Observacion - Situacion Discapacidad",
+      "description" : "Observacion - Situacion Discapacidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSOrigenDiscapacidad"
+      },
+      "name" : "OrigenDiscapacidad",
+      "description" : "OrigenDiscapacidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSOrigenDiscapacidad"
+      },
+      "name" : "OrigenDiscapacidad",
+      "description" : "OrigenDiscapacidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PacienteMinsalMPI"
       },
       "name" : "Paciente definido para el Registro Maestro de Pacientes",
       "description" : "Paciente definido para el Registro Maestro de Pacientes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PaisOrigenMPI"
+      },
+      "name" : "País de origen del paciente",
+      "description" : "País de origen del paciente",
       "exampleBoolean" : false
     },
     {
@@ -708,10 +756,58 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/PueblosAfrodescendiente"
+      },
+      "name" : "PueblosAfrodescendiente",
+      "description" : "PueblosAfrodescendiente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PueblosOriginariosPerteneciente"
       },
       "name" : "PueblosOriginariosPerteneciente",
       "description" : "PueblosOriginariosPerteneciente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSReligion"
+      },
+      "name" : "Religion",
+      "description" : "Religion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSReligion"
+      },
+      "name" : "Religion",
+      "description" : "Religion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Religion"
+      },
+      "name" : "Religión",
+      "description" : "Religión",
       "exampleBoolean" : false
     },
     {
@@ -722,8 +818,8 @@
       "reference" : {
         "reference" : "StructureDefinition/SexoBiologico"
       },
-      "name" : "SexoBiologico",
-      "description" : "SexoBiologico",
+      "name" : "Sexo Biologico del paciente",
+      "description" : "Sexo Biologico del paciente",
       "exampleBoolean" : false
     },
     {
