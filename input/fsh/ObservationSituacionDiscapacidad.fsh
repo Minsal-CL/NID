@@ -1,17 +1,14 @@
 Profile: SituacionDiscapacidad
 Parent: Observation
 Id: SituacionDiscapacidad
-Title: "Observacion - Situacion Discapacidad"
-Description: "Observacion - Situacion Discapacidad"
+Title: "Situacion Discapacidad"
+Description: "Situacion Discapacidad"
 
-
-*  status 
-
-
-* valueBoolean 1..1 MS
-* valueBoolean ^short = "aaaaa"
-
-
-* code from VSOrigenDiscapacidad
-//* code 0..1
+* status MS
+* category MS
+* category from VSTipoObservacion
+  * coding 1..1 MS
+    * code 1..1 MS
+    //* code = Ocupación
+    * system 0..1 MS
 

@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-PueblosOriginariosCS.html"><code>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</code></a></li></ul></div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="PueblosOriginariosVS"/>
   <title value="Pueblos Originarios de Chile"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2023-07-19T17:59:07-04:00"/>
+  <date value="2023-08-10T11:42:08-04:00"/>
   <publisher value="MINSAL"/>
   <contact>
     <name value="MINSAL"/>
@@ -21,6 +21,13 @@
     </telecom>
   </contact>
   <description value="Pueblos Originarios de Chile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
   <compose>
     <include>
       <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>

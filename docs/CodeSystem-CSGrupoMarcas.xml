@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSGrupoMarcas"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="CSGrupoMarcas-01"> </a></td><td>Condición de Cuidador(a)</td></tr><tr><td style="white-space:nowrap">02<a name="CSGrupoMarcas-02"> </a></td><td>Documento que acredita cuidador </td></tr><tr><td style="white-space:nowrap">03<a name="CSGrupoMarcas-03"> </a></td><td>Fibromialgia</td></tr><tr><td style="white-space:nowrap">04<a name="CSGrupoMarcas-04"> </a></td><td>TEA</td></tr><tr><td style="white-space:nowrap">05<a name="CSGrupoMarcas-05"> </a></td><td>EII</td></tr></table></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas"/>
+  <version value="0.1.1"/>
+  <name value="CSGrupoMarcas"/>
+  <title value="GrupoMarcas"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-15"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="GrupoMarcas"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="01"/>
+    <display value="Condición de Cuidador(a)"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Documento que acredita cuidador "/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Fibromialgia"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="TEA"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="EII"/>
+  </concept>
+</CodeSystem>

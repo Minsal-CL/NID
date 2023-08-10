@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSUNivelAprob"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSUNivelAprob-1"> </a></td><td>Preescolar</td></tr><tr><td style="white-space:nowrap">2<a name="CSUNivelAprob-2"> </a></td><td>Especial o Diferencial </td></tr><tr><td style="white-space:nowrap">3<a name="CSUNivelAprob-3"> </a></td><td>Básica o Primaria</td></tr><tr><td style="white-space:nowrap">4<a name="CSUNivelAprob-4"> </a></td><td>Media o Secundaria</td></tr><tr><td style="white-space:nowrap">5<a name="CSUNivelAprob-5"> </a></td><td>Educación Superior</td></tr><tr><td style="white-space:nowrap">6<a name="CSUNivelAprob-6"> </a></td><td>Sin Instrucción</td></tr><tr><td style="white-space:nowrap">97<a name="CSUNivelAprob-97"> </a></td><td>No Recuerda</td></tr><tr><td style="white-space:nowrap">98<a name="CSUNivelAprob-98"> </a></td><td>No Responde</td></tr></table></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob"/>
+  <version value="0.1.1"/>
+  <name value="CSUNivelAprob"/>
+  <title value="Ultimo nivel aprobado"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Código del último nivel aprobado"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1"/>
+    <display value="Preescolar"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Especial o Diferencial "/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Básica o Primaria"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Media o Secundaria"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Educación Superior"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Sin Instrucción"/>
+  </concept>
+  <concept>
+    <code value="97"/>
+    <display value="No Recuerda"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="No Responde"/>
+  </concept>
+</CodeSystem>

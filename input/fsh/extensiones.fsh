@@ -88,3 +88,43 @@ Description: "País de origen del paciente"
   * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
+
+
+Extension: DirigenteVecinal 
+Id: DirigenteVecinal 
+Title: "Dirigente Vecinal"
+Description: "Dirigente Vecinal"
+
+//* value[x] only Boolean
+//* valueReference = Reference()
+* valueBoolean ^short = "Dirigente Vecinal"
+
+
+Extension: Prilonco 
+Id: Prilonco 
+Title: "Prilonco"
+Description: "Prilonco"
+
+//* value[x] only Boolean
+//* valueReference = Reference()
+* valueBoolean ^short = "Prilonco"
+
+
+Extension: Antuco
+Id: Antuco
+Title: "Antuco"
+Description: "Antuco"
+
+//* value[x] only Boolean
+//* valueReference = Reference()
+* valueBoolean ^short = "Antuco"
+
+
+Extension: Prais
+Id: Prais
+Title: "PRAIS"
+Description: "PRAIS"
+
+//* value[x] only Boolean
+//* valueReference = Reference()
+* valueBoolean ^short = "PRAIS"

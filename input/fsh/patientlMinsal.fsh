@@ -5,7 +5,7 @@
 Profile: PacienteMinsalMPI
 Parent: PacienteCl
 Id: PacienteMinsalMPI
-Title: "Paciente definido para el Registro Maestro de Pacientes"
+Title: "PacienteMPI"
 Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * extension contains PaisOrigenMPI named PaisOrigen 1..1 MS
@@ -29,7 +29,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
 * identifier.type ^definition = "Tipo de documento de Id (Extensible)"
 * identifier.type ^comment = "Tipo de documento de Id (Extensible)"
-* identifier.type from VSTipoIdentificador 
+* identifier.type.coding from VSTipoIdentificador 
 * identifier.type ^binding.description = "Identificadores definidos por DEIS"
 
 * gender ^short = "Sexo Registral del paciente"
@@ -61,4 +61,5 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * deceasedBoolean ^short = "Información si el paciente esta fallecido"
 * deceasedBoolean ^definition = "Información si el paciente esta fallecido"
 
+* contact 0..* MS
 

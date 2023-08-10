@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="Indicedemaestrodepacientes"/>
   <title value="Indice de maestro de pacientes"/>
   <status value="draft"/>
-  <date value="2023-07-19T17:59:07-04:00"/>
+  <date value="2023-08-10T11:42:08-04:00"/>
   <publisher value="MINSAL"/>
   <contact>
     <name value="MINSAL"/>
@@ -21,6 +21,13 @@
     </telecom>
   </contact>
   <description value="Indice de maestro de pacientes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
   <packageId value="hl7.fhir.cl.minsal.mpi"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -438,10 +445,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/AgrupacionPorMarcas"/>
+      </reference>
+      <name value="Agrupacion Por Marcas"/>
+      <description value="Agrupacion Por Marcas"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Antuco"/>
+      </reference>
+      <name value="Antuco"/>
+      <description value="Antuco"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VScalificacionPrevisional"/>
+      </reference>
+      <name value="calificacionPrevisional"/>
+      <description value="calificacionPrevisional"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CScalificacionPrevisional"/>
+      </reference>
+      <name value="calificacionPrevisional"/>
+      <description value="calificacionPrevisional"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/CoberturaMinsalMPI"/>
       </reference>
-      <name value="CoberturaMinsalMPI"/>
-      <description value="An example profile of the Patient resource."/>
+      <name value="Cobertura de Salud del paciente"/>
+      <description value="Recurso para almacenar la cobertura del paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DirigenteVecinal"/>
+      </reference>
+      <name value="Dirigente Vecinal"/>
+      <description value="Dirigente Vecinal"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -464,6 +526,28 @@
       </reference>
       <name value="EstadoCivil"/>
       <description value="EstadoCivil"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSGrupoMarcas"/>
+      </reference>
+      <name value="GrupoMarcas"/>
+      <description value="GrupoMarcas"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSGrupoMarcas"/>
+      </reference>
+      <name value="GrupoMarcas"/>
+      <description value="GrupoMarcas"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -504,10 +588,65 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/SituacionDiscapacidad"/>
+        <reference value="StructureDefinition/NivelEducacional"/>
       </reference>
-      <name value="Observacion - Situacion Discapacidad"/>
-      <description value="Observacion - Situacion Discapacidad"/>
+      <name value="Nivel Educacional"/>
+      <description value="Nivel Educacional"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSNivelEducacionalDesc"/>
+      </reference>
+      <name value="NivelEducacionalDesc"/>
+      <description value="NivelEducacionalDesc"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSNivelEducacionalDesc"/>
+      </reference>
+      <name value="NivelEducacionalDesc"/>
+      <description value="NivelEducacionalDesc"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSOcupacionesDet"/>
+      </reference>
+      <name value="Ocupaciones Detalladas"/>
+      <description value="Código asociados a el detalle de las ocupaciones de un paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSOcupacionesDet"/>
+      </reference>
+      <name value="Ocupaciones Detalladas"/>
+      <description value="Código asociados a el detalle de las ocupaciones de un paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Ocupacion"/>
+      </reference>
+      <name value="Ocupación"/>
+      <description value="Ocupación"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -539,7 +678,7 @@
       <reference>
         <reference value="StructureDefinition/PacienteMinsalMPI"/>
       </reference>
-      <name value="Paciente definido para el Registro Maestro de Pacientes"/>
+      <name value="PacienteMPI"/>
       <description value="Paciente definido para el Registro Maestro de Pacientes"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -552,6 +691,28 @@
       </reference>
       <name value="País de origen del paciente"/>
       <description value="País de origen del paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Prais"/>
+      </reference>
+      <name value="PRAIS"/>
+      <description value="PRAIS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Prilonco"/>
+      </reference>
+      <name value="Prilonco"/>
+      <description value="Prilonco"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -611,6 +772,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RelatedPersonMPI"/>
+      </reference>
+      <name value="RelatedPerson"/>
+      <description value="RelatedPerson"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -655,6 +827,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SituacionDiscapacidad"/>
+      </reference>
+      <name value="Situacion Discapacidad"/>
+      <description value="Situacion Discapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -684,6 +867,50 @@
       </reference>
       <name value="Tipo Identificador"/>
       <description value="Tipo Identificador"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSTipoObservacion"/>
+      </reference>
+      <name value="TipoObservacion"/>
+      <description value="TipoObservacion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSTipoObservacion"/>
+      </reference>
+      <name value="TipoObservacion"/>
+      <description value="TipoObservacion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSUNivelAprob"/>
+      </reference>
+      <name value="Ultimo nivel aprobado"/>
+      <description value="Código del último nivel aprobado"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSUNivelAprob"/>
+      </reference>
+      <name value="Ultimo nivel aprobado"/>
+      <description value="Código del último nivel aprobado"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

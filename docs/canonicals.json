@@ -3,168 +3,308 @@
     "id" : "CSEstadoCivil",
     "type" : "CodeSystem",
     "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "CSEstadoCivil"
+  },
+  {
+    "id" : "CSGrupoMarcas",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas",
+    "version" : "0.1.1",
+    "name" : "CSGrupoMarcas"
   },
   {
     "id" : "CSIdentidadDeGenero",
     "type" : "CodeSystem",
     "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "CSIdentidadDeGenero"
+  },
+  {
+    "id" : "CSNivelEducacionalDesc",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSNivelEducacionalDesc",
+    "version" : "0.1.1",
+    "name" : "CSNivelEducacionalDesc"
+  },
+  {
+    "id" : "CSOcupacionesDet",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet",
+    "version" : "0.1.1",
+    "name" : "CSOcupacionesDet"
   },
   {
     "id" : "CSOrigenDiscapacidad",
     "type" : "CodeSystem",
     "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "CSOrigenDiscapacidad"
   },
   {
     "id" : "CSReligion",
     "type" : "CodeSystem",
     "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "CSReligion"
   },
   {
     "id" : "CSTipoIdentificador",
     "type" : "CodeSystem",
     "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "CSTipoIdentificador"
+  },
+  {
+    "id" : "CSTipoObservacion",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoObservacion",
+    "version" : "0.1.1",
+    "name" : "CSTipoObservacion"
+  },
+  {
+    "id" : "CSUNivelAprob",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob",
+    "version" : "0.1.1",
+    "name" : "CSUNivelAprob"
+  },
+  {
+    "id" : "CScalificacionPrevisional",
+    "type" : "CodeSystem",
+    "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional",
+    "version" : "0.1.1",
+    "name" : "CScalificacionPrevisional"
   },
   {
     "id" : "PueblosOriginariosCS",
     "type" : "CodeSystem",
     "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PueblosOriginariosCS"
   },
   {
     "id" : "hl7.fhir.cl.minsal.mpi",
     "type" : "ImplementationGuide",
     "url" : "http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "Indicedemaestrodepacientes"
+  },
+  {
+    "id" : "AgrupacionPorMarcas",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/AgrupacionPorMarcas",
+    "version" : "0.1.1",
+    "name" : "AgrupacionPorMarcas"
+  },
+  {
+    "id" : "Antuco",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Antuco",
+    "version" : "0.1.1",
+    "name" : "Antuco"
   },
   {
     "id" : "CoberturaMinsalMPI",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/CoberturaMinsalMPI",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "CoberturaMinsalMPI"
+  },
+  {
+    "id" : "DirigenteVecinal",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/DirigenteVecinal",
+    "version" : "0.1.1",
+    "name" : "DirigenteVecinal"
   },
   {
     "id" : "IdentidadDeGenero",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "IdentidadDeGenero"
+  },
+  {
+    "id" : "NivelEducacional",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/NivelEducacional",
+    "version" : "0.1.1",
+    "name" : "NivelEducacional"
+  },
+  {
+    "id" : "Ocupacion",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Ocupacion",
+    "version" : "0.1.1",
+    "name" : "Ocupacion"
   },
   {
     "id" : "PacienteMinsalMPI",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PacienteMinsalMPI"
   },
   {
     "id" : "PaisOrigenMPI",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PaisOrigenMPI"
+  },
+  {
+    "id" : "Prais",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prais",
+    "version" : "0.1.1",
+    "name" : "Prais"
+  },
+  {
+    "id" : "Prilonco",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prilonco",
+    "version" : "0.1.1",
+    "name" : "Prilonco"
   },
   {
     "id" : "PueblosAfrodescendiente",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PueblosAfrodescendiente"
   },
   {
     "id" : "PueblosOriginarios",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PueblosOriginarios"
   },
   {
     "id" : "PueblosOriginariosPerteneciente",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PueblosOriginariosPerteneciente"
+  },
+  {
+    "id" : "RelatedPersonMPI",
+    "type" : "StructureDefinition",
+    "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/RelatedPersonMPI",
+    "version" : "0.1.1",
+    "name" : "RelatedPersonMPI"
   },
   {
     "id" : "Religion",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "Religion"
   },
   {
     "id" : "SexoBiologico",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "SexoBiologico"
   },
   {
     "id" : "SituacionCalle",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionCalle",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "SituacionCalle"
   },
   {
     "id" : "SituacionDiscapacidad",
     "type" : "StructureDefinition",
     "url" : "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionDiscapacidad",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "SituacionDiscapacidad"
   },
   {
     "id" : "PueblosOriginariosVS",
     "type" : "ValueSet",
     "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "PueblosOriginariosVS"
   },
   {
     "id" : "VSEstadoCivil",
     "type" : "ValueSet",
     "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSEstadoCivil",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "VSEstadoCivil"
+  },
+  {
+    "id" : "VSGrupoMarcas",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSGrupoMarcas",
+    "version" : "0.1.1",
+    "name" : "VSGrupoMarcas"
   },
   {
     "id" : "VSIdentidadDeGenero",
     "type" : "ValueSet",
     "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "VSIdentidadDeGenero"
+  },
+  {
+    "id" : "VSNivelEducacionalDesc",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSNivelEducacionalDesc",
+    "version" : "0.1.1",
+    "name" : "VSNivelEducacionalDesc"
+  },
+  {
+    "id" : "VSOcupacionesDet",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSOcupacionesDet",
+    "version" : "0.1.1",
+    "name" : "VSOcupacionesDet"
   },
   {
     "id" : "VSOrigenDiscapacidad",
     "type" : "ValueSet",
     "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSOrigenDiscapacidad",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "VSOrigenDiscapacidad"
   },
   {
     "id" : "VSReligion",
     "type" : "ValueSet",
     "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSReligion",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "VSReligion"
   },
   {
     "id" : "VSTipoIdentificador",
     "type" : "ValueSet",
     "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador",
-    "version" : "0.1.0",
+    "version" : "0.1.1",
     "name" : "VSTipoIdentificador"
+  },
+  {
+    "id" : "VSTipoObservacion",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoObservacion",
+    "version" : "0.1.1",
+    "name" : "VSTipoObservacion"
+  },
+  {
+    "id" : "VSUNivelAprob",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VSUNivelAprob",
+    "version" : "0.1.1",
+    "name" : "CSUNivelAprob"
+  },
+  {
+    "id" : "VScalificacionPrevisional",
+    "type" : "ValueSet",
+    "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VScalificacionPrevisional",
+    "version" : "0.1.1",
+    "name" : "VScalificacionPrevisional"
   }
 ]

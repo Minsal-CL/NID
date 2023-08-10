@@ -19,10 +19,26 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "Coverage.contained","Coverage.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Coverage.extension","Coverage.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Coverage.extension","Coverage.extension","","","",4,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Coverage.extension:DirigenteVecinal","Coverage.extension","DirigenteVecinal","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/fhir/ig/mpi/StructureDefinition/DirigenteVecinal]]} {[]}
+","Dirigente Vecinal","Dirigente Vecinal","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Coverage.extension:Prais","Coverage.extension","Prais","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prais]]} {[]}
+","PRAIS","PRAIS","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Coverage.extension:Antuco","Coverage.extension","Antuco","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/fhir/ig/mpi/StructureDefinition/Antuco]]} {[]}
+","Antuco","Antuco","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Coverage.extension:Prilonco","Coverage.extension","Prilonco","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prilonco]]} {[]}
+","Prilonco","Prilonco","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Coverage.modifierExtension","Coverage.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -32,13 +48,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.identifier","Coverage.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
 ","Business Identifier for the coverage","A unique identifier assigned to this coverage.","The main (and possibly only) identifier for the coverage - often referred to as a Member Id, Certificate number, Personal Health Number or Case ID. May be constructed as the concatenation of the Coverage.SubscriberID and the Coverage.dependant.","Allows coverages to be distinguished and referenced.","","","","","","","",,,,,"",,,,"Coverage.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.identifier",".id","FiveWs.identifier","C02","IN1-2","C.32, C.33, C.39"
-"Coverage.status","Coverage.status","","","",1,1,"","Y","Y","code {[]} {[]}
+"Coverage.status","Coverage.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","active | cancelled | draft | entered-in-error","The status of the resource instance.","This element is labeled as a modifier because the status contains the code entered-in-error that marks the coverage as not currently valid.","Need to track the status of the resource as 'draft' resources may undergo further edits while 'active' resources are immutable and may only have their status changed to 'cancelled'.","","","","","","","",,"required","A code specifying the state of the resource instance.","http://hl7.org/fhir/ValueSet/fm-status|4.0.1","",,,,"Coverage.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","Act.status","FiveWs.status"
 "Coverage.type","Coverage.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Coverage category such as medical or accident","The type of coverage: social program, medical plan, accident coverage (workers compensation, auto), group health or payment by an individual or organization.","","The order of application of coverages is dependent on the types of coverage.","","","","","","","",,"preferred","The type of insurance: public health, worker compensation; private accident, auto, private health, etc.) or a direct payment by an individual or organization.","http://hl7.org/fhir/ValueSet/coverage-type","",,,,"Coverage.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class","IN1-15"
-"Coverage.policyHolder","Coverage.policyHolder","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"Coverage.policyHolder","Coverage.policyHolder","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI]]}
 ","Owner of the policy","The party who 'owns' the insurance policy.","For example: may be an individual, corporation or the subscriber's employer.","This provides employer information in the case of Worker's Compensation and other policies.","","","","","","","",,,,,"",,,,"Coverage.policyHolder",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.subject[x]","FiveWs.subject","D01 through D09","IN1-16, 18,  19-name of insured, address, date of birth","C.35"
 "Coverage.subscriber","Coverage.subscriber","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
@@ -47,7 +63,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.subscriberId","Coverage.subscriberId","","","",0,1,"","","Y","string {[]} {[]}
 ","ID assigned to the subscriber","The insurer assigned ID for the Subscriber.","","The insurer requires this identifier on correspondance and claims (digital and otherwise).","","","","","","","",,,,,"",,,,"Coverage.subscriberId",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.subject[x]","FiveWs.subject","D01 through D09","IN1-16, 18,  19-name of insured, address, date of birth","C.35"
-"Coverage.beneficiary","Coverage.beneficiary","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"Coverage.beneficiary","Coverage.beneficiary","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI]]}
 ","Plan beneficiary","The party who benefits from the insurance coverage; the patient when products and/or services are provided.","","This is the party who receives treatment for which the costs are reimbursed under the coverage.","","","","","","","",,,,,"",,,,"Coverage.beneficiary",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","FiveWs.subject[x]","FiveWs.subject","D01 through D09","IN1-16, 18,  19-name of insured, address, date of birth","C.35"
 "Coverage.dependent","Coverage.dependent","","","",0,1,"","","Y","string {[]} {[]}
@@ -56,14 +72,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.relationship","Coverage.relationship","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Beneficiary relationship to the subscriber","The relationship of beneficiary (patient) to the subscriber.","Typically, an individual uses policies which are theirs (relationship='self') before policies owned by others.","To determine relationship between the patient and the subscriber to determine coordination of benefits.","","","","","","","",,"extensible","The relationship between the Subscriber and the Beneficiary (insured/covered party/patient).","http://hl7.org/fhir/ValueSet/subscriber-relationship","",,,,"Coverage.relationship",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C03"
-"Coverage.period","Coverage.period","","","",0,1,"","","Y","Period {[]} {[]}
+"Coverage.period","Coverage.period","","","",0,1,"Y","","Y","Period {[]} {[]}
 ","Coverage start and end dates","Time period during which the coverage is in force. A missing start date indicates the start date isn't known, a missing end date means the coverage is continuing to be in force.","","Some insurers require the submission of the coverage term.","","","","","","","",,,,,"",,,,"Coverage.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]","Act.effectiveTime","FiveWs.done[x]","IN1-12 / IN1-13"
-"Coverage.payor","Coverage.payor","","","",1,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
+"Coverage.payor","Coverage.payor","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Issuer of the policy","The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements.","May provide multiple identifiers such as insurance company identifier or business identifier (BIN number).
 For selfpay it may provide multiple paying persons and/or organizations.","Need to identify the issuer to target for claim processing and for coordination of benefit processing.","","","","","","","",,,,,"",,,,"Coverage.payor",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.author","A05","IN1-3","C.30"
-"Coverage.class","Coverage.class","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Coverage.class","Coverage.class","","","",0,1,"Y","","","BackboneElement {[]} {[]}
 ","Additional coverage classifications","A suite of underwriter specific classifiers.","For example may be used to identify a class of coverage or employer group, Policy, Plan.","The codes provided on the health card which identify or confirm the specific policy for the insurer.","","","","","","","",,,,,"",,,,"Coverage.class",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.id","Coverage.class.id","","","",0,1,"","","","string {[]} {[]}
@@ -82,7 +98,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Type of class such as 'group' or 'plan'","The type of classification for which an insurer-specific class label or number and optional name is provided, for example may be used to identify a class of coverage or employer group, Policy, Plan.","","The insurer issued label for a specific health card value.","","","","","","","",,"extensible","The policy classifications, eg. Group, Plan, Class, etc.","http://hl7.org/fhir/ValueSet/coverage-class","",,,,"Coverage.class.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Coverage.class.value","Coverage.class.value","","","",1,1,"","","Y","string {[]} {[]}
-","Value associated with the type","The alphanumeric string value associated with the insurer issued label.","For example, the Group or Plan number.","The insurer issued label and value are necessary to identify the specific policy.","","","","","","","",,,,,"",,,,"Coverage.class.value",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Value associated with the type","The alphanumeric string value associated with the insurer issued label.","For example, the Group or Plan number.","The insurer issued label and value are necessary to identify the specific policy.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Plan""/>","","","",,,,,"",,,,"Coverage.class.value",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C11 (Division,Section)","IN1-8","C.31"
 "Coverage.class.name","Coverage.class.name","","","",0,1,"","","Y","string {[]} {[]}
 ","Human readable description of the type and value","A short description for the class.","","Used to provide a meaningful description in correspondence to the patient.","","","","","","","",,,,,"",,,,"Coverage.class.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

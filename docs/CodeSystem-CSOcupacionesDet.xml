@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSOcupacionesDet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0110<a name="CSOcupacionesDet-0110"> </a></td><td>Oficiales de las Fuerzas Armadas</td></tr><tr><td style="white-space:nowrap">0210<a name="CSOcupacionesDet-0210"> </a></td><td>Suboficiales de las Fuerzas Armadas	</td></tr><tr><td style="white-space:nowrap">0310<a name="CSOcupacionesDet-0310"> </a></td><td>Otros miembros de las Fuerzas Armadas	</td></tr><tr><td style="white-space:nowrap">1111<a name="CSOcupacionesDet-1111"> </a></td><td>Miembros del poder ejecutivo y legislativo	</td></tr><tr><td style="white-space:nowrap">1112<a name="CSOcupacionesDet-1112"> </a></td><td>Personal directivo de la administración pública	</td></tr><tr><td style="white-space:nowrap">1113<a name="CSOcupacionesDet-1113"> </a></td><td>Jefes de comunidades indígenas	</td></tr><tr><td style="white-space:nowrap">1114<a name="CSOcupacionesDet-1114"> </a></td><td>Dirigentes de organizaciones sociales y/o políticas (sindicatos, organizaciones sociales, partidos políticos, entre otras)	</td></tr><tr><td style="white-space:nowrap">1120<a name="CSOcupacionesDet-1120"> </a></td><td>Directores y gerentes generales de empresas	</td></tr><tr><td style="white-space:nowrap">1211<a name="CSOcupacionesDet-1211"> </a></td><td>Directores, gerentes y administradores de finanzas 	</td></tr><tr><td style="white-space:nowrap">1212<a name="CSOcupacionesDet-1212"> </a></td><td>Directores, gerentes y administradores de recursos humanos	</td></tr><tr><td style="white-space:nowrap">1213<a name="CSOcupacionesDet-1213"> </a></td><td>Directores, gerentes y administradores de políticas empresariales y planificación	</td></tr><tr><td style="white-space:nowrap">1219<a name="CSOcupacionesDet-1219"> </a></td><td>Otros directores, gerentes y administradores de servicios administrativos no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">1221<a name="CSOcupacionesDet-1221"> </a></td><td>Directores, gerentes y administradores comercialización	</td></tr><tr><td style="white-space:nowrap">1222<a name="CSOcupacionesDet-1222"> </a></td><td>Directores, gerentes y administradores de publicidad y relaciones públicas	</td></tr><tr><td style="white-space:nowrap">1223<a name="CSOcupacionesDet-1223"> </a></td><td>Directores, gerentes y administradores de investigación y desarrollo	</td></tr><tr><td style="white-space:nowrap">1311<a name="CSOcupacionesDet-1311"> </a></td><td>Directores, gerentes y administradores de producción y operaciones agropecuarias y de silvicultura	</td></tr><tr><td style="white-space:nowrap">1312<a name="CSOcupacionesDet-1312"> </a></td><td>Directores, gerentes y administradores de producción y operaciones de acuicultura y pesca	</td></tr><tr><td style="white-space:nowrap">1321<a name="CSOcupacionesDet-1321"> </a></td><td>Directores, gerentes y administradores de industrias manufactureras	</td></tr><tr><td style="white-space:nowrap">1322<a name="CSOcupacionesDet-1322"> </a></td><td>Directores, gerentes y administradores de explotaciones mineras	</td></tr><tr><td style="white-space:nowrap">1323<a name="CSOcupacionesDet-1323"> </a></td><td>Directores, gerentes y administradores de construcción	</td></tr><tr><td style="white-space:nowrap">1324<a name="CSOcupacionesDet-1324"> </a></td><td>Directores, gerentes y administradores de empresas de abastecimiento, almacenamiento y distribución	</td></tr><tr><td style="white-space:nowrap">1330<a name="CSOcupacionesDet-1330"> </a></td><td>Directores, gerentes y administradores de servicios de tecnología de la información y las comunicaciones	</td></tr><tr><td style="white-space:nowrap">1341<a name="CSOcupacionesDet-1341"> </a></td><td>Directores, gerentes y administradores de servicios de cuidados infantiles	</td></tr><tr><td style="white-space:nowrap">1342<a name="CSOcupacionesDet-1342"> </a></td><td>Directores, gerentes y administradores de servicios de salud	</td></tr><tr><td style="white-space:nowrap">1343<a name="CSOcupacionesDet-1343"> </a></td><td>Directores, gerentes y administradores de servicios de cuidado de adultos mayores	</td></tr><tr><td style="white-space:nowrap">1344<a name="CSOcupacionesDet-1344"> </a></td><td>Directores, generales y administradores de servicios de bienestar social	</td></tr><tr><td style="white-space:nowrap">1345<a name="CSOcupacionesDet-1345"> </a></td><td>Directores, gerentes y administradores de servicios de educación	</td></tr><tr><td style="white-space:nowrap">1346<a name="CSOcupacionesDet-1346"> </a></td><td>Directores, gerentes y administradores de servicios financieros	</td></tr><tr><td style="white-space:nowrap">1349<a name="CSOcupacionesDet-1349"> </a></td><td>Directores, gerentes y administradores de otros servicios profesionales no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">1411<a name="CSOcupacionesDet-1411"> </a></td><td>Directores, gerentes y administradores de hoteles	</td></tr><tr><td style="white-space:nowrap">1412<a name="CSOcupacionesDet-1412"> </a></td><td>Directores, gerentes y administradores de restaurantes	</td></tr><tr><td style="white-space:nowrap">1420<a name="CSOcupacionesDet-1420"> </a></td><td>Directores, gerentes y administradores de comercios al por mayor y al por menor	</td></tr><tr><td style="white-space:nowrap">1431<a name="CSOcupacionesDet-1431"> </a></td><td>Directores, gerentes y administradores de centros deportivos, de esparcimiento y culturales	</td></tr><tr><td style="white-space:nowrap">1439<a name="CSOcupacionesDet-1439"> </a></td><td>Directores, gerentes y administradores de otros servicios no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2111<a name="CSOcupacionesDet-2111"> </a></td><td>Físicos y astrónomos	</td></tr><tr><td style="white-space:nowrap">2112<a name="CSOcupacionesDet-2112"> </a></td><td>Meteorólogos	</td></tr><tr><td style="white-space:nowrap">2113<a name="CSOcupacionesDet-2113"> </a></td><td>Químicos	</td></tr><tr><td style="white-space:nowrap">2114<a name="CSOcupacionesDet-2114"> </a></td><td>Geólogos y geofísicos	</td></tr><tr><td style="white-space:nowrap">2120<a name="CSOcupacionesDet-2120"> </a></td><td>Matemáticos y estadísticos	</td></tr><tr><td style="white-space:nowrap">2131<a name="CSOcupacionesDet-2131"> </a></td><td>Biólogos, botánicos, zoólogos, genetista y farmacólogos	</td></tr><tr><td style="white-space:nowrap">2132<a name="CSOcupacionesDet-2132"> </a></td><td>Agrónomos y profesionales del ámbito forestal y pesquero	</td></tr><tr><td style="white-space:nowrap">2133<a name="CSOcupacionesDet-2133"> </a></td><td>Profesionales de la protección medioambiental	</td></tr><tr><td style="white-space:nowrap">2134<a name="CSOcupacionesDet-2134"> </a></td><td>Bioquímicos	</td></tr><tr><td style="white-space:nowrap">2141<a name="CSOcupacionesDet-2141"> </a></td><td>Ingenieros industriales y de producción	</td></tr><tr><td style="white-space:nowrap">2142<a name="CSOcupacionesDet-2142"> </a></td><td>Ingenieros civiles, ingenieros en construcción y constructores civiles	</td></tr><tr><td style="white-space:nowrap">2143<a name="CSOcupacionesDet-2143"> </a></td><td>Ingenieros mediambientales	</td></tr><tr><td style="white-space:nowrap">2144<a name="CSOcupacionesDet-2144"> </a></td><td>Ingenieros mecánicos	</td></tr><tr><td style="white-space:nowrap">2145<a name="CSOcupacionesDet-2145"> </a></td><td>Ingenieros químicos	</td></tr><tr><td style="white-space:nowrap">2146<a name="CSOcupacionesDet-2146"> </a></td><td>Ingenieros en minas y metalúrgicos	</td></tr><tr><td style="white-space:nowrap">2147<a name="CSOcupacionesDet-2147"> </a></td><td>Ingenieros biomédicos	</td></tr><tr><td style="white-space:nowrap">2149<a name="CSOcupacionesDet-2149"> </a></td><td>Otros ingenieros no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2151<a name="CSOcupacionesDet-2151"> </a></td><td>Ingenieros eléctricos	</td></tr><tr><td style="white-space:nowrap">2152<a name="CSOcupacionesDet-2152"> </a></td><td>Ingenieros electrónicos	</td></tr><tr><td style="white-space:nowrap">2153<a name="CSOcupacionesDet-2153"> </a></td><td>Ingenieros en telecomunicaciones	</td></tr><tr><td style="white-space:nowrap">2161<a name="CSOcupacionesDet-2161"> </a></td><td>Arquitectos 	</td></tr><tr><td style="white-space:nowrap">2162<a name="CSOcupacionesDet-2162"> </a></td><td>Arquitectos paisajistas	</td></tr><tr><td style="white-space:nowrap">2163<a name="CSOcupacionesDet-2163"> </a></td><td>Diseñadores de productos y de vestuario	</td></tr><tr><td style="white-space:nowrap">2164<a name="CSOcupacionesDet-2164"> </a></td><td>Urbanistas e ingenieros de transporte y tránsito	</td></tr><tr><td style="white-space:nowrap">2165<a name="CSOcupacionesDet-2165"> </a></td><td>Cartógrafos y agrimensores	</td></tr><tr><td style="white-space:nowrap">2166<a name="CSOcupacionesDet-2166"> </a></td><td>Diseñadores gráficos y de multimedia	</td></tr><tr><td style="white-space:nowrap">2211<a name="CSOcupacionesDet-2211"> </a></td><td>Médicos generales  	</td></tr><tr><td style="white-space:nowrap">2212<a name="CSOcupacionesDet-2212"> </a></td><td>Médicos especialistas	</td></tr><tr><td style="white-space:nowrap">2221<a name="CSOcupacionesDet-2221"> </a></td><td>Enfermeros profesionales	</td></tr><tr><td style="white-space:nowrap">2222<a name="CSOcupacionesDet-2222"> </a></td><td>Profesionales de matronería	</td></tr><tr><td style="white-space:nowrap">2230<a name="CSOcupacionesDet-2230"> </a></td><td>Veterinarios	</td></tr><tr><td style="white-space:nowrap">2241<a name="CSOcupacionesDet-2241"> </a></td><td>Dentistas  	</td></tr><tr><td style="white-space:nowrap">2242<a name="CSOcupacionesDet-2242"> </a></td><td>Químicos farmaceúticos	</td></tr><tr><td style="white-space:nowrap">2243<a name="CSOcupacionesDet-2243"> </a></td><td>Ingenieros en prevención de riesgos y otros profesionales de la seguridad e higiene laboral y ambiental	</td></tr><tr><td style="white-space:nowrap">2244<a name="CSOcupacionesDet-2244"> </a></td><td>Kinesiólogos	</td></tr><tr><td style="white-space:nowrap">2245<a name="CSOcupacionesDet-2245"> </a></td><td>Dietistas y nutricionistas	</td></tr><tr><td style="white-space:nowrap">2246<a name="CSOcupacionesDet-2246"> </a></td><td>Fonoaudiólogos	</td></tr><tr><td style="white-space:nowrap">2247<a name="CSOcupacionesDet-2247"> </a></td><td>Tecnólogos médicos	</td></tr><tr><td style="white-space:nowrap">2248<a name="CSOcupacionesDet-2248"> </a></td><td>Terapeutas ocupacionales	</td></tr><tr><td style="white-space:nowrap">2249<a name="CSOcupacionesDet-2249"> </a></td><td>Otros profesionales de la salud no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2310<a name="CSOcupacionesDet-2310"> </a></td><td>Profesores de la educación superior	</td></tr><tr><td style="white-space:nowrap">2320<a name="CSOcupacionesDet-2320"> </a></td><td>Profesores de educación media técnico profesional (especialidades) y de formación laboral 	</td></tr><tr><td style="white-space:nowrap">2330<a name="CSOcupacionesDet-2330"> </a></td><td>Profesores de educación media  	</td></tr><tr><td style="white-space:nowrap">2341<a name="CSOcupacionesDet-2341"> </a></td><td>Profesores de educación básica	</td></tr><tr><td style="white-space:nowrap">2342<a name="CSOcupacionesDet-2342"> </a></td><td>Educadores de párvulos	</td></tr><tr><td style="white-space:nowrap">2351<a name="CSOcupacionesDet-2351"> </a></td><td>Especialistas en métodos pedagógicos 	</td></tr><tr><td style="white-space:nowrap">2352<a name="CSOcupacionesDet-2352"> </a></td><td>Educadores para necesidades especiales	</td></tr><tr><td style="white-space:nowrap">2353<a name="CSOcupacionesDet-2353"> </a></td><td>Otros profesores de idiomas	</td></tr><tr><td style="white-space:nowrap">2354<a name="CSOcupacionesDet-2354"> </a></td><td>Otros profesores de música	</td></tr><tr><td style="white-space:nowrap">2355<a name="CSOcupacionesDet-2355"> </a></td><td>otros profesores de artes	</td></tr><tr><td style="white-space:nowrap">2356<a name="CSOcupacionesDet-2356"> </a></td><td>Instructores en tecnologías de la información	</td></tr><tr><td style="white-space:nowrap">2359<a name="CSOcupacionesDet-2359"> </a></td><td>Otros profesionales de la educación no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2411<a name="CSOcupacionesDet-2411"> </a></td><td>Contadores  	</td></tr><tr><td style="white-space:nowrap">2412<a name="CSOcupacionesDet-2412"> </a></td><td>Asesores financieros y en inversiones	</td></tr><tr><td style="white-space:nowrap">2413<a name="CSOcupacionesDet-2413"> </a></td><td>Analistas financieros	</td></tr><tr><td style="white-space:nowrap">2421<a name="CSOcupacionesDet-2421"> </a></td><td>Especialistas y asesores de gestión 	</td></tr><tr><td style="white-space:nowrap">2422<a name="CSOcupacionesDet-2422"> </a></td><td>Especialistas en políticas de administración	</td></tr><tr><td style="white-space:nowrap">2423<a name="CSOcupacionesDet-2423"> </a></td><td>Especialistas en políticas y servicios de personal	</td></tr><tr><td style="white-space:nowrap">2424<a name="CSOcupacionesDet-2424"> </a></td><td>Especialistas en formación del personal	</td></tr><tr><td style="white-space:nowrap">2431<a name="CSOcupacionesDet-2431"> </a></td><td>Profesionales de la publicidad y la comercialización	</td></tr><tr><td style="white-space:nowrap">2432<a name="CSOcupacionesDet-2432"> </a></td><td>Profesionales de las relaciones públicas	</td></tr><tr><td style="white-space:nowrap">2433<a name="CSOcupacionesDet-2433"> </a></td><td>Profesionales de ventas técnicas y médicas (excluyendo las TIC)	</td></tr><tr><td style="white-space:nowrap">2434<a name="CSOcupacionesDet-2434"> </a></td><td>Profesionales de ventas de tecnología de la información y las comunicaciones (TIC)	</td></tr><tr><td style="white-space:nowrap">2511<a name="CSOcupacionesDet-2511"> </a></td><td>Analistas de sistemas	</td></tr><tr><td style="white-space:nowrap">2512<a name="CSOcupacionesDet-2512"> </a></td><td>Desarrolladores de software	</td></tr><tr><td style="white-space:nowrap">2513<a name="CSOcupacionesDet-2513"> </a></td><td>Desarrolladores web y multimedia	</td></tr><tr><td style="white-space:nowrap">2514<a name="CSOcupacionesDet-2514"> </a></td><td>Programadores de aplicaciones	</td></tr><tr><td style="white-space:nowrap">2519<a name="CSOcupacionesDet-2519"> </a></td><td>Otros desarrolladores y analistas de software y multimedia no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2521<a name="CSOcupacionesDet-2521"> </a></td><td>Diseñadores y administradores de bases de datos  	</td></tr><tr><td style="white-space:nowrap">2522<a name="CSOcupacionesDet-2522"> </a></td><td>Administradores de sistemas	</td></tr><tr><td style="white-space:nowrap">2523<a name="CSOcupacionesDet-2523"> </a></td><td>Profesionales en redes de computadores	</td></tr><tr><td style="white-space:nowrap">2529<a name="CSOcupacionesDet-2529"> </a></td><td>Otros especialistas en bases de datos y en redes de computadores no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2611<a name="CSOcupacionesDet-2611"> </a></td><td>Abogados 	</td></tr><tr><td style="white-space:nowrap">2612<a name="CSOcupacionesDet-2612"> </a></td><td>Jueces	</td></tr><tr><td style="white-space:nowrap">2619<a name="CSOcupacionesDet-2619"> </a></td><td>Otros profesionales del derecho no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">2621<a name="CSOcupacionesDet-2621"> </a></td><td>Archivistas y curadores de museos	</td></tr><tr><td style="white-space:nowrap">2622<a name="CSOcupacionesDet-2622"> </a></td><td>Bibliotecarios y documentalistas de archivos	</td></tr><tr><td style="white-space:nowrap">2631<a name="CSOcupacionesDet-2631"> </a></td><td>Economistas 	</td></tr><tr><td style="white-space:nowrap">2632<a name="CSOcupacionesDet-2632"> </a></td><td>Sociólogos, antropólogos, geógrafos y arqueólogos	</td></tr><tr><td style="white-space:nowrap">2633<a name="CSOcupacionesDet-2633"> </a></td><td>Filósofos, historiadores y especialistas en ciencias políticas	</td></tr><tr><td style="white-space:nowrap">2634<a name="CSOcupacionesDet-2634"> </a></td><td>Psicólogos	</td></tr><tr><td style="white-space:nowrap">2635<a name="CSOcupacionesDet-2635"> </a></td><td>Profesionales del trabajo social	</td></tr><tr><td style="white-space:nowrap">2636<a name="CSOcupacionesDet-2636"> </a></td><td>Profesionales religiosos	</td></tr><tr><td style="white-space:nowrap">2641<a name="CSOcupacionesDet-2641"> </a></td><td>Autores y otros escritores	</td></tr><tr><td style="white-space:nowrap">2642<a name="CSOcupacionesDet-2642"> </a></td><td>Periodistas	</td></tr><tr><td style="white-space:nowrap">2643<a name="CSOcupacionesDet-2643"> </a></td><td>Traductores, intérpretes de lengua de señas y lingüistas	</td></tr><tr><td style="white-space:nowrap">2651<a name="CSOcupacionesDet-2651"> </a></td><td>Artistas de artes plásticas	</td></tr><tr><td style="white-space:nowrap">2652<a name="CSOcupacionesDet-2652"> </a></td><td>Músicos, cantantes y compositores	</td></tr><tr><td style="white-space:nowrap">2653<a name="CSOcupacionesDet-2653"> </a></td><td>Bailarines y coreógrafos	</td></tr><tr><td style="white-space:nowrap">2654<a name="CSOcupacionesDet-2654"> </a></td><td>Directores de cine, radio y teatro	</td></tr><tr><td style="white-space:nowrap">2655<a name="CSOcupacionesDet-2655"> </a></td><td>Actores	</td></tr><tr><td style="white-space:nowrap">2656<a name="CSOcupacionesDet-2656"> </a></td><td>Locutores de radio, televisión y otros medios de comunicación	</td></tr><tr><td style="white-space:nowrap">2659<a name="CSOcupacionesDet-2659"> </a></td><td>Otros artistas creativos e interpretativos no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3111<a name="CSOcupacionesDet-3111"> </a></td><td>Técnicos en ciencias físicas y químicas	</td></tr><tr><td style="white-space:nowrap">3112<a name="CSOcupacionesDet-3112"> </a></td><td>Técnicos en construcción y topógrafos	</td></tr><tr><td style="white-space:nowrap">3113<a name="CSOcupacionesDet-3113"> </a></td><td>Técnicos en electricidad	</td></tr><tr><td style="white-space:nowrap">3114<a name="CSOcupacionesDet-3114"> </a></td><td>Técnicos en electrónica	</td></tr><tr><td style="white-space:nowrap">3115<a name="CSOcupacionesDet-3115"> </a></td><td>Técnicos en ingeniería mecánica	</td></tr><tr><td style="white-space:nowrap">3116<a name="CSOcupacionesDet-3116"> </a></td><td>Técnicos en química industrial	</td></tr><tr><td style="white-space:nowrap">3117<a name="CSOcupacionesDet-3117"> </a></td><td>Técnicos en ingeniería de minas y metalurgia	</td></tr><tr><td style="white-space:nowrap">3118<a name="CSOcupacionesDet-3118"> </a></td><td>Delineantes y dibujantes técnicos	</td></tr><tr><td style="white-space:nowrap">3119<a name="CSOcupacionesDet-3119"> </a></td><td>Otros técnicos en ciencias físicas y en ingeniería no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3121<a name="CSOcupacionesDet-3121"> </a></td><td>Supervisores de minas  	</td></tr><tr><td style="white-space:nowrap">3122<a name="CSOcupacionesDet-3122"> </a></td><td>Supervisores de industrias manufactureras	</td></tr><tr><td style="white-space:nowrap">3123<a name="CSOcupacionesDet-3123"> </a></td><td>Supervisores de la construcción	</td></tr><tr><td style="white-space:nowrap">3131<a name="CSOcupacionesDet-3131"> </a></td><td>Operadores de instalaciones de producción de energía	</td></tr><tr><td style="white-space:nowrap">3132<a name="CSOcupacionesDet-3132"> </a></td><td>Operadores de incineradores y de instalaciones de tratamiento de agua	</td></tr><tr><td style="white-space:nowrap">3133<a name="CSOcupacionesDet-3133"> </a></td><td>Controladores de instalaciones de procesamiento de productos químicos	</td></tr><tr><td style="white-space:nowrap">3134<a name="CSOcupacionesDet-3134"> </a></td><td>Operadores de instalaciones de refinación de petróleo y gas natural	</td></tr><tr><td style="white-space:nowrap">3135<a name="CSOcupacionesDet-3135"> </a></td><td>Controladores de procesos de producción de metales	</td></tr><tr><td style="white-space:nowrap">3139<a name="CSOcupacionesDet-3139"> </a></td><td>Técnicos en control de procesos no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3141<a name="CSOcupacionesDet-3141"> </a></td><td>Técnicos en ciencias biológicas (excluyendo la medicina)	</td></tr><tr><td style="white-space:nowrap">3142<a name="CSOcupacionesDet-3142"> </a></td><td>Técnicos agropecuarios (incluyendo acuícolas)	</td></tr><tr><td style="white-space:nowrap">3143<a name="CSOcupacionesDet-3143"> </a></td><td>Técnicos forestales	</td></tr><tr><td style="white-space:nowrap">3151<a name="CSOcupacionesDet-3151"> </a></td><td>Oficiales maquinistas en navegación	</td></tr><tr><td style="white-space:nowrap">3152<a name="CSOcupacionesDet-3152"> </a></td><td>Capitanes y oficiales de cubierta	</td></tr><tr><td style="white-space:nowrap">3153<a name="CSOcupacionesDet-3153"> </a></td><td>Pilotos de aviación	</td></tr><tr><td style="white-space:nowrap">3154<a name="CSOcupacionesDet-3154"> </a></td><td>Controladores de tráfico aéreo	</td></tr><tr><td style="white-space:nowrap">3155<a name="CSOcupacionesDet-3155"> </a></td><td>Técnicos electrónicos aeronáuticos	</td></tr><tr><td style="white-space:nowrap">3211<a name="CSOcupacionesDet-3211"> </a></td><td>Técnicos y auxiliares paramédicos de radiología e imagenología y otros aparatos de diagnóstico y tratamiento médico 	</td></tr><tr><td style="white-space:nowrap">3212<a name="CSOcupacionesDet-3212"> </a></td><td>Técnicos de laboratorios clínicos y servicios de sangre	</td></tr><tr><td style="white-space:nowrap">3213<a name="CSOcupacionesDet-3213"> </a></td><td>Técnicos y asistentes farmacéuticos	</td></tr><tr><td style="white-space:nowrap">3214<a name="CSOcupacionesDet-3214"> </a></td><td>Técnicos de prótesis médicas	</td></tr><tr><td style="white-space:nowrap">3215<a name="CSOcupacionesDet-3215"> </a></td><td>Laboratoristas dentales o técnicos en prótesis dentales	</td></tr><tr><td style="white-space:nowrap">3216<a name="CSOcupacionesDet-3216"> </a></td><td>Auxiliares paramédicos de anatomía patológica	</td></tr><tr><td style="white-space:nowrap">3221<a name="CSOcupacionesDet-3221"> </a></td><td>Técnicos y auxiliares paramédicos de enfermería 	</td></tr><tr><td style="white-space:nowrap">3222<a name="CSOcupacionesDet-3222"> </a></td><td>Técnicos y auxiliares paramédicos de esterilización	</td></tr><tr><td style="white-space:nowrap">3223<a name="CSOcupacionesDet-3223"> </a></td><td>Ayudantes de ambulancia	</td></tr><tr><td style="white-space:nowrap">3231<a name="CSOcupacionesDet-3231"> </a></td><td>Profesionales y técnicos de las terapias complementarias  	</td></tr><tr><td style="white-space:nowrap">3232<a name="CSOcupacionesDet-3232"> </a></td><td>Practicantes de la medicina tradicional	</td></tr><tr><td style="white-space:nowrap">3240<a name="CSOcupacionesDet-3240"> </a></td><td>Técnicos y asistentes veterinarios	</td></tr><tr><td style="white-space:nowrap">3251<a name="CSOcupacionesDet-3251"> </a></td><td>Técnicos y auxiliares paramédicos en odontología	</td></tr><tr><td style="white-space:nowrap">3252<a name="CSOcupacionesDet-3252"> </a></td><td>Técnicos en documentación e información sanitaria	</td></tr><tr><td style="white-space:nowrap">3253<a name="CSOcupacionesDet-3253"> </a></td><td>Podólogos	</td></tr><tr><td style="white-space:nowrap">3254<a name="CSOcupacionesDet-3254"> </a></td><td>Técnicos ópticos y contactólogos	</td></tr><tr><td style="white-space:nowrap">3255<a name="CSOcupacionesDet-3255"> </a></td><td>Técnicos y asistentes fisioterapeutas	</td></tr><tr><td style="white-space:nowrap">3256<a name="CSOcupacionesDet-3256"> </a></td><td>Técnicos y auxiliares paramédicos de alimentación	</td></tr><tr><td style="white-space:nowrap">3257<a name="CSOcupacionesDet-3257"> </a></td><td>Inspectores de la salud y técnicos en prevención de riesgos	</td></tr><tr><td style="white-space:nowrap">3258<a name="CSOcupacionesDet-3258"> </a></td><td>Quiroprácticos y osteópatas	</td></tr><tr><td style="white-space:nowrap">3259<a name="CSOcupacionesDet-3259"> </a></td><td>Otros técnicos de la salud no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3311<a name="CSOcupacionesDet-3311"> </a></td><td>Agentes de bolsa y otros servicios financieros	</td></tr><tr><td style="white-space:nowrap">3312<a name="CSOcupacionesDet-3312"> </a></td><td>Ejecutivos de préstamos y créditos	</td></tr><tr><td style="white-space:nowrap">3313<a name="CSOcupacionesDet-3313"> </a></td><td>Técnicos y asistentes en contabilidad	</td></tr><tr><td style="white-space:nowrap">3314<a name="CSOcupacionesDet-3314"> </a></td><td>Técnicos de servicios estadísticos y metamáticos	</td></tr><tr><td style="white-space:nowrap">3315<a name="CSOcupacionesDet-3315"> </a></td><td>Tasadores	</td></tr><tr><td style="white-space:nowrap">3321<a name="CSOcupacionesDet-3321"> </a></td><td>Agentes de seguros y ejecutivos de fondos de pensiones	</td></tr><tr><td style="white-space:nowrap">3322<a name="CSOcupacionesDet-3322"> </a></td><td>Representantes comerciales (excepto venta de productos y servicios industriales, farmacéuticos y de tecnologías de la información y las comunicaciones)	</td></tr><tr><td style="white-space:nowrap">3323<a name="CSOcupacionesDet-3323"> </a></td><td>Agentes responsables de adquisiciones	</td></tr><tr><td style="white-space:nowrap">3324<a name="CSOcupacionesDet-3324"> </a></td><td>Corredores comerciales y consignatarios	</td></tr><tr><td style="white-space:nowrap">3331<a name="CSOcupacionesDet-3331"> </a></td><td>Agentes de aduana 	</td></tr><tr><td style="white-space:nowrap">3332<a name="CSOcupacionesDet-3332"> </a></td><td>Organizadores de conferencias y eventos	</td></tr><tr><td style="white-space:nowrap">3333<a name="CSOcupacionesDet-3333"> </a></td><td>Agentes de empleo y contratistas de personal	</td></tr><tr><td style="white-space:nowrap">3334<a name="CSOcupacionesDet-3334"> </a></td><td>Agentes inmobiliarios	</td></tr><tr><td style="white-space:nowrap">3339<a name="CSOcupacionesDet-3339"> </a></td><td>Otros agentes de servicios comerciales no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3341<a name="CSOcupacionesDet-3341"> </a></td><td>Supervisores de oficina  	</td></tr><tr><td style="white-space:nowrap">3342<a name="CSOcupacionesDet-3342"> </a></td><td>Secretarios jurídicos	</td></tr><tr><td style="white-space:nowrap">3343<a name="CSOcupacionesDet-3343"> </a></td><td>Secretarios administrativos y ejecutivos	</td></tr><tr><td style="white-space:nowrap">3344<a name="CSOcupacionesDet-3344"> </a></td><td>Secretarios médicos	</td></tr><tr><td style="white-space:nowrap">3351<a name="CSOcupacionesDet-3351"> </a></td><td>Inspectores de aduana	</td></tr><tr><td style="white-space:nowrap">3352<a name="CSOcupacionesDet-3352"> </a></td><td>Agentes de la administración tributaria	</td></tr><tr><td style="white-space:nowrap">3353<a name="CSOcupacionesDet-3353"> </a></td><td>Agentes de servicios de prestaciones sociales	</td></tr><tr><td style="white-space:nowrap">3354<a name="CSOcupacionesDet-3354"> </a></td><td>Agentes de servicios de tramitación y entrega de licencias y permisos	</td></tr><tr><td style="white-space:nowrap">3355<a name="CSOcupacionesDet-3355"> </a></td><td>Inspectores y detectives de la Policía de Investigaciones (PDI)	</td></tr><tr><td style="white-space:nowrap">3359<a name="CSOcupacionesDet-3359"> </a></td><td>Agentes de la administración pública para la aplicación de la ley no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3411<a name="CSOcupacionesDet-3411"> </a></td><td>Técnicos de los servicios jurídicos  	</td></tr><tr><td style="white-space:nowrap">3412<a name="CSOcupacionesDet-3412"> </a></td><td>Técnico en trabajo social	</td></tr><tr><td style="white-space:nowrap">3413<a name="CSOcupacionesDet-3413"> </a></td><td>Técnicos de los servicios religiosos	</td></tr><tr><td style="white-space:nowrap">3421<a name="CSOcupacionesDet-3421"> </a></td><td>Atletas y deportistas	</td></tr><tr><td style="white-space:nowrap">3422<a name="CSOcupacionesDet-3422"> </a></td><td>Entrenadores, instructores y árbitros de actividades deportivas	</td></tr><tr><td style="white-space:nowrap">3423<a name="CSOcupacionesDet-3423"> </a></td><td>Instructores de acondicionamiento físico y actividades recreativas	</td></tr><tr><td style="white-space:nowrap">3431<a name="CSOcupacionesDet-3431"> </a></td><td>Fotógrafos 	</td></tr><tr><td style="white-space:nowrap">3432<a name="CSOcupacionesDet-3432"> </a></td><td>Diseñadores y decorador de interior	</td></tr><tr><td style="white-space:nowrap">3433<a name="CSOcupacionesDet-3433"> </a></td><td>Técnicos en galerías de arte, museos y bibliotecas	</td></tr><tr><td style="white-space:nowrap">3434<a name="CSOcupacionesDet-3434"> </a></td><td>Chefs	</td></tr><tr><td style="white-space:nowrap">3435<a name="CSOcupacionesDet-3435"> </a></td><td>Tatuadores	</td></tr><tr><td style="white-space:nowrap">3439<a name="CSOcupacionesDet-3439"> </a></td><td>Otros técnicos en actividades culturales y artísticas no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">3511<a name="CSOcupacionesDet-3511"> </a></td><td>Técnicos en operaciones de tecnología de la información y las comunicaciones	</td></tr><tr><td style="white-space:nowrap">3512<a name="CSOcupacionesDet-3512"> </a></td><td>Técnicos en asistencia al usuario de tecnología de la información y las comunicaciones	</td></tr><tr><td style="white-space:nowrap">3513<a name="CSOcupacionesDet-3513"> </a></td><td>Técnicos en redes y sistemas de computadores	</td></tr><tr><td style="white-space:nowrap">3514<a name="CSOcupacionesDet-3514"> </a></td><td>Técnicos de la web	</td></tr><tr><td style="white-space:nowrap">3521<a name="CSOcupacionesDet-3521"> </a></td><td>Técnicos de radiodifusión y grabación audiovisual	</td></tr><tr><td style="white-space:nowrap">3522<a name="CSOcupacionesDet-3522"> </a></td><td>Técnicos de ingeniería de las telecomunicaciones	</td></tr><tr><td style="white-space:nowrap">3611<a name="CSOcupacionesDet-3611"> </a></td><td>Técnicos en educación parvularia	</td></tr><tr><td style="white-space:nowrap">3612<a name="CSOcupacionesDet-3612"> </a></td><td>Técnicos en educación diferencial	</td></tr><tr><td style="white-space:nowrap">4110<a name="CSOcupacionesDet-4110"> </a></td><td>Trabajadores de tareas administrativas generales	</td></tr><tr><td style="white-space:nowrap">4120<a name="CSOcupacionesDet-4120"> </a></td><td>Secretarios generales	</td></tr><tr><td style="white-space:nowrap">4131<a name="CSOcupacionesDet-4131"> </a></td><td>Oeradores de equipo de procesamiento de texto y mecanógrafos	</td></tr><tr><td style="white-space:nowrap">4132<a name="CSOcupacionesDet-4132"> </a></td><td>Digitadores de datos	</td></tr><tr><td style="white-space:nowrap">4211<a name="CSOcupacionesDet-4211"> </a></td><td>Cajeros de bancos y de oficinas de correo	</td></tr><tr><td style="white-space:nowrap">4212<a name="CSOcupacionesDet-4212"> </a></td><td>Receptores de apuestas	</td></tr><tr><td style="white-space:nowrap">4213<a name="CSOcupacionesDet-4213"> </a></td><td>Empleados de casa de empeño y prestamistas	</td></tr><tr><td style="white-space:nowrap">4214<a name="CSOcupacionesDet-4214"> </a></td><td>Cobradores	</td></tr><tr><td style="white-space:nowrap">4221<a name="CSOcupacionesDet-4221"> </a></td><td>Empleados de agencias de viajes	</td></tr><tr><td style="white-space:nowrap">4222<a name="CSOcupacionesDet-4222"> </a></td><td>Empleados de centros de llamadas de informaciones	</td></tr><tr><td style="white-space:nowrap">4223<a name="CSOcupacionesDet-4223"> </a></td><td>Telefonistas	</td></tr><tr><td style="white-space:nowrap">4224<a name="CSOcupacionesDet-4224"> </a></td><td>Recepcionistas de hoteles	</td></tr><tr><td style="white-space:nowrap">4225<a name="CSOcupacionesDet-4225"> </a></td><td>Empleados de informaciones, reclamos o sugerencias	</td></tr><tr><td style="white-space:nowrap">4226<a name="CSOcupacionesDet-4226"> </a></td><td>Recepcionistas (funciones generales)	</td></tr><tr><td style="white-space:nowrap">4227<a name="CSOcupacionesDet-4227"> </a></td><td>Entrevistadores de investigaciones de mercado, estudios de opinión pública y encuestadores	</td></tr><tr><td style="white-space:nowrap">4229<a name="CSOcupacionesDet-4229"> </a></td><td>Otros empleados de servicios de información al cliente no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">4311<a name="CSOcupacionesDet-4311"> </a></td><td>Auxiliares y ayudantes de registros de contabilidad y cálculo de costos	</td></tr><tr><td style="white-space:nowrap">4312<a name="CSOcupacionesDet-4312"> </a></td><td>Auxiliares y ayudantes de servicios estadísticos, financieros y de seguros	</td></tr><tr><td style="white-space:nowrap">4313<a name="CSOcupacionesDet-4313"> </a></td><td>Empleados encargados de nóminas o registros de remuneraciones 	</td></tr><tr><td style="white-space:nowrap">4321<a name="CSOcupacionesDet-4321"> </a></td><td>Empleados encargados del control de abastecimiento e inventario	</td></tr><tr><td style="white-space:nowrap">4322<a name="CSOcupacionesDet-4322"> </a></td><td>Empleados de cálculo de los insumos y materiales para la producción	</td></tr><tr><td style="white-space:nowrap">4323<a name="CSOcupacionesDet-4323"> </a></td><td>Empleados de servicios de transporte	</td></tr><tr><td style="white-space:nowrap">4411<a name="CSOcupacionesDet-4411"> </a></td><td>Asistentes y ayudantes de bibliotecas	</td></tr><tr><td style="white-space:nowrap">4412<a name="CSOcupacionesDet-4412"> </a></td><td>Carteros y empleados de servicios de correos y encomiendas	</td></tr><tr><td style="white-space:nowrap">4413<a name="CSOcupacionesDet-4413"> </a></td><td>Codificadores de datos y correctores de pruebas de imprenta	</td></tr><tr><td style="white-space:nowrap">4414<a name="CSOcupacionesDet-4414"> </a></td><td>Escribientes públicos	</td></tr><tr><td style="white-space:nowrap">4415<a name="CSOcupacionesDet-4415"> </a></td><td>Empleados administrativos de archivos	</td></tr><tr><td style="white-space:nowrap">4416<a name="CSOcupacionesDet-4416"> </a></td><td>Empleados y asistentes de recursos humanos	</td></tr><tr><td style="white-space:nowrap">4419<a name="CSOcupacionesDet-4419"> </a></td><td>Otro personal de apoyo administrativo no clasificado previamente	</td></tr><tr><td style="white-space:nowrap">5111<a name="CSOcupacionesDet-5111"> </a></td><td>Auxiliares de servicio a bordo de aeronaves y barcos	</td></tr><tr><td style="white-space:nowrap">5112<a name="CSOcupacionesDet-5112"> </a></td><td>Revisores y cobradores de los transportes públicos	</td></tr><tr><td style="white-space:nowrap">5113<a name="CSOcupacionesDet-5113"> </a></td><td>Guías de turismo	</td></tr><tr><td style="white-space:nowrap">5120<a name="CSOcupacionesDet-5120"> </a></td><td>Cocineros	</td></tr><tr><td style="white-space:nowrap">5131<a name="CSOcupacionesDet-5131"> </a></td><td>Garzones de mesa  	</td></tr><tr><td style="white-space:nowrap">5132<a name="CSOcupacionesDet-5132"> </a></td><td>bármanes	</td></tr><tr><td style="white-space:nowrap">5141<a name="CSOcupacionesDet-5141"> </a></td><td>Peluqueros 	</td></tr><tr><td style="white-space:nowrap">5142<a name="CSOcupacionesDet-5142"> </a></td><td>Cosmetólogos y especialistas en tratamiento de belleza	</td></tr><tr><td style="white-space:nowrap">5151<a name="CSOcupacionesDet-5151"> </a></td><td>Supervisores de mantenimiento y limpieza en oficinas, hoteles y otros establecimientos	</td></tr><tr><td style="white-space:nowrap">5152<a name="CSOcupacionesDet-5152"> </a></td><td>Amas de llaves, mayordomos domésticos y dueños/administradores de pequeños establecimientos de alojamiento	</td></tr><tr><td style="white-space:nowrap">5153<a name="CSOcupacionesDet-5153"> </a></td><td>Conserjes	</td></tr><tr><td style="white-space:nowrap">5161<a name="CSOcupacionesDet-5161"> </a></td><td>Astrólogos y adivinadores	</td></tr><tr><td style="white-space:nowrap">5162<a name="CSOcupacionesDet-5162"> </a></td><td>Acompañantes	</td></tr><tr><td style="white-space:nowrap">5163<a name="CSOcupacionesDet-5163"> </a></td><td>Personal de pompas fúnebres y embalsamadores	</td></tr><tr><td style="white-space:nowrap">5164<a name="CSOcupacionesDet-5164"> </a></td><td>Cuidadores de animales	</td></tr><tr><td style="white-space:nowrap">5165<a name="CSOcupacionesDet-5165"> </a></td><td>Instructores de manejo	</td></tr><tr><td style="white-space:nowrap">5169<a name="CSOcupacionesDet-5169"> </a></td><td>Otros trabajadores de servicios a las personas no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">5211<a name="CSOcupacionesDet-5211"> </a></td><td>Vendedores en quioscos o puestos de feria  	</td></tr><tr><td style="white-space:nowrap">5212<a name="CSOcupacionesDet-5212"> </a></td><td>Vendedores ambulantes de productos comestibles de consumo inmediato (elaboración propia)	</td></tr><tr><td style="white-space:nowrap">5221<a name="CSOcupacionesDet-5221"> </a></td><td>Comerciantes y dueños - operadores de locales comerciales, tiendas, almacenes y mercados	</td></tr><tr><td style="white-space:nowrap">5222<a name="CSOcupacionesDet-5222"> </a></td><td>Supervisores de locales comerciales, tiendas y almacenes	</td></tr><tr><td style="white-space:nowrap">5223<a name="CSOcupacionesDet-5223"> </a></td><td>Vendedores y asistentes de venta de tiendas, almacenes y puestos de mercado	</td></tr><tr><td style="white-space:nowrap">5230<a name="CSOcupacionesDet-5230"> </a></td><td>Vendedores de entrada (entretenciones y eventos deportivos) y cajeros de comercio	</td></tr><tr><td style="white-space:nowrap">5241<a name="CSOcupacionesDet-5241"> </a></td><td>Modelos de moda, arte y publicidad	</td></tr><tr><td style="white-space:nowrap">5242<a name="CSOcupacionesDet-5242"> </a></td><td>Promotores de tiendas	</td></tr><tr><td style="white-space:nowrap">5243<a name="CSOcupacionesDet-5243"> </a></td><td>Representantes de ventas de puerta a puerta (venta a hogares)	</td></tr><tr><td style="white-space:nowrap">5244<a name="CSOcupacionesDet-5244"> </a></td><td>Vendedores por internet y otros medios de comunicación	</td></tr><tr><td style="white-space:nowrap">5245<a name="CSOcupacionesDet-5245"> </a></td><td>Bomberos de gasolineras	</td></tr><tr><td style="white-space:nowrap">5246<a name="CSOcupacionesDet-5246"> </a></td><td>Vendedores de comida al mostrador	</td></tr><tr><td style="white-space:nowrap">5249<a name="CSOcupacionesDet-5249"> </a></td><td>Otros vendedores no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">5311<a name="CSOcupacionesDet-5311"> </a></td><td>Cuidadores de niños en instituciones y a domicilios	</td></tr><tr><td style="white-space:nowrap">5312<a name="CSOcupacionesDet-5312"> </a></td><td>Asistentes de aulas e inspectores de patio	</td></tr><tr><td style="white-space:nowrap">5321<a name="CSOcupacionesDet-5321"> </a></td><td>Trabajadores de los cuidados personales en instituciones 	</td></tr><tr><td style="white-space:nowrap">5322<a name="CSOcupacionesDet-5322"> </a></td><td>Trabajadores de los cuidados personales a domicilio	</td></tr><tr><td style="white-space:nowrap">5329<a name="CSOcupacionesDet-5329"> </a></td><td>Otros trabajadores de los cuidados personales en instituciones y a domicilio no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">5411<a name="CSOcupacionesDet-5411"> </a></td><td>Bomberos  	</td></tr><tr><td style="white-space:nowrap">5412<a name="CSOcupacionesDet-5412"> </a></td><td>Carabineros	</td></tr><tr><td style="white-space:nowrap">5413<a name="CSOcupacionesDet-5413"> </a></td><td>Gendarmes	</td></tr><tr><td style="white-space:nowrap">5414<a name="CSOcupacionesDet-5414"> </a></td><td>Guardias de seguridad	</td></tr><tr><td style="white-space:nowrap">5419<a name="CSOcupacionesDet-5419"> </a></td><td>Otro personal de los servicios de protección no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">6111<a name="CSOcupacionesDet-6111"> </a></td><td>Agricultores y trabajadores calificados de cultivos extensivos  	</td></tr><tr><td style="white-space:nowrap">6112<a name="CSOcupacionesDet-6112"> </a></td><td>Agricultores y trabajadores calificados de plantaciones de árboles y arbustos	</td></tr><tr><td style="white-space:nowrap">6113<a name="CSOcupacionesDet-6113"> </a></td><td>Agricultores y trabajadores calificados de huertas, invernaderos, viveros y jardines	</td></tr><tr><td style="white-space:nowrap">6114<a name="CSOcupacionesDet-6114"> </a></td><td>Agricultores y trabajadores calificados de cultivos mixtos	</td></tr><tr><td style="white-space:nowrap">6121<a name="CSOcupacionesDet-6121"> </a></td><td>Criadores de ganado	</td></tr><tr><td style="white-space:nowrap">6122<a name="CSOcupacionesDet-6122"> </a></td><td>Avicultores y trabajadores calificados de la avicultura	</td></tr><tr><td style="white-space:nowrap">6123<a name="CSOcupacionesDet-6123"> </a></td><td>Trabajadores calificados de la apicultura y la sericultura	</td></tr><tr><td style="white-space:nowrap">6129<a name="CSOcupacionesDet-6129"> </a></td><td>Otros criadores y trabajadores calificados de la cría de animales no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">6130<a name="CSOcupacionesDet-6130"> </a></td><td>Productores y trabajadores calificados de explotaciones agropecuarias mixtas	</td></tr><tr><td style="white-space:nowrap">6210<a name="CSOcupacionesDet-6210"> </a></td><td>Trabajadores forestales calificados 	</td></tr><tr><td style="white-space:nowrap">6221<a name="CSOcupacionesDet-6221"> </a></td><td>Trabajadores de explotaciones de acuicultura  	</td></tr><tr><td style="white-space:nowrap">6222<a name="CSOcupacionesDet-6222"> </a></td><td>Pescadores en agua dulce y en aguas costeras	</td></tr><tr><td style="white-space:nowrap">6223<a name="CSOcupacionesDet-6223"> </a></td><td>Pescadores de alta mar	</td></tr><tr><td style="white-space:nowrap">6224<a name="CSOcupacionesDet-6224"> </a></td><td>Cazadores y tramperos	</td></tr><tr><td style="white-space:nowrap">6310<a name="CSOcupacionesDet-6310"> </a></td><td>Trabajadores agrícolas de subsistencia	</td></tr><tr><td style="white-space:nowrap">6320<a name="CSOcupacionesDet-6320"> </a></td><td>Criadores de subsistencia	</td></tr><tr><td style="white-space:nowrap">6330<a name="CSOcupacionesDet-6330"> </a></td><td>Trabajadores agropecuarios de subsitencia	</td></tr><tr><td style="white-space:nowrap">6340<a name="CSOcupacionesDet-6340"> </a></td><td>Pescadores, cazadores, tramperos y recolectores de subsistencia	</td></tr><tr><td style="white-space:nowrap">7111<a name="CSOcupacionesDet-7111"> </a></td><td>Constructores de casas	</td></tr><tr><td style="white-space:nowrap">7112<a name="CSOcupacionesDet-7112"> </a></td><td>Albañiles	</td></tr><tr><td style="white-space:nowrap">7113<a name="CSOcupacionesDet-7113"> </a></td><td>Tronzadores, labrantes y grabadores de piedra	</td></tr><tr><td style="white-space:nowrap">7114<a name="CSOcupacionesDet-7114"> </a></td><td>Operarios en cemento armado	</td></tr><tr><td style="white-space:nowrap">7115<a name="CSOcupacionesDet-7115"> </a></td><td>Carpinteros de obra	</td></tr><tr><td style="white-space:nowrap">7119<a name="CSOcupacionesDet-7119"> </a></td><td>Otros operarios de la construcción (obra gruesa) no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">7121<a name="CSOcupacionesDet-7121"> </a></td><td>Instaladores o reparadores de techos	</td></tr><tr><td style="white-space:nowrap">7122<a name="CSOcupacionesDet-7122"> </a></td><td>Instaladores de parqué, cerámicas, baldosas y alfombras	</td></tr><tr><td style="white-space:nowrap">7123<a name="CSOcupacionesDet-7123"> </a></td><td>Yeseros, estucadores y revocadores	</td></tr><tr><td style="white-space:nowrap">7124<a name="CSOcupacionesDet-7124"> </a></td><td>Instaladores de material aislante y de insonorización	</td></tr><tr><td style="white-space:nowrap">7125<a name="CSOcupacionesDet-7125"> </a></td><td>Cristaleros	</td></tr><tr><td style="white-space:nowrap">7126<a name="CSOcupacionesDet-7126"> </a></td><td>Gásfiter e instaladores de tuberías	</td></tr><tr><td style="white-space:nowrap">7127<a name="CSOcupacionesDet-7127"> </a></td><td>Mecánicos de instalaciones de refrigeración y aire acondicionado	</td></tr><tr><td style="white-space:nowrap">7131<a name="CSOcupacionesDet-7131"> </a></td><td>Pintores y empapeladores de paredes	</td></tr><tr><td style="white-space:nowrap">7132<a name="CSOcupacionesDet-7132"> </a></td><td>Barnizadores y pulverizadores de productos manufacturados	</td></tr><tr><td style="white-space:nowrap">7133<a name="CSOcupacionesDet-7133"> </a></td><td>Limpiadores de fachadas y deshollinadores	</td></tr><tr><td style="white-space:nowrap">7211<a name="CSOcupacionesDet-7211"> </a></td><td>Moldeadores y macheros	</td></tr><tr><td style="white-space:nowrap">7212<a name="CSOcupacionesDet-7212"> </a></td><td>Soldadores y oxicortadores	</td></tr><tr><td style="white-space:nowrap">7213<a name="CSOcupacionesDet-7213"> </a></td><td>Chapistas y caldereros	</td></tr><tr><td style="white-space:nowrap">7214<a name="CSOcupacionesDet-7214"> </a></td><td>Montadores de estructuras metálicas	</td></tr><tr><td style="white-space:nowrap">7215<a name="CSOcupacionesDet-7215"> </a></td><td>Aparejadores y empalmadores de cables no eléctricos	</td></tr><tr><td style="white-space:nowrap">7221<a name="CSOcupacionesDet-7221"> </a></td><td>Herreros y forjadores	</td></tr><tr><td style="white-space:nowrap">7222<a name="CSOcupacionesDet-7222"> </a></td><td>Herramentistas	</td></tr><tr><td style="white-space:nowrap">7223<a name="CSOcupacionesDet-7223"> </a></td><td>Reguladores y operarios de máquinas herramientas	</td></tr><tr><td style="white-space:nowrap">7224<a name="CSOcupacionesDet-7224"> </a></td><td>Pulidores de metales y afiladores de herramientas	</td></tr><tr><td style="white-space:nowrap">7231<a name="CSOcupacionesDet-7231"> </a></td><td>Mecánicos y reparadores de vehículos de motor	</td></tr><tr><td style="white-space:nowrap">7232<a name="CSOcupacionesDet-7232"> </a></td><td>Mecánicos y reparadores de motores de avión	</td></tr><tr><td style="white-space:nowrap">7233<a name="CSOcupacionesDet-7233"> </a></td><td>Mecánicos y reparadores de máquinas agrícolas e industriales	</td></tr><tr><td style="white-space:nowrap">7234<a name="CSOcupacionesDet-7234"> </a></td><td>Reparadores de bicicletas	</td></tr><tr><td style="white-space:nowrap">7311<a name="CSOcupacionesDet-7311"> </a></td><td>mecánicos y reparadores de instrumentos de precisión	</td></tr><tr><td style="white-space:nowrap">7312<a name="CSOcupacionesDet-7312"> </a></td><td>Fabricantes y afinadores de instrumentos musicales	</td></tr><tr><td style="white-space:nowrap">7313<a name="CSOcupacionesDet-7313"> </a></td><td>Joyeros, orfebres y plateros	</td></tr><tr><td style="white-space:nowrap">7314<a name="CSOcupacionesDet-7314"> </a></td><td>Alfareros (barro, arcilla y abrasivos)	</td></tr><tr><td style="white-space:nowrap">7315<a name="CSOcupacionesDet-7315"> </a></td><td>Sopladores, modeladores, laminadores, cortadores y pulidores de vidrio	</td></tr><tr><td style="white-space:nowrap">7316<a name="CSOcupacionesDet-7316"> </a></td><td>Pintores de carteles, pintores decorativos y grabadores	</td></tr><tr><td style="white-space:nowrap">7317<a name="CSOcupacionesDet-7317"> </a></td><td>Artesanos en madera, cestería y materiales similares	</td></tr><tr><td style="white-space:nowrap">7318<a name="CSOcupacionesDet-7318"> </a></td><td>Artesanos de los tejidos, el cuero y materiales similares	</td></tr><tr><td style="white-space:nowrap">7319<a name="CSOcupacionesDet-7319"> </a></td><td>Artesanos no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">7321<a name="CSOcupacionesDet-7321"> </a></td><td>Tipógrafos  	</td></tr><tr><td style="white-space:nowrap">7322<a name="CSOcupacionesDet-7322"> </a></td><td>Impresores	</td></tr><tr><td style="white-space:nowrap">7323<a name="CSOcupacionesDet-7323"> </a></td><td>Encuadernadores	</td></tr><tr><td style="white-space:nowrap">7411<a name="CSOcupacionesDet-7411"> </a></td><td>Electricistas de obras	</td></tr><tr><td style="white-space:nowrap">7412<a name="CSOcupacionesDet-7412"> </a></td><td>Mecánicos y ajustadores electricistas	</td></tr><tr><td style="white-space:nowrap">7413<a name="CSOcupacionesDet-7413"> </a></td><td>Instaladores y reparadores de líneas eléctricas	</td></tr><tr><td style="white-space:nowrap">7421<a name="CSOcupacionesDet-7421"> </a></td><td>Mecánicos y reparadores en electrónica	</td></tr><tr><td style="white-space:nowrap">7422<a name="CSOcupacionesDet-7422"> </a></td><td>Instaladores y reparadores en tecnología de la información y las comunicaciones	</td></tr><tr><td style="white-space:nowrap">7511<a name="CSOcupacionesDet-7511"> </a></td><td>Carniceros y pescaderos	</td></tr><tr><td style="white-space:nowrap">7512<a name="CSOcupacionesDet-7512"> </a></td><td>Panaderos, pasteleros y confíteros	</td></tr><tr><td style="white-space:nowrap">7513<a name="CSOcupacionesDet-7513"> </a></td><td>Operarios de la elaboración de productos lácteos	</td></tr><tr><td style="white-space:nowrap">7514<a name="CSOcupacionesDet-7514"> </a></td><td>Operarios de la conservación de frutas, legumbres y verduras	</td></tr><tr><td style="white-space:nowrap">7515<a name="CSOcupacionesDet-7515"> </a></td><td>Catadores, clasificadores y controladores de calidad de alimentos y bebidas	</td></tr><tr><td style="white-space:nowrap">7516<a name="CSOcupacionesDet-7516"> </a></td><td>Elaboradores de tabaco y sus productos	</td></tr><tr><td style="white-space:nowrap">7521<a name="CSOcupacionesDet-7521"> </a></td><td>Operarios del tratamiento de la madera 	</td></tr><tr><td style="white-space:nowrap">7522<a name="CSOcupacionesDet-7522"> </a></td><td>Ebanistas y mueblistas	</td></tr><tr><td style="white-space:nowrap">7523<a name="CSOcupacionesDet-7523"> </a></td><td>Operadores y reguladores de máquinas para trabajar la madera	</td></tr><tr><td style="white-space:nowrap">7531<a name="CSOcupacionesDet-7531"> </a></td><td>Sastres, modistos, peleteros y sombrereros	</td></tr><tr><td style="white-space:nowrap">7532<a name="CSOcupacionesDet-7532"> </a></td><td>Patronistas y cortadores de telas	</td></tr><tr><td style="white-space:nowrap">7533<a name="CSOcupacionesDet-7533"> </a></td><td>Costureros y bordadores	</td></tr><tr><td style="white-space:nowrap">7534<a name="CSOcupacionesDet-7534"> </a></td><td>Tapiceros	</td></tr><tr><td style="white-space:nowrap">7535<a name="CSOcupacionesDet-7535"> </a></td><td>Apelambradores, pellejeros y curtidores	</td></tr><tr><td style="white-space:nowrap">7536<a name="CSOcupacionesDet-7536"> </a></td><td>Zapateros	</td></tr><tr><td style="white-space:nowrap">7541<a name="CSOcupacionesDet-7541"> </a></td><td>Buzos 	</td></tr><tr><td style="white-space:nowrap">7542<a name="CSOcupacionesDet-7542"> </a></td><td>Dinamiteros y pegadores	</td></tr><tr><td style="white-space:nowrap">7543<a name="CSOcupacionesDet-7543"> </a></td><td>Clasificadores, probadores de productos e inspectores de calidad (excluyendo alimentos y bebidas)	</td></tr><tr><td style="white-space:nowrap">7544<a name="CSOcupacionesDet-7544"> </a></td><td>Fumigadores y otros controladores de plagas y malezas	</td></tr><tr><td style="white-space:nowrap">7549<a name="CSOcupacionesDet-7549"> </a></td><td>Operarios de otros oficios no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">8111<a name="CSOcupacionesDet-8111"> </a></td><td>Mineros y operadores de instalaciones mineras 	</td></tr><tr><td style="white-space:nowrap">8112<a name="CSOcupacionesDet-8112"> </a></td><td>Operadores de instalaciones de procesamiento de minerales y rocas	</td></tr><tr><td style="white-space:nowrap">8113<a name="CSOcupacionesDet-8113"> </a></td><td>Perforadores y sondistas de pozos	</td></tr><tr><td style="white-space:nowrap">8114<a name="CSOcupacionesDet-8114"> </a></td><td>Operadores de máquinas para fabricar cemento y otros productos minerales	</td></tr><tr><td style="white-space:nowrap">8121<a name="CSOcupacionesDet-8121"> </a></td><td>Operadores de instalaciones de procesamiento de metales	</td></tr><tr><td style="white-space:nowrap">8122<a name="CSOcupacionesDet-8122"> </a></td><td>Operadores de máquinas de acabado de metales (pulidores, galvanizadores y recubridores de metales)	</td></tr><tr><td style="white-space:nowrap">8131<a name="CSOcupacionesDet-8131"> </a></td><td>Operadores de plantas y máquinas para fabricar productos químicos	</td></tr><tr><td style="white-space:nowrap">8132<a name="CSOcupacionesDet-8132"> </a></td><td>Operadores de máquinas para fabricar productos fotográficos	</td></tr><tr><td style="white-space:nowrap">8141<a name="CSOcupacionesDet-8141"> </a></td><td>Operadores de máquinas para fabricar productos de caucho 	</td></tr><tr><td style="white-space:nowrap">8142<a name="CSOcupacionesDet-8142"> </a></td><td>Operadores de máquinas para fabricar productos de material plástico	</td></tr><tr><td style="white-space:nowrap">8143<a name="CSOcupacionesDet-8143"> </a></td><td>Operadores de máquinas para fabricar productos de papel	</td></tr><tr><td style="white-space:nowrap">8151<a name="CSOcupacionesDet-8151"> </a></td><td>Operadores de máquinas de preparación de fibras, hilado y devanado	</td></tr><tr><td style="white-space:nowrap">8152<a name="CSOcupacionesDet-8152"> </a></td><td>Operadores de telares y otras máquinas tejedoras	</td></tr><tr><td style="white-space:nowrap">8153<a name="CSOcupacionesDet-8153"> </a></td><td>Operadores de máquinas de coser	</td></tr><tr><td style="white-space:nowrap">8154<a name="CSOcupacionesDet-8154"> </a></td><td>Operadores de máquinas de blanqueamiento, teñido y limpieza de tejidos	</td></tr><tr><td style="white-space:nowrap">8155<a name="CSOcupacionesDet-8155"> </a></td><td>Operadores de máquinas de tratamiento de pieles y cueros	</td></tr><tr><td style="white-space:nowrap">8156<a name="CSOcupacionesDet-8156"> </a></td><td>Operadores de máquinas para la fabricación de calzado, bolsos y accesorios de talabartería	</td></tr><tr><td style="white-space:nowrap">8157<a name="CSOcupacionesDet-8157"> </a></td><td>Operadores de máquinas de lavanderías	</td></tr><tr><td style="white-space:nowrap">8159<a name="CSOcupacionesDet-8159"> </a></td><td>Operadores de máquinas para fabricar productos textiles y artículos de piel y cuero no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">8160<a name="CSOcupacionesDet-8160"> </a></td><td>Operadores de máquinas para elaborar alimentos, bebidas y cigarrillos	</td></tr><tr><td style="white-space:nowrap">8171<a name="CSOcupacionesDet-8171"> </a></td><td>Operadores de instalaciones para la preparación de papel y de pasta para papel	</td></tr><tr><td style="white-space:nowrap">8172<a name="CSOcupacionesDet-8172"> </a></td><td>Operadores de instalaciones de procesamiento de la madera	</td></tr><tr><td style="white-space:nowrap">8181<a name="CSOcupacionesDet-8181"> </a></td><td>Operadores de instalaciones de vidrieriía y cerámica	</td></tr><tr><td style="white-space:nowrap">8182<a name="CSOcupacionesDet-8182"> </a></td><td>Operadores de máquinas de vapor y calderas	</td></tr><tr><td style="white-space:nowrap">8183<a name="CSOcupacionesDet-8183"> </a></td><td>Operadores de máquinas de embalaje, embotellamiento y etiquetado	</td></tr><tr><td style="white-space:nowrap">8189<a name="CSOcupacionesDet-8189"> </a></td><td>Operadores de máquinas y de instalaciones fijas no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">8211<a name="CSOcupacionesDet-8211"> </a></td><td>Ensambladores de maquinaria mecánica 	</td></tr><tr><td style="white-space:nowrap">8212<a name="CSOcupacionesDet-8212"> </a></td><td>Ensambladores de equipos eléctricos y electrónicos	</td></tr><tr><td style="white-space:nowrap">8219<a name="CSOcupacionesDet-8219"> </a></td><td>Ensambladores no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">8311<a name="CSOcupacionesDet-8311"> </a></td><td>Maquinistas de locomotoras  	</td></tr><tr><td style="white-space:nowrap">8312<a name="CSOcupacionesDet-8312"> </a></td><td>Guardafrenos, guardagujas y agentes de maniobras	</td></tr><tr><td style="white-space:nowrap">8321<a name="CSOcupacionesDet-8321"> </a></td><td>Conductores de motocicletas 	</td></tr><tr><td style="white-space:nowrap">8322<a name="CSOcupacionesDet-8322"> </a></td><td>Conductores de automóviles, taxis y camionetas	</td></tr><tr><td style="white-space:nowrap">8331<a name="CSOcupacionesDet-8331"> </a></td><td>Conductores de buses y trolebuses	</td></tr><tr><td style="white-space:nowrap">8332<a name="CSOcupacionesDet-8332"> </a></td><td>Conductores de camiones pesados y de alto tonelaje	</td></tr><tr><td style="white-space:nowrap">8341<a name="CSOcupacionesDet-8341"> </a></td><td>Operadores de maquinaria agrícola y forestal móvil	</td></tr><tr><td style="white-space:nowrap">8342<a name="CSOcupacionesDet-8342"> </a></td><td>Operadores de máquinas de movimiento de tierras	</td></tr><tr><td style="white-space:nowrap">8343<a name="CSOcupacionesDet-8343"> </a></td><td>Operadores de grúas y aparatos elevadores	</td></tr><tr><td style="white-space:nowrap">8344<a name="CSOcupacionesDet-8344"> </a></td><td>Operadores de autoelevadoras y montacargas	</td></tr><tr><td style="white-space:nowrap">8350<a name="CSOcupacionesDet-8350"> </a></td><td>Tripulantes de cubierta de barco	</td></tr><tr><td style="white-space:nowrap">9111<a name="CSOcupacionesDet-9111"> </a></td><td>Trabajadores de casa particular y asistentes domésticos	</td></tr><tr><td style="white-space:nowrap">9112<a name="CSOcupacionesDet-9112"> </a></td><td>Auxiliares de aseo de oficinas, hoteles y otros establecimientos	</td></tr><tr><td style="white-space:nowrap">9121<a name="CSOcupacionesDet-9121"> </a></td><td>Lavadores y planchadores manuales	</td></tr><tr><td style="white-space:nowrap">9122<a name="CSOcupacionesDet-9122"> </a></td><td>Limpiadores de vehículos 	</td></tr><tr><td style="white-space:nowrap">9123<a name="CSOcupacionesDet-9123"> </a></td><td>Limpiadores de ventanas	</td></tr><tr><td style="white-space:nowrap">9129<a name="CSOcupacionesDet-9129"> </a></td><td>Otro personal de limpieza no clasificado previamente	</td></tr><tr><td style="white-space:nowrap">9211<a name="CSOcupacionesDet-9211"> </a></td><td>Obreros de explotaciones agrícolas	</td></tr><tr><td style="white-space:nowrap">9212<a name="CSOcupacionesDet-9212"> </a></td><td>Obreros de explotaciones ganaderas	</td></tr><tr><td style="white-space:nowrap">9213<a name="CSOcupacionesDet-9213"> </a></td><td>Obreros de explotaciones agropecuarias	</td></tr><tr><td style="white-space:nowrap">9214<a name="CSOcupacionesDet-9214"> </a></td><td>Ayudantes de jardinería y horticultura	</td></tr><tr><td style="white-space:nowrap">9215<a name="CSOcupacionesDet-9215"> </a></td><td>Obreros forestales	</td></tr><tr><td style="white-space:nowrap">9216<a name="CSOcupacionesDet-9216"> </a></td><td>Obreros de pesca y acuicultura	</td></tr><tr><td style="white-space:nowrap">9311<a name="CSOcupacionesDet-9311"> </a></td><td>Obreros de la minería	</td></tr><tr><td style="white-space:nowrap">9312<a name="CSOcupacionesDet-9312"> </a></td><td>Obreros de obras públicas	</td></tr><tr><td style="white-space:nowrap">9313<a name="CSOcupacionesDet-9313"> </a></td><td>Obreros de la construcción de edificios	</td></tr><tr><td style="white-space:nowrap">9321<a name="CSOcupacionesDet-9321"> </a></td><td>Empacadores manuales	</td></tr><tr><td style="white-space:nowrap">9329<a name="CSOcupacionesDet-9329"> </a></td><td>Obreros de la industria manufacturera no clasificados previamente	</td></tr><tr><td style="white-space:nowrap">9331<a name="CSOcupacionesDet-9331"> </a></td><td>Conductores de vehículos accionados a pedal o a brazo (no motorizados)	</td></tr><tr><td style="white-space:nowrap">9332<a name="CSOcupacionesDet-9332"> </a></td><td>Conductores de vehículos y máquinas de tracción animal	</td></tr><tr><td style="white-space:nowrap">9333<a name="CSOcupacionesDet-9333"> </a></td><td>Obreros de carga	</td></tr><tr><td style="white-space:nowrap">9334<a name="CSOcupacionesDet-9334"> </a></td><td>Reponedores de estanterías	</td></tr><tr><td style="white-space:nowrap">9411<a name="CSOcupacionesDet-9411"> </a></td><td>Cocineros de comida rápida  	</td></tr><tr><td style="white-space:nowrap">9412<a name="CSOcupacionesDet-9412"> </a></td><td>Ayudantes de cocina	</td></tr><tr><td style="white-space:nowrap">9510<a name="CSOcupacionesDet-9510"> </a></td><td>Trabajadores ambulantes de servicios  	</td></tr><tr><td style="white-space:nowrap">9520<a name="CSOcupacionesDet-9520"> </a></td><td>Vendedores ambulantes (excluyendo comida de consumo inmediato)	</td></tr><tr><td style="white-space:nowrap">9611<a name="CSOcupacionesDet-9611"> </a></td><td>Recolectores de basura y material reciclable  	</td></tr><tr><td style="white-space:nowrap">9612<a name="CSOcupacionesDet-9612"> </a></td><td>Clasificadores de desechos	</td></tr><tr><td style="white-space:nowrap">9613<a name="CSOcupacionesDet-9613"> </a></td><td>Barrenderos	</td></tr><tr><td style="white-space:nowrap">9621<a name="CSOcupacionesDet-9621"> </a></td><td>Mensajeros, estafetas, maleteros y repartidores de folletos y diarios a domicilio	</td></tr><tr><td style="white-space:nowrap">9622<a name="CSOcupacionesDet-9622"> </a></td><td>Auxiliares de mantenimiento (pequeñas reparaciones)	</td></tr><tr><td style="white-space:nowrap">9623<a name="CSOcupacionesDet-9623"> </a></td><td>Recolectores de dinero en máquinas expendedoras de venta automática y lectores de medidores	</td></tr><tr><td style="white-space:nowrap">9624<a name="CSOcupacionesDet-9624"> </a></td><td>Acarreadores de agua y recolectores de leña	</td></tr><tr><td style="white-space:nowrap">9629<a name="CSOcupacionesDet-9629"> </a></td><td>Otras ocupaciones elementales no clasificadas previamente	</td></tr></table></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet"/>
+  <version value="0.1.1"/>
+  <name value="CSOcupacionesDet"/>
+  <title value="Ocupaciones Detalladas"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Código asociados a el detalle de las ocupaciones de un paciente"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="444"/>
+  <concept>
+    <code value="0110"/>
+    <display value="Oficiales de las Fuerzas Armadas"/>
+  </concept>
+  <concept>
+    <code value="0210"/>
+    <display value="Suboficiales de las Fuerzas Armadas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="0310"/>
+    <display value="Otros miembros de las Fuerzas Armadas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1111"/>
+    <display value="Miembros del poder ejecutivo y legislativo&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1112"/>
+    <display value="Personal directivo de la administración pública&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1113"/>
+    <display value="Jefes de comunidades indígenas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1114"/>
+    <display value="Dirigentes de organizaciones sociales y/o políticas (sindicatos, organizaciones sociales, partidos políticos, entre otras)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1120"/>
+    <display value="Directores y gerentes generales de empresas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1211"/>
+    <display value="Directores, gerentes y administradores de finanzas &#x9;"/>
+  </concept>
+  <concept>
+    <code value="1212"/>
+    <display value="Directores, gerentes y administradores de recursos humanos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1213"/>
+    <display value="Directores, gerentes y administradores de políticas empresariales y planificación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1219"/>
+    <display value="Otros directores, gerentes y administradores de servicios administrativos no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1221"/>
+    <display value="Directores, gerentes y administradores comercialización&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1222"/>
+    <display value="Directores, gerentes y administradores de publicidad y relaciones públicas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1223"/>
+    <display value="Directores, gerentes y administradores de investigación y desarrollo&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1311"/>
+    <display value="Directores, gerentes y administradores de producción y operaciones agropecuarias y de silvicultura&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1312"/>
+    <display value="Directores, gerentes y administradores de producción y operaciones de acuicultura y pesca&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1321"/>
+    <display value="Directores, gerentes y administradores de industrias manufactureras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1322"/>
+    <display value="Directores, gerentes y administradores de explotaciones mineras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1323"/>
+    <display value="Directores, gerentes y administradores de construcción&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1324"/>
+    <display value="Directores, gerentes y administradores de empresas de abastecimiento, almacenamiento y distribución&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1330"/>
+    <display value="Directores, gerentes y administradores de servicios de tecnología de la información y las comunicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1341"/>
+    <display value="Directores, gerentes y administradores de servicios de cuidados infantiles&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1342"/>
+    <display value="Directores, gerentes y administradores de servicios de salud&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1343"/>
+    <display value="Directores, gerentes y administradores de servicios de cuidado de adultos mayores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1344"/>
+    <display value="Directores, generales y administradores de servicios de bienestar social&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1345"/>
+    <display value="Directores, gerentes y administradores de servicios de educación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1346"/>
+    <display value="Directores, gerentes y administradores de servicios financieros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1349"/>
+    <display value="Directores, gerentes y administradores de otros servicios profesionales no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1411"/>
+    <display value="Directores, gerentes y administradores de hoteles&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1412"/>
+    <display value="Directores, gerentes y administradores de restaurantes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1420"/>
+    <display value="Directores, gerentes y administradores de comercios al por mayor y al por menor&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1431"/>
+    <display value="Directores, gerentes y administradores de centros deportivos, de esparcimiento y culturales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="1439"/>
+    <display value="Directores, gerentes y administradores de otros servicios no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2111"/>
+    <display value="Físicos y astrónomos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2112"/>
+    <display value="Meteorólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2113"/>
+    <display value="Químicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2114"/>
+    <display value="Geólogos y geofísicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2120"/>
+    <display value="Matemáticos y estadísticos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2131"/>
+    <display value="Biólogos, botánicos, zoólogos, genetista y farmacólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2132"/>
+    <display value="Agrónomos y profesionales del ámbito forestal y pesquero&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2133"/>
+    <display value="Profesionales de la protección medioambiental&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2134"/>
+    <display value="Bioquímicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2141"/>
+    <display value="Ingenieros industriales y de producción&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2142"/>
+    <display value="Ingenieros civiles, ingenieros en construcción y constructores civiles&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2143"/>
+    <display value="Ingenieros mediambientales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2144"/>
+    <display value="Ingenieros mecánicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2145"/>
+    <display value="Ingenieros químicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2146"/>
+    <display value="Ingenieros en minas y metalúrgicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2147"/>
+    <display value="Ingenieros biomédicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2149"/>
+    <display value="Otros ingenieros no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2151"/>
+    <display value="Ingenieros eléctricos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2152"/>
+    <display value="Ingenieros electrónicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2153"/>
+    <display value="Ingenieros en telecomunicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2161"/>
+    <display value="Arquitectos &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2162"/>
+    <display value="Arquitectos paisajistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2163"/>
+    <display value="Diseñadores de productos y de vestuario&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2164"/>
+    <display value="Urbanistas e ingenieros de transporte y tránsito&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2165"/>
+    <display value="Cartógrafos y agrimensores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2166"/>
+    <display value="Diseñadores gráficos y de multimedia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2211"/>
+    <display value="Médicos generales  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2212"/>
+    <display value="Médicos especialistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2221"/>
+    <display value="Enfermeros profesionales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2222"/>
+    <display value="Profesionales de matronería&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2230"/>
+    <display value="Veterinarios&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2241"/>
+    <display value="Dentistas  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2242"/>
+    <display value="Químicos farmaceúticos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2243"/>
+    <display value="Ingenieros en prevención de riesgos y otros profesionales de la seguridad e higiene laboral y ambiental&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2244"/>
+    <display value="Kinesiólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2245"/>
+    <display value="Dietistas y nutricionistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2246"/>
+    <display value="Fonoaudiólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2247"/>
+    <display value="Tecnólogos médicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2248"/>
+    <display value="Terapeutas ocupacionales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2249"/>
+    <display value="Otros profesionales de la salud no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2310"/>
+    <display value="Profesores de la educación superior&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2320"/>
+    <display value="Profesores de educación media técnico profesional (especialidades) y de formación laboral &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2330"/>
+    <display value="Profesores de educación media  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2341"/>
+    <display value="Profesores de educación básica&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2342"/>
+    <display value="Educadores de párvulos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2351"/>
+    <display value="Especialistas en métodos pedagógicos &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2352"/>
+    <display value="Educadores para necesidades especiales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2353"/>
+    <display value="Otros profesores de idiomas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2354"/>
+    <display value="Otros profesores de música&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2355"/>
+    <display value="otros profesores de artes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2356"/>
+    <display value="Instructores en tecnologías de la información&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2359"/>
+    <display value="Otros profesionales de la educación no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2411"/>
+    <display value="Contadores  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2412"/>
+    <display value="Asesores financieros y en inversiones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2413"/>
+    <display value="Analistas financieros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2421"/>
+    <display value="Especialistas y asesores de gestión &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2422"/>
+    <display value="Especialistas en políticas de administración&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2423"/>
+    <display value="Especialistas en políticas y servicios de personal&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2424"/>
+    <display value="Especialistas en formación del personal&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2431"/>
+    <display value="Profesionales de la publicidad y la comercialización&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2432"/>
+    <display value="Profesionales de las relaciones públicas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2433"/>
+    <display value="Profesionales de ventas técnicas y médicas (excluyendo las TIC)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2434"/>
+    <display value="Profesionales de ventas de tecnología de la información y las comunicaciones (TIC)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2511"/>
+    <display value="Analistas de sistemas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2512"/>
+    <display value="Desarrolladores de software&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2513"/>
+    <display value="Desarrolladores web y multimedia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2514"/>
+    <display value="Programadores de aplicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2519"/>
+    <display value="Otros desarrolladores y analistas de software y multimedia no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2521"/>
+    <display value="Diseñadores y administradores de bases de datos  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2522"/>
+    <display value="Administradores de sistemas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2523"/>
+    <display value="Profesionales en redes de computadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2529"/>
+    <display value="Otros especialistas en bases de datos y en redes de computadores no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2611"/>
+    <display value="Abogados &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2612"/>
+    <display value="Jueces&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2619"/>
+    <display value="Otros profesionales del derecho no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2621"/>
+    <display value="Archivistas y curadores de museos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2622"/>
+    <display value="Bibliotecarios y documentalistas de archivos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2631"/>
+    <display value="Economistas &#x9;"/>
+  </concept>
+  <concept>
+    <code value="2632"/>
+    <display value="Sociólogos, antropólogos, geógrafos y arqueólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2633"/>
+    <display value="Filósofos, historiadores y especialistas en ciencias políticas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2634"/>
+    <display value="Psicólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2635"/>
+    <display value="Profesionales del trabajo social&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2636"/>
+    <display value="Profesionales religiosos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2641"/>
+    <display value="Autores y otros escritores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2642"/>
+    <display value="Periodistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2643"/>
+    <display value="Traductores, intérpretes de lengua de señas y lingüistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2651"/>
+    <display value="Artistas de artes plásticas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2652"/>
+    <display value="Músicos, cantantes y compositores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2653"/>
+    <display value="Bailarines y coreógrafos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2654"/>
+    <display value="Directores de cine, radio y teatro&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2655"/>
+    <display value="Actores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2656"/>
+    <display value="Locutores de radio, televisión y otros medios de comunicación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="2659"/>
+    <display value="Otros artistas creativos e interpretativos no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3111"/>
+    <display value="Técnicos en ciencias físicas y químicas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3112"/>
+    <display value="Técnicos en construcción y topógrafos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3113"/>
+    <display value="Técnicos en electricidad&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3114"/>
+    <display value="Técnicos en electrónica&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3115"/>
+    <display value="Técnicos en ingeniería mecánica&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3116"/>
+    <display value="Técnicos en química industrial&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3117"/>
+    <display value="Técnicos en ingeniería de minas y metalurgia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3118"/>
+    <display value="Delineantes y dibujantes técnicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3119"/>
+    <display value="Otros técnicos en ciencias físicas y en ingeniería no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3121"/>
+    <display value="Supervisores de minas  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3122"/>
+    <display value="Supervisores de industrias manufactureras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3123"/>
+    <display value="Supervisores de la construcción&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3131"/>
+    <display value="Operadores de instalaciones de producción de energía&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3132"/>
+    <display value="Operadores de incineradores y de instalaciones de tratamiento de agua&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3133"/>
+    <display value="Controladores de instalaciones de procesamiento de productos químicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3134"/>
+    <display value="Operadores de instalaciones de refinación de petróleo y gas natural&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3135"/>
+    <display value="Controladores de procesos de producción de metales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3139"/>
+    <display value="Técnicos en control de procesos no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3141"/>
+    <display value="Técnicos en ciencias biológicas (excluyendo la medicina)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3142"/>
+    <display value="Técnicos agropecuarios (incluyendo acuícolas)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3143"/>
+    <display value="Técnicos forestales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3151"/>
+    <display value="Oficiales maquinistas en navegación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3152"/>
+    <display value="Capitanes y oficiales de cubierta&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3153"/>
+    <display value="Pilotos de aviación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3154"/>
+    <display value="Controladores de tráfico aéreo&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3155"/>
+    <display value="Técnicos electrónicos aeronáuticos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3211"/>
+    <display value="Técnicos y auxiliares paramédicos de radiología e imagenología y otros aparatos de diagnóstico y tratamiento médico &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3212"/>
+    <display value="Técnicos de laboratorios clínicos y servicios de sangre&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3213"/>
+    <display value="Técnicos y asistentes farmacéuticos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3214"/>
+    <display value="Técnicos de prótesis médicas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3215"/>
+    <display value="Laboratoristas dentales o técnicos en prótesis dentales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3216"/>
+    <display value="Auxiliares paramédicos de anatomía patológica&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3221"/>
+    <display value="Técnicos y auxiliares paramédicos de enfermería &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3222"/>
+    <display value="Técnicos y auxiliares paramédicos de esterilización&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3223"/>
+    <display value="Ayudantes de ambulancia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3231"/>
+    <display value="Profesionales y técnicos de las terapias complementarias  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3232"/>
+    <display value="Practicantes de la medicina tradicional&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3240"/>
+    <display value="Técnicos y asistentes veterinarios&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3251"/>
+    <display value="Técnicos y auxiliares paramédicos en odontología&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3252"/>
+    <display value="Técnicos en documentación e información sanitaria&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3253"/>
+    <display value="Podólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3254"/>
+    <display value="Técnicos ópticos y contactólogos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3255"/>
+    <display value="Técnicos y asistentes fisioterapeutas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3256"/>
+    <display value="Técnicos y auxiliares paramédicos de alimentación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3257"/>
+    <display value="Inspectores de la salud y técnicos en prevención de riesgos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3258"/>
+    <display value="Quiroprácticos y osteópatas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3259"/>
+    <display value="Otros técnicos de la salud no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3311"/>
+    <display value="Agentes de bolsa y otros servicios financieros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3312"/>
+    <display value="Ejecutivos de préstamos y créditos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3313"/>
+    <display value="Técnicos y asistentes en contabilidad&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3314"/>
+    <display value="Técnicos de servicios estadísticos y metamáticos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3315"/>
+    <display value="Tasadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3321"/>
+    <display value="Agentes de seguros y ejecutivos de fondos de pensiones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3322"/>
+    <display value="Representantes comerciales (excepto venta de productos y servicios industriales, farmacéuticos y de tecnologías de la información y las comunicaciones)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3323"/>
+    <display value="Agentes responsables de adquisiciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3324"/>
+    <display value="Corredores comerciales y consignatarios&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3331"/>
+    <display value="Agentes de aduana &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3332"/>
+    <display value="Organizadores de conferencias y eventos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3333"/>
+    <display value="Agentes de empleo y contratistas de personal&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3334"/>
+    <display value="Agentes inmobiliarios&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3339"/>
+    <display value="Otros agentes de servicios comerciales no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3341"/>
+    <display value="Supervisores de oficina  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3342"/>
+    <display value="Secretarios jurídicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3343"/>
+    <display value="Secretarios administrativos y ejecutivos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3344"/>
+    <display value="Secretarios médicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3351"/>
+    <display value="Inspectores de aduana&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3352"/>
+    <display value="Agentes de la administración tributaria&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3353"/>
+    <display value="Agentes de servicios de prestaciones sociales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3354"/>
+    <display value="Agentes de servicios de tramitación y entrega de licencias y permisos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3355"/>
+    <display value="Inspectores y detectives de la Policía de Investigaciones (PDI)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3359"/>
+    <display value="Agentes de la administración pública para la aplicación de la ley no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3411"/>
+    <display value="Técnicos de los servicios jurídicos  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3412"/>
+    <display value="Técnico en trabajo social&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3413"/>
+    <display value="Técnicos de los servicios religiosos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3421"/>
+    <display value="Atletas y deportistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3422"/>
+    <display value="Entrenadores, instructores y árbitros de actividades deportivas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3423"/>
+    <display value="Instructores de acondicionamiento físico y actividades recreativas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3431"/>
+    <display value="Fotógrafos &#x9;"/>
+  </concept>
+  <concept>
+    <code value="3432"/>
+    <display value="Diseñadores y decorador de interior&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3433"/>
+    <display value="Técnicos en galerías de arte, museos y bibliotecas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3434"/>
+    <display value="Chefs&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3435"/>
+    <display value="Tatuadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3439"/>
+    <display value="Otros técnicos en actividades culturales y artísticas no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3511"/>
+    <display value="Técnicos en operaciones de tecnología de la información y las comunicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3512"/>
+    <display value="Técnicos en asistencia al usuario de tecnología de la información y las comunicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3513"/>
+    <display value="Técnicos en redes y sistemas de computadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3514"/>
+    <display value="Técnicos de la web&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3521"/>
+    <display value="Técnicos de radiodifusión y grabación audiovisual&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3522"/>
+    <display value="Técnicos de ingeniería de las telecomunicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3611"/>
+    <display value="Técnicos en educación parvularia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="3612"/>
+    <display value="Técnicos en educación diferencial&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4110"/>
+    <display value="Trabajadores de tareas administrativas generales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4120"/>
+    <display value="Secretarios generales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4131"/>
+    <display value="Oeradores de equipo de procesamiento de texto y mecanógrafos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4132"/>
+    <display value="Digitadores de datos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4211"/>
+    <display value="Cajeros de bancos y de oficinas de correo&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4212"/>
+    <display value="Receptores de apuestas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4213"/>
+    <display value="Empleados de casa de empeño y prestamistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4214"/>
+    <display value="Cobradores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4221"/>
+    <display value="Empleados de agencias de viajes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4222"/>
+    <display value="Empleados de centros de llamadas de informaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4223"/>
+    <display value="Telefonistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4224"/>
+    <display value="Recepcionistas de hoteles&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4225"/>
+    <display value="Empleados de informaciones, reclamos o sugerencias&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4226"/>
+    <display value="Recepcionistas (funciones generales)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4227"/>
+    <display value="Entrevistadores de investigaciones de mercado, estudios de opinión pública y encuestadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4229"/>
+    <display value="Otros empleados de servicios de información al cliente no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4311"/>
+    <display value="Auxiliares y ayudantes de registros de contabilidad y cálculo de costos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4312"/>
+    <display value="Auxiliares y ayudantes de servicios estadísticos, financieros y de seguros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4313"/>
+    <display value="Empleados encargados de nóminas o registros de remuneraciones &#x9;"/>
+  </concept>
+  <concept>
+    <code value="4321"/>
+    <display value="Empleados encargados del control de abastecimiento e inventario&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4322"/>
+    <display value="Empleados de cálculo de los insumos y materiales para la producción&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4323"/>
+    <display value="Empleados de servicios de transporte&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4411"/>
+    <display value="Asistentes y ayudantes de bibliotecas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4412"/>
+    <display value="Carteros y empleados de servicios de correos y encomiendas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4413"/>
+    <display value="Codificadores de datos y correctores de pruebas de imprenta&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4414"/>
+    <display value="Escribientes públicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4415"/>
+    <display value="Empleados administrativos de archivos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4416"/>
+    <display value="Empleados y asistentes de recursos humanos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="4419"/>
+    <display value="Otro personal de apoyo administrativo no clasificado previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5111"/>
+    <display value="Auxiliares de servicio a bordo de aeronaves y barcos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5112"/>
+    <display value="Revisores y cobradores de los transportes públicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5113"/>
+    <display value="Guías de turismo&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5120"/>
+    <display value="Cocineros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5131"/>
+    <display value="Garzones de mesa  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="5132"/>
+    <display value="bármanes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5141"/>
+    <display value="Peluqueros &#x9;"/>
+  </concept>
+  <concept>
+    <code value="5142"/>
+    <display value="Cosmetólogos y especialistas en tratamiento de belleza&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5151"/>
+    <display value="Supervisores de mantenimiento y limpieza en oficinas, hoteles y otros establecimientos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5152"/>
+    <display value="Amas de llaves, mayordomos domésticos y dueños/administradores de pequeños establecimientos de alojamiento&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5153"/>
+    <display value="Conserjes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5161"/>
+    <display value="Astrólogos y adivinadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5162"/>
+    <display value="Acompañantes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5163"/>
+    <display value="Personal de pompas fúnebres y embalsamadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5164"/>
+    <display value="Cuidadores de animales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5165"/>
+    <display value="Instructores de manejo&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5169"/>
+    <display value="Otros trabajadores de servicios a las personas no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5211"/>
+    <display value="Vendedores en quioscos o puestos de feria  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="5212"/>
+    <display value="Vendedores ambulantes de productos comestibles de consumo inmediato (elaboración propia)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5221"/>
+    <display value="Comerciantes y dueños - operadores de locales comerciales, tiendas, almacenes y mercados&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5222"/>
+    <display value="Supervisores de locales comerciales, tiendas y almacenes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5223"/>
+    <display value="Vendedores y asistentes de venta de tiendas, almacenes y puestos de mercado&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5230"/>
+    <display value="Vendedores de entrada (entretenciones y eventos deportivos) y cajeros de comercio&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5241"/>
+    <display value="Modelos de moda, arte y publicidad&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5242"/>
+    <display value="Promotores de tiendas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5243"/>
+    <display value="Representantes de ventas de puerta a puerta (venta a hogares)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5244"/>
+    <display value="Vendedores por internet y otros medios de comunicación&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5245"/>
+    <display value="Bomberos de gasolineras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5246"/>
+    <display value="Vendedores de comida al mostrador&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5249"/>
+    <display value="Otros vendedores no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5311"/>
+    <display value="Cuidadores de niños en instituciones y a domicilios&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5312"/>
+    <display value="Asistentes de aulas e inspectores de patio&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5321"/>
+    <display value="Trabajadores de los cuidados personales en instituciones &#x9;"/>
+  </concept>
+  <concept>
+    <code value="5322"/>
+    <display value="Trabajadores de los cuidados personales a domicilio&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5329"/>
+    <display value="Otros trabajadores de los cuidados personales en instituciones y a domicilio no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5411"/>
+    <display value="Bomberos  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="5412"/>
+    <display value="Carabineros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5413"/>
+    <display value="Gendarmes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5414"/>
+    <display value="Guardias de seguridad&#x9;"/>
+  </concept>
+  <concept>
+    <code value="5419"/>
+    <display value="Otro personal de los servicios de protección no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6111"/>
+    <display value="Agricultores y trabajadores calificados de cultivos extensivos  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="6112"/>
+    <display value="Agricultores y trabajadores calificados de plantaciones de árboles y arbustos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6113"/>
+    <display value="Agricultores y trabajadores calificados de huertas, invernaderos, viveros y jardines&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6114"/>
+    <display value="Agricultores y trabajadores calificados de cultivos mixtos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6121"/>
+    <display value="Criadores de ganado&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6122"/>
+    <display value="Avicultores y trabajadores calificados de la avicultura&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6123"/>
+    <display value="Trabajadores calificados de la apicultura y la sericultura&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6129"/>
+    <display value="Otros criadores y trabajadores calificados de la cría de animales no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6130"/>
+    <display value="Productores y trabajadores calificados de explotaciones agropecuarias mixtas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6210"/>
+    <display value="Trabajadores forestales calificados &#x9;"/>
+  </concept>
+  <concept>
+    <code value="6221"/>
+    <display value="Trabajadores de explotaciones de acuicultura  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="6222"/>
+    <display value="Pescadores en agua dulce y en aguas costeras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6223"/>
+    <display value="Pescadores de alta mar&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6224"/>
+    <display value="Cazadores y tramperos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6310"/>
+    <display value="Trabajadores agrícolas de subsistencia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6320"/>
+    <display value="Criadores de subsistencia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6330"/>
+    <display value="Trabajadores agropecuarios de subsitencia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="6340"/>
+    <display value="Pescadores, cazadores, tramperos y recolectores de subsistencia&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7111"/>
+    <display value="Constructores de casas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7112"/>
+    <display value="Albañiles&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7113"/>
+    <display value="Tronzadores, labrantes y grabadores de piedra&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7114"/>
+    <display value="Operarios en cemento armado&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7115"/>
+    <display value="Carpinteros de obra&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7119"/>
+    <display value="Otros operarios de la construcción (obra gruesa) no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7121"/>
+    <display value="Instaladores o reparadores de techos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7122"/>
+    <display value="Instaladores de parqué, cerámicas, baldosas y alfombras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7123"/>
+    <display value="Yeseros, estucadores y revocadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7124"/>
+    <display value="Instaladores de material aislante y de insonorización&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7125"/>
+    <display value="Cristaleros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7126"/>
+    <display value="Gásfiter e instaladores de tuberías&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7127"/>
+    <display value="Mecánicos de instalaciones de refrigeración y aire acondicionado&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7131"/>
+    <display value="Pintores y empapeladores de paredes&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7132"/>
+    <display value="Barnizadores y pulverizadores de productos manufacturados&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7133"/>
+    <display value="Limpiadores de fachadas y deshollinadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7211"/>
+    <display value="Moldeadores y macheros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7212"/>
+    <display value="Soldadores y oxicortadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7213"/>
+    <display value="Chapistas y caldereros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7214"/>
+    <display value="Montadores de estructuras metálicas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7215"/>
+    <display value="Aparejadores y empalmadores de cables no eléctricos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7221"/>
+    <display value="Herreros y forjadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7222"/>
+    <display value="Herramentistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7223"/>
+    <display value="Reguladores y operarios de máquinas herramientas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7224"/>
+    <display value="Pulidores de metales y afiladores de herramientas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7231"/>
+    <display value="Mecánicos y reparadores de vehículos de motor&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7232"/>
+    <display value="Mecánicos y reparadores de motores de avión&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7233"/>
+    <display value="Mecánicos y reparadores de máquinas agrícolas e industriales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7234"/>
+    <display value="Reparadores de bicicletas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7311"/>
+    <display value="mecánicos y reparadores de instrumentos de precisión&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7312"/>
+    <display value="Fabricantes y afinadores de instrumentos musicales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7313"/>
+    <display value="Joyeros, orfebres y plateros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7314"/>
+    <display value="Alfareros (barro, arcilla y abrasivos)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7315"/>
+    <display value="Sopladores, modeladores, laminadores, cortadores y pulidores de vidrio&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7316"/>
+    <display value="Pintores de carteles, pintores decorativos y grabadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7317"/>
+    <display value="Artesanos en madera, cestería y materiales similares&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7318"/>
+    <display value="Artesanos de los tejidos, el cuero y materiales similares&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7319"/>
+    <display value="Artesanos no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7321"/>
+    <display value="Tipógrafos  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="7322"/>
+    <display value="Impresores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7323"/>
+    <display value="Encuadernadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7411"/>
+    <display value="Electricistas de obras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7412"/>
+    <display value="Mecánicos y ajustadores electricistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7413"/>
+    <display value="Instaladores y reparadores de líneas eléctricas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7421"/>
+    <display value="Mecánicos y reparadores en electrónica&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7422"/>
+    <display value="Instaladores y reparadores en tecnología de la información y las comunicaciones&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7511"/>
+    <display value="Carniceros y pescaderos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7512"/>
+    <display value="Panaderos, pasteleros y confíteros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7513"/>
+    <display value="Operarios de la elaboración de productos lácteos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7514"/>
+    <display value="Operarios de la conservación de frutas, legumbres y verduras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7515"/>
+    <display value="Catadores, clasificadores y controladores de calidad de alimentos y bebidas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7516"/>
+    <display value="Elaboradores de tabaco y sus productos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7521"/>
+    <display value="Operarios del tratamiento de la madera &#x9;"/>
+  </concept>
+  <concept>
+    <code value="7522"/>
+    <display value="Ebanistas y mueblistas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7523"/>
+    <display value="Operadores y reguladores de máquinas para trabajar la madera&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7531"/>
+    <display value="Sastres, modistos, peleteros y sombrereros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7532"/>
+    <display value="Patronistas y cortadores de telas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7533"/>
+    <display value="Costureros y bordadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7534"/>
+    <display value="Tapiceros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7535"/>
+    <display value="Apelambradores, pellejeros y curtidores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7536"/>
+    <display value="Zapateros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7541"/>
+    <display value="Buzos &#x9;"/>
+  </concept>
+  <concept>
+    <code value="7542"/>
+    <display value="Dinamiteros y pegadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7543"/>
+    <display value="Clasificadores, probadores de productos e inspectores de calidad (excluyendo alimentos y bebidas)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7544"/>
+    <display value="Fumigadores y otros controladores de plagas y malezas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="7549"/>
+    <display value="Operarios de otros oficios no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8111"/>
+    <display value="Mineros y operadores de instalaciones mineras &#x9;"/>
+  </concept>
+  <concept>
+    <code value="8112"/>
+    <display value="Operadores de instalaciones de procesamiento de minerales y rocas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8113"/>
+    <display value="Perforadores y sondistas de pozos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8114"/>
+    <display value="Operadores de máquinas para fabricar cemento y otros productos minerales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8121"/>
+    <display value="Operadores de instalaciones de procesamiento de metales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8122"/>
+    <display value="Operadores de máquinas de acabado de metales (pulidores, galvanizadores y recubridores de metales)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8131"/>
+    <display value="Operadores de plantas y máquinas para fabricar productos químicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8132"/>
+    <display value="Operadores de máquinas para fabricar productos fotográficos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8141"/>
+    <display value="Operadores de máquinas para fabricar productos de caucho &#x9;"/>
+  </concept>
+  <concept>
+    <code value="8142"/>
+    <display value="Operadores de máquinas para fabricar productos de material plástico&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8143"/>
+    <display value="Operadores de máquinas para fabricar productos de papel&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8151"/>
+    <display value="Operadores de máquinas de preparación de fibras, hilado y devanado&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8152"/>
+    <display value="Operadores de telares y otras máquinas tejedoras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8153"/>
+    <display value="Operadores de máquinas de coser&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8154"/>
+    <display value="Operadores de máquinas de blanqueamiento, teñido y limpieza de tejidos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8155"/>
+    <display value="Operadores de máquinas de tratamiento de pieles y cueros&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8156"/>
+    <display value="Operadores de máquinas para la fabricación de calzado, bolsos y accesorios de talabartería&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8157"/>
+    <display value="Operadores de máquinas de lavanderías&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8159"/>
+    <display value="Operadores de máquinas para fabricar productos textiles y artículos de piel y cuero no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8160"/>
+    <display value="Operadores de máquinas para elaborar alimentos, bebidas y cigarrillos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8171"/>
+    <display value="Operadores de instalaciones para la preparación de papel y de pasta para papel&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8172"/>
+    <display value="Operadores de instalaciones de procesamiento de la madera&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8181"/>
+    <display value="Operadores de instalaciones de vidrieriía y cerámica&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8182"/>
+    <display value="Operadores de máquinas de vapor y calderas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8183"/>
+    <display value="Operadores de máquinas de embalaje, embotellamiento y etiquetado&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8189"/>
+    <display value="Operadores de máquinas y de instalaciones fijas no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8211"/>
+    <display value="Ensambladores de maquinaria mecánica &#x9;"/>
+  </concept>
+  <concept>
+    <code value="8212"/>
+    <display value="Ensambladores de equipos eléctricos y electrónicos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8219"/>
+    <display value="Ensambladores no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8311"/>
+    <display value="Maquinistas de locomotoras  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="8312"/>
+    <display value="Guardafrenos, guardagujas y agentes de maniobras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8321"/>
+    <display value="Conductores de motocicletas &#x9;"/>
+  </concept>
+  <concept>
+    <code value="8322"/>
+    <display value="Conductores de automóviles, taxis y camionetas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8331"/>
+    <display value="Conductores de buses y trolebuses&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8332"/>
+    <display value="Conductores de camiones pesados y de alto tonelaje&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8341"/>
+    <display value="Operadores de maquinaria agrícola y forestal móvil&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8342"/>
+    <display value="Operadores de máquinas de movimiento de tierras&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8343"/>
+    <display value="Operadores de grúas y aparatos elevadores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8344"/>
+    <display value="Operadores de autoelevadoras y montacargas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="8350"/>
+    <display value="Tripulantes de cubierta de barco&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9111"/>
+    <display value="Trabajadores de casa particular y asistentes domésticos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9112"/>
+    <display value="Auxiliares de aseo de oficinas, hoteles y otros establecimientos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9121"/>
+    <display value="Lavadores y planchadores manuales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9122"/>
+    <display value="Limpiadores de vehículos &#x9;"/>
+  </concept>
+  <concept>
+    <code value="9123"/>
+    <display value="Limpiadores de ventanas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9129"/>
+    <display value="Otro personal de limpieza no clasificado previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9211"/>
+    <display value="Obreros de explotaciones agrícolas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9212"/>
+    <display value="Obreros de explotaciones ganaderas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9213"/>
+    <display value="Obreros de explotaciones agropecuarias&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9214"/>
+    <display value="Ayudantes de jardinería y horticultura&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9215"/>
+    <display value="Obreros forestales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9216"/>
+    <display value="Obreros de pesca y acuicultura&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9311"/>
+    <display value="Obreros de la minería&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9312"/>
+    <display value="Obreros de obras públicas&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9313"/>
+    <display value="Obreros de la construcción de edificios&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9321"/>
+    <display value="Empacadores manuales&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9329"/>
+    <display value="Obreros de la industria manufacturera no clasificados previamente&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9331"/>
+    <display value="Conductores de vehículos accionados a pedal o a brazo (no motorizados)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9332"/>
+    <display value="Conductores de vehículos y máquinas de tracción animal&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9333"/>
+    <display value="Obreros de carga&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9334"/>
+    <display value="Reponedores de estanterías&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9411"/>
+    <display value="Cocineros de comida rápida  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="9412"/>
+    <display value="Ayudantes de cocina&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9510"/>
+    <display value="Trabajadores ambulantes de servicios  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="9520"/>
+    <display value="Vendedores ambulantes (excluyendo comida de consumo inmediato)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9611"/>
+    <display value="Recolectores de basura y material reciclable  &#x9;"/>
+  </concept>
+  <concept>
+    <code value="9612"/>
+    <display value="Clasificadores de desechos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9613"/>
+    <display value="Barrenderos&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9621"/>
+    <display value="Mensajeros, estafetas, maleteros y repartidores de folletos y diarios a domicilio&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9622"/>
+    <display value="Auxiliares de mantenimiento (pequeñas reparaciones)&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9623"/>
+    <display value="Recolectores de dinero en máquinas expendedoras de venta automática y lectores de medidores&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9624"/>
+    <display value="Acarreadores de agua y recolectores de leña&#x9;"/>
+  </concept>
+  <concept>
+    <code value="9629"/>
+    <display value="Otras ocupaciones elementales no clasificadas previamente&#x9;"/>
+  </concept>
+</CodeSystem>

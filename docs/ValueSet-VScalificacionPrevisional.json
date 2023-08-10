@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VScalificacionPrevisional",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CScalificacionPrevisional.html\"><code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional</code></a></li></ul></div>"
+  },
+  "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/VScalificacionPrevisional",
+  "version" : "0.1.1",
+  "name" : "VScalificacionPrevisional",
+  "title" : "calificacionPrevisional",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-15",
+  "publisher" : "MINSAL",
+  "contact" : [{
+    "name" : "MINSAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://minsal.cl"
+    }]
+  }],
+  "description" : "calificacionPrevisional",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional"
+    }]
+  }
+}

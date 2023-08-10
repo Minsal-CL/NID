@@ -1,8 +1,25 @@
 {
   "package": "hl7.fhir.cl.minsal.mpi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "CL",
   "extensions": [
+    {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Antuco",
+      "title": "Antuco",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/DirigenteVecinal",
+      "title": "Dirigente Vecinal",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
     {
       "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero",
       "title": "Identidad De Genero",
@@ -27,6 +44,22 @@
         "string",
         "boolean",
         "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prais",
+      "title": "PRAIS",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prilonco",
+      "title": "Prilonco",
+      "types": [
+        "boolean",
+        "boolean"
       ]
     },
     {
@@ -97,22 +130,34 @@
     }
   ],
   "profiles": {
+    "Group": [
+      {
+        "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/AgrupacionPorMarcas",
+        "title": "Agrupacion Por Marcas"
+      }
+    ],
     "Coverage": [
       {
         "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/CoberturaMinsalMPI",
-        "title": "CoberturaMinsalMPI"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI",
-        "title": "Paciente definido para el Registro Maestro de Pacientes"
+        "title": "Cobertura de Salud del paciente"
       }
     ],
     "Observation": [
       {
         "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionDiscapacidad",
-        "title": "Observacion - Situacion Discapacidad"
+        "title": "Situacion Discapacidad"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI",
+        "title": "PacienteMPI"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/RelatedPersonMPI",
+        "title": "RelatedPerson"
       }
     ]
   },
@@ -178,11 +223,23 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Antuco": [
+      "Coverage"
+    ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/DirigenteVecinal": [
+      "Coverage"
+    ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero": [
       "Patient"
     ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI": [
       "Patient"
+    ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prais": [
+      "Coverage"
+    ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prilonco": [
+      "Coverage"
     ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente": [
       "Patient"
