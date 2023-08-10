@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSTramosFONASA",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"CSTramosFONASA-A\"> </a></td><td>FONASA A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"CSTramosFONASA-B\"> </a></td><td>FONASA B</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"CSTramosFONASA-C\"> </a></td><td>FONASA C</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"CSTramosFONASA-D\"> </a></td><td>FONASA D</td></tr></table></div>"
+  },
+  "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA",
+  "version" : "0.1.2",
+  "name" : "CSTramosFONASA",
+  "title" : "TramosFONASA",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-15",
+  "publisher" : "MINSAL",
+  "contact" : [{
+    "name" : "MINSAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://minsal.cl"
+    }]
+  }],
+  "description" : "TramosFONASA",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "A",
+    "display" : "FONASA A"
+  },
+  {
+    "code" : "B",
+    "display" : "FONASA B"
+  },
+  {
+    "code" : "C",
+    "display" : "FONASA C"
+  },
+  {
+    "code" : "D",
+    "display" : "FONASA D"
+  }]
+}

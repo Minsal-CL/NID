@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSNivelEducacionalDesc</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSNivelEducacionalDesc-01\"> </a></td><td>Ultimo curso aprobado</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSNivelEducacionalDesc-02\"> </a></td><td>Ultimo nivel aprobado</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSNivelEducacionalDesc"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
   fhir:name [ fhir:v "CSNivelEducacionalDesc"] ; # 
   fhir:title [ fhir:v "NivelEducacionalDesc"] ; # 
   fhir:status [ fhir:v "active"] ; # 

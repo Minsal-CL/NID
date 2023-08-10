@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSTramosFONASA"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">A<a name="CSTramosFONASA-A"> </a></td><td>FONASA A</td></tr><tr><td style="white-space:nowrap">B<a name="CSTramosFONASA-B"> </a></td><td>FONASA B</td></tr><tr><td style="white-space:nowrap">C<a name="CSTramosFONASA-C"> </a></td><td>FONASA C</td></tr><tr><td style="white-space:nowrap">D<a name="CSTramosFONASA-D"> </a></td><td>FONASA D</td></tr></table></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA"/>
+  <version value="0.1.2"/>
+  <name value="CSTramosFONASA"/>
+  <title value="TramosFONASA"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-15"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="TramosFONASA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="A"/>
+    <display value="FONASA A"/>
+  </concept>
+  <concept>
+    <code value="B"/>
+    <display value="FONASA B"/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="FONASA C"/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="FONASA D"/>
+  </concept>
+</CodeSystem>

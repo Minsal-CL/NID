@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSPrevision",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSPrevision</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSPrevision-01\"> </a></td><td>FONASA</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSPrevision-02\"> </a></td><td>Isapre</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSPrevision-03\"> </a></td><td>Capredena</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSPrevision-04\"> </a></td><td>Otro</td></tr></table></div>"
+  },
+  "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSPrevision",
+  "version" : "0.1.2",
+  "name" : "CSPrevision",
+  "title" : "Prevision",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-15",
+  "publisher" : "MINSAL",
+  "contact" : [{
+    "name" : "MINSAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://minsal.cl"
+    }]
+  }],
+  "description" : "Prevision",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "01",
+    "display" : "FONASA"
+  },
+  {
+    "code" : "02",
+    "display" : "Isapre"
+  },
+  {
+    "code" : "03",
+    "display" : "Capredena"
+  },
+  {
+    "code" : "04",
+    "display" : "Otro"
+  }]
+}

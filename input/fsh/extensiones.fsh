@@ -60,6 +60,26 @@ Description: "Almacenar si el paciente pertenece a algun pueblo originario"
 * value[x].text 0..1 MS
 * value[x].text ^short = "Otro pueblo originario"
 
+
+
+Extension: OrigenDiscapacidad
+Title: "Origen Discapacidad"
+Description: "OrigenDiscapacidad"
+* value[x] only CodeableConcept
+* value[x] ^short = "Origen Discapacidad"
+* url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
+* value[x].coding.system 1..1
+* value[x].coding.display 0..1
+* value[x].coding.code 1..1
+* value[x].coding.code from VSOrigenDiscapacidad (required)
+* value[x].coding.system ^short = "URI del system para validar"
+* value[x].coding.display ^short = "Nombre discapacidad"
+* value[x].coding.code ^short = "Código discapacidad"
+
+
+
+
+
 Extension: Religion
 Title: "Religión"
 Description: "Religión"
@@ -128,3 +148,4 @@ Description: "PRAIS"
 //* value[x] only Boolean
 //* valueReference = Reference()
 * valueBoolean ^short = "PRAIS"
+

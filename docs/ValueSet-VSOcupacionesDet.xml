@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSOcupacionesDet.html"><code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet</code></a></li></ul></div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSOcupacionesDet"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="VSOcupacionesDet"/>
   <title value="Ocupaciones Detalladas"/>
   <status value="active"/>

@@ -9,7 +9,7 @@ name: Indice de maestro de pacientes
 title: Indice de maestro de pacientes 
 description: Indice de maestro de pacientes 
 status: draft # draft | active | retired | unknown
-version: 0.1.1
+version: 0.1.2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use

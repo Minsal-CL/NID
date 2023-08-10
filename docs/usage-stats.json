@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.cl.minsal.mpi",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [
@@ -26,6 +26,24 @@
       "types": [
         "CodeableConcept",
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/fhir/ig/mpi/StructureDefinition/OrigenDiscapacidad",
+      "title": "Origen Discapacidad",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {
@@ -231,6 +249,9 @@
     ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero": [
       "Patient"
+    ],
+    "http://minsal.cl/fhir/ig/mpi/StructureDefinition/OrigenDiscapacidad": [
+      "Observation"
     ],
     "http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI": [
       "Patient"

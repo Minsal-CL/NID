@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="Indicedemaestrodepacientes"/>
   <title value="Indice de maestro de pacientes"/>
   <status value="draft"/>
-  <date value="2023-08-10T11:42:08-04:00"/>
+  <date value="2023-08-10T15:46:58-04:00"/>
   <publisher value="MINSAL"/>
   <contact>
     <name value="MINSAL"/>
@@ -651,6 +651,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OrigenDiscapacidad"/>
+      </reference>
+      <name value="Origen Discapacidad"/>
+      <description value="OrigenDiscapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -702,6 +713,28 @@
       </reference>
       <name value="PRAIS"/>
       <description value="PRAIS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSPrevision"/>
+      </reference>
+      <name value="Prevision"/>
+      <description value="Prevision"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSPrevision"/>
+      </reference>
+      <name value="Prevision"/>
+      <description value="Prevision"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -896,6 +929,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSTramosFONASA"/>
+      </reference>
+      <name value="TramosFONASA"/>
+      <description value="TramosFONASA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSTramosFONASA"/>
+      </reference>
+      <name value="TramosFONASA"/>
+      <description value="TramosFONASA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSUNivelAprob"/>
       </reference>
       <name value="Ultimo nivel aprobado"/>
@@ -911,6 +966,28 @@
       </reference>
       <name value="Ultimo nivel aprobado"/>
       <description value="Código del último nivel aprobado"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSValoracionDesempeno"/>
+      </reference>
+      <name value="Valoracion Desempeno"/>
+      <description value="Valoracion Desempeno"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSValoracionDesempeno"/>
+      </reference>
+      <name value="Valoracion Desempeno"/>
+      <description value="Valoracion Desempeno"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

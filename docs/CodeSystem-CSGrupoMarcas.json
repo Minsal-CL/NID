@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSGrupoMarcas-01\"> </a></td><td>Condición de Cuidador(a)</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSGrupoMarcas-02\"> </a></td><td>Documento que acredita cuidador </td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSGrupoMarcas-03\"> </a></td><td>Fibromialgia</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSGrupoMarcas-04\"> </a></td><td>TEA</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSGrupoMarcas-05\"> </a></td><td>EII</td></tr></table></div>"
   },
   "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "CSGrupoMarcas",
   "title" : "GrupoMarcas",
   "status" : "active",

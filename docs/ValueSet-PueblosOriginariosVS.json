@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-PueblosOriginariosCS.html\"><code>http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS</code></a></li></ul></div>"
   },
   "url" : "http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "PueblosOriginariosVS",
   "title" : "Pueblos Originarios de Chile",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2023-08-10T11:42:08-04:00",
+  "date" : "2023-08-10T15:46:58-04:00",
   "publisher" : "MINSAL",
   "contact" : [{
     "name" : "MINSAL",

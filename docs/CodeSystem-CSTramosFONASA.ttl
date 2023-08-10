@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSTramosFONASA"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"CSTramosFONASA-A\"> </a></td><td>FONASA A</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"CSTramosFONASA-B\"> </a></td><td>FONASA B</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"CSTramosFONASA-C\"> </a></td><td>FONASA C</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"CSTramosFONASA-D\"> </a></td><td>FONASA D</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:name [ fhir:v "CSTramosFONASA"] ; # 
+  fhir:title [ fhir:v "TramosFONASA"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "TramosFONASA"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "FONASA A" ]
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "FONASA B" ]
+  ] [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "FONASA C" ]
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "FONASA D" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

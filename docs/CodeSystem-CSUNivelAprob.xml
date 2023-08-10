@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSUNivelAprob-1"> </a></td><td>Preescolar</td></tr><tr><td style="white-space:nowrap">2<a name="CSUNivelAprob-2"> </a></td><td>Especial o Diferencial </td></tr><tr><td style="white-space:nowrap">3<a name="CSUNivelAprob-3"> </a></td><td>Básica o Primaria</td></tr><tr><td style="white-space:nowrap">4<a name="CSUNivelAprob-4"> </a></td><td>Media o Secundaria</td></tr><tr><td style="white-space:nowrap">5<a name="CSUNivelAprob-5"> </a></td><td>Educación Superior</td></tr><tr><td style="white-space:nowrap">6<a name="CSUNivelAprob-6"> </a></td><td>Sin Instrucción</td></tr><tr><td style="white-space:nowrap">97<a name="CSUNivelAprob-97"> </a></td><td>No Recuerda</td></tr><tr><td style="white-space:nowrap">98<a name="CSUNivelAprob-98"> </a></td><td>No Responde</td></tr></table></div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob"/>
-  <version value="0.1.1"/>
+  <version value="0.1.2"/>
   <name value="CSUNivelAprob"/>
   <title value="Ultimo nivel aprobado"/>
   <status value="active"/>

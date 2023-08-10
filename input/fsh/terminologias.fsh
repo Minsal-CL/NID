@@ -1,7 +1,7 @@
-ValueSet: VSPrevision
-Id: VSPrevision
-Title: "PrevisionVSPrevision"
-Description: "PrevisionVSPrevision"
+ValueSet: VSValoracionDesempeno
+Id: VSValoracionDesempeno
+Title: "Valoracion Desempeno"
+Description: "Valoracion Desempeno"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -11,12 +11,85 @@ Description: "PrevisionVSPrevision"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSPrevisionVSPrevision
+* codes from system CSValoracionDesempeno
 
-CodeSystem: CSPrevisionVSPrevision
-Id: CSPrevisionVSPrevision
-Title: "PrevisionVSPrevision"
-Description: "PrevisionVSPrevision"
+CodeSystem: CSValoracionDesempeno
+Id: CSValoracionDesempeno
+Title: "Valoracion Desempeno"
+Description: "Valoracion Desempeno"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #01 "Sin discapacidad"
+* #02 "Discapacidad leve"
+* #03 "Discapacidad moderada"
+* #04 "Discapacidad severa"
+* #05 "Discapacidad profunda"
+
+/*************************************/
+ValueSet: VSOrigenDiscapacidad
+Id: VSOrigenDiscapacidad
+Title: "OrigenDiscapacidad"
+Description: "OrigenDiscapacidad"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSOrigenDiscapacidad
+
+CodeSystem: CSOrigenDiscapacidad
+Id: CSOrigenDiscapacidad
+Title: "OrigenDiscapacidad"
+Description: "OrigenDiscapacidad"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #01 "Origen Físico"
+* #02 "Origen sensorial visual"
+* #04 "Origen sensorial auditivo"
+* #05 "Origen mental síquico"
+* #06 "Origen mental intelectual"
+* #07 "Origen múltiple"
+
+/*************************************/
+ValueSet: VSPrevision
+Id: VSPrevision
+Title: "Prevision"
+Description: "Prevision"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSPrevision
+
+CodeSystem: CSPrevision
+Id: CSPrevision
+Title: "Prevision"
+Description: "Prevision"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -281,42 +354,6 @@ Description: "Religion"
 * #99 "Desconocido"
 
 /********************************************************/
-
-ValueSet: VSOrigenDiscapacidad
-Id: VSOrigenDiscapacidad
-Title: "OrigenDiscapacidad"
-Description: "OrigenDiscapacidad"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSOrigenDiscapacidad
-
-CodeSystem: CSOrigenDiscapacidad
-Id: CSOrigenDiscapacidad
-Title: "OrigenDiscapacidad"
-Description: "OrigenDiscapacidad"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #01 "Origen Físico"
-* #02 "Origen sensorial visual "
-* #03 "Origen sensorial auditivo"
-* #04 "Origen mental síquico "
-* #05 "Origen mental intelectual "
-* #06 "Origen múltiple"
 
 ValueSet: VScalificacionPrevisional
 Id: VScalificacionPrevisional

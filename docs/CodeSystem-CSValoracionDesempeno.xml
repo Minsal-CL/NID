@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSValoracionDesempeno"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSValoracionDesempeno</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="CSValoracionDesempeno-01"> </a></td><td>Sin discapacidad</td></tr><tr><td style="white-space:nowrap">02<a name="CSValoracionDesempeno-02"> </a></td><td>Discapacidad leve</td></tr><tr><td style="white-space:nowrap">03<a name="CSValoracionDesempeno-03"> </a></td><td>Discapacidad moderada</td></tr><tr><td style="white-space:nowrap">04<a name="CSValoracionDesempeno-04"> </a></td><td>Discapacidad severa</td></tr><tr><td style="white-space:nowrap">05<a name="CSValoracionDesempeno-05"> </a></td><td>Discapacidad profunda</td></tr></table></div>
+  </text>
+  <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSValoracionDesempeno"/>
+  <version value="0.1.2"/>
+  <name value="CSValoracionDesempeno"/>
+  <title value="Valoracion Desempeno"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-15"/>
+  <publisher value="MINSAL"/>
+  <contact>
+    <name value="MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Valoracion Desempeno"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="01"/>
+    <display value="Sin discapacidad"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Discapacidad leve"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="Discapacidad moderada"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="Discapacidad severa"/>
+  </concept>
+  <concept>
+    <code value="05"/>
+    <display value="Discapacidad profunda"/>
+  </concept>
+</CodeSystem>
