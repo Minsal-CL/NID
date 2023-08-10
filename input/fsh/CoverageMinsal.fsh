@@ -23,5 +23,9 @@ Description: "Recurso para almacenar la cobertura del paciente"
 * status 1..1 MS
 * payor 1..1 MS
 * payor only Reference(Organization)
-* class 0..1 MS
+* class 1..1 MS
+* class.type.coding 1..1 *
+  * code 1..1 MS
+
+
 * class.value = "Plan"

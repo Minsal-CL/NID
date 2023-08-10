@@ -1,4 +1,73 @@
+ValueSet: VSPrevision
+Id: VSPrevision
+Title: "PrevisionVSPrevision"
+Description: "PrevisionVSPrevision"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+* codes from system CSPrevisionVSPrevision
+
+CodeSystem: CSPrevisionVSPrevision
+Id: CSPrevisionVSPrevision
+Title: "PrevisionVSPrevision"
+Description: "PrevisionVSPrevision"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #01 "FONASA"
+* #02 "Isapre"
+* #03 "Capredena"
+* #04 "Otro"
+
+/***********************************/
+ValueSet: VSTramosFONASA
+Id: VSTramosFONASA
+Title: "TramosFONASA"
+Description: "TramosFONASA"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTramosFONASA
+
+CodeSystem: CSTramosFONASA
+Id: CSTramosFONASA
+Title: "TramosFONASA"
+Description: "TramosFONASA"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #A "FONASA A"
+* #B "FONASA B"
+* #C "FONASA C"
+* #D "FONASA D"
+
+/*****************************************/
 ValueSet: VSNivelEducacionalDesc
 Id: VSNivelEducacionalDesc
 Title: "NivelEducacionalDesc"
