@@ -6,7 +6,7 @@ Description: "Identidad De Genero"
 //* value[x] only CodeSystem
 //* valueReference = Reference()
 * valueCodeableConcept ^short = "Identidad De Genero"
-
+* valueCodeableConcept from  VSIdentidadDeGenero
 
 Extension: SexoBiologico
 Id: SexoBiologico
@@ -15,6 +15,8 @@ Description: "Sexo Biologico del paciente"
 * value[x] only CodeableConcept
 //* valueReference = Reference()
 * valueCodeableConcept ^short = "SexoBiologico"
+* valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
+
 
 Extension: SituacionCalle
 Id: SituacionCalle
