@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="08182fc8-acc9-4606-b08e-2a86c21a2aab"/>
+  <id value="2bc42276-dba6-4482-9039-fa3e85f567c1"/>
   <meta>
-    <lastUpdated value="2023-08-10T15:46:58.025-04:00"/>
+    <lastUpdated value="2023-09-04T11:09:02.096-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 8 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSUNivelAprob.html">Ultimo nivel aprobado v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSUNivelAprob.html">codesystem Ultimo nivel aprobado v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -97,7 +97,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSUNivelAprob"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="CSUNivelAprob"/>
         <title value="Ultimo nivel aprobado"/>
         <status value="active"/>
@@ -111,16 +111,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d551fdad-4090-4816-b641-a9aaae13f3c4"/>
-          <timestamp value="2023-08-10T15:47:40-04:00"/>
+          <identifier value="urn:uuid:0f7b0a65-a4ba-4a3d-a97d-33976b371d64"/>
+          <timestamp value="2023-09-04T11:09:42-03:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSUNivelAprob"/>
@@ -175,7 +175,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSNivelEducacionalDesc.html">NivelEducacionalDesc v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSNivelEducacionalDesc.html">codesystem NivelEducacionalDesc v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -209,7 +209,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSNivelEducacionalDesc"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSNivelEducacionalDesc"/>
         <title value="NivelEducacionalDesc"/>
         <status value="active"/>
@@ -223,16 +223,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9df2eb99-ad6c-4850-b0c7-765cc837a997"/>
-          <timestamp value="2023-08-10T15:47:43-04:00"/>
+          <identifier value="urn:uuid:3b8276e6-93dd-44b4-b025-47bd369ecba1"/>
+          <timestamp value="2023-09-04T11:09:44-03:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSNivelEducacionalDesc|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSNivelEducacionalDesc|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSNivelEducacionalDesc"/>
@@ -257,7 +257,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSPrevision.html">Prevision v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSPrevision.html">codesystem Prevision v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -307,7 +307,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSPrevision"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSPrevision"/>
         <title value="Prevision"/>
         <status value="active"/>
@@ -321,16 +321,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:94d5232d-207d-4c2a-b131-fc664a8c3cb6"/>
-          <timestamp value="2023-08-10T15:47:44-04:00"/>
+          <identifier value="urn:uuid:005ede2b-13ba-40ab-8d7d-afc06c800618"/>
+          <timestamp value="2023-09-04T11:09:44-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSPrevision|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSPrevision|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSPrevision"/>
@@ -365,7 +365,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 11 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-PueblosOriginariosCS.html">Pueblos Originarios de Chile v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-PueblosOriginariosCS.html">codesystem Pueblos Originarios de Chile v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -471,12 +471,12 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/PueblosOriginariosVS"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="PueblosOriginariosVS"/>
         <title value="Pueblos Originarios de Chile"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2023-08-10T15:46:58-04:00"/>
+        <date value="2023-09-04T11:09:02-03:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -485,16 +485,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c532c345-2cfd-4fe4-a481-96a8814d7934"/>
-          <timestamp value="2023-08-10T15:47:45-04:00"/>
+          <identifier value="urn:uuid:9369e868-1e18-4c4d-bd63-2c40ed1ade68"/>
+          <timestamp value="2023-09-04T11:09:45-03:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/PueblosOriginariosCS"/>
@@ -564,7 +564,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 6 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSOrigenDiscapacidad.html">OrigenDiscapacidad v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSOrigenDiscapacidad.html">codesystem OrigenDiscapacidad v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -630,7 +630,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSOrigenDiscapacidad"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSOrigenDiscapacidad"/>
         <title value="OrigenDiscapacidad"/>
         <status value="active"/>
@@ -644,16 +644,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7d550dea-e719-4907-b61b-53a7925cdc9d"/>
-          <timestamp value="2023-08-10T15:47:45-04:00"/>
+          <identifier value="urn:uuid:a22f898d-66cf-47d6-afb0-ab3962c593fa"/>
+          <timestamp value="2023-09-04T11:09:45-03:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad"/>
@@ -698,7 +698,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTramosFONASA.html">TramosFONASA v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSTramosFONASA.html">codesystem TramosFONASA v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -748,7 +748,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSTramosFONASA"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSTramosFONASA"/>
         <title value="TramosFONASA"/>
         <status value="active"/>
@@ -762,16 +762,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9018a3d4-105b-4213-a557-7807943e9322"/>
-          <timestamp value="2023-08-10T15:47:45-04:00"/>
+          <identifier value="urn:uuid:69b3fba9-5d62-4158-b5de-aeceebc82f9e"/>
+          <timestamp value="2023-09-04T11:09:45-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTramosFONASA"/>
@@ -806,7 +806,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSValoracionDesempeno.html">Valoracion Desempeno v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSValoracionDesempeno.html">codesystem Valoracion Desempeno v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -864,7 +864,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSValoracionDesempeno"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSValoracionDesempeno"/>
         <title value="Valoracion Desempeno"/>
         <status value="active"/>
@@ -878,16 +878,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4732616a-e05c-41f7-ab84-97f5ea9d87aa"/>
-          <timestamp value="2023-08-10T15:47:48-04:00"/>
+          <identifier value="urn:uuid:4926a937-d698-4544-a131-eff08456ed00"/>
+          <timestamp value="2023-09-04T11:09:48-03:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSValoracionDesempeno|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSValoracionDesempeno|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSValoracionDesempeno"/>
@@ -927,7 +927,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTipoObservacion.html">TipoObservacion v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSTipoObservacion.html">codesystem TipoObservacion v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -977,7 +977,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoObservacion"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSTipoObservacion"/>
         <title value="TipoObservacion"/>
         <status value="active"/>
@@ -991,16 +991,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e7b6e0d8-f27c-4ef2-a9ca-b55b6f1d8e0c"/>
-          <timestamp value="2023-08-10T15:47:48-04:00"/>
+          <identifier value="urn:uuid:e79731fe-5308-4200-a6fd-3a86a0728e02"/>
+          <timestamp value="2023-09-04T11:09:48-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoObservacion|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoObservacion|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoObservacion"/>
@@ -1035,7 +1035,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 10 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSReligion.html">Religion v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSReligion.html">codesystem Religion v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1133,7 +1133,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSReligion"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSReligion"/>
         <title value="Religion"/>
         <status value="active"/>
@@ -1147,16 +1147,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:35bbe399-74e1-4fd8-a54d-76b983b0d0af"/>
-          <timestamp value="2023-08-10T15:47:48-04:00"/>
+          <identifier value="urn:uuid:6f1e22b5-88ef-4394-90ac-9b10d341989c"/>
+          <timestamp value="2023-09-04T11:09:48-03:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSReligion"/>
@@ -1221,7 +1221,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 7 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSIdentidadDeGenero.html">IdentidadDeGenero v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSIdentidadDeGenero.html">codesystem IdentidadDeGenero v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1295,7 +1295,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSIdentidadDeGenero"/>
         <title value="IdentidadDeGenero"/>
         <status value="active"/>
@@ -1309,16 +1309,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:986561fb-6a47-45ca-b3fb-373ec14d672d"/>
-          <timestamp value="2023-08-10T15:47:49-04:00"/>
+          <identifier value="urn:uuid:038d28c8-c76a-4905-8407-80f47efc4975"/>
+          <timestamp value="2023-09-04T11:09:49-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"/>
@@ -1368,7 +1368,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 4 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CScalificacionPrevisional.html">calificacionPrevisional v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CScalificacionPrevisional.html">codesystem calificacionPrevisional v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1418,7 +1418,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VScalificacionPrevisional"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VScalificacionPrevisional"/>
         <title value="calificacionPrevisional"/>
         <status value="active"/>
@@ -1432,16 +1432,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:334ee147-7904-426b-9e7a-6c657ddcb568"/>
-          <timestamp value="2023-08-10T15:47:49-04:00"/>
+          <identifier value="urn:uuid:77684f79-7150-4a9b-8b09-866eaa382770"/>
+          <timestamp value="2023-09-04T11:09:49-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional"/>
@@ -1468,179 +1468,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 9 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTipoIdentificador.html">Tipo Identificador v0.1.2 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-01"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-01">01</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Run</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-02"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-02">02</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Run materno/progenitor(a)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-03"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-03">03</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de Folio de comprobante de parto</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-04"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-04">04</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de pasaporte</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-05"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-05">05</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de documento identificador de país de origen</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-06"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-06">06</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de identificador FONASA</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-07"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-07">07</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Identificador Provisorio Escolar</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-08"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-08">08</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Identificador Provisorio Apoderado</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---minsal.cl-fhir-ig-mpi-CodeSystem-CSTipoIdentificador-09"> </a>  
-                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-09">09</a>
-                </td>
-                <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador</td>
-                <td>Registro Único de Contribuyentes</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador"/>
-        <version value="0.1.2"/>
-        <name value="VSTipoIdentificador"/>
-        <title value="Tipo Identificador"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-07-03T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:85e612ff-6518-44f1-bd3f-2e7ceba9d437"/>
-          <timestamp value="2023-08-10T15:47:49-04:00"/>
-          <total value="9"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador|0.1.2"/>
-          </parameter>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="01"/>
-            <display value="Run"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="02"/>
-            <display value="Run materno/progenitor(a)"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="03"/>
-            <display value="Número de Folio de comprobante de parto"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="04"/>
-            <display value="Número de pasaporte"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="05"/>
-            <display value="Número de documento identificador de país de origen"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="06"/>
-            <display value="Número de identificador FONASA"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="07"/>
-            <display value="Identificador Provisorio Escolar"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="08"/>
-            <display value="Identificador Provisorio Apoderado"/>
-          </contains>
-          <contains>
-            <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoIdentificador"/>
-            <code value="09"/>
-            <display value="Registro Único de Contribuyentes"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSGrupoMarcas"/>
     <resource>
       <ValueSet>
@@ -1649,7 +1476,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSGrupoMarcas.html">GrupoMarcas v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSGrupoMarcas.html">codesystem GrupoMarcas v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1707,7 +1534,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSGrupoMarcas"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSGrupoMarcas"/>
         <title value="GrupoMarcas"/>
         <status value="active"/>
@@ -1721,16 +1548,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:84f88626-834c-4c02-a0e4-bb41f16fd365"/>
-          <timestamp value="2023-08-10T15:47:49-04:00"/>
+          <identifier value="urn:uuid:f0bfbd80-6974-41de-84c2-f0b59ba709c6"/>
+          <timestamp value="2023-09-04T11:09:49-03:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas"/>
@@ -1770,7 +1597,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 7 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSEstadoCivil.html">EstadoCivil v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSEstadoCivil.html">codesystem EstadoCivil v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -1844,7 +1671,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSEstadoCivil"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSEstadoCivil"/>
         <title value="EstadoCivil"/>
         <status value="active"/>
@@ -1858,16 +1685,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:654a3975-0ac4-4d61-800c-501ba7b74aef"/>
-          <timestamp value="2023-08-10T15:47:51-04:00"/>
+          <identifier value="urn:uuid:630759a9-04ae-49e0-8aa4-6a67f3d6d35c"/>
+          <timestamp value="2023-09-04T11:09:50-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSEstadoCivil"/>
@@ -1917,7 +1744,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 444 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSOcupacionesDet.html">Ocupaciones Detalladas v0.1.2 (CodeSystem)</a>
+              <a href="CodeSystem-CSOcupacionesDet.html">codesystem Ocupaciones Detalladas v0.1.3 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -5487,7 +5314,7 @@
           </div>
         </text>
         <url value="http://minsal.cl/fhir/ig/mpi/ValueSet/VSOcupacionesDet"/>
-        <version value="0.1.2"/>
+        <version value="0.1.3"/>
         <name value="VSOcupacionesDet"/>
         <title value="Ocupaciones Detalladas"/>
         <status value="active"/>
@@ -5501,16 +5328,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c65854d0-daf9-4ef5-bdc5-358f1c0cefa7"/>
-          <timestamp value="2023-08-10T15:47:51-04:00"/>
+          <identifier value="urn:uuid:d93b7c44-dd2e-4687-bbbe-08cfa32d9c7b"/>
+          <timestamp value="2023-09-04T11:09:50-03:00"/>
           <total value="444"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet|0.1.2"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet|0.1.3"/>
           </parameter>
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOcupacionesDet"/>

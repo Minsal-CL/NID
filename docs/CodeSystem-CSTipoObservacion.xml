@@ -3,10 +3,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CSTipoObservacion"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoObservacion</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="CSTipoObservacion-01"> </a></td><td>Nivel Educacional</td></tr><tr><td style="white-space:nowrap">02<a name="CSTipoObservacion-02"> </a></td><td>Nivel Instruccion</td></tr><tr><td style="white-space:nowrap">03<a name="CSTipoObservacion-03"> </a></td><td>Situacion Discapacidad</td></tr><tr><td style="white-space:nowrap">04<a name="CSTipoObservacion-04"> </a></td><td>Ocupación</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CSTipoObservacion"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="CSTipoObservacion"/>
   <title value="TipoObservacion"/>
   <status value="active"/>

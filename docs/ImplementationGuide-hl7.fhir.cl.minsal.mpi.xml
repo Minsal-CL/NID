@@ -3,15 +3,14 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.cl.minsal.mpi"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Indicedemaestrodepacientes</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi</pre><div><p>Indice de maestro de pacientes</p>
-</div></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="http://minsal.cl/fhir/ig/mpi/ImplementationGuide/hl7.fhir.cl.minsal.mpi"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="Indicedemaestrodepacientes"/>
   <title value="Indice de maestro de pacientes"/>
   <status value="draft"/>
-  <date value="2023-08-10T15:46:58-04:00"/>
+  <date value="2023-09-04T11:09:02-03:00"/>
   <publisher value="MINSAL"/>
   <contact>
     <name value="MINSAL"/>
@@ -50,7 +49,7 @@
   <dependsOn id="hl7_fhir_cl_clcore">
     <uri value="https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"/>
     <packageId value="hl7.fhir.cl.clcore"/>
-    <version value="1.8.1"/>
+    <version value="1.8.4"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -878,28 +877,6 @@
       </reference>
       <name value="SituacionCalle"/>
       <description value="SituacionCalle"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSTipoIdentificador"/>
-      </reference>
-      <name value="Tipo Identificador"/>
-      <description value="Tipo Identificador"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSTipoIdentificador"/>
-      </reference>
-      <name value="Tipo Identificador"/>
-      <description value="Tipo Identificador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

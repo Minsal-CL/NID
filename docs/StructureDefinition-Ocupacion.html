@@ -71,7 +71,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Indice de maestro de pacientes</span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
 
@@ -133,7 +133,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Indice de maestro de pacientes - Local Development build (v0.1.2). See the <a href="http://minsal.cl/fhir/ig/mpi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Indice de maestro de pacientes - Local Development build (v0.1.3). See the <a href="http://minsal.cl/fhir/ig/mpi/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -213,7 +213,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://minsal.cl/fhir/ig/mpi/StructureDefinition/Ocupacion<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://minsal.cl/fhir/ig/mpi/StructureDefinition/Ocupacion"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://minsal.cl/fhir/ig/mpi/StructureDefinition/Ocupacion|0.1.2"/></span>
+      <span class="copy-text">0.1.3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://minsal.cl/fhir/ig/mpi/StructureDefinition/Ocupacion|0.1.3"/></span>
       </td>
     </tr>
 
@@ -229,7 +229,7 @@
         
           Draft
           
-            as of 2023-08-10
+            as of 2023-09-04
           
         
       </td>
@@ -555,9 +555,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
+<tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
+<tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
 </table>
 
           
@@ -974,9 +981,16 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Observation</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Observation</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Observation</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 <tr><td>obs-3</td><td>error</td><td>Observation.referenceRange</td><td>Must have at least a low or a high or text<br/>: low.exists() or high.exists() or text.exists()</td><td></td></tr>
+<tr><td>obs-6</td><td>error</td><td>Observation</td><td>dataAbsentReason SHALL only be present if Observation.value[x] is not present<br/>: dataAbsentReason.empty() or value.empty()</td><td></td></tr>
+<tr><td>obs-7</td><td>error</td><td>Observation</td><td>If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present<br/>: value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()</td><td></td></tr>
 </table>
 
           
@@ -1192,7 +1206,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://minsal.cl">MINSAL</a>.  Package hl7.fhir.cl.minsal.mpi#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 10, 2023 15:46-0400">2023-08-10</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://minsal.cl">MINSAL</a>.  Package hl7.fhir.cl.minsal.mpi#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 4, 2023 11:09-0300">2023-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

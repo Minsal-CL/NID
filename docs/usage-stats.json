@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.cl.minsal.mpi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [

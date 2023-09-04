@@ -3,10 +3,10 @@
   "id" : "CSOrigenDiscapacidad",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSOrigenDiscapacidad-01\"> </a></td><td>Origen Físico</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSOrigenDiscapacidad-02\"> </a></td><td>Origen sensorial visual</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSOrigenDiscapacidad-04\"> </a></td><td>Origen sensorial auditivo</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSOrigenDiscapacidad-05\"> </a></td><td>Origen mental síquico</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"CSOrigenDiscapacidad-06\"> </a></td><td>Origen mental intelectual</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"CSOrigenDiscapacidad-07\"> </a></td><td>Origen múltiple</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSOrigenDiscapacidad",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "CSOrigenDiscapacidad",
   "title" : "OrigenDiscapacidad",
   "status" : "active",

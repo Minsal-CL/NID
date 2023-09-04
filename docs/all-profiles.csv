@@ -1,6 +1,7 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "AgrupacionPorMarcas","Group","Group","","","",0,*,"","","","null {[]} {[]}
-","Group of multiple entities","Represents a defined collection of entities that may be discussed or acted upon collectively but which are not expected to act collectively, and are not formally or legally recognized; i.e. a collection of entities that isn't an Organization.","If both Group.characteristic and Group.member are present, then the members are the individuals who were found who met the characteristic.  It's possible that there might be other candidate members who meet the characteristic and aren't (yet) in the list.  All members SHALL have the listed characteristics.","","","","","","","","",,,,,"",,,,"Group",0,*,"",""
+","Group of multiple entities","Represents a defined collection of entities that may be discussed or acted upon collectively but which are not expected to act collectively, and are not formally or legally recognized; i.e. a collection of entities that isn't an Organization.","If both Group.characteristic and Group.member are present, then the members are the individuals who were found who met the characteristic.  It's possible that there might be other candidate members who meet the characteristic and aren't (yet) in the list.  All members SHALL have the listed characteristics.","","","","","","","","",,,,,"",,,,"Group",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}grp-1:Can only have members if group is ""actual"" {member.empty() or (actual = true)}"
 "AgrupacionPorMarcas","Group.id","Group.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "AgrupacionPorMarcas","Group.meta","Group.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -147,7 +148,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "DirigenteVecinal","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Dirigente Vecinal","Dirigente Vecinal","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "DirigenteVecinal","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "DirigenteVecinal","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -165,7 +167,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "NivelEducacional","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}
-","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"",""
+","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}obs-6:dataAbsentReason SHALL only be present if Observation.value[x] is not present {dataAbsentReason.empty() or value.empty()}obs-7:If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present {value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()}"
 "NivelEducacional","Observation.id","Observation.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "NivelEducacional","Observation.meta","Observation.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -618,7 +621,8 @@ CodeableConcept {[]} {[]}string {[]} {[]}boolean {[]} {[]}integer {[]} {[]}Range
 ","",,"open","Observation.component.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NivelEducacional","Observation.component:UtlimoNivelAprobado.value[x]:valueCodeableConcept","Observation.component.value[x]","valueCodeableConcept","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,,,,"",,,,"Observation.component.value[x]",0,1,"",""
+","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,,,,"",,,,"Observation.component.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "NivelEducacional","Observation.component:UtlimoNivelAprobado.value[x]:valueCodeableConcept.id","Observation.component.value[x].id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "NivelEducacional","Observation.component:UtlimoNivelAprobado.value[x]:valueCodeableConcept.extension","Observation.component.value[x].extension","","extensions
@@ -669,7 +673,8 @@ The alternate way is to use the value element for actual observations and use th
 "
 "Prilonco","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Prilonco","Prilonco","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Prilonco","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "Prilonco","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -687,7 +692,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "PueblosAfrodescendiente","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","PueblosAfrodescendiente","PueblosAfrodescendiente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PueblosAfrodescendiente","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "PueblosAfrodescendiente","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -701,7 +707,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "Antuco","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Antuco","Antuco","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Antuco","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "Antuco","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -718,7 +725,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Antuco","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoberturaMinsalMPI","Coverage","Coverage","","","",0,*,"","","","null {[]} {[]}
-","Insurance or medical plan or a payment agreement","Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.","The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.","","","","","","","","",,,,,"",,,,"Coverage",0,*,"",""
+","Insurance or medical plan or a payment agreement","Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.","The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.","","","","","","","","",,,,,"",,,,"Coverage",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}"
 "CoberturaMinsalMPI","Coverage.id","Coverage.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "CoberturaMinsalMPI","Coverage.meta","Coverage.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -913,7 +921,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "Religion","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Religión","Religión","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Religion","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "Religion","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -962,7 +971,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "Prais","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","PRAIS","PRAIS","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Prais","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "Prais","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -980,7 +990,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "SituacionDiscapacidad","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}
-","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"",""
+","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}obs-6:dataAbsentReason SHALL only be present if Observation.value[x] is not present {dataAbsentReason.empty() or value.empty()}obs-7:If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present {value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()}"
 "SituacionDiscapacidad","Observation.id","Observation.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "SituacionDiscapacidad","Observation.meta","Observation.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -1237,7 +1248,8 @@ The alternate way is to use the value element for actual observations and use th
 "
 "PacienteMinsalMPI","Patient","Patient","","SubjectOfCare Client Resident
 ","",0,*,"","","","null {[]} {[]}
-","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Patient",0,*,"",""
+","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Patient",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}"
 "PacienteMinsalMPI","Patient.id","Patient.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "PacienteMinsalMPI","Patient.meta","Patient.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -1273,7 +1285,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PacienteMinsalMPI","Patient.extension:nacionalidad.url","Patient.extension.url","","","",1,1,"Y","","","uri {[]} {[]}
 ","Extensión de Nacionalidad para pacientes extranjeros","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "PacienteMinsalMPI","Patient.extension:nacionalidad.value[x]","Patient.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Código de País","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+","Código de País","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].id","Patient.extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].extension","Patient.extension.value[x].extension","","extensions
@@ -1281,7 +1294,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding","Patient.extension.value[x].coding","","","",1,1,"Y","","Y","Coding {[]} {[]}
+"PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding","Patient.extension.value[x].coding","","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding.id","Patient.extension.value[x].coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -1297,7 +1310,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding.version","Patient.extension.value[x].coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding.code","Patient.extension.value[x].coding.code","","","",1,1,"Y","","Y","code {[]} {[]}
+"PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding.code","Patient.extension.value[x].coding.code","","","",0,1,"Y","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","","","","",,"required","","https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais","",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PacienteMinsalMPI","Patient.extension:nacionalidad.value[x].coding.display","Patient.extension.value[x].coding.display","","","",0,1,"Y","","Y","string {[]} {[]}
@@ -1352,7 +1365,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","usual | official | temp | secondary | old (If known)","Se definirá este uso siempre como ""official"" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo","Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PacienteMinsalMPI","Patient.identifier.type","Patient.identifier.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Tipo de documento de Id (Extensible)","Tipo de documento de Id (Extensible)","Tipo de documento de Id (Extensible)","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"required","Identificadores definidos por DEIS","https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Tipo de documento de Id (Extensible)","Tipo de documento de Id (Extensible)","Tipo de documento de Id (Extensible)","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"required","Identificadores definidos por DEIS","https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PacienteMinsalMPI","Patient.identifier.type.id","Patient.identifier.type.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -1364,7 +1377,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Codigo de Identificación de países","Esta extensión incluye códigos de paises de origen","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PacienteMinsalMPI","Patient.identifier.type.coding","Patient.identifier.type.coding","","","",0,*,"Y","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","http://minsal.cl/fhir/ig/mpi/ValueSet/VSTipoIdentificador","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PacienteMinsalMPI","Patient.identifier.type.coding.id","Patient.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -1882,7 +1895,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","replaced-by | replaces | refer | seealso","The type of link between this patient resource and another patient resource.","","","","","","","","","",,"required","The type of link between this patient resource and another patient resource.","http://hl7.org/fhir/ValueSet/link-type|4.0.1","",,,,"Patient.link.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RelatedPersonMPI","RelatedPerson","RelatedPerson","","","",0,*,"","","","null {[]} {[]}
-","A person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"RelatedPerson",0,*,"",""
+","A person that is related to a patient, but who is not a direct target of care","Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.","","","","","","","","","",,,,,"",,,,"RelatedPerson",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}"
 "RelatedPersonMPI","RelatedPerson.id","RelatedPerson.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "RelatedPersonMPI","RelatedPerson.meta","RelatedPerson.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -1967,7 +1981,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "PueblosOriginariosPerteneciente","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","PueblosOriginariosPerteneciente","PueblosOriginariosPerteneciente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PueblosOriginariosPerteneciente","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "PueblosOriginariosPerteneciente","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -1985,7 +2000,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "PueblosOriginarios","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Pueblos Originarios","Almacenar si el paciente pertenece a algun pueblo originario","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PueblosOriginarios","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "PueblosOriginarios","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2034,7 +2050,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "OrigenDiscapacidad","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Origen Discapacidad","OrigenDiscapacidad","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "OrigenDiscapacidad","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "OrigenDiscapacidad","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2083,7 +2100,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "SituacionCalle","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","SituacionCalle","SituacionCalle","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "SituacionCalle","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "SituacionCalle","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2101,7 +2119,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "SexoBiologico","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Sexo Biologico del paciente","Sexo Biologico del paciente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "SexoBiologico","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "SexoBiologico","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2111,11 +2130,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "SexoBiologico","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "SexoBiologico","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","SexoBiologico","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","SexoBiologico","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "IdentidadDeGenero","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Identidad De Genero","Identidad De Genero","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "IdentidadDeGenero","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "IdentidadDeGenero","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2129,11 +2149,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "IdentidadDeGenero","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Identidad De Genero","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identidad De Genero","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://minsal.cl/fhir/ig/mpi/ValueSet/VSIdentidadDeGenero","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Ocupacion","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}
-","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"",""
+","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Observation",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}obs-6:dataAbsentReason SHALL only be present if Observation.value[x] is not present {dataAbsentReason.empty() or value.empty()}obs-7:If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present {value.empty() or component.code.where(coding.intersect(%resource.code.coding).exists()).empty()}"
 "Ocupacion","Observation.id","Observation.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "Ocupacion","Observation.meta","Observation.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -2406,7 +2427,8 @@ The alternate way is to use the value element for actual observations and use th
 "
 "PaisOrigenMPI","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","País de origen del paciente","País de origen del paciente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PaisOrigenMPI","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "PaisOrigenMPI","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
@@ -2416,7 +2438,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PaisOrigenMPI","Extension.url","Extension.url","","","",1,1,"Y","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "PaisOrigenMPI","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Código de País","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"",""
+","Código de País","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "PaisOrigenMPI","Extension.value[x].id","Extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
 "PaisOrigenMPI","Extension.value[x].extension","Extension.value[x].extension","","extensions
