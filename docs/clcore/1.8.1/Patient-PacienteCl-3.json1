@@ -1,0 +1,121 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PacienteCl-3",
+  "meta" : {
+    "versionId" : "2",
+    "lastUpdated" : "2021-07-13T00:22:41.166Z",
+    "profile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>PABLO RODRIGO PIZARRO (OFFICIAL)</b> male, DoB: 1983-08-04 ( Chile: 15602754-5\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"mailto:ppizarro.delgado@minsal.cl\">ppizarro.delgado@minsal.cl</a></li><li>13120 13 152 (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {urn:iso:std:iso:3166 152}\">Chile</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:iso:std:iso:3166",
+        "code" : "152",
+        "display" : "Chile"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:3166",
+            "code" : "152",
+            "display" : "Chile"
+          }]
+        }
+      }],
+      "coding" : [{
+        "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
+        "code" : "NNCHL",
+        "display" : "Chile"
+      }]
+    },
+    "system" : "http://regcivil.cl/Validacion/RUN",
+    "value" : "15602754-5"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "family" : "PIZARRO",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+        "valueString" : "DELGADO"
+      }]
+    },
+    "given" : ["PABLO",
+    "RODRIGO"]
+  }],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "ppizarro.delgado@minsal.cl",
+    "use" : "work"
+  }],
+  "gender" : "male",
+  "birthDate" : "1983-08-04",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "use" : "home",
+    "city" : "13120",
+    "_city" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+            "code" : "15101",
+            "display" : "Arica"
+          }]
+        }
+      }]
+    },
+    "district" : "131",
+    "_district" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+            "code" : "151",
+            "display" : "Arica"
+          }]
+        }
+      }]
+    },
+    "state" : "13",
+    "_state" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+            "code" : "15",
+            "display" : "Arica y Parinacota"
+          }]
+        }
+      }]
+    },
+    "country" : "152",
+    "_country" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:3166",
+            "code" : "CL",
+            "display" : "Chile"
+          }]
+        }
+      }]
+    }
+  }]
+}

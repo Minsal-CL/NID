@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/Medication/MedicamentoCl> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicamentoCl"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"MedicamentoCl\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;MedicamentoCl&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CoreMedicamentoCl.html\">CL Medicamento</a></p></div><p><b>identifier</b>: id: 1991971000167110 (use: OFFICIAL), id: 840851000167103 (use: OFFICIAL)</p><p><b>code</b>: Tareg - D 160 / 25 comprimido recubierto (Novartis) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (description-id#1991971000167110)</span></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://minsal.cl/semantikos/description-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1991971000167110" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://minsal.cl/semantikos/concept-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "840851000167103" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://minsal.cl/semantikos/description-id"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1991971000167110" ] ;
+       fhir:display [ fhir:v "Tareg - D 160 / 25 comprimido recubierto (Novartis)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Tareg - D 160 / 25 comprimido recubierto (Novartis)" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

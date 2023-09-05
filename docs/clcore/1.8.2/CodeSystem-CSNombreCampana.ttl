@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSNombreCampana"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.8.2"] ; # 
+  fhir:name [ fhir:v "CSNombreCampanaCL"] ; # 
+  fhir:title [ fhir:v "Campañas Inmunización"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-05T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7chile.cl" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "36"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "campanSARSCov_2_AstraZ" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (AstraZeneca)" ]
+  ] [
+     fhir:code [ fhir:v "campanSARSCov_2_Cansino" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (CanSino)" ]
+  ] [
+     fhir:code [ fhir:v "campanSARSCov_2_Intern" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (Internacional)" ]
+  ] [
+     fhir:code [ fhir:v "campanSARSCov_2_Janssen" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (Janssen)" ]
+  ] [
+     fhir:code [ fhir:v "campanSARSCov_2_Moderna" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (Moderna)" ]
+  ] [
+     fhir:code [ fhir:v "campanSARSCov_2_Pfizer" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (Pfizer)" ]
+  ] [
+     fhir:code [ fhir:v "campanSARSCov_2_Sinovac" ] ;
+     fhir:display [ fhir:v "Campaña SARS-CoV-2 (Sinovac)" ]
+  ] [
+     fhir:code [ fhir:v "campanSRP20_40" ] ;
+     fhir:display [ fhir:v "Campaña SRP 20 - 24 años" ]
+  ] [
+     fhir:code [ fhir:v "estratCapullo" ] ;
+     fhir:display [ fhir:v "Estrategia Capullo" ]
+  ] [
+     fhir:code [ fhir:v "estratCapullo2013" ] ;
+     fhir:display [ fhir:v "Estrategia Capullo 2013" ]
+  ] [
+     fhir:code [ fhir:v "estratMeningocócica" ] ;
+     fhir:display [ fhir:v "Estrategia Meningocócica" ]
+  ] [
+     fhir:code [ fhir:v "hepatiA" ] ;
+     fhir:display [ fhir:v "Hepatitis A" ]
+  ] [
+     fhir:code [ fhir:v "hepatiA2012" ] ;
+     fhir:display [ fhir:v "Hepatitis A 2012" ]
+  ] [
+     fhir:code [ fhir:v "hepatiApost_Terr" ] ;
+     fhir:display [ fhir:v "Hepatitis A post-terremoto" ]
+  ] [
+     fhir:code [ fhir:v "hepatiAar_Tar_Bio" ] ;
+     fhir:display [ fhir:v "Hepatitis A, Arica-Tarapacá-Bíobío" ]
+  ] [
+     fhir:code [ fhir:v "hepatiABrote_Conting" ] ;
+     fhir:display [ fhir:v "Hepatitis A,Brote/Contingencia" ]
+  ] [
+     fhir:code [ fhir:v "influenza2010" ] ;
+     fhir:display [ fhir:v "Influenza 2010" ]
+  ] [
+     fhir:code [ fhir:v "influenza2011" ] ;
+     fhir:display [ fhir:v "Influenza 2011" ]
+  ] [
+     fhir:code [ fhir:v "influenza2012" ] ;
+     fhir:display [ fhir:v "Influenza 2012" ]
+  ] [
+     fhir:code [ fhir:v "influenza2013" ] ;
+     fhir:display [ fhir:v "Influenza 2013" ]
+  ] [
+     fhir:code [ fhir:v "influenza2014" ] ;
+     fhir:display [ fhir:v "Influenza 2014" ]
+  ] [
+     fhir:code [ fhir:v "influenza2015" ] ;
+     fhir:display [ fhir:v "Influenza 2015" ]
+  ] [
+     fhir:code [ fhir:v "influenza2016" ] ;
+     fhir:display [ fhir:v "Influenza 2016" ]
+  ] [
+     fhir:code [ fhir:v "influenza2017" ] ;
+     fhir:display [ fhir:v "Influenza 2017" ]
+  ] [
+     fhir:code [ fhir:v "influenza2018" ] ;
+     fhir:display [ fhir:v "Influenza 2018" ]
+  ] [
+     fhir:code [ fhir:v "influenza2019" ] ;
+     fhir:display [ fhir:v "Influenza 2019" ]
+  ] [
+     fhir:code [ fhir:v "influenza2020" ] ;
+     fhir:display [ fhir:v "Influenza 2020" ]
+  ] [
+     fhir:code [ fhir:v "influenza2021" ] ;
+     fhir:display [ fhir:v "Influenza 2021" ]
+  ] [
+     fhir:code [ fhir:v "influenza2022" ] ;
+     fhir:display [ fhir:v "Influenza 2022" ]
+  ] [
+     fhir:code [ fhir:v "sarampRubeoPaperas" ] ;
+     fhir:display [ fhir:v "Sarampión-Rubeóla-Paperas" ]
+  ] [
+     fhir:code [ fhir:v "SRPCampanSeguim2015" ] ;
+     fhir:display [ fhir:v "SRP - Campaña de Seguimiento - 2015" ]
+  ] [
+     fhir:code [ fhir:v "SRPFuncSaludyPuestosFronteriz" ] ;
+     fhir:display [ fhir:v "SRP - Funcionarios de salud y Puestos Fronterizos" ]
+  ] [
+     fhir:code [ fhir:v "SRPCampanSeguim2020" ] ;
+     fhir:display [ fhir:v "SRP- Campaña de seguimiento- 2020" ]
+  ] [
+     fhir:code [ fhir:v "SRPdelViajero" ] ;
+     fhir:display [ fhir:v "SRP del viajero" ]
+  ] [
+     fhir:code [ fhir:v "tosConvul_brote_conting" ] ;
+     fhir:display [ fhir:v "Tos Convulsiva Brote-Contingencia" ]
+  ] [
+     fhir:code [ fhir:v "vacunaFiebAmar" ] ;
+     fhir:display [ fhir:v "Vacuna Fiebre Amarilla" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

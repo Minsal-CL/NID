@@ -1,0 +1,75 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSTipoIdentificador",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+  "version" : "1.8.2",
+  "name" : "CSTipoIdentificador",
+  "title" : "Tipo Identificador",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-07-03T00:00:00-03:00",
+  "publisher" : "HL7 Chile",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7chile.cl"
+    },
+    {
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Tipo Identificador",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "copyright" : "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "01",
+    "display" : "Run"
+  },
+  {
+    "code" : "02",
+    "display" : "Run materno/progenitor(a)"
+  },
+  {
+    "code" : "03",
+    "display" : "Número de Folio de comprobante de parto"
+  },
+  {
+    "code" : "04",
+    "display" : "Número de pasaporte"
+  },
+  {
+    "code" : "05",
+    "display" : "Número de documento identificador de país de origen"
+  },
+  {
+    "code" : "06",
+    "display" : "Número de identificador FONASA"
+  },
+  {
+    "code" : "07",
+    "display" : "Identificador Provisorio Escolar"
+  },
+  {
+    "code" : "08",
+    "display" : "Identificador Provisorio Apoderado"
+  },
+  {
+    "code" : "09",
+    "display" : "Registro Único de Contribuyentes"
+  }]
+}

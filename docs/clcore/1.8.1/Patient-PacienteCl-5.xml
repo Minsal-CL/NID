@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCl-5"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2021-07-13T00:22:41.166Z"/>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>JuanJo </b> male, DoB: 1980-08-04 ( Passport Number: P102145874 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Juan José Ortega (OFFICIAL)</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="mailto:juan@jo.cl">juan@jo.cl</a></li><li>Calle 4 Norte, 52, pieza 802 null null null (HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Next-of-Kin">Next-of-Kin:</td><td colspan="3"><ul><li>Juana Josefa Calleja (OFFICIAL)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Esta extensión incluye códigos de paises de origen"><a href="StructureDefinition-CodigoPaises.html">Codigo de Identificación de países:</a></td><td colspan="3"><ul><li><span title="Codes: {urn:iso:std:iso:3166 152}">Chile</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+        <display value="Passport Number"/>
+      </coding>
+    </type>
+    <system value="http://regcivil.cl/Validacion/Passport"/>
+    <value value="P102145874"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Ortega">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Callejas"/>
+      </extension>
+    </family>
+    <given value="Juan"/>
+    <given value="José"/>
+  </name>
+  <name>
+    <use value="usual"/>
+    <given value="JuanJo"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="juan@jo.cl"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1980-08-04"/>
+  <address>
+    <use value="home"/>
+    <line value="Calle 4 Norte, 52, pieza 802"/>
+    <city>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
+            <code value="15101"/>
+            <display value="Arica"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
+            <code value="151"/>
+            <display value="Arica"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </district>
+    <state>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
+            <code value="15"/>
+            <display value="Arica y Parinacota"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </state>
+    <country>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+  <contact>
+    <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto">
+      <extension url="tutId">
+        <valueIdentifier>
+          <type>
+            <coding>
+              <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"/>
+              <code value="NNCHL"/>
+              <display value="Chile"/>
+            </coding>
+          </type>
+          <system value="http://regcivil.cl/Validacion/RUN"/>
+          <value value="8987321-7"/>
+        </valueIdentifier>
+      </extension>
+      <extension url="docProc">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="N"/>
+        <display value="Next-of-Kin"/>
+      </coding>
+    </relationship>
+    <name>
+      <use value="official"/>
+      <family value="Calleja">
+        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+          <valueString value="Morales"/>
+        </extension>
+      </family>
+      <given value="Juana"/>
+      <given value="Josefa"/>
+    </name>
+  </contact>
+</Patient>

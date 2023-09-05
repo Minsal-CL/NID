@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/Immunization/ImmunizationCL> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ImmunizationCL"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Immunization</b><a name=\"ImmunizationCL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Immunization &quot;ImmunizationCL&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ImmunizationCL.html\">CL Inmunización</a></p></div><p><b>Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</b>: Hepatitis A (Details: https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana code hepatiA = 'Hepatitis A', stated as 'Hepatitis A')</p><p><b>identifier</b>: id: 136588279</p><p><b>status</b>: completed</p><p><b>statusReason</b>:  <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>vaccineCode</b>:  <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>patient</b>: <a href=\"Patient-11.html\">Patient/11</a> &quot;&quot;</p><p><b>occurrence</b>: 2022-04-07 00:00:00-0400</p><p><b>recorded</b>: 2021-06-24 00:00:00-0400</p><p><b>location</b>: <a href=\"Location-3333458.html\">Location/3333458</a></p><p><b>lotNumber</b>: T3E881V</p><p><b>expirationDate</b>: 2022-03-31</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-f003.html\">Organization/f003</a> &quot;Hospital Nueva Aurora&quot;</td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1º dosis</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "hepatiA" ] ;
+       fhir:display [ fhir:v "Hepatitis A" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://sgi.gob.cl/identifier/inmunization/rni/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "136588279" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:statusReason [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarseInm"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "solicitudPaci" ]
+     ] )
+  ] ; # 
+  fhir:vaccineCode [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hep_A" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://hl7chile.cl/fhir/ig/clcore/Patient/11> ;
+     fhir:reference [ fhir:v "Patient/11" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2022-04-07T00:00:00-04:00"^^xsd:dateTime] ; # 
+  fhir:recorded [ fhir:v "2021-06-24T00:00:00-04:00"^^xsd:dateTime] ; # 
+  fhir:location [
+     fhir:link <https://hl7chile.cl/fhir/ig/clcore/Location/3333458> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SSAN" ] ;
+         fhir:display [ fhir:v "Servicio de Salud Antofagasta" ]
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "Location/3333458" ]
+  ] ; # 
+  fhir:lotNumber [ fhir:v "T3E881V"] ; # 
+  fhir:expirationDate [ fhir:v "2022-03-31"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/Organization/f003> ;
+       fhir:reference [ fhir:v "Organization/f003" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:doseNumber [ fhir:v "1º dosis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

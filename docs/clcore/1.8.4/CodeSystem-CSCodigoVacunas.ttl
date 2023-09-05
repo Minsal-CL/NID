@@ -1,0 +1,285 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSCodigoVacunas"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.8.4"] ; # 
+  fhir:name [ fhir:v "CSTiposVacunaCL"] ; # 
+  fhir:title [ fhir:v "Códigos de Vacunas RNI"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-05T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7chile.cl" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "79"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "actacelPriv" ] ;
+     fhir:display [ fhir:v "Actacel (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "antirr" ] ;
+     fhir:display [ fhir:v "Antirrábica" ]
+  ] [
+     fhir:code [ fhir:v "antirrPriv" ] ;
+     fhir:display [ fhir:v "Antirrábica (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "antitifoInyPriv" ] ;
+     fhir:display [ fhir:v "Antitifoidea inyectable (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "bcgMat" ] ;
+     fhir:display [ fhir:v "BCG MATERNIDAD" ]
+  ] [
+     fhir:code [ fhir:v "bcg_mat" ] ;
+     fhir:display [ fhir:v "BCG_maternidad" ]
+  ] [
+     fhir:code [ fhir:v "fiebreAmar" ] ;
+     fhir:display [ fhir:v "Fiebre Amarilla" ]
+  ] [
+     fhir:code [ fhir:v "hep_A" ] ;
+     fhir:display [ fhir:v "Hepatítis A" ]
+  ] [
+     fhir:code [ fhir:v "hep_A_adult" ] ;
+     fhir:display [ fhir:v "Hepatitis A adulto" ]
+  ] [
+     fhir:code [ fhir:v "hep_A_adultPriv" ] ;
+     fhir:display [ fhir:v "Hepatitis A adulto (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hep_A_ped" ] ;
+     fhir:display [ fhir:v "Hepatitis A pediátrica" ]
+  ] [
+     fhir:code [ fhir:v "hep_A_pedPriv" ] ;
+     fhir:display [ fhir:v "Hepatitis A pediátrica (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hep_A-B_adultPriv" ] ;
+     fhir:display [ fhir:v "Hepatitis A-B adulto (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hep_A-B_pedPriv" ] ;
+     fhir:display [ fhir:v "Hepatitis A-B pediátrica (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_adult" ] ;
+     fhir:display [ fhir:v "Hepatitis B adulto" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_adultPriv" ] ;
+     fhir:display [ fhir:v "Hepatitis B adulto (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_dializAdult" ] ;
+     fhir:display [ fhir:v "Hepatitis B dializados adulto" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_dializPed" ] ;
+     fhir:display [ fhir:v "Hepatitis B dializados pediátrica" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_ped" ] ;
+     fhir:display [ fhir:v "Hepatitis B pediátrica" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_pedPriv" ] ;
+     fhir:display [ fhir:v "Hepatitis B pediátrica (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hep_B_maternidad" ] ;
+     fhir:display [ fhir:v "Hepatitis B_maternidad" ]
+  ] [
+     fhir:code [ fhir:v "herpesZPriv" ] ;
+     fhir:display [ fhir:v "Herpes Zoster (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "hexavalent" ] ;
+     fhir:display [ fhir:v "Hexavalente" ]
+  ] [
+     fhir:code [ fhir:v "hezavalentPriv" ] ;
+     fhir:display [ fhir:v "Hexavalente (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "inmAntitetanic" ] ;
+     fhir:display [ fhir:v "INMUNOGLOBULINA ANTITETANICA" ]
+  ] [
+     fhir:code [ fhir:v "inmAntiVaricela" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina anti varicela" ]
+  ] [
+     fhir:code [ fhir:v "inmAntirrabica" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina antirrábica" ]
+  ] [
+     fhir:code [ fhir:v "inmAntirrabicaPriv" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina antirrábica (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "inmAntitetanica" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina Antitetánica" ]
+  ] [
+     fhir:code [ fhir:v "inmEstandarH_A" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina estandar (Hep. A)" ]
+  ] [
+     fhir:code [ fhir:v "inmEstandarSaramp" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina estandar (Sarampión)" ]
+  ] [
+     fhir:code [ fhir:v "inmEstandarVaric" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina estandar (Varicela)" ]
+  ] [
+     fhir:code [ fhir:v "inmHepat_B" ] ;
+     fhir:display [ fhir:v "Inmunoglobulina Hepatitis B" ]
+  ] [
+     fhir:code [ fhir:v "neumococicaConj10V" ] ;
+     fhir:display [ fhir:v "Neumocócica conjugada 10V" ]
+  ] [
+     fhir:code [ fhir:v "neomococicaConj10VPriv" ] ;
+     fhir:display [ fhir:v "Neumocócica conjugada 10V (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "neumococicaConj13V" ] ;
+     fhir:display [ fhir:v "Neumocócica conjugada 13V" ]
+  ] [
+     fhir:code [ fhir:v "neumococicaConj13VPriv" ] ;
+     fhir:display [ fhir:v "Neumocócica conjugada 13V (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "neumococicaPolisac23V" ] ;
+     fhir:display [ fhir:v "Neumocócica polisacárida 23V" ]
+  ] [
+     fhir:code [ fhir:v "neumococicaPolisac23VPriv" ] ;
+     fhir:display [ fhir:v "Neumocócica polisacárida 23V (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "pentavalente" ] ;
+     fhir:display [ fhir:v "Pentavalente" ]
+  ] [
+     fhir:code [ fhir:v "polioInactIny" ] ;
+     fhir:display [ fhir:v "Polio inactivada inyectable" ]
+  ] [
+     fhir:code [ fhir:v "polioInactInyPriv" ] ;
+     fhir:display [ fhir:v "Polio inactivada inyectable (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "polioOralBival_boPV" ] ;
+     fhir:display [ fhir:v "Polio oral bivalente (bOPV)" ]
+  ] [
+     fhir:code [ fhir:v "polioOralTrival" ] ;
+     fhir:display [ fhir:v "Polio oral trivalente" ]
+  ] [
+     fhir:code [ fhir:v "rotavirus" ] ;
+     fhir:display [ fhir:v "Rotavirus" ]
+  ] [
+     fhir:code [ fhir:v "rotavirusPriv" ] ;
+     fhir:display [ fhir:v "Rotavirus (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "saramp_rube_paper" ] ;
+     fhir:display [ fhir:v "Sarampión-Rubeóla-Paperas" ]
+  ] [
+     fhir:code [ fhir:v "toxoideDTPriv" ] ;
+     fhir:display [ fhir:v "Toxoide DT (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "toxoideDTEscol" ] ;
+     fhir:display [ fhir:v "TOXOIDE DT ESCOLAR" ]
+  ] [
+     fhir:code [ fhir:v "toxoideDTProfil" ] ;
+     fhir:display [ fhir:v "TOXOIDE DT PROFILAXIS" ]
+  ] [
+     fhir:code [ fhir:v "vacunaAntiten" ] ;
+     fhir:display [ fhir:v "VACUNA ANTITETÁNICA" ]
+  ] [
+     fhir:code [ fhir:v "vacunaAntitenPriv" ] ;
+     fhir:display [ fhir:v "Vacuna Antitetánica (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunaBCG" ] ;
+     fhir:display [ fhir:v "VACUNA BCG" ]
+  ] [
+     fhir:code [ fhir:v "vacunaBexsero" ] ;
+     fhir:display [ fhir:v "VACUNA BEXSERO" ]
+  ] [
+     fhir:code [ fhir:v "vacunaBexseroPriv" ] ;
+     fhir:display [ fhir:v "VACUNA BEXSERO (Sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunaDPT" ] ;
+     fhir:display [ fhir:v "VACUNA DPT" ]
+  ] [
+     fhir:code [ fhir:v "vacunadpTaPriv" ] ;
+     fhir:display [ fhir:v "Vacuna dpTa (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunadtPa" ] ;
+     fhir:display [ fhir:v "Vacuna dTpa" ]
+  ] [
+     fhir:code [ fhir:v "vacunaHepat_AyB" ] ;
+     fhir:display [ fhir:v "VACUNA HEPATITIS A Y B" ]
+  ] [
+     fhir:code [ fhir:v "vacunaHIB" ] ;
+     fhir:display [ fhir:v "VACUNA HIB" ]
+  ] [
+     fhir:code [ fhir:v "vacunaHIBPriv" ] ;
+     fhir:display [ fhir:v "Vacuna HIB (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunaInfluTrival" ] ;
+     fhir:display [ fhir:v "VACUNA INFLUENZA TRIVALENTE" ]
+  ] [
+     fhir:code [ fhir:v "vacunaMenacPriv" ] ;
+     fhir:display [ fhir:v "VACUNA MENACTRA (Sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunaMenveo" ] ;
+     fhir:display [ fhir:v "VACUNA MENVEO" ]
+  ] [
+     fhir:code [ fhir:v "vacunaMenveoPriv" ] ;
+     fhir:display [ fhir:v "VACUNA MENVEO (Sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunaNeumoco7V" ] ;
+     fhir:display [ fhir:v "VACUNA NEUMOCOCICA 7 V" ]
+  ] [
+     fhir:code [ fhir:v "vacunaNimenrix" ] ;
+     fhir:display [ fhir:v "VACUNA NIMENRIX" ]
+  ] [
+     fhir:code [ fhir:v "vacunaNimenrixPriv" ] ;
+     fhir:display [ fhir:v "VACUNA NIMENRIX (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "vacunaPoliomielInact" ] ;
+     fhir:display [ fhir:v "VACUNA POLIOMIELITIS INACTIVADA" ]
+  ] [
+     fhir:code [ fhir:v "vacunaSRPt3VMonodos" ] ;
+     fhir:display [ fhir:v "VACUNA SRP (TRES VIRICA) MONODOSIS" ]
+  ] [
+     fhir:code [ fhir:v "vacunaSRP3VMultidos" ] ;
+     fhir:display [ fhir:v "VACUNA SRP (TRES VIRICA) MULTIDOSIS" ]
+  ] [
+     fhir:code [ fhir:v "vacunaSRPTrivMonodos" ] ;
+     fhir:display [ fhir:v "Vacuna SRP (trivirica) Monodosis" ]
+  ] [
+     fhir:code [ fhir:v "vacunaSRPTrivMultidos" ] ;
+     fhir:display [ fhir:v "Vacuna SRP (trivirica) Multidosis" ]
+  ] [
+     fhir:code [ fhir:v "varicela" ] ;
+     fhir:display [ fhir:v "Varicela" ]
+  ] [
+     fhir:code [ fhir:v "varicelaPriv" ] ;
+     fhir:display [ fhir:v "Varicela (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "VPHBivalPriv" ] ;
+     fhir:display [ fhir:v "VPH Bivalente (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "VPHNonavalPriv" ] ;
+     fhir:display [ fhir:v "VPH Nonavalente (sector privado)" ]
+  ] [
+     fhir:code [ fhir:v "VPHTetraval" ] ;
+     fhir:display [ fhir:v "VPH Tetravalente" ]
+  ] [
+     fhir:code [ fhir:v "VPHTretavalPriv" ] ;
+     fhir:display [ fhir:v "VPH Tetravalente (sector privado)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

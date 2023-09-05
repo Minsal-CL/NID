@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ContactoParticipantes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes"/>
+  <version value="1.8.3"/>
+  <name value="ContactopartCL"/>
+  <title value="Contacto de los participantes secundarios del encuentro"/>
+  <status value="active"/>
+  <date value="2023-09-01T23:03:42-04:00"/>
+  <publisher value="HL7 Chile"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7chile.cl"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <context>
+    <type value="element"/>
+    <expression value="Element"/>
+  </context>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
+  <snapshot>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Contacto de los participantes secundarios del encuentro"/>
+      <definition value="Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+    </element>
+    <element id="Extension.id">
+      <path value="Extension.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <representation value="xmlAttr"/>
+      <short value="identifies the meaning of the extension"/>
+      <definition value="Source of the definition for the extension code - a logical name or a URL."/>
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.url"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="uri"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <fixedUri value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes"/>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="Códigos de contactos"/>
+      <definition value="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Extension.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].id">
+      <path value="Extension.value[x].id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].extension">
+      <path value="Extension.value[x].extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system"/>
+      <short value="phone | fax | email | pager | url | sms | other"/>
+      <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ContactPoint.system"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <condition value="cpt-2"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XTN.3"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./scheme"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./ContactPointType"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].value">
+      <path value="Extension.value[x].value"/>
+      <short value="The actual contact point details"/>
+      <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)."/>
+      <comment value="Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value."/>
+      <requirements value="Need to support legacy numbers that are not in a tightly controlled format."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ContactPoint.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XTN.1 (or XTN.12)"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./url"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./Value"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].use">
+      <path value="Extension.value[x].use"/>
+      <short value="home | work | temp | old | mobile - purpose of this contact point"/>
+      <definition value="Identifies the purpose for the contact point."/>
+      <comment value="Applications can assume that a contact is current unless it explicitly says that it is temporary or old."/>
+      <requirements value="Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ContactPoint.use"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="true"/>
+      <isModifierReason value="This is labeled as &quot;Is Modifier&quot; because applications should not mistake a temporary or old contact etc.for a current/permanent one"/>
+      <isSummary value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ContactPointUse"/>
+        </extension>
+        <strength value="required"/>
+        <description value="Use of contact point."/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1"/>
+      </binding>
+      <mapping>
+        <identity value="v2"/>
+        <map value="XTN.2 - but often indicated by field"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="unique(./use)"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./ContactPointPurpose"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].rank">
+      <path value="Extension.value[x].rank"/>
+      <short value="Specify preferred order of use (1 = highest)"/>
+      <definition value="Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values."/>
+      <comment value="Note that rank does not necessarily follow the order in which the contacts are represented in the instance."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ContactPoint.rank"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="positiveInt"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Extension.value[x].period">
+      <path value="Extension.value[x].period"/>
+      <short value="Time period when the contact point was/is in use"/>
+      <definition value="Time period when the contact point was/is in use."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ContactPoint.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="true"/>
+      <mapping>
+        <identity value="v2"/>
+        <map value="N/A"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="./usablePeriod[type=&quot;IVL&lt;TS&gt;&quot;]"/>
+      </mapping>
+      <mapping>
+        <identity value="servd"/>
+        <map value="./StartDate and ./EndDate"/>
+      </mapping>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Extension">
+      <path value="Extension"/>
+      <short value="Contacto de los participantes secundarios del encuentro"/>
+      <definition value="Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"/>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension"/>
+      <max value="0"/>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url"/>
+      <fixedUri value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes"/>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]"/>
+      <short value="Códigos de contactos"/>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

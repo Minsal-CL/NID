@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3645f345-3017-4a6a-b7ed-8d9a7e0a1989-170",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3645f345-3017-4a6a-b7ed-8d9a7e0a1989-170",
+  "name" : "UnionVSEspecialidadesDeisCLAndVSEspecialidadesDeisCL",
+  "title" : "Union of Códigos de Especialidades And Códigos de Especialidades",
+  "status" : "active",
+  "date" : "2023-09-01T23:22:35-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }]
+}

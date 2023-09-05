@@ -1,0 +1,1748 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b8d67a23-275f-49a4-bbf5-71e723b259d4-149",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b8d67a23-275f-49a4-bbf5-71e723b259d4-149",
+  "name" : "UnionVSCodigosComunaCLAndVSCodigosComunaCL",
+  "title" : "Union of Códigos de Comunas en Chile And Códigos de Comunas en Chile",
+  "status" : "active",
+  "date" : "2023-06-27T23:23:35-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05602",
+      "display" : "Algarrobo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13502",
+      "display" : "Alhué"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08314",
+      "display" : "Alto Biobío"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03302",
+      "display" : "Alto del Carmen"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01107",
+      "display" : "Alto Hospicio"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10202",
+      "display" : "Ancud"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04103",
+      "display" : "Andacollo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09201",
+      "display" : "Angol"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12202",
+      "display" : "Antartica"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02101",
+      "display" : "Antofagasta"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08302",
+      "display" : "Antuco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08202",
+      "display" : "Arauco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "15101",
+      "display" : "Arica"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11201",
+      "display" : "Aysén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13402",
+      "display" : "Buin"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16102",
+      "display" : "Bulnes"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05402",
+      "display" : "Cabildo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12201",
+      "display" : "Cabo de Hornos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08303",
+      "display" : "Cabrero"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02201",
+      "display" : "Calama"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10102",
+      "display" : "Calbuco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03102",
+      "display" : "Caldera"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05502",
+      "display" : "Calera"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13403",
+      "display" : "Calera de Tango"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05302",
+      "display" : "Calle Larga"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "15102",
+      "display" : "Camarones"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01402",
+      "display" : "Camiña"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04202",
+      "display" : "Canela"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08203",
+      "display" : "Cañete"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09102",
+      "display" : "Carahue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05603",
+      "display" : "Cartagena"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05102",
+      "display" : "Casablanca"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10201",
+      "display" : "Castro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05702",
+      "display" : "Catemu"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07201",
+      "display" : "Cauquenes"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13102",
+      "display" : "Cerrillos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13103",
+      "display" : "Cerro Navia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10401",
+      "display" : "Chaitén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03201",
+      "display" : "Chañaral"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07202",
+      "display" : "Chanco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06302",
+      "display" : "Chépica"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08103",
+      "display" : "Chiguayante"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11401",
+      "display" : "Chile Chico"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16101",
+      "display" : "Chillán"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16103",
+      "display" : "Chillán Viejo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06303",
+      "display" : "Chimbarongo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09121",
+      "display" : "Cholchol"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10203",
+      "display" : "Chonchi"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11202",
+      "display" : "Cisnes"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16202",
+      "display" : "Cobquecura"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10103",
+      "display" : "Cochamó"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11301",
+      "display" : "Cochrane"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06102",
+      "display" : "Codegua"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16203",
+      "display" : "Coelemu"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11101",
+      "display" : "Coihaique"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16302",
+      "display" : "Coihueco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06103",
+      "display" : "Coinco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07402",
+      "display" : "Colbún"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01403",
+      "display" : "Colchane"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13301",
+      "display" : "Colina"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09202",
+      "display" : "Collipulli"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06104",
+      "display" : "Coltauco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04302",
+      "display" : "Combarbalá"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08101",
+      "display" : "Concepción"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13104",
+      "display" : "Conchalí"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05103",
+      "display" : "Concón"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07102",
+      "display" : "Constitución"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08204",
+      "display" : "Contulmo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03101",
+      "display" : "Copiapó"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04102",
+      "display" : "Coquimbo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08102",
+      "display" : "Coronel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14102",
+      "display" : "Corral"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09103",
+      "display" : "Cunco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09203",
+      "display" : "Curacautín"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13503",
+      "display" : "Curacaví"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10204",
+      "display" : "Curaco de Vélez"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08205",
+      "display" : "Curanilahue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09104",
+      "display" : "Curarrehue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07103",
+      "display" : "Curepto"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07301",
+      "display" : "Curicó"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10205",
+      "display" : "Dalcahue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03202",
+      "display" : "Diego de Almagro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06105",
+      "display" : "Doñihue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13105",
+      "display" : "El Bosque"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16104",
+      "display" : "El Carmen"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13602",
+      "display" : "El Monte"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05604",
+      "display" : "El Quisco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05605",
+      "display" : "El Tabo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07104",
+      "display" : "Empedrado"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09204",
+      "display" : "Ercilla"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13106",
+      "display" : "Estacin Central"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08104",
+      "display" : "Florida"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09105",
+      "display" : "Freire"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03303",
+      "display" : "Freirina"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10104",
+      "display" : "Fresia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10105",
+      "display" : "Frutillar"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10402",
+      "display" : "Futaleufú"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14202",
+      "display" : "Futrono"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09106",
+      "display" : "Galvarino"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "15202",
+      "display" : "General Lagos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09107",
+      "display" : "Gorbea"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06106",
+      "display" : "Graneros"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11203",
+      "display" : "Guaitecas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05503",
+      "display" : "Hijuelas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10403",
+      "display" : "Hualaihué"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07302",
+      "display" : "Hualañé"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08112",
+      "display" : "Hualpén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08105",
+      "display" : "Hualqui"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01404",
+      "display" : "Huara"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03304",
+      "display" : "Huasco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13107",
+      "display" : "Huechuraba"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04201",
+      "display" : "Illapel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13108",
+      "display" : "Independencia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01101",
+      "display" : "Iquique"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13603",
+      "display" : "Isla de Maipo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05201",
+      "display" : "Isla de Pascua"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05104",
+      "display" : "Juan Fernández"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13109",
+      "display" : "La Cisterna"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05504",
+      "display" : "La Cruz"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06202",
+      "display" : "La Estrella"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13110",
+      "display" : "La Florida"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13111",
+      "display" : "La Granja"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04104",
+      "display" : "La Higuera"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05401",
+      "display" : "La Ligua"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13112",
+      "display" : "La Pintana"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13113",
+      "display" : "La Reina"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04101",
+      "display" : "La Serena"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14201",
+      "display" : "La Unión"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14203",
+      "display" : "Lago Ranco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11102",
+      "display" : "Lago Verde"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12102",
+      "display" : "Laguna Blanca"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08304",
+      "display" : "Laja"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13302",
+      "display" : "Lampa"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14103",
+      "display" : "Lanco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06107",
+      "display" : "Las Cabras"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13114",
+      "display" : "Las Condes"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09108",
+      "display" : "Lautaro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08201",
+      "display" : "Lebu"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07303",
+      "display" : "Licantén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05802",
+      "display" : "Limache"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07401",
+      "display" : "Linares"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06203",
+      "display" : "Litueche"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05703",
+      "display" : "Llaillay"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10107",
+      "display" : "Llanquihue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13115",
+      "display" : "Lo Barnechea"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13116",
+      "display" : "Lo Espejo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13117",
+      "display" : "Lo Prado"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06304",
+      "display" : "Lolol"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09109",
+      "display" : "Loncoche"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07403",
+      "display" : "Longaví"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09205",
+      "display" : "Lonquimay"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08206",
+      "display" : "Los Álamos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05301",
+      "display" : "Los Andes"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08301",
+      "display" : "Los Ángeles"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14104",
+      "display" : "Los Lagos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10106",
+      "display" : "Los Muermos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09206",
+      "display" : "Los Sauces"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04203",
+      "display" : "Los Vilos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08106",
+      "display" : "Lota"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09207",
+      "display" : "Lumaco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06108",
+      "display" : "Machalí"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13118",
+      "display" : "Macul"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14105",
+      "display" : "Máfil"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13119",
+      "display" : "Maipú"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06109",
+      "display" : "Malloa"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06204",
+      "display" : "Marchihue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02302",
+      "display" : "María Elena"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13504",
+      "display" : "María Pinto"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14106",
+      "display" : "Mariquina"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07105",
+      "display" : "Maule"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10108",
+      "display" : "Maullín"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02102",
+      "display" : "Mejillones"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09110",
+      "display" : "Melipeuco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13501",
+      "display" : "Melipilla"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07304",
+      "display" : "Molina"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04303",
+      "display" : "Monte Patria"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06110",
+      "display" : "Mostazal"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08305",
+      "display" : "Mulchén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08306",
+      "display" : "Nacimiento"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06305",
+      "display" : "Nancagua"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12401",
+      "display" : "Natales"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06205",
+      "display" : "Navidad"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08307",
+      "display" : "Negrete"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16204",
+      "display" : "Ninhue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16303",
+      "display" : "Ñiquén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05506",
+      "display" : "Nogales"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09111",
+      "display" : "Nueva Imperial"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13120",
+      "display" : "ÑuÑoa"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06111",
+      "display" : "Olivar"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02202",
+      "display" : "Ollagüe"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05803",
+      "display" : "Olmué"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10301",
+      "display" : "Osorno"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04301",
+      "display" : "Ovalle"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11302",
+      "display" : "O'Higgins"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13604",
+      "display" : "Padre Hurtado"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09112",
+      "display" : "Padre las Casas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04105",
+      "display" : "Paiguano"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14107",
+      "display" : "Paillaco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13404",
+      "display" : "Paine"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10404",
+      "display" : "Palena"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06306",
+      "display" : "Palmilla"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14108",
+      "display" : "Panguipulli"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05704",
+      "display" : "Panquehue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05403",
+      "display" : "Papudo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06206",
+      "display" : "Paredones"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07404",
+      "display" : "Parral"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13121",
+      "display" : "Pedro Aguirre Cerda"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07106",
+      "display" : "Pelarco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07203",
+      "display" : "Pelluhue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16105",
+      "display" : "Pemuco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13605",
+      "display" : "Peñaflor"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13122",
+      "display" : "Peñalolén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07107",
+      "display" : "Pencahue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08107",
+      "display" : "Penco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06307",
+      "display" : "Peralillo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09113",
+      "display" : "Perquenco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05404",
+      "display" : "Petorca"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06112",
+      "display" : "Peumo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01405",
+      "display" : "Pica"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06113",
+      "display" : "Pichidegua"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06201",
+      "display" : "Pichilemu"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16106",
+      "display" : "Pinto"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13202",
+      "display" : "Pirque"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09114",
+      "display" : "Pitrufquén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06308",
+      "display" : "Placilla"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16205",
+      "display" : "Portezuelo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12301",
+      "display" : "Porvenir"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "01401",
+      "display" : "Pozo Almonte"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12302",
+      "display" : "Primavera"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13123",
+      "display" : "Providencia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05105",
+      "display" : "Puchuncaví"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09115",
+      "display" : "Pucón"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13124",
+      "display" : "Pudahuel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13201",
+      "display" : "Puente Alto"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10101",
+      "display" : "Puerto Montt"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10302",
+      "display" : "Puerto Octay"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10109",
+      "display" : "Puerto Varas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06309",
+      "display" : "Pumanque"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04304",
+      "display" : "Punitaqui"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12101",
+      "display" : "Punta Arenas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10206",
+      "display" : "Puqueldón"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09208",
+      "display" : "Purén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10303",
+      "display" : "Purranque"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05705",
+      "display" : "Putaendo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "15201",
+      "display" : "Putre"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10304",
+      "display" : "Puyehue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10207",
+      "display" : "Queilén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10208",
+      "display" : "Quellón"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10209",
+      "display" : "Quemchi"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08308",
+      "display" : "Quilaco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13125",
+      "display" : "Quilicura"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08309",
+      "display" : "Quilleco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16107",
+      "display" : "Quillón"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05501",
+      "display" : "Quillota"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05801",
+      "display" : "Quilpué"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10210",
+      "display" : "Quinchao"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06114",
+      "display" : "Quinta de Tilcoco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13126",
+      "display" : "Quinta Normal"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05107",
+      "display" : "Quintero"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16201",
+      "display" : "Quirihue"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06101",
+      "display" : "Rancagua"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16206",
+      "display" : "Ránquil"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07305",
+      "display" : "Rauco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13127",
+      "display" : "Recoleta"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09209",
+      "display" : "Renaico"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13128",
+      "display" : "Renca"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06115",
+      "display" : "Rengo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06116",
+      "display" : "Requínoa"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07405",
+      "display" : "Retiro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05303",
+      "display" : "Rinconada"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14204",
+      "display" : "Río Bueno"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07108",
+      "display" : "Río Claro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04305",
+      "display" : "Río Hurtado"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11402",
+      "display" : "Río Ibáñez"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10305",
+      "display" : "Río Negro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12103",
+      "display" : "Río Verde"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07306",
+      "display" : "Romeral"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09116",
+      "display" : "Saavedra"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07307",
+      "display" : "Sagrada Familia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04204",
+      "display" : "Salamanca"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05601",
+      "display" : "San Antonio"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13401",
+      "display" : "San Bernardo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16301",
+      "display" : "San Carlos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07109",
+      "display" : "San Clemente"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05304",
+      "display" : "San Esteban"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16304",
+      "display" : "San Fabián"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05701",
+      "display" : "San Felipe"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06301",
+      "display" : "San Fernando"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12104",
+      "display" : "San Gregorio"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16108",
+      "display" : "San Ignacio"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07406",
+      "display" : "San Javier"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13129",
+      "display" : "San Joaquín"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13203",
+      "display" : "San José de Maipo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10306",
+      "display" : "San Juan de la Costa"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13130",
+      "display" : "San Miguel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16305",
+      "display" : "San Nicolás"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "10307",
+      "display" : "San Pablo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13505",
+      "display" : "San Pedro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02203",
+      "display" : "San Pedro de Atacama"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08108",
+      "display" : "San Pedro de la Paz"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07110",
+      "display" : "San Rafael"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13131",
+      "display" : "San Ramón"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08310",
+      "display" : "San Rosendo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06117",
+      "display" : "San Vicente"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08311",
+      "display" : "Santa Bárbara"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "06310",
+      "display" : "Santa Cruz"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08109",
+      "display" : "Santa Juana"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05706",
+      "display" : "Santa María"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13101",
+      "display" : "Santiago Centro"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05606",
+      "display" : "Santo Domingo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02103",
+      "display" : "Sierra Gorda"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13601",
+      "display" : "Talagante"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07101",
+      "display" : "Talca"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08110",
+      "display" : "Talcahuano"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02104",
+      "display" : "Taltal"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09101",
+      "display" : "Temuco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07308",
+      "display" : "Teno"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09117",
+      "display" : "Teodoro Schmidt"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03103",
+      "display" : "Tierra Amarilla"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13303",
+      "display" : "Tiltil"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12303",
+      "display" : "Timaukel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08207",
+      "display" : "Tirúa"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "02301",
+      "display" : "Tocopilla"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09118",
+      "display" : "Toltén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08111",
+      "display" : "Tomé"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "12402",
+      "display" : "Torres del Paine"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "11303",
+      "display" : "Tortel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09210",
+      "display" : "Traiguén"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16207",
+      "display" : "Treguaco"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08312",
+      "display" : "Tucapel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "14101",
+      "display" : "Valdivia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "03301",
+      "display" : "Vallenar"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05101",
+      "display" : "Valparaíso"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07309",
+      "display" : "Vichuqué"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09211",
+      "display" : "Victoria"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "04106",
+      "display" : "Vicuña"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09119",
+      "display" : "Vilcún"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07407",
+      "display" : "Villa Alegre"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05804",
+      "display" : "Villa Alemana"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "09120",
+      "display" : "Villarrica"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05109",
+      "display" : "Viña del Mar"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "13132",
+      "display" : "Vitacura"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "07408",
+      "display" : "Yerbas Buenas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "08313",
+      "display" : "Yumbel"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "16109",
+      "display" : "Yungay"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+      "code" : "05405",
+      "display" : "Zapallar"
+    }]
+  }
+}

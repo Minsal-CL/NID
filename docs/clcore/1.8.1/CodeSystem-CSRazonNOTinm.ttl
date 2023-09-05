@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSRazonNOTinm"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">solicitudPaci<a name=\"CSRazonNOTinm-solicitudPaci\"> </a></td><td>Solicitud del paciente</td></tr><tr><td style=\"white-space:nowrap\">otras<a name=\"CSRazonNOTinm-otras\"> </a></td><td>Otras</td></tr><tr><td style=\"white-space:nowrap\">contraindicación<a name=\"CSRazonNOTinm-contraindicaci.243n\"> </a></td><td>Contraindicación</td></tr><tr><td style=\"white-space:nowrap\">solicitudPad<a name=\"CSRazonNOTinm-solicitudPad\"> </a></td><td>Solicitud de los Padres</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.8.1"] ; # 
+  fhir:name [ fhir:v "CSRazonNOinmunizacionCL"] ; # 
+  fhir:title [ fhir:v "Razones no Inmunización"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-06-10T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7chile.cl" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "solicitudPaci" ] ;
+     fhir:display [ fhir:v "Solicitud del paciente" ]
+  ] [
+     fhir:code [ fhir:v "otras" ] ;
+     fhir:display [ fhir:v "Otras" ]
+  ] [
+     fhir:code [ fhir:v "contraindicación" ] ;
+     fhir:display [ fhir:v "Contraindicación" ]
+  ] [
+     fhir:code [ fhir:v "solicitudPad" ] ;
+     fhir:display [ fhir:v "Solicitud de los Padres" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

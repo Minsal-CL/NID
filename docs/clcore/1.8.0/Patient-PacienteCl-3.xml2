@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCl-3"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2021-07-13T00:22:41.166Z"/>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>PABLO RODRIGO PIZARRO (OFFICIAL)</b> male, DoB: 1983-08-04 ( Chile: 15602754-5 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="mailto:ppizarro.delgado@minsal.cl">ppizarro.delgado@minsal.cl</a></li><li>13120 13 152 (HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Esta extensión incluye códigos de paises de origen"><a href="StructureDefinition-CodigoPaises.html">Codigo de Identificación de países:</a></td><td colspan="3"><ul><li><span title="Codes: {urn:iso:std:iso:3166 152}">Chile</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"/>
+        <code value="NNCHL"/>
+        <display value="Chile"/>
+      </coding>
+    </type>
+    <system value="http://regcivil.cl/Validacion/RUN"/>
+    <value value="15602754-5"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="PIZARRO">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="DELGADO"/>
+      </extension>
+    </family>
+    <given value="PABLO"/>
+    <given value="RODRIGO"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="ppizarro.delgado@minsal.cl"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1983-08-04"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <use value="home"/>
+    <city value="13120">
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
+            <code value="15101"/>
+            <display value="Arica"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="131">
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
+            <code value="151"/>
+            <display value="Arica"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </district>
+    <state value="13">
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
+            <code value="15"/>
+            <display value="Arica y Parinacota"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </state>
+    <country value="152">
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+</Patient>

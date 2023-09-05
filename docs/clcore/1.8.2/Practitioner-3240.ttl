@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/Practitioner/3240> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "3240"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"3240\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;3240&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CorePrestadorCl.html\">CL Prestador</a></p></div><p><b>identifier</b>: id: 8336277-3 (use: OFFICIAL), id: 999999 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna Rosa null (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href=\"mailto:DraSilva@mimail.com\">DraSilva@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: cert</p><p><b>code</b>: Certificado(s) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#2112 &quot;Certificado Profesional Médico Cirujano&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#122 &quot;Cardiólogia&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (#1234 &quot;Medicina interna&quot;)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://api_run/run"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8336277-3" ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:system [ fhir:v "http://example.org/api"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "999999" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Reyes" ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Johanna" ] [ fhir:v "Rosa" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "9345666" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "DraSilva@mimail.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1974-08-12"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "cert" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://api.minsal.cl/v1/catalogos/profesiones/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2112" ] ;
+         fhir:display [ fhir:v "Certificado Profesional Médico Cirujano" ]
+       ] ) ;
+       fhir:text [ fhir:v "Certificado(s)" ]
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "esp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "122" ] ;
+         fhir:display [ fhir:v "Cardiólogia" ]
+       ] ) ;
+       fhir:text [ fhir:v "Especialidad(es)" ]
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "esp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1234" ] ;
+         fhir:display [ fhir:v "Medicina interna" ]
+       ] ) ;
+       fhir:text [ fhir:v "Especialidad(es)" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

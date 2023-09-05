@@ -1,0 +1,198 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b8d67a23-275f-49a4-bbf5-71e723b259d4-173",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b8d67a23-275f-49a4-bbf5-71e723b259d4-173",
+  "name" : "UnionVSNombreCampanaCLAndVSNombreCampanaCL",
+  "title" : "Union of Campañas de Vacunación And Campañas de Vacunación",
+  "status" : "active",
+  "date" : "2023-06-27T23:23:35-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_AstraZ",
+      "display" : "Campaña SARS-CoV-2 (AstraZeneca)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_Cansino",
+      "display" : "Campaña SARS-CoV-2 (CanSino)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_Intern",
+      "display" : "Campaña SARS-CoV-2 (Internacional)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_Janssen",
+      "display" : "Campaña SARS-CoV-2 (Janssen)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_Moderna",
+      "display" : "Campaña SARS-CoV-2 (Moderna)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_Pfizer",
+      "display" : "Campaña SARS-CoV-2 (Pfizer)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSARSCov_2_Sinovac",
+      "display" : "Campaña SARS-CoV-2 (Sinovac)"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "campanSRP20_40",
+      "display" : "Campaña SRP 20 - 24 años"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "estratCapullo",
+      "display" : "Estrategia Capullo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "estratCapullo2013",
+      "display" : "Estrategia Capullo 2013"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "estratMeningocócica",
+      "display" : "Estrategia Meningocócica"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "hepatiA",
+      "display" : "Hepatitis A"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "hepatiA2012",
+      "display" : "Hepatitis A 2012"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "hepatiApost_Terr",
+      "display" : "Hepatitis A post-terremoto"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "hepatiAar_Tar_Bio",
+      "display" : "Hepatitis A, Arica-Tarapacá-Bíobío"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "hepatiABrote_Conting",
+      "display" : "Hepatitis A,Brote/Contingencia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2010",
+      "display" : "Influenza 2010"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2011",
+      "display" : "Influenza 2011"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2012",
+      "display" : "Influenza 2012"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2013",
+      "display" : "Influenza 2013"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2014",
+      "display" : "Influenza 2014"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2015",
+      "display" : "Influenza 2015"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2016",
+      "display" : "Influenza 2016"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2017",
+      "display" : "Influenza 2017"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2018",
+      "display" : "Influenza 2018"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2019",
+      "display" : "Influenza 2019"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2020",
+      "display" : "Influenza 2020"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2021",
+      "display" : "Influenza 2021"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "influenza2022",
+      "display" : "Influenza 2022"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "sarampRubeoPaperas",
+      "display" : "Sarampión-Rubeóla-Paperas"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "SRPCampanSeguim2015",
+      "display" : "SRP - Campaña de Seguimiento - 2015"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "SRPFuncSaludyPuestosFronteriz",
+      "display" : "SRP - Funcionarios de salud y Puestos Fronterizos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "SRPCampanSeguim2020",
+      "display" : "SRP- Campaña de seguimiento- 2020"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "SRPdelViajero",
+      "display" : "SRP del viajero"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "tosConvul_brote_conting",
+      "display" : "Tos Convulsiva Brote-Contingencia"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
+      "code" : "vacunaFiebAmar",
+      "display" : "Vacuna Fiebre Amarilla"
+    }]
+  }
+}

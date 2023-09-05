@@ -1,0 +1,851 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "219a9162-e1ce-4437-9e5b-a0ee8cfa4664-68",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/219a9162-e1ce-4437-9e5b-a0ee8cfa4664-68",
+  "name" : "UnionClAddressAndClAddress",
+  "title" : "Union of CL Address And CL Address",
+  "status" : "active",
+  "date" : "2023-09-01T23:05:18-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "snapshot" : {
+    "element" : [{
+      "path" : "Address",
+      "short" : "Tipo de dato para agragar la dirección de un paciente",
+      "definition" : "An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.",
+      "comment" : "Variable dirección",
+      "min" : 0,
+      "max" : "*",
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "v2",
+        "map" : "XAD"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD"
+      },
+      {
+        "identity" : "servd",
+        "map" : "Address"
+      }]
+    },
+    {
+      "path" : "Address.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "path" : "Address.extension",
+      "short" : "Extension",
+      "definition" : "Formato Chileno para la definición de direcciones",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])"
+        }],
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.use",
+      "short" : "Definición del tipo de domicilio home | work | temp | old (requerido)",
+      "definition" : "Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR",
+      "comment" : "Applications can assume that an address is current unless it explicitly says that it is temporary or old.",
+      "requirements" : "Allows an appropriate address to be chosen from a list of many.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueCode" : "home"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : true,
+      "isSummary" : true,
+      "binding" : {
+        "strength" : "required",
+        "description" : "The use of an address.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/address-use|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.7"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./AddressPurpose"
+      }]
+    },
+    {
+      "path" : "Address.type",
+      "short" : "postal | physical | both",
+      "definition" : "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
+      "comment" : "The definition of Address states that \"address is intended to describe postal addresses, not physical locations\". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location] resource).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueCode" : "both"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "strength" : "required",
+        "description" : "The type of an address (physical / postal).",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/address-type|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.18"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "address type parameter"
+      }]
+    },
+    {
+      "path" : "Address.text",
+      "short" : "Text representation of the address",
+      "definition" : "Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.",
+      "comment" : "Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.",
+      "requirements" : "A renderable, unencoded form.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "137 Nowhere Street, Erewhon 9132"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./formatted"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "address label parameter"
+      }]
+    },
+    {
+      "path" : "Address.line",
+      "short" : "Calle o avenida, numero y casa o depto",
+      "definition" : "Aquí se escribe toda la dirección completa",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "137 Nowhere Street"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = AL]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "street"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StreetAddress (newline delimitted)"
+      }]
+    },
+    {
+      "path" : "Address.city",
+      "short" : "Campo para Comuna de residencia",
+      "definition" : "Campo para Comuna de residencia.",
+      "alias" : ["Municpality"],
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "Erewhon"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = CTY]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "locality"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Jurisdiction"
+      }]
+    },
+    {
+      "path" : "Address.city.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.city.extension",
+      "short" : "Código de Comunas",
+      "definition" : "Código de Comunas",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+        }],
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.city.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for string",
+      "definition" : "The actual value",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString" : "[ \\r\\n\\t\\S]+"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "maxLength" : 1048576,
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.district",
+      "short" : "Campo para Provincia de Residencia",
+      "definition" : "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona.",
+      "comment" : "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.",
+      "alias" : ["County"],
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "Madison"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.9"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = CNT | CPA]"
+      }]
+    },
+    {
+      "path" : "Address.district.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.district.extension",
+      "short" : "Código de Regiones",
+      "definition" : "Código de Regiones",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+        }],
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.district.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for string",
+      "definition" : "The actual value",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString" : "[ \\r\\n\\t\\S]+"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "maxLength" : 1048576,
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.state",
+      "short" : "Campo para la Región",
+      "definition" : "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona.",
+      "alias" : ["Province",
+      "Territory"],
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.4"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = STA]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "region"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Region"
+      }]
+    },
+    {
+      "path" : "Address.state.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.state.extension",
+      "short" : "Código de Regiones",
+      "definition" : "Código de Regiones",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+        }],
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.state.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for string",
+      "definition" : "The actual value",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString" : "[ \\r\\n\\t\\S]+"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "maxLength" : 1048576,
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.postalCode",
+      "short" : "Postal code for area",
+      "definition" : "A postal code designating a region defined by the postal service.",
+      "alias" : ["Zip"],
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "9132"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.5"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = ZIP]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "code"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./PostalIdentificationCode"
+      }]
+    },
+    {
+      "path" : "Address.country",
+      "short" : "Campo para País de Residencia",
+      "definition" : "Campo para País de Residencia",
+      "comment" : "ISO 3166 3 letter codes can be used in place of a human readable country name.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : true,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.6"
+      },
+      {
+        "identity" : "rim",
+        "map" : "AD.part[parttype = CNT]"
+      },
+      {
+        "identity" : "vcard",
+        "map" : "country"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Country"
+      }]
+    },
+    {
+      "path" : "Address.country.id",
+      "representation" : ["xmlAttr"],
+      "short" : "xml:id (or equivalent in JSON)",
+      "definition" : "unique id for the element within a resource (for internal references)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.country.extension",
+      "short" : "Código de Países",
+      "definition" : "Código de Países",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+        }],
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.country.value",
+      "representation" : ["xmlAttr"],
+      "short" : "Primitive value for string",
+      "definition" : "The actual value",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/regex",
+          "valueString" : "[ \\r\\n\\t\\S]+"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "maxLength" : 1048576,
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : false
+    },
+    {
+      "path" : "Address.period",
+      "short" : "Time period when address was/is in use",
+      "definition" : "Time period when address was/is in use.",
+      "requirements" : "Allows addresses to be placed in historical context.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valuePeriod" : {
+          "start" : "2010-03-23",
+          "end" : "2010-07-01"
+        }
+      }],
+      "constraint" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",
+          "valueString" : "@value|f:*|h:div"
+        }],
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mustSupport" : false,
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XAD.12 / XAD.13 + XAD.14"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./usablePeriod[type=\"IVL<TS>\"]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    }]
+  }
+}

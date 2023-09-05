@@ -1,0 +1,1423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSCodComunasCL"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
+  <version value="1.8.2"/>
+  <name value="CSCodComunasCL"/>
+  <title value="Códigos de Comunas en Chile"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-01-18T00:00:00-03:00"/>
+  <publisher value="HL7 Chile"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7chile.cl"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="346"/>
+  <concept>
+    <code value="05602"/>
+    <display value="Algarrobo"/>
+  </concept>
+  <concept>
+    <code value="13502"/>
+    <display value="Alhué"/>
+  </concept>
+  <concept>
+    <code value="08314"/>
+    <display value="Alto Biobío"/>
+  </concept>
+  <concept>
+    <code value="03302"/>
+    <display value="Alto del Carmen"/>
+  </concept>
+  <concept>
+    <code value="01107"/>
+    <display value="Alto Hospicio"/>
+  </concept>
+  <concept>
+    <code value="10202"/>
+    <display value="Ancud"/>
+  </concept>
+  <concept>
+    <code value="04103"/>
+    <display value="Andacollo"/>
+  </concept>
+  <concept>
+    <code value="09201"/>
+    <display value="Angol"/>
+  </concept>
+  <concept>
+    <code value="12202"/>
+    <display value="Antartica"/>
+  </concept>
+  <concept>
+    <code value="02101"/>
+    <display value="Antofagasta"/>
+  </concept>
+  <concept>
+    <code value="08302"/>
+    <display value="Antuco"/>
+  </concept>
+  <concept>
+    <code value="08202"/>
+    <display value="Arauco"/>
+  </concept>
+  <concept>
+    <code value="15101"/>
+    <display value="Arica"/>
+  </concept>
+  <concept>
+    <code value="11201"/>
+    <display value="Aysén"/>
+  </concept>
+  <concept>
+    <code value="13402"/>
+    <display value="Buin"/>
+  </concept>
+  <concept>
+    <code value="16102"/>
+    <display value="Bulnes"/>
+  </concept>
+  <concept>
+    <code value="05402"/>
+    <display value="Cabildo"/>
+  </concept>
+  <concept>
+    <code value="12201"/>
+    <display value="Cabo de Hornos"/>
+  </concept>
+  <concept>
+    <code value="08303"/>
+    <display value="Cabrero"/>
+  </concept>
+  <concept>
+    <code value="02201"/>
+    <display value="Calama"/>
+  </concept>
+  <concept>
+    <code value="10102"/>
+    <display value="Calbuco"/>
+  </concept>
+  <concept>
+    <code value="03102"/>
+    <display value="Caldera"/>
+  </concept>
+  <concept>
+    <code value="05502"/>
+    <display value="Calera"/>
+  </concept>
+  <concept>
+    <code value="13403"/>
+    <display value="Calera de Tango"/>
+  </concept>
+  <concept>
+    <code value="05302"/>
+    <display value="Calle Larga"/>
+  </concept>
+  <concept>
+    <code value="15102"/>
+    <display value="Camarones"/>
+  </concept>
+  <concept>
+    <code value="01402"/>
+    <display value="Camiña"/>
+  </concept>
+  <concept>
+    <code value="04202"/>
+    <display value="Canela"/>
+  </concept>
+  <concept>
+    <code value="08203"/>
+    <display value="Cañete"/>
+  </concept>
+  <concept>
+    <code value="09102"/>
+    <display value="Carahue"/>
+  </concept>
+  <concept>
+    <code value="05603"/>
+    <display value="Cartagena"/>
+  </concept>
+  <concept>
+    <code value="05102"/>
+    <display value="Casablanca"/>
+  </concept>
+  <concept>
+    <code value="10201"/>
+    <display value="Castro"/>
+  </concept>
+  <concept>
+    <code value="05702"/>
+    <display value="Catemu"/>
+  </concept>
+  <concept>
+    <code value="07201"/>
+    <display value="Cauquenes"/>
+  </concept>
+  <concept>
+    <code value="13102"/>
+    <display value="Cerrillos"/>
+  </concept>
+  <concept>
+    <code value="13103"/>
+    <display value="Cerro Navia"/>
+  </concept>
+  <concept>
+    <code value="10401"/>
+    <display value="Chaitén"/>
+  </concept>
+  <concept>
+    <code value="03201"/>
+    <display value="Chañaral"/>
+  </concept>
+  <concept>
+    <code value="07202"/>
+    <display value="Chanco"/>
+  </concept>
+  <concept>
+    <code value="06302"/>
+    <display value="Chépica"/>
+  </concept>
+  <concept>
+    <code value="08103"/>
+    <display value="Chiguayante"/>
+  </concept>
+  <concept>
+    <code value="11401"/>
+    <display value="Chile Chico"/>
+  </concept>
+  <concept>
+    <code value="16101"/>
+    <display value="Chillán"/>
+  </concept>
+  <concept>
+    <code value="16103"/>
+    <display value="Chillán Viejo"/>
+  </concept>
+  <concept>
+    <code value="06303"/>
+    <display value="Chimbarongo"/>
+  </concept>
+  <concept>
+    <code value="09121"/>
+    <display value="Cholchol"/>
+  </concept>
+  <concept>
+    <code value="10203"/>
+    <display value="Chonchi"/>
+  </concept>
+  <concept>
+    <code value="11202"/>
+    <display value="Cisnes"/>
+  </concept>
+  <concept>
+    <code value="16202"/>
+    <display value="Cobquecura"/>
+  </concept>
+  <concept>
+    <code value="10103"/>
+    <display value="Cochamó"/>
+  </concept>
+  <concept>
+    <code value="11301"/>
+    <display value="Cochrane"/>
+  </concept>
+  <concept>
+    <code value="06102"/>
+    <display value="Codegua"/>
+  </concept>
+  <concept>
+    <code value="16203"/>
+    <display value="Coelemu"/>
+  </concept>
+  <concept>
+    <code value="11101"/>
+    <display value="Coihaique"/>
+  </concept>
+  <concept>
+    <code value="16302"/>
+    <display value="Coihueco"/>
+  </concept>
+  <concept>
+    <code value="06103"/>
+    <display value="Coinco"/>
+  </concept>
+  <concept>
+    <code value="07402"/>
+    <display value="Colbún"/>
+  </concept>
+  <concept>
+    <code value="01403"/>
+    <display value="Colchane"/>
+  </concept>
+  <concept>
+    <code value="13301"/>
+    <display value="Colina"/>
+  </concept>
+  <concept>
+    <code value="09202"/>
+    <display value="Collipulli"/>
+  </concept>
+  <concept>
+    <code value="06104"/>
+    <display value="Coltauco"/>
+  </concept>
+  <concept>
+    <code value="04302"/>
+    <display value="Combarbalá"/>
+  </concept>
+  <concept>
+    <code value="08101"/>
+    <display value="Concepción"/>
+  </concept>
+  <concept>
+    <code value="13104"/>
+    <display value="Conchalí"/>
+  </concept>
+  <concept>
+    <code value="05103"/>
+    <display value="Concón"/>
+  </concept>
+  <concept>
+    <code value="07102"/>
+    <display value="Constitución"/>
+  </concept>
+  <concept>
+    <code value="08204"/>
+    <display value="Contulmo"/>
+  </concept>
+  <concept>
+    <code value="03101"/>
+    <display value="Copiapó"/>
+  </concept>
+  <concept>
+    <code value="04102"/>
+    <display value="Coquimbo"/>
+  </concept>
+  <concept>
+    <code value="08102"/>
+    <display value="Coronel"/>
+  </concept>
+  <concept>
+    <code value="14102"/>
+    <display value="Corral"/>
+  </concept>
+  <concept>
+    <code value="09103"/>
+    <display value="Cunco"/>
+  </concept>
+  <concept>
+    <code value="09203"/>
+    <display value="Curacautín"/>
+  </concept>
+  <concept>
+    <code value="13503"/>
+    <display value="Curacaví"/>
+  </concept>
+  <concept>
+    <code value="10204"/>
+    <display value="Curaco de Vélez"/>
+  </concept>
+  <concept>
+    <code value="08205"/>
+    <display value="Curanilahue"/>
+  </concept>
+  <concept>
+    <code value="09104"/>
+    <display value="Curarrehue"/>
+  </concept>
+  <concept>
+    <code value="07103"/>
+    <display value="Curepto"/>
+  </concept>
+  <concept>
+    <code value="07301"/>
+    <display value="Curicó"/>
+  </concept>
+  <concept>
+    <code value="10205"/>
+    <display value="Dalcahue"/>
+  </concept>
+  <concept>
+    <code value="03202"/>
+    <display value="Diego de Almagro"/>
+  </concept>
+  <concept>
+    <code value="06105"/>
+    <display value="Doñihue"/>
+  </concept>
+  <concept>
+    <code value="13105"/>
+    <display value="El Bosque"/>
+  </concept>
+  <concept>
+    <code value="16104"/>
+    <display value="El Carmen"/>
+  </concept>
+  <concept>
+    <code value="13602"/>
+    <display value="El Monte"/>
+  </concept>
+  <concept>
+    <code value="05604"/>
+    <display value="El Quisco"/>
+  </concept>
+  <concept>
+    <code value="05605"/>
+    <display value="El Tabo"/>
+  </concept>
+  <concept>
+    <code value="07104"/>
+    <display value="Empedrado"/>
+  </concept>
+  <concept>
+    <code value="09204"/>
+    <display value="Ercilla"/>
+  </concept>
+  <concept>
+    <code value="13106"/>
+    <display value="Estacin Central"/>
+  </concept>
+  <concept>
+    <code value="08104"/>
+    <display value="Florida"/>
+  </concept>
+  <concept>
+    <code value="09105"/>
+    <display value="Freire"/>
+  </concept>
+  <concept>
+    <code value="03303"/>
+    <display value="Freirina"/>
+  </concept>
+  <concept>
+    <code value="10104"/>
+    <display value="Fresia"/>
+  </concept>
+  <concept>
+    <code value="10105"/>
+    <display value="Frutillar"/>
+  </concept>
+  <concept>
+    <code value="10402"/>
+    <display value="Futaleufú"/>
+  </concept>
+  <concept>
+    <code value="14202"/>
+    <display value="Futrono"/>
+  </concept>
+  <concept>
+    <code value="09106"/>
+    <display value="Galvarino"/>
+  </concept>
+  <concept>
+    <code value="15202"/>
+    <display value="General Lagos"/>
+  </concept>
+  <concept>
+    <code value="09107"/>
+    <display value="Gorbea"/>
+  </concept>
+  <concept>
+    <code value="06106"/>
+    <display value="Graneros"/>
+  </concept>
+  <concept>
+    <code value="11203"/>
+    <display value="Guaitecas"/>
+  </concept>
+  <concept>
+    <code value="05503"/>
+    <display value="Hijuelas"/>
+  </concept>
+  <concept>
+    <code value="10403"/>
+    <display value="Hualaihué"/>
+  </concept>
+  <concept>
+    <code value="07302"/>
+    <display value="Hualañé"/>
+  </concept>
+  <concept>
+    <code value="08112"/>
+    <display value="Hualpén"/>
+  </concept>
+  <concept>
+    <code value="08105"/>
+    <display value="Hualqui"/>
+  </concept>
+  <concept>
+    <code value="01404"/>
+    <display value="Huara"/>
+  </concept>
+  <concept>
+    <code value="03304"/>
+    <display value="Huasco"/>
+  </concept>
+  <concept>
+    <code value="13107"/>
+    <display value="Huechuraba"/>
+  </concept>
+  <concept>
+    <code value="04201"/>
+    <display value="Illapel"/>
+  </concept>
+  <concept>
+    <code value="13108"/>
+    <display value="Independencia"/>
+  </concept>
+  <concept>
+    <code value="01101"/>
+    <display value="Iquique"/>
+  </concept>
+  <concept>
+    <code value="13603"/>
+    <display value="Isla de Maipo"/>
+  </concept>
+  <concept>
+    <code value="05201"/>
+    <display value="Isla de Pascua"/>
+  </concept>
+  <concept>
+    <code value="05104"/>
+    <display value="Juan Fernández"/>
+  </concept>
+  <concept>
+    <code value="13109"/>
+    <display value="La Cisterna"/>
+  </concept>
+  <concept>
+    <code value="05504"/>
+    <display value="La Cruz"/>
+  </concept>
+  <concept>
+    <code value="06202"/>
+    <display value="La Estrella"/>
+  </concept>
+  <concept>
+    <code value="13110"/>
+    <display value="La Florida"/>
+  </concept>
+  <concept>
+    <code value="13111"/>
+    <display value="La Granja"/>
+  </concept>
+  <concept>
+    <code value="04104"/>
+    <display value="La Higuera"/>
+  </concept>
+  <concept>
+    <code value="05401"/>
+    <display value="La Ligua"/>
+  </concept>
+  <concept>
+    <code value="13112"/>
+    <display value="La Pintana"/>
+  </concept>
+  <concept>
+    <code value="13113"/>
+    <display value="La Reina"/>
+  </concept>
+  <concept>
+    <code value="04101"/>
+    <display value="La Serena"/>
+  </concept>
+  <concept>
+    <code value="14201"/>
+    <display value="La Unión"/>
+  </concept>
+  <concept>
+    <code value="14203"/>
+    <display value="Lago Ranco"/>
+  </concept>
+  <concept>
+    <code value="11102"/>
+    <display value="Lago Verde"/>
+  </concept>
+  <concept>
+    <code value="12102"/>
+    <display value="Laguna Blanca"/>
+  </concept>
+  <concept>
+    <code value="08304"/>
+    <display value="Laja"/>
+  </concept>
+  <concept>
+    <code value="13302"/>
+    <display value="Lampa"/>
+  </concept>
+  <concept>
+    <code value="14103"/>
+    <display value="Lanco"/>
+  </concept>
+  <concept>
+    <code value="06107"/>
+    <display value="Las Cabras"/>
+  </concept>
+  <concept>
+    <code value="13114"/>
+    <display value="Las Condes"/>
+  </concept>
+  <concept>
+    <code value="09108"/>
+    <display value="Lautaro"/>
+  </concept>
+  <concept>
+    <code value="08201"/>
+    <display value="Lebu"/>
+  </concept>
+  <concept>
+    <code value="07303"/>
+    <display value="Licantén"/>
+  </concept>
+  <concept>
+    <code value="05802"/>
+    <display value="Limache"/>
+  </concept>
+  <concept>
+    <code value="07401"/>
+    <display value="Linares"/>
+  </concept>
+  <concept>
+    <code value="06203"/>
+    <display value="Litueche"/>
+  </concept>
+  <concept>
+    <code value="05703"/>
+    <display value="Llaillay"/>
+  </concept>
+  <concept>
+    <code value="10107"/>
+    <display value="Llanquihue"/>
+  </concept>
+  <concept>
+    <code value="13115"/>
+    <display value="Lo Barnechea"/>
+  </concept>
+  <concept>
+    <code value="13116"/>
+    <display value="Lo Espejo"/>
+  </concept>
+  <concept>
+    <code value="13117"/>
+    <display value="Lo Prado"/>
+  </concept>
+  <concept>
+    <code value="06304"/>
+    <display value="Lolol"/>
+  </concept>
+  <concept>
+    <code value="09109"/>
+    <display value="Loncoche"/>
+  </concept>
+  <concept>
+    <code value="07403"/>
+    <display value="Longaví"/>
+  </concept>
+  <concept>
+    <code value="09205"/>
+    <display value="Lonquimay"/>
+  </concept>
+  <concept>
+    <code value="08206"/>
+    <display value="Los Álamos"/>
+  </concept>
+  <concept>
+    <code value="05301"/>
+    <display value="Los Andes"/>
+  </concept>
+  <concept>
+    <code value="08301"/>
+    <display value="Los Ángeles"/>
+  </concept>
+  <concept>
+    <code value="14104"/>
+    <display value="Los Lagos"/>
+  </concept>
+  <concept>
+    <code value="10106"/>
+    <display value="Los Muermos"/>
+  </concept>
+  <concept>
+    <code value="09206"/>
+    <display value="Los Sauces"/>
+  </concept>
+  <concept>
+    <code value="04203"/>
+    <display value="Los Vilos"/>
+  </concept>
+  <concept>
+    <code value="08106"/>
+    <display value="Lota"/>
+  </concept>
+  <concept>
+    <code value="09207"/>
+    <display value="Lumaco"/>
+  </concept>
+  <concept>
+    <code value="06108"/>
+    <display value="Machalí"/>
+  </concept>
+  <concept>
+    <code value="13118"/>
+    <display value="Macul"/>
+  </concept>
+  <concept>
+    <code value="14105"/>
+    <display value="Máfil"/>
+  </concept>
+  <concept>
+    <code value="13119"/>
+    <display value="Maipú"/>
+  </concept>
+  <concept>
+    <code value="06109"/>
+    <display value="Malloa"/>
+  </concept>
+  <concept>
+    <code value="06204"/>
+    <display value="Marchihue"/>
+  </concept>
+  <concept>
+    <code value="02302"/>
+    <display value="María Elena"/>
+  </concept>
+  <concept>
+    <code value="13504"/>
+    <display value="María Pinto"/>
+  </concept>
+  <concept>
+    <code value="14106"/>
+    <display value="Mariquina"/>
+  </concept>
+  <concept>
+    <code value="07105"/>
+    <display value="Maule"/>
+  </concept>
+  <concept>
+    <code value="10108"/>
+    <display value="Maullín"/>
+  </concept>
+  <concept>
+    <code value="02102"/>
+    <display value="Mejillones"/>
+  </concept>
+  <concept>
+    <code value="09110"/>
+    <display value="Melipeuco"/>
+  </concept>
+  <concept>
+    <code value="13501"/>
+    <display value="Melipilla"/>
+  </concept>
+  <concept>
+    <code value="07304"/>
+    <display value="Molina"/>
+  </concept>
+  <concept>
+    <code value="04303"/>
+    <display value="Monte Patria"/>
+  </concept>
+  <concept>
+    <code value="06110"/>
+    <display value="Mostazal"/>
+  </concept>
+  <concept>
+    <code value="08305"/>
+    <display value="Mulchén"/>
+  </concept>
+  <concept>
+    <code value="08306"/>
+    <display value="Nacimiento"/>
+  </concept>
+  <concept>
+    <code value="06305"/>
+    <display value="Nancagua"/>
+  </concept>
+  <concept>
+    <code value="12401"/>
+    <display value="Natales"/>
+  </concept>
+  <concept>
+    <code value="06205"/>
+    <display value="Navidad"/>
+  </concept>
+  <concept>
+    <code value="08307"/>
+    <display value="Negrete"/>
+  </concept>
+  <concept>
+    <code value="16204"/>
+    <display value="Ninhue"/>
+  </concept>
+  <concept>
+    <code value="16303"/>
+    <display value="Ñiquén"/>
+  </concept>
+  <concept>
+    <code value="05506"/>
+    <display value="Nogales"/>
+  </concept>
+  <concept>
+    <code value="09111"/>
+    <display value="Nueva Imperial"/>
+  </concept>
+  <concept>
+    <code value="13120"/>
+    <display value="ÑuÑoa"/>
+  </concept>
+  <concept>
+    <code value="06111"/>
+    <display value="Olivar"/>
+  </concept>
+  <concept>
+    <code value="02202"/>
+    <display value="Ollagüe"/>
+  </concept>
+  <concept>
+    <code value="05803"/>
+    <display value="Olmué"/>
+  </concept>
+  <concept>
+    <code value="10301"/>
+    <display value="Osorno"/>
+  </concept>
+  <concept>
+    <code value="04301"/>
+    <display value="Ovalle"/>
+  </concept>
+  <concept>
+    <code value="11302"/>
+    <display value="O'Higgins"/>
+  </concept>
+  <concept>
+    <code value="13604"/>
+    <display value="Padre Hurtado"/>
+  </concept>
+  <concept>
+    <code value="09112"/>
+    <display value="Padre las Casas"/>
+  </concept>
+  <concept>
+    <code value="04105"/>
+    <display value="Paiguano"/>
+  </concept>
+  <concept>
+    <code value="14107"/>
+    <display value="Paillaco"/>
+  </concept>
+  <concept>
+    <code value="13404"/>
+    <display value="Paine"/>
+  </concept>
+  <concept>
+    <code value="10404"/>
+    <display value="Palena"/>
+  </concept>
+  <concept>
+    <code value="06306"/>
+    <display value="Palmilla"/>
+  </concept>
+  <concept>
+    <code value="14108"/>
+    <display value="Panguipulli"/>
+  </concept>
+  <concept>
+    <code value="05704"/>
+    <display value="Panquehue"/>
+  </concept>
+  <concept>
+    <code value="05403"/>
+    <display value="Papudo"/>
+  </concept>
+  <concept>
+    <code value="06206"/>
+    <display value="Paredones"/>
+  </concept>
+  <concept>
+    <code value="07404"/>
+    <display value="Parral"/>
+  </concept>
+  <concept>
+    <code value="13121"/>
+    <display value="Pedro Aguirre Cerda"/>
+  </concept>
+  <concept>
+    <code value="07106"/>
+    <display value="Pelarco"/>
+  </concept>
+  <concept>
+    <code value="07203"/>
+    <display value="Pelluhue"/>
+  </concept>
+  <concept>
+    <code value="16105"/>
+    <display value="Pemuco"/>
+  </concept>
+  <concept>
+    <code value="13605"/>
+    <display value="Peñaflor"/>
+  </concept>
+  <concept>
+    <code value="13122"/>
+    <display value="Peñalolén"/>
+  </concept>
+  <concept>
+    <code value="07107"/>
+    <display value="Pencahue"/>
+  </concept>
+  <concept>
+    <code value="08107"/>
+    <display value="Penco"/>
+  </concept>
+  <concept>
+    <code value="06307"/>
+    <display value="Peralillo"/>
+  </concept>
+  <concept>
+    <code value="09113"/>
+    <display value="Perquenco"/>
+  </concept>
+  <concept>
+    <code value="05404"/>
+    <display value="Petorca"/>
+  </concept>
+  <concept>
+    <code value="06112"/>
+    <display value="Peumo"/>
+  </concept>
+  <concept>
+    <code value="01405"/>
+    <display value="Pica"/>
+  </concept>
+  <concept>
+    <code value="06113"/>
+    <display value="Pichidegua"/>
+  </concept>
+  <concept>
+    <code value="06201"/>
+    <display value="Pichilemu"/>
+  </concept>
+  <concept>
+    <code value="16106"/>
+    <display value="Pinto"/>
+  </concept>
+  <concept>
+    <code value="13202"/>
+    <display value="Pirque"/>
+  </concept>
+  <concept>
+    <code value="09114"/>
+    <display value="Pitrufquén"/>
+  </concept>
+  <concept>
+    <code value="06308"/>
+    <display value="Placilla"/>
+  </concept>
+  <concept>
+    <code value="16205"/>
+    <display value="Portezuelo"/>
+  </concept>
+  <concept>
+    <code value="12301"/>
+    <display value="Porvenir"/>
+  </concept>
+  <concept>
+    <code value="01401"/>
+    <display value="Pozo Almonte"/>
+  </concept>
+  <concept>
+    <code value="12302"/>
+    <display value="Primavera"/>
+  </concept>
+  <concept>
+    <code value="13123"/>
+    <display value="Providencia"/>
+  </concept>
+  <concept>
+    <code value="05105"/>
+    <display value="Puchuncaví"/>
+  </concept>
+  <concept>
+    <code value="09115"/>
+    <display value="Pucón"/>
+  </concept>
+  <concept>
+    <code value="13124"/>
+    <display value="Pudahuel"/>
+  </concept>
+  <concept>
+    <code value="13201"/>
+    <display value="Puente Alto"/>
+  </concept>
+  <concept>
+    <code value="10101"/>
+    <display value="Puerto Montt"/>
+  </concept>
+  <concept>
+    <code value="10302"/>
+    <display value="Puerto Octay"/>
+  </concept>
+  <concept>
+    <code value="10109"/>
+    <display value="Puerto Varas"/>
+  </concept>
+  <concept>
+    <code value="06309"/>
+    <display value="Pumanque"/>
+  </concept>
+  <concept>
+    <code value="04304"/>
+    <display value="Punitaqui"/>
+  </concept>
+  <concept>
+    <code value="12101"/>
+    <display value="Punta Arenas"/>
+  </concept>
+  <concept>
+    <code value="10206"/>
+    <display value="Puqueldón"/>
+  </concept>
+  <concept>
+    <code value="09208"/>
+    <display value="Purén"/>
+  </concept>
+  <concept>
+    <code value="10303"/>
+    <display value="Purranque"/>
+  </concept>
+  <concept>
+    <code value="05705"/>
+    <display value="Putaendo"/>
+  </concept>
+  <concept>
+    <code value="15201"/>
+    <display value="Putre"/>
+  </concept>
+  <concept>
+    <code value="10304"/>
+    <display value="Puyehue"/>
+  </concept>
+  <concept>
+    <code value="10207"/>
+    <display value="Queilén"/>
+  </concept>
+  <concept>
+    <code value="10208"/>
+    <display value="Quellón"/>
+  </concept>
+  <concept>
+    <code value="10209"/>
+    <display value="Quemchi"/>
+  </concept>
+  <concept>
+    <code value="08308"/>
+    <display value="Quilaco"/>
+  </concept>
+  <concept>
+    <code value="13125"/>
+    <display value="Quilicura"/>
+  </concept>
+  <concept>
+    <code value="08309"/>
+    <display value="Quilleco"/>
+  </concept>
+  <concept>
+    <code value="16107"/>
+    <display value="Quillón"/>
+  </concept>
+  <concept>
+    <code value="05501"/>
+    <display value="Quillota"/>
+  </concept>
+  <concept>
+    <code value="05801"/>
+    <display value="Quilpué"/>
+  </concept>
+  <concept>
+    <code value="10210"/>
+    <display value="Quinchao"/>
+  </concept>
+  <concept>
+    <code value="06114"/>
+    <display value="Quinta de Tilcoco"/>
+  </concept>
+  <concept>
+    <code value="13126"/>
+    <display value="Quinta Normal"/>
+  </concept>
+  <concept>
+    <code value="05107"/>
+    <display value="Quintero"/>
+  </concept>
+  <concept>
+    <code value="16201"/>
+    <display value="Quirihue"/>
+  </concept>
+  <concept>
+    <code value="06101"/>
+    <display value="Rancagua"/>
+  </concept>
+  <concept>
+    <code value="16206"/>
+    <display value="Ránquil"/>
+  </concept>
+  <concept>
+    <code value="07305"/>
+    <display value="Rauco"/>
+  </concept>
+  <concept>
+    <code value="13127"/>
+    <display value="Recoleta"/>
+  </concept>
+  <concept>
+    <code value="09209"/>
+    <display value="Renaico"/>
+  </concept>
+  <concept>
+    <code value="13128"/>
+    <display value="Renca"/>
+  </concept>
+  <concept>
+    <code value="06115"/>
+    <display value="Rengo"/>
+  </concept>
+  <concept>
+    <code value="06116"/>
+    <display value="Requínoa"/>
+  </concept>
+  <concept>
+    <code value="07405"/>
+    <display value="Retiro"/>
+  </concept>
+  <concept>
+    <code value="05303"/>
+    <display value="Rinconada"/>
+  </concept>
+  <concept>
+    <code value="14204"/>
+    <display value="Río Bueno"/>
+  </concept>
+  <concept>
+    <code value="07108"/>
+    <display value="Río Claro"/>
+  </concept>
+  <concept>
+    <code value="04305"/>
+    <display value="Río Hurtado"/>
+  </concept>
+  <concept>
+    <code value="11402"/>
+    <display value="Río Ibáñez"/>
+  </concept>
+  <concept>
+    <code value="10305"/>
+    <display value="Río Negro"/>
+  </concept>
+  <concept>
+    <code value="12103"/>
+    <display value="Río Verde"/>
+  </concept>
+  <concept>
+    <code value="07306"/>
+    <display value="Romeral"/>
+  </concept>
+  <concept>
+    <code value="09116"/>
+    <display value="Saavedra"/>
+  </concept>
+  <concept>
+    <code value="07307"/>
+    <display value="Sagrada Familia"/>
+  </concept>
+  <concept>
+    <code value="04204"/>
+    <display value="Salamanca"/>
+  </concept>
+  <concept>
+    <code value="05601"/>
+    <display value="San Antonio"/>
+  </concept>
+  <concept>
+    <code value="13401"/>
+    <display value="San Bernardo"/>
+  </concept>
+  <concept>
+    <code value="16301"/>
+    <display value="San Carlos"/>
+  </concept>
+  <concept>
+    <code value="07109"/>
+    <display value="San Clemente"/>
+  </concept>
+  <concept>
+    <code value="05304"/>
+    <display value="San Esteban"/>
+  </concept>
+  <concept>
+    <code value="16304"/>
+    <display value="San Fabián"/>
+  </concept>
+  <concept>
+    <code value="05701"/>
+    <display value="San Felipe"/>
+  </concept>
+  <concept>
+    <code value="06301"/>
+    <display value="San Fernando"/>
+  </concept>
+  <concept>
+    <code value="12104"/>
+    <display value="San Gregorio"/>
+  </concept>
+  <concept>
+    <code value="16108"/>
+    <display value="San Ignacio"/>
+  </concept>
+  <concept>
+    <code value="07406"/>
+    <display value="San Javier"/>
+  </concept>
+  <concept>
+    <code value="13129"/>
+    <display value="San Joaquín"/>
+  </concept>
+  <concept>
+    <code value="13203"/>
+    <display value="San José de Maipo"/>
+  </concept>
+  <concept>
+    <code value="10306"/>
+    <display value="San Juan de la Costa"/>
+  </concept>
+  <concept>
+    <code value="13130"/>
+    <display value="San Miguel"/>
+  </concept>
+  <concept>
+    <code value="16305"/>
+    <display value="San Nicolás"/>
+  </concept>
+  <concept>
+    <code value="10307"/>
+    <display value="San Pablo"/>
+  </concept>
+  <concept>
+    <code value="13505"/>
+    <display value="San Pedro"/>
+  </concept>
+  <concept>
+    <code value="02203"/>
+    <display value="San Pedro de Atacama"/>
+  </concept>
+  <concept>
+    <code value="08108"/>
+    <display value="San Pedro de la Paz"/>
+  </concept>
+  <concept>
+    <code value="07110"/>
+    <display value="San Rafael"/>
+  </concept>
+  <concept>
+    <code value="13131"/>
+    <display value="San Ramón"/>
+  </concept>
+  <concept>
+    <code value="08310"/>
+    <display value="San Rosendo"/>
+  </concept>
+  <concept>
+    <code value="06117"/>
+    <display value="San Vicente"/>
+  </concept>
+  <concept>
+    <code value="08311"/>
+    <display value="Santa Bárbara"/>
+  </concept>
+  <concept>
+    <code value="06310"/>
+    <display value="Santa Cruz"/>
+  </concept>
+  <concept>
+    <code value="08109"/>
+    <display value="Santa Juana"/>
+  </concept>
+  <concept>
+    <code value="05706"/>
+    <display value="Santa María"/>
+  </concept>
+  <concept>
+    <code value="13101"/>
+    <display value="Santiago Centro"/>
+  </concept>
+  <concept>
+    <code value="05606"/>
+    <display value="Santo Domingo"/>
+  </concept>
+  <concept>
+    <code value="02103"/>
+    <display value="Sierra Gorda"/>
+  </concept>
+  <concept>
+    <code value="13601"/>
+    <display value="Talagante"/>
+  </concept>
+  <concept>
+    <code value="07101"/>
+    <display value="Talca"/>
+  </concept>
+  <concept>
+    <code value="08110"/>
+    <display value="Talcahuano"/>
+  </concept>
+  <concept>
+    <code value="02104"/>
+    <display value="Taltal"/>
+  </concept>
+  <concept>
+    <code value="09101"/>
+    <display value="Temuco"/>
+  </concept>
+  <concept>
+    <code value="07308"/>
+    <display value="Teno"/>
+  </concept>
+  <concept>
+    <code value="09117"/>
+    <display value="Teodoro Schmidt"/>
+  </concept>
+  <concept>
+    <code value="03103"/>
+    <display value="Tierra Amarilla"/>
+  </concept>
+  <concept>
+    <code value="13303"/>
+    <display value="Tiltil"/>
+  </concept>
+  <concept>
+    <code value="12303"/>
+    <display value="Timaukel"/>
+  </concept>
+  <concept>
+    <code value="08207"/>
+    <display value="Tirúa"/>
+  </concept>
+  <concept>
+    <code value="02301"/>
+    <display value="Tocopilla"/>
+  </concept>
+  <concept>
+    <code value="09118"/>
+    <display value="Toltén"/>
+  </concept>
+  <concept>
+    <code value="08111"/>
+    <display value="Tomé"/>
+  </concept>
+  <concept>
+    <code value="12402"/>
+    <display value="Torres del Paine"/>
+  </concept>
+  <concept>
+    <code value="11303"/>
+    <display value="Tortel"/>
+  </concept>
+  <concept>
+    <code value="09210"/>
+    <display value="Traiguén"/>
+  </concept>
+  <concept>
+    <code value="16207"/>
+    <display value="Treguaco"/>
+  </concept>
+  <concept>
+    <code value="08312"/>
+    <display value="Tucapel"/>
+  </concept>
+  <concept>
+    <code value="14101"/>
+    <display value="Valdivia"/>
+  </concept>
+  <concept>
+    <code value="03301"/>
+    <display value="Vallenar"/>
+  </concept>
+  <concept>
+    <code value="05101"/>
+    <display value="Valparaíso"/>
+  </concept>
+  <concept>
+    <code value="07309"/>
+    <display value="Vichuqué"/>
+  </concept>
+  <concept>
+    <code value="09211"/>
+    <display value="Victoria"/>
+  </concept>
+  <concept>
+    <code value="04106"/>
+    <display value="Vicuña"/>
+  </concept>
+  <concept>
+    <code value="09119"/>
+    <display value="Vilcún"/>
+  </concept>
+  <concept>
+    <code value="07407"/>
+    <display value="Villa Alegre"/>
+  </concept>
+  <concept>
+    <code value="05804"/>
+    <display value="Villa Alemana"/>
+  </concept>
+  <concept>
+    <code value="09120"/>
+    <display value="Villarrica"/>
+  </concept>
+  <concept>
+    <code value="05109"/>
+    <display value="Viña del Mar"/>
+  </concept>
+  <concept>
+    <code value="13132"/>
+    <display value="Vitacura"/>
+  </concept>
+  <concept>
+    <code value="07408"/>
+    <display value="Yerbas Buenas"/>
+  </concept>
+  <concept>
+    <code value="08313"/>
+    <display value="Yumbel"/>
+  </concept>
+  <concept>
+    <code value="16109"/>
+    <display value="Yungay"/>
+  </concept>
+  <concept>
+    <code value="05405"/>
+    <display value="Zapallar"/>
+  </concept>
+</CodeSystem>

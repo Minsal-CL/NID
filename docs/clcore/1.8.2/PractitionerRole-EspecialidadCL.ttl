@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/PractitionerRole/EspecialidadCL> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EspecialidadCL"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreEspecialidadCl"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreEspecialidadCl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EspecialidadCL\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EspecialidadCL&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CoreEspecialidadCl.html\">CL RolClinico</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-3240.html\">Practitioner/3240: Johanna Rosa Silva Reyes</a> &quot;&quot;</p><p><b>specialty</b>: Cirujano Cardiovascular <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadesDeisCL.html\">Códigos de Especialidades</a>#06)</span>, Médico Cardiólogo <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadesDeisCL.html\">Códigos de Especialidades</a>#03)</span>, Médico internista <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadesDeisCL.html\">Códigos de Especialidades</a>#30)</span></p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:practitioner [
+     fhir:link <https://hl7chile.cl/fhir/ig/clcore/Practitioner/3240> ;
+     fhir:reference [ fhir:v "Practitioner/3240" ] ;
+     fhir:display [ fhir:v "Johanna Rosa Silva Reyes" ]
+  ] ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "06" ]
+     ] ) ;
+     fhir:text [ fhir:v "Cirujano Cardiovascular" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "03" ]
+     ] ) ;
+     fhir:text [ fhir:v "Médico Cardiólogo" ]
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "30" ]
+     ] ) ;
+     fhir:text [ fhir:v "Médico internista" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

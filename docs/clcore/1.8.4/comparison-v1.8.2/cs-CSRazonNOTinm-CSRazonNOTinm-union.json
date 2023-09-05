@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3645f345-3017-4a6a-b7ed-8d9a7e0a1989-38",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3645f345-3017-4a6a-b7ed-8d9a7e0a1989-38",
+  "name" : "UnionCSRazonNOinmunizacionCLAndCSRazonNOinmunizacionCL",
+  "title" : "Union of Razones no Inmunización And Razones no Inmunización",
+  "status" : "active",
+  "date" : "2023-09-01T23:22:34-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "solicitudPaci",
+    "display" : "Solicitud del paciente"
+  },
+  {
+    "code" : "otras",
+    "display" : "Otras"
+  },
+  {
+    "code" : "contraindicación",
+    "display" : "Contraindicación"
+  },
+  {
+    "code" : "solicitudPad",
+    "display" : "Solicitud de los Padres"
+  }]
+}

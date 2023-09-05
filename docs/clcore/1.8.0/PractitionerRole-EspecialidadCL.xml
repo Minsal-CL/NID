@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="EspecialidadCL"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreEspecialidadCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EspecialidadCL"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EspecialidadCL&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CoreEspecialidadCl.html">CL RolClinico</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-3240.html">Practitioner/3240: Johanna Rosa Silva Reyes</a> &quot;&quot;</p><p><b>specialty</b>: Cirujano Cardiovascular <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadesDeisCL.html">Códigos de Especialidades</a>#06)</span>, Médico Cardiólogo <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadesDeisCL.html">Códigos de Especialidades</a>#03)</span>, Médico internista <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadesDeisCL.html">Códigos de Especialidades</a>#30)</span></p></div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/3240"/>
+    <display value="Johanna Rosa Silva Reyes"/>
+  </practitioner>
+  <specialty>
+    <coding>
+      <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"/>
+      <code value="06"/>
+    </coding>
+    <text value="Cirujano Cardiovascular"/>
+  </specialty>
+  <specialty>
+    <coding>
+      <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"/>
+      <code value="03"/>
+    </coding>
+    <text value="Médico Cardiólogo"/>
+  </specialty>
+  <specialty>
+    <coding>
+      <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"/>
+      <code value="30"/>
+    </coding>
+    <text value="Médico internista"/>
+  </specialty>
+</PractitionerRole>

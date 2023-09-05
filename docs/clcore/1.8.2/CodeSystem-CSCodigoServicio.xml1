@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSCodigoServicio"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio"/>
+  <version value="1.8.2"/>
+  <name value="CSCodServicioCL"/>
+  <title value="Tipos de Servicios Remotos"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-05-22T00:00:00-03:00"/>
+  <publisher value="HL7 Chile"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7chile.cl"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="14"/>
+  <concept>
+    <code value="nutINTA"/>
+    <display value="Nutrición INTA"/>
+  </concept>
+  <concept>
+    <code value="nedINTA"/>
+    <display value="Medicina INTA"/>
+  </concept>
+  <concept>
+    <code value="medInt"/>
+    <display value="Medicina Interna"/>
+  </concept>
+  <concept>
+    <code value="saludMDigital"/>
+    <display value="Salud Mental Digital"/>
+  </concept>
+  <concept>
+    <code value="medGen"/>
+    <display value="Medicina General"/>
+  </concept>
+  <concept>
+    <code value="derm"/>
+    <display value="Dermatología"/>
+  </concept>
+  <concept>
+    <code value="telDiabetes"/>
+    <display value="Telemedicina Diabetes"/>
+  </concept>
+  <concept>
+    <code value="telRehab"/>
+    <display value="Tele rehabilitación"/>
+  </concept>
+  <concept>
+    <code value="otorrin"/>
+    <display value="Otorrinolaringología"/>
+  </concept>
+  <concept>
+    <code value="neurInf"/>
+    <display value="Neurología Infantil"/>
+  </concept>
+  <concept>
+    <code value="atencUrgAPS"/>
+    <display value="Atención de Urgencia APS"/>
+  </concept>
+  <concept>
+    <code value="vih"/>
+    <display value="VIH"/>
+  </concept>
+  <concept>
+    <code value="geri"/>
+    <display value="Geriatría"/>
+  </concept>
+  <concept>
+    <code value="gine"/>
+    <display value="Ginecología"/>
+  </concept>
+</CodeSystem>

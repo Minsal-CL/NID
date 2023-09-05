@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7e0a81e9-e381-4760-9a4b-6c21dedf45c7-189",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7e0a81e9-e381-4760-9a4b-6c21dedf45c7-189",
+  "name" : "IntersectionVSTiposEncuentroCLAndVSTiposEncuentroCL",
+  "title" : "Intersection of Tipos de Encuentro And Tipos de Encuentro",
+  "status" : "active",
+  "date" : "2023-09-01T22:37:58-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }]
+}

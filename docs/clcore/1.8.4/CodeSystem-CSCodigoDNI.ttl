@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSCodigoDNI"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.8.4"] ; # 
+  fhir:name [ fhir:v "CSCodigoDNI"] ; # 
+  fhir:title [ fhir:v "Códigos de Documentos DNI para LATAM y el Caribe"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7chile.cl" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "33"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NNBLZ" ] ;
+     fhir:display [ fhir:v "Belice" ]
+  ] [
+     fhir:code [ fhir:v "NNCRI" ] ;
+     fhir:display [ fhir:v "Costa Rica" ]
+  ] [
+     fhir:code [ fhir:v "NNSLV" ] ;
+     fhir:display [ fhir:v "El Salvador" ]
+  ] [
+     fhir:code [ fhir:v "NNGTM" ] ;
+     fhir:display [ fhir:v "Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "NNHND" ] ;
+     fhir:display [ fhir:v "Honduras" ]
+  ] [
+     fhir:code [ fhir:v "NNMEX" ] ;
+     fhir:display [ fhir:v "México" ]
+  ] [
+     fhir:code [ fhir:v "NNNIC" ] ;
+     fhir:display [ fhir:v "Nicaragua" ]
+  ] [
+     fhir:code [ fhir:v "NNPAN" ] ;
+     fhir:display [ fhir:v "Panamá" ]
+  ] [
+     fhir:code [ fhir:v "NNARG" ] ;
+     fhir:display [ fhir:v "Argentina" ]
+  ] [
+     fhir:code [ fhir:v "NNBOL" ] ;
+     fhir:display [ fhir:v "Bolivia" ]
+  ] [
+     fhir:code [ fhir:v "NNBRA" ] ;
+     fhir:display [ fhir:v "Brasil" ]
+  ] [
+     fhir:code [ fhir:v "NNCOL" ] ;
+     fhir:display [ fhir:v "Colombia" ]
+  ] [
+     fhir:code [ fhir:v "NNECU" ] ;
+     fhir:display [ fhir:v "Ecuador" ]
+  ] [
+     fhir:code [ fhir:v "NNGUY" ] ;
+     fhir:display [ fhir:v "Guyana" ]
+  ] [
+     fhir:code [ fhir:v "NNPRY" ] ;
+     fhir:display [ fhir:v "Paraguay" ]
+  ] [
+     fhir:code [ fhir:v "NNPER" ] ;
+     fhir:display [ fhir:v "Perú" ]
+  ] [
+     fhir:code [ fhir:v "NNSUR" ] ;
+     fhir:display [ fhir:v "Surinam" ]
+  ] [
+     fhir:code [ fhir:v "NNURY" ] ;
+     fhir:display [ fhir:v "Uruguay" ]
+  ] [
+     fhir:code [ fhir:v "NNVEN" ] ;
+     fhir:display [ fhir:v "Venezuela" ]
+  ] [
+     fhir:code [ fhir:v "NNCHL" ] ;
+     fhir:display [ fhir:v "Chile" ]
+  ] [
+     fhir:code [ fhir:v "NNATG" ] ;
+     fhir:display [ fhir:v "Antigua y Barbuda" ]
+  ] [
+     fhir:code [ fhir:v "NNBHS" ] ;
+     fhir:display [ fhir:v "Bahamas" ]
+  ] [
+     fhir:code [ fhir:v "NNBRB" ] ;
+     fhir:display [ fhir:v "Barbados" ]
+  ] [
+     fhir:code [ fhir:v "NNCUB" ] ;
+     fhir:display [ fhir:v "Cuba" ]
+  ] [
+     fhir:code [ fhir:v "NNDMA" ] ;
+     fhir:display [ fhir:v "Dominica" ]
+  ] [
+     fhir:code [ fhir:v "NNGRD" ] ;
+     fhir:display [ fhir:v "Granada" ]
+  ] [
+     fhir:code [ fhir:v "NNHTI" ] ;
+     fhir:display [ fhir:v "Haití" ]
+  ] [
+     fhir:code [ fhir:v "NNJAM" ] ;
+     fhir:display [ fhir:v "Jamaica" ]
+  ] [
+     fhir:code [ fhir:v "NNDOM" ] ;
+     fhir:display [ fhir:v "República Dominicana" ]
+  ] [
+     fhir:code [ fhir:v "NNKNA" ] ;
+     fhir:display [ fhir:v "San Cristóbal y Nieves" ]
+  ] [
+     fhir:code [ fhir:v "NNLCA" ] ;
+     fhir:display [ fhir:v "Santa Lucía" ]
+  ] [
+     fhir:code [ fhir:v "NNVCT" ] ;
+     fhir:display [ fhir:v "San Vicente y las Granadinas" ]
+  ] [
+     fhir:code [ fhir:v "NNTTO" ] ;
+     fhir:display [ fhir:v "Trinidad y Tobago" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

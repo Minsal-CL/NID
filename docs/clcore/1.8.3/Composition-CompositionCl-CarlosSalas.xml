@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="CompositionCl-CarlosSalas"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Composition</b><a name="CompositionCl-CarlosSalas"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Composition &quot;CompositionCl-CarlosSalas&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DocumentoCl.html">CL Documento</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Patient Summary Document <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2022-07-06 14:30:00+0100</p><p><b>author</b>: <a href="Practitioner-3020.html">Practitioner/3020</a> &quot;&quot;</p><p><b>title</b>: Resumen IPS para Carlos Salas - 06 JUL 2022</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="60591-5"/>
+      <display value="Patient Summary Document"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/11"/>
+  </subject>
+  <date value="2022-07-06T14:30:00+01:00"/>
+  <author>
+    <reference value="Practitioner/3020"/>
+  </author>
+  <title value="Resumen IPS para Carlos Salas - 06 JUL 2022"/>
+  <section>
+    <title value="Diagnósticos"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11450-4"/>
+        <display value="Problem list - Reported"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Asma</div>
+    </text>
+    <entry>
+      <reference value="Condition/1112"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Medicamentos"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+        <display value="Hx of Medication use"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Anastrozole/Cimicifuga</div>
+    </text>
+    <entry>
+      <reference value="MedicationStatement/354"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Alergias"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48765-2"/>
+        <display value="Allergies and adverse reactions Document"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Allergy to penicillin, high criticality, active</div>
+    </text>
+    <entry>
+      <reference value="AllergyIntolerance/222"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Vacunas"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11369-6"/>
+        <display value="Hx of Immunization"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Lista de las vacunas recibidas</div>
+    </text>
+    <entry>
+      <reference value="Immunization/999"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Signos Vitales y Mediciones Fisiológicas"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8716-3"/>
+        <display value="Vital signs"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Vital signs</div>
+    </text>
+    <entry>
+      <reference value="Observation/123"/>
+    </entry>
+  </section>
+</Composition>

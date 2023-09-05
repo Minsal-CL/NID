@@ -1,0 +1,80 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "219a9162-e1ce-4437-9e5b-a0ee8cfa4664-12",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/219a9162-e1ce-4437-9e5b-a0ee8cfa4664-12",
+  "name" : "IntersectionCSCodRegionCLAndCSCodRegionCL",
+  "title" : "Intersection of Códigos de Regiones en Chile And Códigos de Regiones en Chile",
+  "status" : "active",
+  "date" : "2023-09-01T23:05:16-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "15",
+    "display" : "Arica y Parinacota"
+  },
+  {
+    "code" : "01",
+    "display" : "Tarapacá"
+  },
+  {
+    "code" : "02",
+    "display" : "Antofagasta"
+  },
+  {
+    "code" : "03",
+    "display" : "Atacama"
+  },
+  {
+    "code" : "04",
+    "display" : "Coquimbo"
+  },
+  {
+    "code" : "05",
+    "display" : "Valparaíso"
+  },
+  {
+    "code" : "13",
+    "display" : "Metropolitana de Santiago"
+  },
+  {
+    "code" : "06",
+    "display" : "Del Libertador Gral. Bernardo O'Higgins"
+  },
+  {
+    "code" : "07",
+    "display" : "Del Maule"
+  },
+  {
+    "code" : "08",
+    "display" : "Del Biobío"
+  },
+  {
+    "code" : "09",
+    "display" : "De la Araucanía"
+  },
+  {
+    "code" : "14",
+    "display" : "De los Ríos"
+  },
+  {
+    "code" : "10",
+    "display" : "De los Lagos"
+  },
+  {
+    "code" : "11",
+    "display" : "Aysén del Gral. Carlos Ibáñez del Campo"
+  },
+  {
+    "code" : "12",
+    "display" : "Magallanes y de la Antártica Chilena"
+  },
+  {
+    "code" : "16",
+    "display" : "Ñuble"
+  }]
+}

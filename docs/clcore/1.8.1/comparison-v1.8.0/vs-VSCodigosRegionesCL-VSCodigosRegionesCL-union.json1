@@ -1,0 +1,98 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b8d67a23-275f-49a4-bbf5-71e723b259d4-155",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b8d67a23-275f-49a4-bbf5-71e723b259d4-155",
+  "name" : "UnionVSCodigosRegionesCLAndVSCodigosRegionesCL",
+  "title" : "Union of Códigos de Regiones en Chile And Códigos de Regiones en Chile",
+  "status" : "active",
+  "date" : "2023-06-27T23:23:35-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "15",
+      "display" : "Arica y Parinacota"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "01",
+      "display" : "Tarapacá"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "02",
+      "display" : "Antofagasta"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "03",
+      "display" : "Atacama"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "04",
+      "display" : "Coquimbo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "05",
+      "display" : "Valparaíso"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "13",
+      "display" : "Metropolitana de Santiago"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "06",
+      "display" : "Del Libertador Gral. Bernardo O'Higgins"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "07",
+      "display" : "Del Maule"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "08",
+      "display" : "Del Biobío"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "09",
+      "display" : "De la Araucanía"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "14",
+      "display" : "De los Ríos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "10",
+      "display" : "De los Lagos"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "11",
+      "display" : "Aysén del Gral. Carlos Ibáñez del Campo"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "12",
+      "display" : "Magallanes y de la Antártica Chilena"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+      "code" : "16",
+      "display" : "Ñuble"
+    }]
+  }
+}

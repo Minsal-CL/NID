@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/Bundle/BundleEx> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BundleEx"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/BundleCl"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/BundleCl>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://sistema.cl/Transacciones/"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Bundle-001" ]
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:timestamp [ fhir:v "2020-09-25T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "Organization/ORG1"^^xsd:anyURI ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Organization"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "Practitioner/3020"^^xsd:anyURI ] ;
+     fhir:request [
+       fhir:method [ fhir:v "POST" ] ;
+       fhir:url [ fhir:v "Practitioner"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

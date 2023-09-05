@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="BundleEx"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/BundleCl"/>
+  </meta>
+  <identifier>
+    <system value="http://sistema.cl/Transacciones/"/>
+    <value value="Bundle-001"/>
+  </identifier>
+  <type value="transaction"/>
+  <timestamp value="2020-09-25T00:00:00-03:00"/>
+  <entry>
+    <fullUrl value="Organization/ORG1"/>
+    <request>
+      <method value="POST"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="Practitioner/3020"/>
+    <request>
+      <method value="POST"/>
+      <url value="Practitioner"/>
+    </request>
+  </entry>
+</Bundle>

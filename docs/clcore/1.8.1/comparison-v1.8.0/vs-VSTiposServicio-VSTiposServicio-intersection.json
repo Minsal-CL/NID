@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b8d67a23-275f-49a4-bbf5-71e723b259d4-192",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b8d67a23-275f-49a4-bbf5-71e723b259d4-192",
+  "name" : "IntersectionVSTiposServicioCLAndVSTiposServicioCL",
+  "title" : "Intersection of Tipos de Servicios Remotos And Tipos de Servicios Remotos",
+  "status" : "active",
+  "date" : "2023-06-27T23:23:36-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "nutINTA",
+      "display" : "Nutrición INTA"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "nedINTA",
+      "display" : "Medicina INTA"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "medInt",
+      "display" : "Medicina Interna"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "saludMDigital",
+      "display" : "Salud Mental Digital"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "medGen",
+      "display" : "Medicina General"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "derm",
+      "display" : "Dermatología"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "telDiabetes",
+      "display" : "Telemedicina Diabetes"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "telRehab",
+      "display" : "Tele rehabilitación"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "otorrin",
+      "display" : "Otorrinolaringología"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "neurInf",
+      "display" : "Neurología Infantil"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "atencUrgAPS",
+      "display" : "Atención de Urgencia APS"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "vih",
+      "display" : "VIH"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "geri",
+      "display" : "Geriatría"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+      "code" : "gine",
+      "display" : "Ginecología"
+    }]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSCodigoServicio",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
+  "version" : "1.8.2",
+  "name" : "CSCodServicioCL",
+  "title" : "Tipos de Servicios Remotos",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-05-22T00:00:00-03:00",
+  "publisher" : "HL7 Chile",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7chile.cl"
+    },
+    {
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "copyright" : "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "nutINTA",
+    "display" : "Nutrición INTA"
+  },
+  {
+    "code" : "nedINTA",
+    "display" : "Medicina INTA"
+  },
+  {
+    "code" : "medInt",
+    "display" : "Medicina Interna"
+  },
+  {
+    "code" : "saludMDigital",
+    "display" : "Salud Mental Digital"
+  },
+  {
+    "code" : "medGen",
+    "display" : "Medicina General"
+  },
+  {
+    "code" : "derm",
+    "display" : "Dermatología"
+  },
+  {
+    "code" : "telDiabetes",
+    "display" : "Telemedicina Diabetes"
+  },
+  {
+    "code" : "telRehab",
+    "display" : "Tele rehabilitación"
+  },
+  {
+    "code" : "otorrin",
+    "display" : "Otorrinolaringología"
+  },
+  {
+    "code" : "neurInf",
+    "display" : "Neurología Infantil"
+  },
+  {
+    "code" : "atencUrgAPS",
+    "display" : "Atención de Urgencia APS"
+  },
+  {
+    "code" : "vih",
+    "display" : "VIH"
+  },
+  {
+    "code" : "geri",
+    "display" : "Geriatría"
+  },
+  {
+    "code" : "gine",
+    "display" : "Ginecología"
+  }]
+}

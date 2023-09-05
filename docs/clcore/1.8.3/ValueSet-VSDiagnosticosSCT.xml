@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VSDiagnosticosSCT"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"/>
+  <version value="1.8.3"/>
+  <name value="VSDiagnosticosSCT"/>
+  <title value="Diagnósticos SNOMED y Ausente o Desconocido"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-07-25T00:00:00-03:00"/>
+  <publisher value="HL7 Chile"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7chile.cl"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Diagnósticos definidos en Snomed-CT."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+    </include>
+  </compose>
+</ValueSet>

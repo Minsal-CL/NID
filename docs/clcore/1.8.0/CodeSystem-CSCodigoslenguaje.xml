@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSCodigoslenguaje"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ar-SA<a name="CSCodigoslenguaje-ar-SA"> </a></td><td>Arabic</td><td>Saudi Arabia, Arabic (Saudi Arabia)</td></tr><tr><td style="white-space:nowrap">bn-BD<a name="CSCodigoslenguaje-bn-BD"> </a></td><td>Bangla</td><td>Bangladesh, Bangla (Bangladesh)</td></tr><tr><td style="white-space:nowrap">bn-IN<a name="CSCodigoslenguaje-bn-IN"> </a></td><td>Bangla</td><td>India, Bangla (India)</td></tr><tr><td style="white-space:nowrap">cs-CZ<a name="CSCodigoslenguaje-cs-CZ"> </a></td><td>Czech</td><td>Czech Republic, Czech (Czech Republic)</td></tr><tr><td style="white-space:nowrap">da-DK<a name="CSCodigoslenguaje-da-DK"> </a></td><td>Danish</td><td>Denmark, Danish (Denmark)</td></tr><tr><td style="white-space:nowrap">de-AT<a name="CSCodigoslenguaje-de-AT"> </a></td><td>German</td><td>Austria, Austrian German</td></tr><tr><td style="white-space:nowrap">de-CH<a name="CSCodigoslenguaje-de-CH"> </a></td><td>German</td><td>Switzerland, Swiss German</td></tr><tr><td style="white-space:nowrap">de-DE<a name="CSCodigoslenguaje-de-DE"> </a></td><td>German</td><td>Germany, Standard German (as spoken in Germany)</td></tr><tr><td style="white-space:nowrap">el-GR<a name="CSCodigoslenguaje-el-GR"> </a></td><td>Greek</td><td>Greece, Modern Greek</td></tr><tr><td style="white-space:nowrap">en-AU<a name="CSCodigoslenguaje-en-AU"> </a></td><td>English</td><td>Australia, Australian English</td></tr><tr><td style="white-space:nowrap">en-CA<a name="CSCodigoslenguaje-en-CA"> </a></td><td>English</td><td>Canada, Canadian English</td></tr><tr><td style="white-space:nowrap">en-GB<a name="CSCodigoslenguaje-en-GB"> </a></td><td>English</td><td>United Kingdom, British English</td></tr><tr><td style="white-space:nowrap">en-IE<a name="CSCodigoslenguaje-en-IE"> </a></td><td>English</td><td>Ireland, Irish English</td></tr><tr><td style="white-space:nowrap">en-IN<a name="CSCodigoslenguaje-en-IN"> </a></td><td>English</td><td>India, Indian English</td></tr><tr><td style="white-space:nowrap">en-NZ<a name="CSCodigoslenguaje-en-NZ"> </a></td><td>English</td><td>New Zealand, New Zealand English</td></tr><tr><td style="white-space:nowrap">en-US<a name="CSCodigoslenguaje-en-US"> </a></td><td>English</td><td>United States, US English</td></tr><tr><td style="white-space:nowrap">en-ZA<a name="CSCodigoslenguaje-en-ZA"> </a></td><td>English</td><td>South Africa, English (South Africa)</td></tr><tr><td style="white-space:nowrap">es-AR<a name="CSCodigoslenguaje-es-AR"> </a></td><td>Spanish</td><td>Argentina, Argentine Spanish</td></tr><tr><td style="white-space:nowrap">es-CL<a name="CSCodigoslenguaje-es-CL"> </a></td><td>Spanish</td><td>Chile, Chilean Spanish</td></tr><tr><td style="white-space:nowrap">es-CO<a name="CSCodigoslenguaje-es-CO"> </a></td><td>Spanish</td><td>Columbia, Colombian Spanish</td></tr><tr><td style="white-space:nowrap">es-ES<a name="CSCodigoslenguaje-es-ES"> </a></td><td>Spanish</td><td>Spain, Castilian Spanish (as spoken in Central-Northern Spain)</td></tr><tr><td style="white-space:nowrap">es-MX<a name="CSCodigoslenguaje-es-MX"> </a></td><td>Spanish</td><td>Mexico, Mexican Spanish</td></tr><tr><td style="white-space:nowrap">es-US<a name="CSCodigoslenguaje-es-US"> </a></td><td>Spanish</td><td>United States, American Spanish</td></tr><tr><td style="white-space:nowrap">fi-FI<a name="CSCodigoslenguaje-fi-FI"> </a></td><td>Finnish</td><td>Finland, Finnish (Finland)</td></tr><tr><td style="white-space:nowrap">fr-BE<a name="CSCodigoslenguaje-fr-BE"> </a></td><td>French</td><td>Belgium, Belgian French</td></tr><tr><td style="white-space:nowrap">fr-CA<a name="CSCodigoslenguaje-fr-CA"> </a></td><td>French</td><td>Canada, Canadian French</td></tr><tr><td style="white-space:nowrap">fr-CH<a name="CSCodigoslenguaje-fr-CH"> </a></td><td>French</td><td>Switzerland, Swiss French</td></tr><tr><td style="white-space:nowrap">fr-FR<a name="CSCodigoslenguaje-fr-FR"> </a></td><td>French</td><td>France, Standard French (especially in France)</td></tr><tr><td style="white-space:nowrap">he-IL<a name="CSCodigoslenguaje-he-IL"> </a></td><td>Hebrew</td><td>Israel, Hebrew (Israel)</td></tr><tr><td style="white-space:nowrap">hi-IN<a name="CSCodigoslenguaje-hi-IN"> </a></td><td>Hindi</td><td>India, Hindi (India)</td></tr><tr><td style="white-space:nowrap">hu-HU<a name="CSCodigoslenguaje-hu-HU"> </a></td><td>Hungarian</td><td>Hungary, Hungarian (Hungary)</td></tr><tr><td style="white-space:nowrap">id-ID<a name="CSCodigoslenguaje-id-ID"> </a></td><td>Indonesian</td><td>Indonesia, Indonesian (Indonesia)</td></tr><tr><td style="white-space:nowrap">it-CH<a name="CSCodigoslenguaje-it-CH"> </a></td><td>Italian</td><td>Switzerland, Swiss Italian</td></tr><tr><td style="white-space:nowrap">it-IT<a name="CSCodigoslenguaje-it-IT"> </a></td><td>Italian</td><td>Italy, Standard Italian (as spoken in Italy)</td></tr><tr><td style="white-space:nowrap">jp-JP<a name="CSCodigoslenguaje-jp-JP"> </a></td><td>Japanese</td><td>Japan, Japanese (Japan)</td></tr><tr><td style="white-space:nowrap">ko-KR<a name="CSCodigoslenguaje-ko-KR"> </a></td><td>Korean</td><td>Republic of Korea, Korean (Republic of Korea)</td></tr><tr><td style="white-space:nowrap">nl-BE<a name="CSCodigoslenguaje-nl-BE"> </a></td><td>Dutch</td><td>Belgium, Belgian Dutch</td></tr><tr><td style="white-space:nowrap">nl-NL<a name="CSCodigoslenguaje-nl-NL"> </a></td><td>Dutch</td><td>The Netherlands, Standard Dutch (as spoken in The Netherlands)</td></tr><tr><td style="white-space:nowrap">no-NO<a name="CSCodigoslenguaje-no-NO"> </a></td><td>Norwegian</td><td>Norway, Norwegian (Norway)</td></tr><tr><td style="white-space:nowrap">pl-PL<a name="CSCodigoslenguaje-pl-PL"> </a></td><td>Polish</td><td>Poland, Polish (Poland)</td></tr><tr><td style="white-space:nowrap">pt-BR<a name="CSCodigoslenguaje-pt-BR"> </a></td><td>Portugese</td><td>Brazil, Brazilian Portuguese</td></tr><tr><td style="white-space:nowrap">pt-PT<a name="CSCodigoslenguaje-pt-PT"> </a></td><td>Portugese</td><td>Portugal, European Portuguese (as written and spoken in Portugal)</td></tr><tr><td style="white-space:nowrap">ro-RO<a name="CSCodigoslenguaje-ro-RO"> </a></td><td>Romanian</td><td>Romania, Romanian (Romania)</td></tr><tr><td style="white-space:nowrap">ru-RU<a name="CSCodigoslenguaje-ru-RU"> </a></td><td>Russian</td><td>Russian Federation, Russian (Russian Federation)</td></tr><tr><td style="white-space:nowrap">sk-SK<a name="CSCodigoslenguaje-sk-SK"> </a></td><td>Slovak</td><td>Slovakia, Slovak (Slovakia)</td></tr><tr><td style="white-space:nowrap">sv-SE<a name="CSCodigoslenguaje-sv-SE"> </a></td><td>Swedish</td><td>Sweden, Swedish (Sweden)</td></tr><tr><td style="white-space:nowrap">ta-IN<a name="CSCodigoslenguaje-ta-IN"> </a></td><td>Tamil</td><td>India, Indian Tamil</td></tr><tr><td style="white-space:nowrap">ta-LK<a name="CSCodigoslenguaje-ta-LK"> </a></td><td>Tamil</td><td>Sri Lanka, Sri Lankan Tamil</td></tr><tr><td style="white-space:nowrap">th-TH<a name="CSCodigoslenguaje-th-TH"> </a></td><td>Thai</td><td>Thailand, Thai (Thailand)</td></tr><tr><td style="white-space:nowrap">tr-TR<a name="CSCodigoslenguaje-tr-TR"> </a></td><td>Turkish</td><td>Turkey, Turkish (Turkey)</td></tr><tr><td style="white-space:nowrap">zh-CN<a name="CSCodigoslenguaje-zh-CN"> </a></td><td>Chinese</td><td>China, Mainland China, simplified characters</td></tr><tr><td style="white-space:nowrap">zh-HK<a name="CSCodigoslenguaje-zh-HK"> </a></td><td>Chinese</td><td>Hond Kong, Hong Kong, traditional characters</td></tr><tr><td style="white-space:nowrap">zh-TW<a name="CSCodigoslenguaje-zh-TW"> </a></td><td>Chinese</td><td>Taiwan, Taiwan, traditional characters</td></tr></table></div>
+  </text>
+  <url value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"/>
+  <version value="1.8.0"/>
+  <name value="CSCodigoslenguaje"/>
+  <title value="Codigos Lenguaje"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-06-10T00:00:00-03:00"/>
+  <publisher value="HL7 Chile"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7chile.cl"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Codigoslenguaje"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="53"/>
+  <concept>
+    <code value="ar-SA"/>
+    <display value="Arabic"/>
+    <definition value="Saudi Arabia, Arabic (Saudi Arabia)"/>
+  </concept>
+  <concept>
+    <code value="bn-BD"/>
+    <display value="Bangla"/>
+    <definition value="Bangladesh, Bangla (Bangladesh)"/>
+  </concept>
+  <concept>
+    <code value="bn-IN"/>
+    <display value="Bangla"/>
+    <definition value="India, Bangla (India)"/>
+  </concept>
+  <concept>
+    <code value="cs-CZ"/>
+    <display value="Czech"/>
+    <definition value="Czech Republic, Czech (Czech Republic)"/>
+  </concept>
+  <concept>
+    <code value="da-DK"/>
+    <display value="Danish"/>
+    <definition value="Denmark, Danish (Denmark)"/>
+  </concept>
+  <concept>
+    <code value="de-AT"/>
+    <display value="German"/>
+    <definition value="Austria, Austrian German"/>
+  </concept>
+  <concept>
+    <code value="de-CH"/>
+    <display value="German"/>
+    <definition value="Switzerland, Swiss German"/>
+  </concept>
+  <concept>
+    <code value="de-DE"/>
+    <display value="German"/>
+    <definition value="Germany, Standard German (as spoken in Germany)"/>
+  </concept>
+  <concept>
+    <code value="el-GR"/>
+    <display value="Greek"/>
+    <definition value="Greece, Modern Greek"/>
+  </concept>
+  <concept>
+    <code value="en-AU"/>
+    <display value="English"/>
+    <definition value="Australia, Australian English"/>
+  </concept>
+  <concept>
+    <code value="en-CA"/>
+    <display value="English"/>
+    <definition value="Canada, Canadian English"/>
+  </concept>
+  <concept>
+    <code value="en-GB"/>
+    <display value="English"/>
+    <definition value="United Kingdom, British English"/>
+  </concept>
+  <concept>
+    <code value="en-IE"/>
+    <display value="English"/>
+    <definition value="Ireland, Irish English"/>
+  </concept>
+  <concept>
+    <code value="en-IN"/>
+    <display value="English"/>
+    <definition value="India, Indian English"/>
+  </concept>
+  <concept>
+    <code value="en-NZ"/>
+    <display value="English"/>
+    <definition value="New Zealand, New Zealand English"/>
+  </concept>
+  <concept>
+    <code value="en-US"/>
+    <display value="English"/>
+    <definition value="United States, US English"/>
+  </concept>
+  <concept>
+    <code value="en-ZA"/>
+    <display value="English"/>
+    <definition value="South Africa, English (South Africa)"/>
+  </concept>
+  <concept>
+    <code value="es-AR"/>
+    <display value="Spanish"/>
+    <definition value="Argentina, Argentine Spanish"/>
+  </concept>
+  <concept>
+    <code value="es-CL"/>
+    <display value="Spanish"/>
+    <definition value="Chile, Chilean Spanish"/>
+  </concept>
+  <concept>
+    <code value="es-CO"/>
+    <display value="Spanish"/>
+    <definition value="Columbia, Colombian Spanish"/>
+  </concept>
+  <concept>
+    <code value="es-ES"/>
+    <display value="Spanish"/>
+    <definition value="Spain, Castilian Spanish (as spoken in Central-Northern Spain)"/>
+  </concept>
+  <concept>
+    <code value="es-MX"/>
+    <display value="Spanish"/>
+    <definition value="Mexico, Mexican Spanish"/>
+  </concept>
+  <concept>
+    <code value="es-US"/>
+    <display value="Spanish"/>
+    <definition value="United States, American Spanish"/>
+  </concept>
+  <concept>
+    <code value="fi-FI"/>
+    <display value="Finnish"/>
+    <definition value="Finland, Finnish (Finland)"/>
+  </concept>
+  <concept>
+    <code value="fr-BE"/>
+    <display value="French"/>
+    <definition value="Belgium, Belgian French"/>
+  </concept>
+  <concept>
+    <code value="fr-CA"/>
+    <display value="French"/>
+    <definition value="Canada, Canadian French"/>
+  </concept>
+  <concept>
+    <code value="fr-CH"/>
+    <display value="French"/>
+    <definition value="Switzerland, Swiss French"/>
+  </concept>
+  <concept>
+    <code value="fr-FR"/>
+    <display value="French"/>
+    <definition value="France, Standard French (especially in France)"/>
+  </concept>
+  <concept>
+    <code value="he-IL"/>
+    <display value="Hebrew"/>
+    <definition value="Israel, Hebrew (Israel)"/>
+  </concept>
+  <concept>
+    <code value="hi-IN"/>
+    <display value="Hindi"/>
+    <definition value="India, Hindi (India)"/>
+  </concept>
+  <concept>
+    <code value="hu-HU"/>
+    <display value="Hungarian"/>
+    <definition value="Hungary, Hungarian (Hungary)"/>
+  </concept>
+  <concept>
+    <code value="id-ID"/>
+    <display value="Indonesian"/>
+    <definition value="Indonesia, Indonesian (Indonesia)"/>
+  </concept>
+  <concept>
+    <code value="it-CH"/>
+    <display value="Italian"/>
+    <definition value="Switzerland, Swiss Italian"/>
+  </concept>
+  <concept>
+    <code value="it-IT"/>
+    <display value="Italian"/>
+    <definition value="Italy, Standard Italian (as spoken in Italy)"/>
+  </concept>
+  <concept>
+    <code value="jp-JP"/>
+    <display value="Japanese"/>
+    <definition value="Japan, Japanese (Japan)"/>
+  </concept>
+  <concept>
+    <code value="ko-KR"/>
+    <display value="Korean"/>
+    <definition value="Republic of Korea, Korean (Republic of Korea)"/>
+  </concept>
+  <concept>
+    <code value="nl-BE"/>
+    <display value="Dutch"/>
+    <definition value="Belgium, Belgian Dutch"/>
+  </concept>
+  <concept>
+    <code value="nl-NL"/>
+    <display value="Dutch"/>
+    <definition value="The Netherlands, Standard Dutch (as spoken in The Netherlands)"/>
+  </concept>
+  <concept>
+    <code value="no-NO"/>
+    <display value="Norwegian"/>
+    <definition value="Norway, Norwegian (Norway)"/>
+  </concept>
+  <concept>
+    <code value="pl-PL"/>
+    <display value="Polish"/>
+    <definition value="Poland, Polish (Poland)"/>
+  </concept>
+  <concept>
+    <code value="pt-BR"/>
+    <display value="Portugese"/>
+    <definition value="Brazil, Brazilian Portuguese"/>
+  </concept>
+  <concept>
+    <code value="pt-PT"/>
+    <display value="Portugese"/>
+    <definition value="Portugal, European Portuguese (as written and spoken in Portugal)"/>
+  </concept>
+  <concept>
+    <code value="ro-RO"/>
+    <display value="Romanian"/>
+    <definition value="Romania, Romanian (Romania)"/>
+  </concept>
+  <concept>
+    <code value="ru-RU"/>
+    <display value="Russian"/>
+    <definition value="Russian Federation, Russian (Russian Federation)"/>
+  </concept>
+  <concept>
+    <code value="sk-SK"/>
+    <display value="Slovak"/>
+    <definition value="Slovakia, Slovak (Slovakia)"/>
+  </concept>
+  <concept>
+    <code value="sv-SE"/>
+    <display value="Swedish"/>
+    <definition value="Sweden, Swedish (Sweden)"/>
+  </concept>
+  <concept>
+    <code value="ta-IN"/>
+    <display value="Tamil"/>
+    <definition value="India, Indian Tamil"/>
+  </concept>
+  <concept>
+    <code value="ta-LK"/>
+    <display value="Tamil"/>
+    <definition value="Sri Lanka, Sri Lankan Tamil"/>
+  </concept>
+  <concept>
+    <code value="th-TH"/>
+    <display value="Thai"/>
+    <definition value="Thailand, Thai (Thailand)"/>
+  </concept>
+  <concept>
+    <code value="tr-TR"/>
+    <display value="Turkish"/>
+    <definition value="Turkey, Turkish (Turkey)"/>
+  </concept>
+  <concept>
+    <code value="zh-CN"/>
+    <display value="Chinese"/>
+    <definition value="China, Mainland China, simplified characters"/>
+  </concept>
+  <concept>
+    <code value="zh-HK"/>
+    <display value="Chinese"/>
+    <definition value="Hond Kong, Hong Kong, traditional characters"/>
+  </concept>
+  <concept>
+    <code value="zh-TW"/>
+    <display value="Chinese"/>
+    <definition value="Taiwan, Taiwan, traditional characters"/>
+  </concept>
+</CodeSystem>

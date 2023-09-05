@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="ORG1"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="ORG1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;ORG1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CoreOrganizacionCl.html">CL Organización</a></p></div><p><b>identifier</b>: id: 1233</p><p><b>active</b>: true</p><p><b>name</b>: Centro de Salud Familiar Rio Bueno de Linares</p><p><b>alias</b>: Rio Bueno CESFAM</p><p><b>telecom</b>: ph: 45325775(WORK)</p><p><b>address</b>: Calle Central 33 07401 07 152 </p></div>
+  </text>
+  <identifier>
+    <system value="http://minsal.cl/deis/codigodeis"/>
+    <value value="1233"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Centro de Salud Familiar Rio Bueno de Linares"/>
+  <alias value="Rio Bueno CESFAM"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="45325775"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <line value="Calle Central 33"/>
+    <city value="07401"/>
+    <district value="074"/>
+    <state value="07"/>
+    <country value="152"/>
+  </address>
+</Organization>

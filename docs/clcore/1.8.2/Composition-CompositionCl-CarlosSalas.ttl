@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/Composition/CompositionCl-CarlosSalas> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CompositionCl-CarlosSalas"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"^^xsd:anyURI ;
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Composition</b><a name=\"CompositionCl-CarlosSalas\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Composition &quot;CompositionCl-CarlosSalas&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentoCl.html\">CL Documento</a></p></div><p><b>status</b>: final</p><p><b>type</b>: Patient Summary Document <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#60591-5)</span></p><p><b>date</b>: 2022-07-06 14:30:00+0100</p><p><b>author</b>: <a href=\"Practitioner-3020.html\">Practitioner/3020</a> &quot;&quot;</p><p><b>title</b>: Resumen IPS para Carlos Salas - 06 JUL 2022</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:60591-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "60591-5" ] ;
+       fhir:display [ fhir:v "Patient Summary Document" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7chile.cl/fhir/ig/clcore/Patient/11> ;
+     fhir:reference [ fhir:v "Patient/11" ]
+  ] ; # 
+  fhir:date [ fhir:v "2022-07-06T14:30:00+01:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <https://hl7chile.cl/fhir/ig/clcore/Practitioner/3020> ;
+     fhir:reference [ fhir:v "Practitioner/3020" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Resumen IPS para Carlos Salas - 06 JUL 2022"] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Diagnósticos" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11450-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11450-4" ] ;
+         fhir:display [ fhir:v "Problem list - Reported" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Asma</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/Condition/1112> ;
+       fhir:reference [ fhir:v "Condition/1112" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Medicamentos" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10160-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "10160-0" ] ;
+         fhir:display [ fhir:v "Hx of Medication use" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Anastrozole/Cimicifuga</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/MedicationStatement/354> ;
+       fhir:reference [ fhir:v "MedicationStatement/354" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Alergias" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:48765-2 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "48765-2" ] ;
+         fhir:display [ fhir:v "Allergies and adverse reactions Document" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/AllergyIntolerance/222> ;
+       fhir:reference [ fhir:v "AllergyIntolerance/222" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Vacunas" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11369-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11369-6" ] ;
+         fhir:display [ fhir:v "Hx of Immunization" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lista de las vacunas recibidas</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/Immunization/999> ;
+       fhir:reference [ fhir:v "Immunization/999" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Signos Vitales y Mediciones Fisiológicas" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8716-3 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8716-3" ] ;
+         fhir:display [ fhir:v "Vital signs" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital signs</div>"
+     ] ;
+     fhir:entry ( [
+       fhir:link <https://hl7chile.cl/fhir/ig/clcore/Observation/123> ;
+       fhir:reference [ fhir:v "Observation/123" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

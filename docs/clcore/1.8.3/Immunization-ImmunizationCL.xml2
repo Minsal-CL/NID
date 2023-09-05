@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="ImmunizationCL"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Immunization</b><a name="ImmunizationCL"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Immunization &quot;ImmunizationCL&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ImmunizationCL.html">CL Inmunización</a></p></div><p><b>Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</b>: Hepatitis A (Details: https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana code hepatiA = 'Hepatitis A', stated as 'Hepatitis A')</p><p><b>identifier</b>: id: 136588279</p><p><b>status</b>: completed</p><p><b>statusReason</b>:  <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>vaccineCode</b>:  <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>patient</b>: <a href="Patient-11.html">Patient/11</a> &quot;&quot;</p><p><b>occurrence</b>: 2022-04-07 00:00:00-0400</p><p><b>recorded</b>: 2021-06-24 00:00:00-0400</p><p><b>location</b>: <a href="Location-3333458.html">Location/3333458</a></p><p><b>lotNumber</b>: T3E881V</p><p><b>expirationDate</b>: 2022-03-31</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-f003.html">Organization/f003</a> &quot;Hospital Nueva Aurora&quot;</td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td>1º dosis</td></tr></table></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana">
+    <valueCoding>
+      <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"/>
+      <code value="hepatiA"/>
+      <display value="Hepatitis A"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="http://sgi.gob.cl/identifier/inmunization/rni/"/>
+    <value value="136588279"/>
+  </identifier>
+  <status value="completed"/>
+  <statusReason>
+    <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarseInm">
+      <valueCode value="solicitudPaci"/>
+    </extension>
+  </statusReason>
+  <vaccineCode>
+    <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI">
+      <valueCode value="hep_A"/>
+    </extension>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/11"/>
+  </patient>
+  <occurrenceDateTime value="2022-04-07T00:00:00-04:00"/>
+  <recorded value="2021-06-24T00:00:00-04:00"/>
+  <location>
+    <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud">
+      <valueCoding>
+        <system value="https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud"/>
+        <code value="SSAN"/>
+        <display value="Servicio de Salud Antofagasta"/>
+      </valueCoding>
+    </extension>
+    <reference value="Location/3333458"/>
+  </location>
+  <lotNumber value="T3E881V"/>
+  <expirationDate value="2022-03-31"/>
+  <performer>
+    <actor>
+      <reference value="Organization/f003"/>
+    </actor>
+  </performer>
+  <protocolApplied>
+    <doseNumberString value="1º dosis"/>
+  </protocolApplied>
+</Immunization>

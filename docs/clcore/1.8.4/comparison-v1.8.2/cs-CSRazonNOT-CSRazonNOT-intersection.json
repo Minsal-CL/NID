@@ -1,0 +1,36 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3645f345-3017-4a6a-b7ed-8d9a7e0a1989-36",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3645f345-3017-4a6a-b7ed-8d9a7e0a1989-36",
+  "name" : "IntersectionCSRazonNOencuentroCLAndCSRazonNOencuentroCL",
+  "title" : "Intersection of Razones Cancelación Atención Remota And Razones Cancelación Atención Remota",
+  "status" : "active",
+  "date" : "2023-09-01T23:22:34-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "pierdeLlam",
+    "display" : "El participante pierde la llamada"
+  },
+  {
+    "code" : "finaLlam",
+    "display" : "El participante finalizó la llamada abruptamente"
+  },
+  {
+    "code" : "problConex",
+    "display" : "El participante tuvo problemas de conexión a internet"
+  },
+  {
+    "code" : "medproblConex",
+    "display" : "Tuve problemas de conexión a internet"
+  },
+  {
+    "code" : "otros",
+    "display" : "Otros / texto libre"
+  }]
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="3240"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="3240"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;3240&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CorePrestadorCl.html">CL Prestador</a></p></div><p><b>identifier</b>: id: 8336277-3 (use: OFFICIAL), id: 999999 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna Rosa null (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href="mailto:DraSilva@mimail.com">DraSilva@mimail.com</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: cert</p><p><b>code</b>: Certificado(s) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#2112 &quot;Certificado Profesional Médico Cirujano&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#122 &quot;Cardiólogia&quot;)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Especialidad(es) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (#1234 &quot;Medicina interna&quot;)</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://api_run/run"/>
+    <value value="8336277-3"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <system value="http://example.org/api"/>
+    <value value="999999"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-mothers-family">
+        <valueString value="Reyes"/>
+      </extension>
+    </family>
+    <given value="Johanna"/>
+    <given value="Rosa"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="9345666"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="DraSilva@mimail.com"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <city>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
+            <code value="05602"/>
+            <display value="Algarrobo"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
+            <code value="056"/>
+            <display value="San Antonio"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </district>
+    <state>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
+            <code value="05"/>
+            <display value="Valparaíso"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </state>
+    <country>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+  <gender value="female"/>
+  <birthDate value="1974-08-12"/>
+  <qualification>
+    <identifier>
+      <value value="cert"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://api.minsal.cl/v1/catalogos/profesiones/"/>
+        <code value="2112"/>
+        <display value="Certificado Profesional Médico Cirujano"/>
+      </coding>
+      <text value="Certificado(s)"/>
+    </code>
+  </qualification>
+  <qualification>
+    <identifier>
+      <value value="esp"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"/>
+        <code value="122"/>
+        <display value="Cardiólogia"/>
+      </coding>
+      <text value="Especialidad(es)"/>
+    </code>
+  </qualification>
+  <qualification>
+    <identifier>
+      <value value="esp"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"/>
+        <code value="1234"/>
+        <display value="Medicina interna"/>
+      </coding>
+      <text value="Especialidad(es)"/>
+    </code>
+  </qualification>
+</Practitioner>
