@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSIdentidadDeGenero"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSIdentidadDeGenero-01\"> </a></td><td>Masculino</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSIdentidadDeGenero-02\"> </a></td><td>Femenino</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSIdentidadDeGenero-03\"> </a></td><td>Transgénero masculino</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSIdentidadDeGenero-04\"> </a></td><td>Transgénero femenino</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSIdentidadDeGenero-05\"> </a></td><td>No binarie</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"CSIdentidadDeGenero-06\"> </a></td><td>otra</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"CSIdentidadDeGenero-07\"> </a></td><td>No revelado</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSIdentidadDeGenero"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.3"] ; # 
+  fhir:name [ fhir:v "CSIdentidadDeGenero"] ; # 
+  fhir:title [ fhir:v "IdentidadDeGenero"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "IdentidadDeGenero"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "01" ] ;
+     fhir:display [ fhir:v "Masculino" ]
+  ] [
+     fhir:code [ fhir:v "02" ] ;
+     fhir:display [ fhir:v "Femenino" ]
+  ] [
+     fhir:code [ fhir:v "03" ] ;
+     fhir:display [ fhir:v "Transgénero masculino" ]
+  ] [
+     fhir:code [ fhir:v "04" ] ;
+     fhir:display [ fhir:v "Transgénero femenino" ]
+  ] [
+     fhir:code [ fhir:v "05" ] ;
+     fhir:display [ fhir:v "No binarie" ]
+  ] [
+     fhir:code [ fhir:v "06" ] ;
+     fhir:display [ fhir:v "otra" ]
+  ] [
+     fhir:code [ fhir:v "07" ] ;
+     fhir:display [ fhir:v "No revelado" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

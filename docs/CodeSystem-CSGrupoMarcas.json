@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSGrupoMarcas",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSGrupoMarcas-01\"> </a></td><td>Condición de Cuidador(a)</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSGrupoMarcas-02\"> </a></td><td>Documento que acredita cuidador </td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSGrupoMarcas-03\"> </a></td><td>Fibromialgia</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSGrupoMarcas-04\"> </a></td><td>TEA</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSGrupoMarcas-05\"> </a></td><td>EII</td></tr></table></div>"
+  },
+  "url" : "http://minsal.cl/fhir/ig/mpi/CodeSystem/CSGrupoMarcas",
+  "version" : "0.1.3",
+  "name" : "CSGrupoMarcas",
+  "title" : "GrupoMarcas",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-15",
+  "publisher" : "MINSAL",
+  "contact" : [{
+    "name" : "MINSAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://minsal.cl"
+    }]
+  }],
+  "description" : "GrupoMarcas",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "01",
+    "display" : "Condición de Cuidador(a)"
+  },
+  {
+    "code" : "02",
+    "display" : "Documento que acredita cuidador "
+  },
+  {
+    "code" : "03",
+    "display" : "Fibromialgia"
+  },
+  {
+    "code" : "04",
+    "display" : "TEA"
+  },
+  {
+    "code" : "05",
+    "display" : "EII"
+  }]
+}
