@@ -47,9 +47,11 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
+pages:
+  index.md:
+    title: MPI
+  negocio.md:
+    title: Negocio
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -79,8 +81,9 @@ dependencies:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  Inicio: index.html
+  Negocio: negocio.html
+  Artefactos: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
