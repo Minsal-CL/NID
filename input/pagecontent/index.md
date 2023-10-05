@@ -40,4 +40,5 @@ Además, la EMPI reduce los costos administrativos al simplificar el proceso de 
 * Describir los distintos perfiles de usuario de los procesos asociados al Índice Maestro de Pacientes y los recursos asociados a cada uno.
 
 * Ejemplificar los distintos casos de uso asociados al Índice Maestro de Pacientes
-* 
+
+
