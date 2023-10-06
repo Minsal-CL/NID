@@ -2,8 +2,8 @@
 A continuación se presenta el diagrama relacionado con el proceso MPI
 
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="DiagramaFlujoMPI.PNG" width="500" height="650"> 
-  <p>Visión Resumen de un Perfil</p>
+  <img  style="border: 1px solid; color: black;" src="DiagramaFlujoMPI.png" width="500" height="650"> 
+  <p></p>
 </div>
 
 ### Casos de Uso
