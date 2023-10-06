@@ -3,3 +3,56 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/AgrupacionPorMarcas'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Antuco.json ==
+WARNING: StructureDefinition/Antuco: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Antuco'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-CoberturaMinsalMPI.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/CoberturaMinsalMPI'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-DirigenteVecinal.json ==
+WARNING: StructureDefinition/DirigenteVecinal: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/DirigenteVecinal'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-IdentidadDeGenero.json ==
+WARNING: StructureDefinition/IdentidadDeGenero: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/IdentidadDeGenero'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-NivelEducacional.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/NivelEducacional'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Ocupacion.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Ocupacion'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-OrigenDiscapacidad.json ==
+WARNING: StructureDefinition/OrigenDiscapacidad: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/OrigenDiscapacidad'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PacienteMinsalMPI.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PacienteMinsalMPI'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PaisOrigenMPI.json ==
+WARNING: StructureDefinition/PaisOrigenMPI: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PaisOrigenMPI'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Prais.json ==
+WARNING: StructureDefinition/Prais: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prais'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Prilonco.json ==
+WARNING: StructureDefinition/Prilonco: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Prilonco'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PueblosAfrodescendiente.json ==
+WARNING: StructureDefinition/PueblosAfrodescendiente: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosAfrodescendiente'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PueblosOriginarios.json ==
+WARNING: StructureDefinition/PueblosOriginarios: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PueblosOriginariosPerteneciente.json ==
+WARNING: StructureDefinition/PueblosOriginariosPerteneciente: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-RelatedPersonMPI.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/RelatedPersonMPI'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Religion.json ==
+WARNING: StructureDefinition/Religion: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/Religion'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-SexoBiologico.json ==
+WARNING: StructureDefinition/SexoBiologico: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SexoBiologico'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-SituacionCalle.json ==
+WARNING: StructureDefinition/SituacionCalle: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionCalle'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-SituacionDiscapacidad.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/fhir/ig/mpi/StructureDefinition/SituacionDiscapacidad'): The Implementation Guide contains no examples for this profile
