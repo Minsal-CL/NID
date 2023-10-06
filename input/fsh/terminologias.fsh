@@ -10,7 +10,7 @@ Description: "Valoracion Desempeno"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-enosssss
+
 * codes from system CSValoracionDesempeno
 
 CodeSystem: CSValoracionDesempeno

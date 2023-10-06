@@ -49,9 +49,11 @@ dependencies:
 #
 pages:
   index.md:
-    title: MPI
+    title: Inicio
   negocio.md:
-    title: Negocio
+    title: Especificaciones de Negocio
+  artifacts.html:
+    title: Artefactos Generados
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
