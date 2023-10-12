@@ -4,21 +4,19 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.minsal.mpi
-canonical: http://minsal.cl/fhir/ig/mpi
-name: Indice de maestro de pacientes 
-title: Indice de maestro de pacientes 
-description: Indice de maestro de pacientes 
+canonical: https://interoperabilidad.minsal.cl/fhir/ig/mpi
+name: Indice Maestro de Pacientes 
+title: Indice Maestro de Pacientes 
+description: Indice Maestro de Pacientes 
 status: draft # draft | active | retired | unknown
-version: 0.1.4
+version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: MINSAL
-  url: http://minsal.cl
+  name: Unidad de Interoperabilidad - MINSAL
+  url: https://interoperabilidad.minsal.cl
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -27,9 +25,6 @@ publisher:
 #
 dependencies:
   hl7.fhir.cl.clcore: 1.8.4
-  #hl7.fhir.us.ecr: 2.1.0
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -47,6 +42,7 @@ dependencies:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
+
 pages:
   index.md:
     title: Inicio
@@ -223,3 +219,4 @@ instanceOptions:
   # if InstanceOf references a profile:
   #
   # setId: always # always | standalone-only
+

@@ -1,0 +1,14 @@
+---
+feedback:
+  - active: true
+    type: "googleform"   
+    label: "Observaciones"   
+    formUrl: https://docs.google.com/forms/d/e/1FAIpQLSe0OK5DNpaXs-QH1lO6mTJScw2df8V5TMvl_MvbBea3iSHGww/viewform?usp=pp_url
+    dashboard: 
+      label: "Issues"    
+    parameters:
+    - fieldId: "402066225"
+      variableName: "pageTitle"
+    - fieldId: "872797498"
+      variableName: "sectionName"
+
