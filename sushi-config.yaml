@@ -83,7 +83,7 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Inicio: index.html
-  Negocio: negocio.html
+  Especificaciones de Negocio: negocio.html
   Especificaciones Técnicas:
     Transacciones: transacciones.html
   Artefactos: artifacts.html
