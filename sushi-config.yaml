@@ -84,9 +84,10 @@ pages:
 menu:
   Inicio: index.html
   Negocio: negocio.html
-  Transacciones: transacciones.html
+  Especificaciones Técnicas:
+    Transacciones: transacciones.html
   Artefactos: artifacts.html
-
+  
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │
