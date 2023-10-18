@@ -5,14 +5,14 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cl.minsal.mpi
 canonical: https://interoperabilidad.minsal.cl/fhir/ig/mpi
-name: Indice Maestro de Pacientes 
-title: Indice Maestro de Pacientes 
-description: Indice Maestro de Pacientes 
+name: Maestro De Pacientes 
+title: Maestro de pacientes 
+description: Maestro de pacientes 
 status: draft # draft | active | retired | unknown
 version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: draft  # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 publisher:
   name: Unidad de Interoperabilidad - MINSAL
@@ -48,8 +48,11 @@ pages:
     title: Inicio
   negocio.md:
     title: Especificaciones de Negocio
+  transacciones.md:
+    title: Transacciones MPI
   artifacts.html:
     title: Artefactos Generados
+  
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -81,6 +84,7 @@ pages:
 menu:
   Inicio: index.html
   Negocio: negocio.html
+  Transacciones: transacciones.html
   Artefactos: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

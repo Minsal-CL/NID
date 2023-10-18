@@ -38,3 +38,31 @@ Además, el MPI reduce los costos administrativos al simplificar el proceso de r
 * Describir los distintos perfiles de usuario de los procesos asociados al Índice Maestro de Pacientes y los recursos asociados a cada uno.
 
 * Ejemplificar los distintos casos de uso asociados al Índice Maestro de Pacientes
+
+
+### Autores y validadores
+Para el desarrollo de esta Guía de implementación fue necesaria la colaboración de varios actores, los cuales se listan a continuación.
+#### Autores
+- [Unidad de Interoperabilidad](https://interoperabilidad.minsal.cl) - [Ministerio de Salud de Chile](https://www.minsal.cl/)
+
+#### Validadores
+- [HL7Chile](https://hl7chile.cl/)
+
+
+<!--
+### Autores y Colaboradores
+Para el desarrollo de esta Guía de implementación fue necesaria la colaboración de varios actores, los cuales se listan a continuación.
+#### Autores
+- [Unidad de Interoperabilidad](https://interoperabilidad.minsal.cl) - [Ministerio de Salud de Chile](https://www.minsal.cl/)
+
+#### Colaboradores
+- [Centro Nacional en Sistemas de Información en Salud (CENS)](https://www.minsal.cl/)
+
+- DEIS
+- DIGERA
+- DIVAP
+- Salud Dital
+
+#### Validadores
+- [HL7Chile](https://hl7chile.cl/)
+-->
