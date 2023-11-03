@@ -1,8 +1,8 @@
-Profile: AgrupacionPorMarcas
+Profile: MINSALAgrupacionPorMarcas
 Parent: Group
-Id: AgrupacionPorMarcas
-Title: "Agrupacion Por Marcas"
-Description: "Agrupacion Por Marcas"
+Id: MINSALAgrupacionPorMarcas
+Title: "MINSAL Agrupacion por marcas"
+Description: "Agrupacion por marcas"
 
 * type MS
 * type = #person
@@ -12,7 +12,7 @@ Description: "Agrupacion Por Marcas"
 
 * member 1..* MS
   * entity 1..1 MS
-* member.entity only Reference(PacienteMinsalMPI)
+* member.entity only Reference(MINSALPaciente)
 
 * characteristic.code from VSGrupoMarcas
 * characteristic 1..1 MS

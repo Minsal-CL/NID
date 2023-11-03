@@ -47,7 +47,7 @@ Por el momento consideraremos solo una trasaccion para un único caso de uso de 
 <br>
 
 <div align="center">
-  <img src="pixmtrans.png"> 
+  <img src="PIXmtrans.png"> 
   <p>Transacción del Caso (Fuente: Perfil IHE)</p>
 </div>
 

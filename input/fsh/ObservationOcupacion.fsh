@@ -1,8 +1,8 @@
-Profile: Ocupacion
+Profile: MINSALOcupacion
 Parent: Observation
-Id: Ocupacion
-Title: "Ocupación"
-Description: "Ocupación"
+Id: MINSALOcupacion
+Title: "MINSAL Ocupación"
+Description: "MINSAL Ocupación"
 
 
 * status MS

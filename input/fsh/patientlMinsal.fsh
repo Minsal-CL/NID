@@ -1,16 +1,12 @@
-// This is a simple example of a FSH file.
-// This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
-
-Profile: PacienteMinsalMPI
+Profile: MINSALPaciente
 Parent: PacienteCl
-Id: PacienteMinsalMPI
-Title: "PacienteMPI"
+Id: MINSALPaciente
+Title: "MINSAL Paciente "
 Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * extension contains PaisOrigenMPI named PaisOrigen 1..1 MS
 * extension contains Religion named Religion 0..1 MS
-* extension contains SexoBiologico named SexoBiologico 1..1 MS
+//* extension contains SexoBiologico named SexoBiologico 1..1 MS
 * extension contains IdentidadDeGenero named identidadGenero 0..1 MS
 * extension contains http://hl7.org/fhir/StructureDefinition/patient-birthPlace named LugarDeNacimiento 1..1 MS
 * extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS

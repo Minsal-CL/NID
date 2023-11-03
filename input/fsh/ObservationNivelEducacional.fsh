@@ -1,8 +1,8 @@
-Profile: NivelEducacional
+Profile: MINSALNivelEducacional
 Parent: Observation
-Id: NivelEducacional
-Title: "Nivel Educacional"
-Description: "Nivel Educacional"
+Id: MINSALNivelEducacional
+Title: "MINSAL Nivel Educacional"
+Description: "MINSAL Nivel Educacional"
 
 
 * status MS

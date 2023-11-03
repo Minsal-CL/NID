@@ -24,7 +24,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.cl.clcore: 1.8.4
+  hl7.fhir.cl.clcore: 1.8.5
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode

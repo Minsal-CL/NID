@@ -1,8 +1,8 @@
-Profile: SituacionDiscapacidad
+Profile: MINSALSituacionDiscapacidad
 Parent: Observation
-Id: SituacionDiscapacidad
-Title: "Situacion Discapacidad"
-Description: "Situacion Discapacidad"
+Id: MINSALSituacionDiscapacidad
+Title: "MINSAL Situacion Discapacidad"
+Description: "MINSAL Situacion Discapacidad"
 
 * extension contains OrigenDiscapacidad named OrigenDiscapacidad 1..1 MS
 

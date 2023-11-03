@@ -1,9 +1,10 @@
 // This is a simple example of a FSH file.
 // This file can be renamed, and additional FSH files can be added.
 // SUSHI will look for definitions in any file using the .fsh ending.
-Profile: CoberturaMinsalMPI
+Profile: MINSALCobertura
 Parent: Coverage
-Title: "Cobertura de Salud del paciente"
+Id: MINSALCobertura
+Title: "MINSAL Cobertura de Salud del paciente"
 Description: "Recurso para almacenar la cobertura del paciente"
 
 
@@ -16,9 +17,9 @@ Description: "Recurso para almacenar la cobertura del paciente"
 * extension contains Prilonco named Prilonco 1..1 MS
 
 * beneficiary 1..1 MS
-* beneficiary only Reference(PacienteMinsalMPI)
+* beneficiary only Reference(MINSALPaciente)
 * policyHolder 1..1 MS
-* policyHolder only Reference(PacienteMinsalMPI)
+* policyHolder only Reference(MINSALPaciente)
 * period 0..1 MS
 * status 1..1 MS
 * payor 1..1 MS
