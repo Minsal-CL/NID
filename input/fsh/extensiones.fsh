@@ -1,21 +1,21 @@
-Extension: IdentidadDeGenero
-Id: IdentidadDeGenero
-Title: "Identidad De Genero"
-Description: "Identidad De Genero"
+//Extension: IdentidadDeGenero
+//Id: IdentidadDeGenero
+//Title: "Identidad De Genero"
+//Description: "Identidad De Genero"
+//
+////* value[x] only CodeSystem
+////* valueReference = Reference()
+//* valueCodeableConcept ^short = "Identidad De Genero"
+//* valueCodeableConcept from  VSIdentidadDeGenero
 
-//* value[x] only CodeSystem
-//* valueReference = Reference()
-* valueCodeableConcept ^short = "Identidad De Genero"
-* valueCodeableConcept from  VSIdentidadDeGenero
-
-Extension: SexoBiologico
-Id: SexoBiologico
-Title: "Sexo Biologico del paciente"
-Description: "Sexo Biologico del paciente"
-* value[x] only CodeableConcept
-//* valueReference = Reference()
-* valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
+//Extension: SexoBiologico
+//Id: SexoBiologico
+//Title: "Sexo Biologico del paciente"
+//Description: "Sexo Biologico del paciente"
+//* value[x] only CodeableConcept
+////* valueReference = Reference()
+//* valueCodeableConcept ^short = "SexoBiologico"
+//* valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
 
 
 Extension: SituacionCalle

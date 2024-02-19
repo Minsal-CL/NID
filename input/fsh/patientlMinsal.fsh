@@ -7,8 +7,8 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * extension contains PaisOrigenMPI named PaisOrigen 1..1 MS
 * extension contains Religion named Religion 0..1 MS
 //* extension contains SexoBiologico named SexoBiologico 1..1 MS
-* extension contains IdentidadDeGenero named identidadGenero 0..1 MS
-* extension contains http://hl7.org/fhir/StructureDefinition/patient-birthPlace named LugarDeNacimiento 1..1 MS
+//* extension contains IdentidadDeGenero named identidadGenero 0..1 MS
+//* extension contains http://hl7.org/fhir/StructureDefinition/patient-birthPlace named LugarDeNacimiento 1..1 MS
 * extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
 
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
@@ -57,9 +57,9 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * maritalStatus from VSEstadoCivil
 * maritalStatus MS
 
-* deceasedBoolean 1..1 MS
-* deceasedBoolean ^short = "Información si el paciente esta fallecido"
-* deceasedBoolean ^definition = "Información si el paciente esta fallecido"
+* deceased 1..1 MS
+* deceased ^short = "Información si el paciente esta fallecido o su fecha de fallecimiento"
+* deceased ^definition = "Información si el paciente esta fallecido o su fecha de fallecimiento"
 
 * contact 0..* MS
 
