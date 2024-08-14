@@ -1,0 +1,24 @@
+Profile:     ParametrosSalidaPixmMpi
+Parent:      PIXmQueryParametersOut
+Id:          ParametrosSalidaPixmMpi
+Title:       "MINSAL Parametros Salida PIXm"
+Description: "Estos son los parametros de Salida para el $ihe-pix del PIXm"
+
+
+* parameter[targetId] 0..* MS
+  * ^short = "Url del recurso paciente"
+  * name 1..1 MS
+    * ^short = "Nombre para la definición"
+  * valueReference 1..1 MS
+    * ^short = "Referencia del recurso paciente encontrado"
+* parameter[targetIdentifier] 0..* MS
+  * ^short = "Identificador encontrados."
+  * name 1..1 MS
+    * ^short = "Nombre para la definición"
+  * valueIdentifier 1..1 MS
+    * ^short = "Identificador del paciente encontrado"
+    * system 1..1 MS
+      * ^short = "Sistema de identificador"
+    * value 1..1 MS
+      * ^short = "Valor del identificador"
+

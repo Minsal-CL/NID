@@ -62,8 +62,6 @@ Description: "Almacenar si el paciente pertenece a algun pueblo originario"
 * value[x].text 0..1 MS
 * value[x].text ^short = "Otro pueblo originario"
 
-
-
 Extension: OrigenDiscapacidad
 Title: "Origen Discapacidad"
 Description: "OrigenDiscapacidad"
@@ -78,10 +76,6 @@ Description: "OrigenDiscapacidad"
 * value[x].coding.display ^short = "Nombre discapacidad"
 * value[x].coding.code ^short = "Código discapacidad"
 
-
-
-
-
 Extension: Religion
 Title: "Religión"
 Description: "Religión"
@@ -95,8 +89,6 @@ Description: "Religión"
 * value[x].coding.system ^short = "URI del system para validar"
 * value[x].coding.display ^short = "Nombre de la religión"
 * value[x].coding.code ^short = "Nombre de la religión"
-
-
 
 Extension:   PaisOrigenMPI
 Id:          PaisOrigenMPI

@@ -1,0 +1,25 @@
+Profile: BundleMPI
+Parent: Bundle
+Id: BundleMPI
+Title: "MINSAL Bundle Search"
+Description: "Bundle resultado de una busqueda de un recurso paciente"
+
+* type 1..1 MS
+* type = #searchset
+
+* total 1..1 MS
+  * ^short = "Numero total de resultados"
+
+* link 1..* MS
+  * ^short = "Enlace de los resultados"
+  * relation 1..1 MS
+    * ^short = "Tipo de relación con la consulta"
+  * url 1..1 MS
+    * ^short = "Consulta de realizada"
+    
+* entry MS
+  * ^short = "Entrada de los resultados de la busqueda"
+  * fullUrl 1..1
+    * ^short = "Uri por recurso"
+  * resource MS
+    * ^short = "Información sobre un individuo o animal que reciva servicio de cuidados de salud"

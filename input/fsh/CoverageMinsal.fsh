@@ -23,7 +23,7 @@ Description: "Recurso para almacenar la cobertura del paciente"
 * period 0..1 MS
 * status 1..1 MS
 * payor 1..1 MS
-* payor only Reference(Organization)
+* payor only Reference(OrganizacionCL)
 * class 1..1 MS
   * type 1..1 MS
   * type from VSPrevision

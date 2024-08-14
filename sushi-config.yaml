@@ -9,7 +9,7 @@ name: Maestro De Pacientes
 title: Maestro de pacientes 
 description: Maestro de pacientes 
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 0.2.2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: draft  # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -24,7 +24,11 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  hl7.fhir.cl.clcore: 1.8.6
+  #hl7.fhir.cl.clcore: 1.8.6
+  hl7.fhir.cl.clcore: 1.9.0
+  ihe.iti.pixm: 3.0.4
+  ihe.iti.pdqm: 3.0.0
+
 #   hl7.fhir.us.mcode:
 #     id: mcode
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
@@ -52,6 +56,8 @@ pages:
     title: Transacciones MPI
   artifacts.html:
     title: Artefactos Generados
+  Changes.md:
+    title: Historial de Cambios
   
 #   implementation.xml:
 #   examples.xml:
@@ -87,6 +93,7 @@ menu:
   Especificaciones Técnicas:
     Transacciones: transacciones.html
   Artefactos: artifacts.html
+  Historial de Cambios: Changes.html
   
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

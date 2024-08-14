@@ -1,0 +1,8 @@
+Instance: FONASA
+InstanceOf: OrganizacionCL
+Usage: #definition
+Title: "FONASA"
+Description: "Organización de pago fonasa"
+
+* name = "Fondo Nacional de Salud"
+* alias = "FONASA" 
