@@ -65,3 +65,12 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * deceased[x] ^definition = "Puede indicar si el paciente esta fallecido o no o en su defecto, agregar la fecha de fallecimiento."
 
 * contact 0..* MS
+
+* link 0..* MS
+  * ^short = "Enlace que tiene el recurso Minsal Paciente con otro que sea la misma persona"
+  * other 1..1 MS
+    * ^short = "Relación mediante identifier o referencia al recurso"
+  * other only Reference(PacienteCl or MINSALPaciente or MINSALAcompanante)
+  * type 1..1 MS
+    * ^short = "replaced-by | replaces | refer | seealso"
+    * ^definition = "Tipo de enlace"

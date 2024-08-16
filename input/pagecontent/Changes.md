@@ -19,6 +19,7 @@ Perfil [MINSAL Cobertura](StructureDefinition-MINSALCobertura.html):
 Perfil [MINSAL Paciente](StructureDefinition-MINSALPaciente.html):
   * Se convalida Paciente LE con MINSAL Paciente
   * Se crea el parametro de busqueda de [SegundoApellido](SearchParameter-mpi-paciente-segundoApellido.html)
+  * Se incluye el dato Link por recomendación de la guía PIXm
 
 Se generan las dependencias a las guías [PIXm](https://profiles.ihe.net/ITI/PIXm/index.html) y [PDQm](https://profiles.ihe.net/ITI/PDQm/).
 

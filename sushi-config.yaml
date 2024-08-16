@@ -9,7 +9,7 @@ name: Maestro De Pacientes
 title: Maestro de pacientes 
 description: Maestro de pacientes 
 status: draft # draft | active | retired | unknown
-version: 0.2.2
+version: 0.2.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: draft  # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
