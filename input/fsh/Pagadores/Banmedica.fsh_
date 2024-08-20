@@ -1,0 +1,66 @@
+Instance: Banmedica
+InstanceOf: OrganizacionCL
+Usage: #definition
+Title: "Banmédica"
+Description: "Isapre Banmédica"
+
+* identifier
+  * value = "96572800-7"
+* name = "Isapre Banmédica S.A."
+* alias = "Banmédica"
+* telecom
+  * system = #phone
+  * value = "600 600 3600"
+* address = CLAddressBanmedica
+* contact
+  * purpose
+    * text = "Representante Legal"
+  * name
+    * family = "Gaggero"
+    * family.extension = SegundoApellidoBanmedica
+    * given[0] = "Aldo"
+
+Instance: CLAddressBanmedica
+InstanceOf: ClAddress
+Usage: #inline
+
+* line[0] = "Apoquindo Nº 3600, 3º piso"
+* city = "Las Condes"
+* city.extension = ComunasClBanmedica
+* district = "Santiago"
+* district.extension = ProvinciasClBanmedica
+* state = "Metropolitana de Santiago"
+* state.extension = RegionesClBanmedica
+* country = "Chile"
+* country.extension = CodigoPaisesBanmedica
+
+
+Instance: ComunasClBanmedica
+InstanceOf: ComunasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodComunasCL#13114 "Las Condes"
+
+Instance: ProvinciasClBanmedica
+InstanceOf: ProvinciasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+
+Instance: RegionesClBanmedica
+InstanceOf: RegionesCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+
+Instance: CodigoPaisesBanmedica
+InstanceOf: CodigoPaises
+Usage: #inline
+
+* valueCodeableConcept = CSCodPaises#152 "Chile"
+
+Instance: SegundoApellidoBanmedica
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Madrid"

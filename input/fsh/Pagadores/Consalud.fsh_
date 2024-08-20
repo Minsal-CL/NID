@@ -1,0 +1,65 @@
+Instance: Consalud
+InstanceOf: OrganizacionCL
+Usage: #definition
+Title: "Consalud"
+Description: "Isapre Consalud"
+
+* identifier
+  * value = "96856780-2"
+* name = "Isapre Consalud S.A."
+* alias = "Consalud"
+* telecom
+  * system = #phone
+  * value = "600 500 9000"
+* address = CLAddressConsalud
+* contact
+  * purpose
+    * text = "Representante Legal"
+  * name
+    * family = "Medel"
+    * family.extension = SegundoApellidoConsalud
+    * given[0] = "Rodrigo"
+
+Instance: CLAddressConsalud
+InstanceOf: ClAddress
+Usage: #inline
+
+* line[0] = "Rosario Norte N° 407, Piso 8 y 9"
+* city = "Las Condes"
+* city.extension = ComunasClConsalud
+* district = "Santiago"
+* district.extension = ProvinciasClConsalud
+* state = "Metropolitana de Santiago"
+* state.extension = RegionesClConsalud
+* country = "Chile"
+* country.extension = CodigoPaisesConsalud
+
+Instance: ComunasClConsalud
+InstanceOf: ComunasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodComunasCL#13114 "Las Condes"
+
+Instance: ProvinciasClConsalud
+InstanceOf: ProvinciasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+
+Instance: RegionesClConsalud
+InstanceOf: RegionesCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+
+Instance: CodigoPaisesConsalud
+InstanceOf: CodigoPaises
+Usage: #inline
+
+* valueCodeableConcept = CSCodPaises#152 "Chile"
+
+Instance: SegundoApellidoConsalud
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Samacoitz"

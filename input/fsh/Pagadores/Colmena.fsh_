@@ -1,0 +1,65 @@
+Instance: Colmena
+InstanceOf: OrganizacionCL
+Usage: #definition
+Title: "Colmena"
+Description: "Isapre Colmena"
+
+* identifier
+  * value = "76296619-0"
+* name = "Colmena Golden Cross S. A."
+* alias = "Colmena"
+* telecom
+  * system = #phone
+  * value = "2 3322 3000"
+* address = CLAddressColmena
+* contact
+  * purpose
+    * text = "Representante Legal"
+  * name
+    * family = "Schwencke"
+    * family.extension = SegundoApellidoColmena
+    * given[0] = "Carola"
+
+Instance: CLAddressColmena
+InstanceOf: ClAddress
+Usage: #inline
+
+* line[0] = "Los Militares 4777, Of. 501"
+* city = "Las Condes"
+* city.extension = ComunasClColmena
+* district = "Santiago"
+* district.extension = ProvinciasClColmena
+* state = "Metropolitana de Santiago"
+* state.extension = RegionesClColmena
+* country = "Chile"
+* country.extension = CodigoPaisesColmena
+
+Instance: ComunasClColmena
+InstanceOf: ComunasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodComunasCL#13114 "Las Condes"
+
+Instance: ProvinciasClColmena
+InstanceOf: ProvinciasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+
+Instance: RegionesClColmena
+InstanceOf: RegionesCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+
+Instance: CodigoPaisesColmena
+InstanceOf: CodigoPaises
+Usage: #inline
+
+* valueCodeableConcept = CSCodPaises#152 "Chile"
+
+Instance: SegundoApellidoColmena
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Reyes"
