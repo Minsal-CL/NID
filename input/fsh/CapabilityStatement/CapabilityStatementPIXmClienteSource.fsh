@@ -1,6 +1,6 @@
 Instance: MPI.IHE.PIXm.Origen
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente para Cliente de Origen PIXm"
+Title: "Indice Maestro Paciente: \"Para Cliente de Origen PIXm\""
 Usage: #definition
 Description: """
 El CapabilityStatement del Actor Cliente de Origen del MPI expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa.

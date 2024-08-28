@@ -1,5 +1,5 @@
 Profile: MINSALOcupacion
-Parent: Observation
+Parent: ObservacionCL
 Id: MINSALOcupacion
 Title: "MINSAL Ocupación"
 Description: "MINSAL Ocupación"
@@ -7,13 +7,18 @@ Description: "MINSAL Ocupación"
 
 * status MS
 * category MS
-* category from VSTipoObservacion
   * coding 1..1 MS
     * code 1..1 MS
-    * code = #04
     * system 0..1 MS
     * display 1..1 MS
-    * display = #Ocupación
+  * coding = http://terminology.hl7.org/CodeSystem/observation-category#social-history
+
+* code MS
+* code from VSTipoObservacion
+  * coding 1..1 MS
+    * code 1..1 MS
+    * system 0..1 MS
+  * coding = CSTipoObservacion#04 "Ocupación"
 
 * effectivePeriod 0..1 MS
   * start 1..1 MS

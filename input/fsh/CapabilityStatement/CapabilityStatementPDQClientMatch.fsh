@@ -1,23 +1,22 @@
-Instance: MPI.IHE.PIXm.Buscador
+Instance: MPI.IHE.PDQm.Search.Cliente.Match
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente: \"Para Cliente Buscador PIXm\""
+Title: "Indice Maestro Paciente: \"Buscador de Datos Demográficos (PDQm) con Implementación de Match\""
 Usage: #definition
 Description: """
-El CapabilityStatement del Actor Cliente Buscador MPI expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa.
+El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del Indice Maestro Paciente(cliente) expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa. Este CapabilityStatement implementa la Opción de Búsqueda de Pacientes mediante la operación Match.
 
 * Uso de FHIR R4
-* Uso de estructura JSON o XML
-* Uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html)
+* Uso **PUEDE** traer el recurso en JSON o XML
+* Los parametros de entrada y salida deben ser conforme a los perfiles MPI Paciente
+* Invoca la operación $match en un endpoint FHIR
 """
+
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* extension[=].valueCode = #draft
-//* version = "0.2.2"
-* name = "MPI_IHE_PIXm_Buscador"
+* name = "MPI_IHE_PDQm_Search_Cliente_Match"
 * status = #draft
 * experimental = false
-* date = "2014-08-14T12:00:00-03:00"
+* date = "2024-08-07T09:44:00-03:00"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #json
@@ -34,7 +33,7 @@ El CapabilityStatement del Actor Cliente Buscador MPI expresa los requisitos que
   * mode = #client
 
 * rest.documentation = """
-El cliente PIXm realiza consultas para la Referencia Cruzada de Identidad del Paciente que coincida con los parámetros de la consulta.
+El Proveedor de Demografía del Indice Maestro Paciente (PDQm) ofrece la capacidad de descubrir Identidades de Pacientes mediante la invocación de la operación $match.
 """
 /*
 * rest.security.description = "1. See the [General Security Considerations](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` \"Unauthorized\", `HTTP 403` \"Forbidden\", or `HTTP 404` \"Not Found\""
@@ -44,9 +43,18 @@ El cliente PIXm realiza consultas para la Referencia Cruzada de Identidad del Pa
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = #SHALL
   * type = #Patient
+  * supportedProfile[0] = Canonical(MINSALPaciente)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * supportedProfile[+] = Canonical(MINSALPacienteBusqueda)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
   * operation[0]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
-    * name = "ihe-pix"
-    * definition = Canonical(MPI.PIXm.pix)
+    * name = "match"
+    * definition = Canonical(MPI.PDQm.match)
+  

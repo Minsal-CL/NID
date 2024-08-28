@@ -1,6 +1,6 @@
 Instance: MPI.IHE.PDQm.Search.Cliente
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente Buscador de Datos Demográficos (PDQm)"
+Title: "Indice Maestro Paciente: \"Buscador de Datos Demográficos (PDQm)\""
 Usage: #definition
 Description: """
 El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del Indice Maestro Paciente(cliente) expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa. Este CapabilityStatement implementa la Opción de Búsqueda de Pacientes.
@@ -14,6 +14,7 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
   * given
   * identifier
   * segundoApellido
+  * segundoApellido:exact
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
@@ -129,3 +130,4 @@ El Proveedor de Demografía del Indice Maestro Paciente (PDQm) ofrece la capacid
     * definition = Canonical(mpi-paciente-segundoApellido)
     * type = #string
     * documentation = "Segundo apellido del paciente"
+ 

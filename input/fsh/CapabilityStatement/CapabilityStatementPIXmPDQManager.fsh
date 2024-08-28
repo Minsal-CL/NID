@@ -15,7 +15,8 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
   * given
   * identifier
   * segundoApellido
-* **DEBE** soportar el uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html)
+* **DEBE** soportar el uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) descrita en está guía.
+* **DEBE** soportar el uso de la operación [$match](OperationDefinition-MPI.PDQm.match.html) descrita en está guía. 
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
@@ -169,3 +170,9 @@ El servidor como administrador PIXm ofrece la capacidad de consultar la \"Refere
       * valueCode = #SHALL
     * name = "ihe-pix"
     * definition = Canonical(MPI.PIXm.pix)
+  * operation[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "match"
+    * definition = Canonical(MPI.PDQm.match)

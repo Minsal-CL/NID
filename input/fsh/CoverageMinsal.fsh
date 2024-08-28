@@ -24,11 +24,11 @@ Description: "Recurso para almacenar la cobertura del paciente"
 * status 1..1 MS
 * payor 1..1 MS
 * payor only Reference(OrganizacionCL)
-* class 1..1 MS
+* class 0..1 MS
   * type 1..1 MS
   * type from VSPrevision
     * coding 1..1 MS
       * code 1..1 MS
       * display 1..1 MS
       * system 1..1 MS
-* class.value 1..1 MS
+  * value 1..1 MS

@@ -8,8 +8,14 @@ Description: "Información sobre una persona que participa en la atención a un 
 * patient only Reference(MINSALPaciente)
 * patient 1..1 MS
 
+* name obeys mpi-rela-1
 * name 1..1 MS
 * telecom 1..1 MS
 * period 1..1 MS
 * address 1..1 MS
 * relationship 1..1 MS
+
+Invariant: mpi-rela-1
+Description: "RelatedPerson.name.given, RelatedPerson.name.family o RelatedPerson.name.text DEBEN estar presentes"
+Severity: #error
+Expression: "family.exists() or given.exists() or text.exists()"

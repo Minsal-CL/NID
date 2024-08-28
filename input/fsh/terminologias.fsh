@@ -1,7 +1,7 @@
 ValueSet: VSValoracionDesempeno
 Id: VSValoracionDesempeno
-Title: "Valoracion Desempeno"
-Description: "Valoracion Desempeno"
+Title: "Valoracion Desempeño"
+Description: "Valoracion Desempeño"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -69,6 +69,41 @@ Description: "OrigenDiscapacidad"
 * #05 "Origen mental síquico"
 * #06 "Origen mental intelectual"
 * #07 "Origen múltiple"
+
+/*************************************/
+
+ValueSet: VSComponenteDiscapacidad
+Id:       VSComponenteDiscapacidad
+Title:       "Componentes de Observación de Discapacidad"
+Description: "Diferenciación entre los componentes de la observación de discapacidad"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2024-08-28"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSComponenteDiscapacidad
+
+CodeSystem:  CSComponenteDiscapacidad
+Id:          CSComponenteDiscapacidad
+Title:       "Componentes de Observación de Discapacidad"
+Description: "Diferenciación entre los componentes de la observación de discapacidad"
+
+* ^experimental = false
+* ^caseSensitive = true
+* ^status = #active
+* ^version = "0.1"
+* ^date = "2024-08-28"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #01 "Origen de la discapacidad"
+* #02 "Evaluación Valoración de Desempeño en Comunidad (IVADEC-DIF)"
 
 /*************************************/
 ValueSet: VSPrevision
@@ -170,8 +205,8 @@ Description: "NivelEducacionalDesc"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Ultimo curso aprobado"
-* #02 "Ultimo nivel aprobado"
+* #01 "Último curso aprobado"
+* #02 "Último nivel aprobado"
 
 
 /************************************/
@@ -390,7 +425,7 @@ Description: "calificacionPrevisional"
 * #04 "Dirigente Vacinal"
 
 /*********************************************/
-ValueSet:  CSUNivelAprob
+ValueSet:  VSUNivelAprob
 Id: VSUNivelAprob
 Title: "Ultimo nivel aprobado"
 Description: "Código del último nivel aprobado"
@@ -446,8 +481,8 @@ Description: "TipoObservacion"
 
 CodeSystem: CSTipoObservacion
 Id: CSTipoObservacion
-Title: "TipoObservacion"
-Description: "TipoObservacion"
+Title: "Tipo Observacion"
+Description: "Tipo Observacion"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -494,11 +529,11 @@ Description: "GrupoMarcas"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Condición de Cuidador(a)"
-* #02 "Documento que acredita cuidador"
-* #03 "Fibromialgia"
-* #04 "TEA"
-* #05 "EII"
+* #01 "Condición de Cuidador(a)" "Ley N°21.380 Ley preferente personas cuidadoras. Prioriza atención exámenes/procedimientos e Interconsultas*."
+//* #02 "Documento que acredita cuidador" 
+* #02 "Fibromialgia" "Ley N°21.531 Ley Fibromialgia y dolores crónicos no oncológicos.  no especifica tipo de prestaciones."
+* #03 "TEA" "Ley N°21.545 Ley TEA. Atención en concepto salud mental. no especifica tipo de prestaciones."
+* #04 "EII" "Ley N°21.559 Ley de Enfermedades inflamatorias intestinales. Atención preferente no especifica tipo de prestaciones."
 /****************************************************************/
 ValueSet:  VSOcupacionesDet
 Id: VSOcupacionesDet

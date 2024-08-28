@@ -12,10 +12,11 @@ Usage: #definition
 * extension[=].valueInteger = 1
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
+* base = "https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix"
 * name = "MPI_PIXM_pix"
 * status = #draft
 * kind = #operation
-* date = "2022-05-25"
+* date = "2024-08-27"
 * code = #ihe-pix
 * resource = #Patient
 * system = false

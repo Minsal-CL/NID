@@ -10,10 +10,15 @@ Description: "Agrupacion por marcas"
 * actual = true
 * actual MS
 
+* code 1.. MS
+  * ^short = "Define el tipo de grupo"
+* code from VSGrupoMarcas
+
 * member 1..* MS
   * entity 1..1 MS
 * member.entity only Reference(MINSALPaciente)
 
+/*
 * characteristic.code from VSGrupoMarcas
 * characteristic 1..1 MS
   * code MS
@@ -23,3 +28,4 @@ Description: "Agrupacion por marcas"
       * code 1..1 MS     
     * text MS
   * valueCodeableConcept MS
+*/

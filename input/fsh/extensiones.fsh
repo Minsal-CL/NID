@@ -22,6 +22,7 @@ Extension: SituacionCalle
 Id: SituacionCalle
 Title: "SituacionCalle"
 Description: "SituacionCalle"
+Context: Address
 
 //* value[x] only Boolean
 //* valueReference = Reference()
@@ -31,6 +32,8 @@ Extension: PueblosAfrodescendiente
 Id: PueblosAfrodescendiente
 Title: "PueblosAfrodescendiente"
 Description: "PueblosAfrodescendiente"
+Context: Patient
+
 * value[x] only boolean
 * url and valueBoolean MS
 * valueBoolean 1..1
@@ -39,16 +42,20 @@ Description: "PueblosAfrodescendiente"
 
 Extension: PueblosOriginariosPerteneciente
 Id: PueblosOriginariosPerteneciente
-Title: "PueblosOriginariosPerteneciente"
-Description: "PueblosOriginariosPerteneciente"
+Title: "Pueblos Originarios Perteneciente"
+Description: "Pueblos Originarios Perteneciente"
+Context: Patient
 
 //* value[x] only Boolean
 //* valueReference = Reference()
-* valueBoolean ^short = "PueblosOriginariosPerteneciente"
+* valueBoolean ^short = "Pueblos Originarios Perteneciente"
 
 Extension: PueblosOriginarios
+Id: PueblosOriginarios
 Title: "Pueblos Originarios"
 Description: "Almacenar si el paciente pertenece a algun pueblo originario"
+Context: Patient
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Código Pueblo Originario"
 * url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
@@ -62,6 +69,7 @@ Description: "Almacenar si el paciente pertenece a algun pueblo originario"
 * value[x].text 0..1 MS
 * value[x].text ^short = "Otro pueblo originario"
 
+/*
 Extension: OrigenDiscapacidad
 Title: "Origen Discapacidad"
 Description: "OrigenDiscapacidad"
@@ -75,10 +83,12 @@ Description: "OrigenDiscapacidad"
 * value[x].coding.system ^short = "URI del system para validar"
 * value[x].coding.display ^short = "Nombre discapacidad"
 * value[x].coding.code ^short = "Código discapacidad"
+*/
 
 Extension: Religion
 Title: "Religión"
 Description: "Religión"
+Context: Patient
 * value[x] only CodeableConcept
 * value[x] ^short = "Religión del paciente"
 * url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
@@ -94,6 +104,7 @@ Extension:   PaisOrigenMPI
 Id:          PaisOrigenMPI
 Title:       "País de origen del paciente"
 Description: "País de origen del paciente"
+Context:     Patient
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 * url 1..1 MS
@@ -108,6 +119,7 @@ Extension: DirigenteVecinal
 Id: DirigenteVecinal 
 Title: "Dirigente Vecinal"
 Description: "Dirigente Vecinal"
+Context: Coverage
 
 //* value[x] only Boolean
 //* valueReference = Reference()
@@ -118,6 +130,7 @@ Extension: Prilonco
 Id: Prilonco 
 Title: "Prilonco"
 Description: "Prilonco"
+Context: Coverage
 
 //* value[x] only Boolean
 //* valueReference = Reference()
@@ -128,6 +141,7 @@ Extension: Antuco
 Id: Antuco
 Title: "Antuco"
 Description: "Antuco"
+Context: Coverage
 
 //* value[x] only Boolean
 //* valueReference = Reference()
@@ -138,6 +152,7 @@ Extension: Prais
 Id: Prais
 Title: "PRAIS"
 Description: "PRAIS"
+Context: Coverage
 
 //* value[x] only Boolean
 //* valueReference = Reference()
