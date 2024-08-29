@@ -8,6 +8,7 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
 * Uso de FHIR R4
 * Uso **PUEDE** devolver el recurso en JSON o XML
 * **DEBE** Soportar Perfil MINSAL Paciente
+* **DEBE** Soportar los perfiles MPI MINSAL que permiten completar con la información normativa requerida. 
 * Los parametros de busquedas **DEBERIAN** ser:
   * _id
   * active
@@ -15,12 +16,16 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
   * given
   * identifier
   * segundoApellido
+  * segundoApellido:exact
+* **DEBE** soportar los _revinclude que permitan traer la información adicional requerida.
 * **DEBE** soportar el uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) descrita en está guía.
 * **DEBE** soportar el uso de la operación [$match](OperationDefinition-MPI.PDQm.match.html) descrita en está guía. 
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
-* version = "2.0.0"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* extension[=].valueCode = #draft
+
 * name = "MPI_IHE_PIXm_Consumidor"
 * status = #draft
 * experimental = false
@@ -37,6 +42,17 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
 * implementationGuide.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * implementationGuide.extension.valueCode = #SHOULD
 */
+
+* implementationGuide[0] = "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+* implementationGuide[+] = "https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+* implementationGuide[+] = "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+
 * rest
   * mode = #server
 
@@ -66,6 +82,11 @@ El servidor como administrador PIXm ofrece la capacidad de consultar la \"Refere
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
     * code = #update
+  * interaction[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #delete
   * searchRevInclude[0]
   * interaction[+]
     * extension
@@ -176,3 +197,87 @@ El servidor como administrador PIXm ofrece la capacidad de consultar la \"Refere
       * valueCode = #SHALL
     * name = "match"
     * definition = Canonical(MPI.PDQm.match)
+* rest.resource[+] //Coverage
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #Coverage
+  * supportedProfile = Canonical(MINSALCobertura)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #update
+  * interaction[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #delete
+* rest.resource[+] //Group
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #Group
+  * supportedProfile = Canonical(MINSALAgrupacionPorMarcas)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #update
+  * interaction[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #delete
+* rest.resource[+] //Observation
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #Observation
+  * supportedProfile[0] = Canonical(MINSALNivelEducacional)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * supportedProfile[+] = Canonical(MINSALOcupacion)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * supportedProfile[+] = Canonical(MINSALSituacionDiscapacidad)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #update
+  * interaction[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #delete
+* rest.resource[+] //relatedPerson
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #RelatedPerson
+  * supportedProfile = Canonical(MINSALAcompanante)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #update
+  * interaction[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #delete

@@ -11,7 +11,7 @@ Usage: #definition
 * extension[=].valueInteger = 1
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
-* base = "https://profiles.ihe.net/ITI/PDQm/OperationDefinition/PDQmMatch"
+* base = "http://hl7.org/fhir/OperationDefinition/Patient-match"
 * name = "MPI_PDQM_Matches"
 * status = #draft
 * kind = #operation
@@ -22,7 +22,7 @@ Usage: #definition
 * type = true
 * instance = false
 * inputProfile = Canonical(ParametrosEntradaPDQmMpi)
-* outputProfile = Canonical(BundleSearchMPI)
+* outputProfile = Canonical(BundleSearchMPIMatch)
 * parameter[0]
   * name = #resource
   * use = #in

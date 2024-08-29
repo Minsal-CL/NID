@@ -4,11 +4,11 @@ Id: MINSALPaciente
 Title: "MINSAL Paciente"
 Description: "Paciente definido para el Registro Maestro de Pacientes"
 
-* obeys mpi-pat-enlaceEstado and mpi-pat-PueblosOriginarios
+* obeys mpi-pat-enlaceEstado 
 
 * extension contains PaisOrigenMPI named PaisOrigen 1..1 MS
 * extension contains Religion named Religion 0..1 MS
-* extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
+//* extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
 * extension contains PueblosOriginarios named PueblosOriginarios 0..1 MS
 * extension[nacionalidad] 1..1 MS
@@ -91,7 +91,9 @@ Description: "Si el elemento Patient.link está presente, entonces **DEBE** esta
 Expression:  "link.exists() implies active.exists()"
 Severity:    #error
 
+/*
 Invariant:   mpi-pat-PueblosOriginarios
 Description: "Si la extensión \"PueblosOriginariosPerteneciente\" es verdadera **DEBE** completar la extensión \"PueblosOriginarios\""
 Expression:  "extension.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente' and value.ofType(boolean).where(true)) implies extension.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios').exists()"
 Severity:    #error
+*/

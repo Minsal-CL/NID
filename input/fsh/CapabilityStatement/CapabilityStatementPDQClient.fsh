@@ -1,12 +1,14 @@
 Instance: MPI.IHE.PDQm.Search.Cliente
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente: \"Buscador de Datos Demográficos (PDQm)\""
+Title: "Indice Maestro Paciente: \"Cliente Buscador de Datos Demográficos (PDQm)\""
 Usage: #definition
 Description: """
 El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del Indice Maestro Paciente(cliente) expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa. Este CapabilityStatement implementa la Opción de Búsqueda de Pacientes.
 
 * Uso de FHIR R4
 * Uso **PUEDE** traer el recurso en JSON o XML
+* Soportar Perfil MINSAL Paciente
+* Soportar los perfiles MPI MINSAL que permiten completar con la información normativa requerida. 
 * Los parametros de busquedas **PUEDEN** ser:
   * _id
   * active
@@ -14,10 +16,13 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
   * given
   * identifier
   * segundoApellido
-  * segundoApellido:exact
+* **PUEDE** soportar los _revinclude que permitan traer la información adicional requerida.
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* extension[=].valueCode = #draft
+
 * name = "MPI_IHE_PDQm_Search_Cliente"
 * status = #draft
 * experimental = false
@@ -29,11 +34,13 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 * format[+] = #application/fhir+json
 * format[+] = #application/fhir+xml
 
-/*
-* implementationGuide = "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"
-* implementationGuide.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* implementationGuide.extension.valueCode = #SHOULD
-*/
+* implementationGuide[0] = "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+* implementationGuide[+] = "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+
 * rest
   * mode = #client
 

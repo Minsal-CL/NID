@@ -1,6 +1,6 @@
 Instance: MPI.IHE.PDQm.Search.Cliente.Match
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente: \"Buscador de Datos Demográficos (PDQm) con Implementación de Match\""
+Title: "Indice Maestro Paciente: \"Cliente Buscador de Datos Demográficos (PDQm) con implementación de Match\""
 Usage: #definition
 Description: """
 El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del Indice Maestro Paciente(cliente) expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa. Este CapabilityStatement implementa la Opción de Búsqueda de Pacientes mediante la operación Match.
@@ -13,6 +13,9 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* extension[=].valueCode = #draft
+
 * name = "MPI_IHE_PDQm_Search_Cliente_Match"
 * status = #draft
 * experimental = false
@@ -24,11 +27,13 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 * format[+] = #application/fhir+json
 * format[+] = #application/fhir+xml
 
-/*
-* implementationGuide = "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"
-* implementationGuide.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* implementationGuide.extension.valueCode = #SHOULD
-*/
+* implementationGuide[0] = "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+* implementationGuide[+] = "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+
 * rest
   * mode = #client
 

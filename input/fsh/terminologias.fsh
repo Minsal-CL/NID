@@ -36,8 +36,8 @@ Description: "Valoracion Desempeno"
 /*************************************/
 ValueSet: VSOrigenDiscapacidad
 Id: VSOrigenDiscapacidad
-Title: "OrigenDiscapacidad"
-Description: "OrigenDiscapacidad"
+Title: "Origen Discapacidad"
+Description: "Origen Discapacidad"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -51,8 +51,8 @@ Description: "OrigenDiscapacidad"
 
 CodeSystem: CSOrigenDiscapacidad
 Id: CSOrigenDiscapacidad
-Title: "OrigenDiscapacidad"
-Description: "OrigenDiscapacidad"
+Title: "Origen Discapacidad"
+Description: "Origen Discapacidad"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -108,8 +108,8 @@ Description: "Diferenciación entre los componentes de la observación de discap
 /*************************************/
 ValueSet: VSPrevision
 Id: VSPrevision
-Title: "Prevision"
-Description: "Prevision"
+Title: "Previsión"
+Description: "Previsión"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -123,8 +123,8 @@ Description: "Prevision"
 
 CodeSystem: CSPrevision
 Id: CSPrevision
-Title: "Prevision"
-Description: "Prevision"
+Title: "Previsión"
+Description: "Previsión"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -143,8 +143,8 @@ Description: "Prevision"
 /***********************************/
 ValueSet: VSTramosFONASA
 Id: VSTramosFONASA
-Title: "TramosFONASA"
-Description: "TramosFONASA"
+Title: "Tramos devFONASA"
+Description: "Tramos de FONASA"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -158,8 +158,8 @@ Description: "TramosFONASA"
 
 CodeSystem: CSTramosFONASA
 Id: CSTramosFONASA
-Title: "TramosFONASA"
-Description: "TramosFONASA"
+Title: "Tramos de FONASA"
+Description: "Tramos de FONASA"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -178,8 +178,8 @@ Description: "TramosFONASA"
 /*****************************************/
 ValueSet: VSNivelEducacionalDesc
 Id: VSNivelEducacionalDesc
-Title: "NivelEducacionalDesc"
-Description: "NivelEducacionalDesc"
+Title: "Nivel Educacional Descripción"
+Description: "Codificación del Nivel Educacional para diferenciar entre los componenetes de la observación"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -193,8 +193,8 @@ Description: "NivelEducacionalDesc"
 
 CodeSystem: CSNivelEducacionalDesc
 Id: CSNivelEducacionalDesc
-Title: "NivelEducacionalDesc"
-Description: "NivelEducacionalDesc"
+Title: "Nivel Educacional Descripción"
+Description: "Codificación del Nivel Educacional para diferenciar entre los componenetes de la observación"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -251,8 +251,8 @@ Description: "NivelEducacionalDesc"
 
 ValueSet: VSIdentidadDeGenero
 Id: VSIdentidadDeGenero
-Title: "IdentidadDeGenero"
-Description: "IdentidadDeGenero"
+Title: "Identidad De Género"
+Description: "Identidad De Género"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -266,8 +266,8 @@ Description: "IdentidadDeGenero"
 
 CodeSystem: CSIdentidadDeGenero
 Id: CSIdentidadDeGenero
-Title: "IdentidadDeGenero"
-Description: "IdentidadDeGenero"
+Title: "Identidad De Género"
+Description: "Identidad De Género"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -288,8 +288,8 @@ Description: "IdentidadDeGenero"
 
 ValueSet: VSEstadoCivil
 Id: VSEstadoCivil
-Title: "EstadoCivil"
-Description: "EstadoCivil"
+Title: "Estado Civil"
+Description: "Estado Civil"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -303,8 +303,8 @@ Description: "EstadoCivil"
 
 CodeSystem: CSEstadoCivil
 Id: CSEstadoCivil
-Title: "EstadoCivil"
-Description: "EstadoCivil"
+Title: "Estado Civil"
+Description: "Estado Civil"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -350,8 +350,8 @@ Description:  "Pueblos Originarios de Chile"
 
 ValueSet: VSReligion
 Id: VSReligion
-Title: "Religion"
-Description: "Religion"
+Title: "Religión"
+Description: "Religión"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -365,8 +365,8 @@ Description: "Religion"
 
 CodeSystem: CSReligion
 Id: CSReligion
-Title: "Religion"
-Description: "Religion"
+Title: "Religión"
+Description: "Religión"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -392,8 +392,8 @@ Description: "Religion"
 
 ValueSet: VScalificacionPrevisional
 Id: VScalificacionPrevisional
-Title: "calificacionPrevisional"
-Description: "calificacionPrevisional"
+Title: "Calificación Previsional"
+Description: "Calificación Previsional"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -407,8 +407,8 @@ Description: "calificacionPrevisional"
 
 CodeSystem: CScalificacionPrevisional
 Id: CScalificacionPrevisional
-Title: "calificacionPrevisional"
-Description: "calificacionPrevisional"
+Title: "Calificación Previsional"
+Description: "Calificación Previsional"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -427,7 +427,7 @@ Description: "calificacionPrevisional"
 /*********************************************/
 ValueSet:  VSUNivelAprob
 Id: VSUNivelAprob
-Title: "Ultimo nivel aprobado"
+Title: "Último nivel aprobado"
 Description: "Código del último nivel aprobado"
 * ^version = "1.0.0"
 * ^status = #active
@@ -442,7 +442,7 @@ Description: "Código del último nivel aprobado"
 
 CodeSystem:  CSUNivelAprob
 Id: CSUNivelAprob
-Title: "Ultimo nivel aprobado"
+Title: "Último nivel aprobado"
 Description: "Código del último nivel aprobado"
 * ^caseSensitive = true
 * ^experimental = true //dependera del uso que le den al codesystem
@@ -466,8 +466,8 @@ Description: "Código del último nivel aprobado"
 /****************************************************************/
 ValueSet: VSTipoObservacion
 Id: VSTipoObservacion
-Title: "TipoObservacion"
-Description: "TipoObservacion"
+Title: "Tipo de Observacion"
+Description: "Codificación para identificar las distintas observaciones existentes dentro del MPI"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -482,7 +482,7 @@ Description: "TipoObservacion"
 CodeSystem: CSTipoObservacion
 Id: CSTipoObservacion
 Title: "Tipo Observacion"
-Description: "Tipo Observacion"
+Description: "Codificación para identificar las distintas observaciones existentes dentro del MPI"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -502,8 +502,8 @@ Description: "Tipo Observacion"
 
 ValueSet: VSGrupoMarcas
 Id: VSGrupoMarcas
-Title: "GrupoMarcas"
-Description: "GrupoMarcas"
+Title: "Grupo Marcas"
+Description: "Diferenciación entre los posibles grupos dentro del MPI"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -517,8 +517,8 @@ Description: "GrupoMarcas"
 
 CodeSystem: CSGrupoMarcas
 Id: CSGrupoMarcas
-Title: "GrupoMarcas"
-Description: "GrupoMarcas"
+Title: "Grupo Marcas"
+Description: "Diferenciación entre los posibles grupos dentro del MPI"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"

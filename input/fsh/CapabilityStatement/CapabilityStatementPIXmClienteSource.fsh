@@ -1,6 +1,6 @@
 Instance: MPI.IHE.PIXm.Origen
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente: \"Para Cliente de Origen PIXm\""
+Title: "Indice Maestro Paciente: \"Cliente de Origen PIXm\""
 Usage: #definition
 Description: """
 El CapabilityStatement del Actor Cliente de Origen del MPI expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa.
@@ -9,6 +9,8 @@ El CapabilityStatement del Actor Cliente de Origen del MPI expresa los requisito
 * Uso de estructura JSON o XML
 * Uso condicional para actualizar Paciente
 * Soportar Perfil MINSAL Paciente
+* Soportar los perfiles MPI MINSAL que permiten completar con la información normativa requerida. 
+
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
@@ -31,6 +33,14 @@ El CapabilityStatement del Actor Cliente de Origen del MPI expresa los requisito
 * implementationGuide.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * implementationGuide.extension.valueCode = #SHOULD
 */
+
+* implementationGuide[0] = "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+* implementationGuide[+] = "https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+
 * rest
   * mode = #client
 
@@ -41,7 +51,105 @@ El cliente de origen es el productor y publicador de los datos de la entidad pac
 * rest.security.description = "1. See the [General Security Considerations](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` \"Unauthorized\", `HTTP 403` \"Forbidden\", or `HTTP 404` \"Not Found\""
 */
 * rest.resource[0] //Patient
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
   * type = #Patient
   * supportedProfile = Canonical(MINSALPaciente)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
   * interaction[0]
     * code = #update
+  * interaction[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #MAY
+  * interaction[+]
+    * code = #delete
+  * interaction[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #MAY
+* rest.resource[+] //Coverage
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #Coverage
+  * supportedProfile = Canonical(MINSALCobertura)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * code = #update
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+  * interaction[+]
+    * code = #delete
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+* rest.resource[+] //Group
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #Group
+  * supportedProfile = Canonical(MINSALAgrupacionPorMarcas)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * code = #update
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+  * interaction[+]
+    * code = #delete
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+* rest.resource[+] //Observation
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #Observation
+  * supportedProfile[0] = Canonical(MINSALNivelEducacional)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * supportedProfile[+] = Canonical(MINSALOcupacion)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * supportedProfile[+] = Canonical(MINSALSituacionDiscapacidad)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * code = #update
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+  * interaction[+]
+    * code = #delete
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+* rest.resource[+] //relatedPerson
+  * extension[0]
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * type = #RelatedPerson
+  * supportedProfile = Canonical(MINSALAcompanante)
+  * supportedProfile.extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * interaction[0]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+    * code = #update
+  * interaction[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+    * code = #delete

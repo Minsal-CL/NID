@@ -14,3 +14,6 @@ Description: "Regresa los pacientes que cumplan con el criterio de segundo apell
 * multipleOr = true
 * multipleAnd = true
 * modifier[0] = #exact
+* modifier[=].extension
+  * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+  * valueCode = #MAY

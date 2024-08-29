@@ -20,26 +20,28 @@
 
 Extension: SituacionCalle
 Id: SituacionCalle
-Title: "SituacionCalle"
-Description: "SituacionCalle"
+Title: "Situacion Calle"
+Description: "Situacion Calle"
 Context: Address
 
 //* value[x] only Boolean
 //* valueReference = Reference()
-* valueBoolean ^short = "SituacionCalle"
+* valueBoolean ^short = "Situacion Calle"
 
 Extension: PueblosAfrodescendiente
 Id: PueblosAfrodescendiente
-Title: "PueblosAfrodescendiente"
-Description: "PueblosAfrodescendiente"
+Title: "Pueblos Afrodescendiente"
+Description: "Pueblos Afrodescendiente"
 Context: Patient
 
 * value[x] only boolean
 * url and valueBoolean MS
 * valueBoolean 1..1
-* valueBoolean ^short = "PueblosAfrodescendiente"
-* valueBoolean ^definition = "PueblosAfrodescendiente"
+* valueBoolean ^short = "Pueblos Afrodescendiente"
+* valueBoolean ^definition = "Pueblos Afrodescendiente"
 
+
+/*
 Extension: PueblosOriginariosPerteneciente
 Id: PueblosOriginariosPerteneciente
 Title: "Pueblos Originarios Perteneciente"
@@ -68,6 +70,7 @@ Context: Patient
 * value[x].coding.code ^short = "Código del pueblo"
 * value[x].text 0..1 MS
 * value[x].text ^short = "Otro pueblo originario"
+*/
 
 /*
 Extension: OrigenDiscapacidad
@@ -151,7 +154,7 @@ Context: Coverage
 Extension: Prais
 Id: Prais
 Title: "PRAIS"
-Description: "PRAIS"
+Description: "Programa de Reparación Atención Integral"
 Context: Coverage
 
 //* value[x] only Boolean

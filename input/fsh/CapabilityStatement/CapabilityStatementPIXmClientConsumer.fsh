@@ -1,6 +1,6 @@
 Instance: MPI.IHE.PIXm.Buscador
 InstanceOf: CapabilityStatement
-Title: "Indice Maestro Paciente: \"Para Cliente Buscador PIXm\""
+Title: "Indice Maestro Paciente: \"Cliente Buscador PIXm\""
 Usage: #definition
 Description: """
 El CapabilityStatement del Actor Cliente Buscador MPI expresa los requisitos que pueden ser utilizados mientras se cumple con la normativa.
@@ -25,11 +25,13 @@ El CapabilityStatement del Actor Cliente Buscador MPI expresa los requisitos que
 * format[+] = #application/fhir+json
 * format[+] = #application/fhir+xml
 
-/*
-* implementationGuide = "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"
-* implementationGuide.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* implementationGuide.extension.valueCode = #SHOULD
-*/
+* implementationGuide[0] = "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+* implementationGuide[+] = "https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm"
+* implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* implementationGuide[=].extension.valueCode = #SHOULD
+
 * rest
   * mode = #client
 
