@@ -1412,7 +1412,7 @@
                   <a href="CodeSystem-CScalificacionPrevisional.html#CScalificacionPrevisional-04">04</a>
                 </td>
                 <td>http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional</td>
-                <td>Dirigente Vacinal</td>
+                <td>Dirigente Vecinal</td>
               </tr>
             </table>
           </div>
@@ -1461,7 +1461,7 @@
           <contains>
             <system value="http://minsal.cl/fhir/ig/mpi/CodeSystem/CScalificacionPrevisional"/>
             <code value="04"/>
-            <display value="Dirigente Vacinal"/>
+            <display value="Dirigente Vecinal"/>
           </contains>
         </expansion>
       </ValueSet>

@@ -422,7 +422,7 @@ Description: "Calificación Previsional"
 * #01 "PRAIS"
 * #02 "Antuco"
 * #03 "Prilonco"
-* #04 "Dirigente Vacinal"
+* #04 "Dirigente Vecinal"
 
 /*********************************************/
 ValueSet:  VSUNivelAprob
