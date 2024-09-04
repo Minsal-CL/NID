@@ -3,11 +3,11 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.minsal.mpi
-canonical: https://interoperabilidad.minsal.cl/fhir/ig/mpi
-name: Maestro De Pacientes 
-title: Maestro de pacientes 
-description: Maestro de pacientes 
+id: hl7.fhir.cl.minsal.nid-mpi
+canonical: https://interoperabilidad.minsal.cl/fhir/ig/nid
+name: Nid_Mpi_Minsal 
+title: NID - MINSAL
+description: Nucleo de Interoperabilidad de Datos - MINSAL 
 status: draft # draft | active | retired | unknown
 version: 0.3.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -25,8 +25,8 @@ publisher:
 #
 dependencies:
   #hl7.fhir.cl.clcore: 1.8.6
-  #hl7.fhir.cl.clcore: 1.9.0
-  hl7.fhir.cl.clcore: dev
+  hl7.fhir.cl.clcore: 1.9.0
+  #hl7.fhir.cl.clcore: dev
   ihe.iti.pixm: 3.0.4
   ihe.iti.pdqm: 3.0.0
 
@@ -163,16 +163,32 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-#groups:
-#  GroupA:
-#    GroupC: asdasd
-#      name: recursos locales sin interes
-#      description: esta es la descripcion pues
-#        Groupd: ssss
-#        name: recursos locales sin interes
-#        description: esta es la descripcion pues
-#        resources:
-#          - StructureDefinition/CoberturaMinsalMPI
+# groups:
+#   #description: Aquí se agrupan todos los perfiles y recursos requeridos para el cumplimiento de la guía "Indice Maestro Paciente" del Ministerio de Salud de Chile
+#   CapabilityStatementsServer:
+#     name: Capability Statements (Servidor)
+#     description: Describe el funcionamiento que debería cumplir la API del MPI
+#     resources:
+#       - MPI-IHE-PIXm-PDQm-Manager
+#   CapabilityStatementsClient:
+#     name: Capability Statements (Cliente)
+#     description: Describe las iteracciones posibles de los clientes, para consumir la API del MPI
+#     resources:
+#       - MPI.IHE.PDQm.Search.Cliente
+#       - MPI.IHE.PDQm.Search.Cliente.Match
+#       - MPI.IHE.PIXm.Buscador
+#       - MPI.IHE.PIXm.Origen
+#   PerfilesMPI:
+#     name: Perfiles MPI
+#     description: Estos son las indicaciones de cada recuros para almacenar la información del Paciente y otra relación 
+#     resources:
+#       - MINSALPaciente
+#       - MINSALSituacionDiscapacidad
+#       - MINSALNivelEducacional
+#       - MINSALOcupacion
+#       - MINSALAcompanante
+#       - MINSALCobertura
+  
 #  GroupB:
 #    name: recursos del lado B para ver que onda
 #    description: Descripciones de lado B

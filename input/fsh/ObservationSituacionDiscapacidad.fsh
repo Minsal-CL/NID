@@ -34,6 +34,8 @@ Description: "MINSAL Situacion Discapacidad"
   * ^short = "Define si tiene o no Discapacidad"
 * valueBoolean 1..1 MS
 
+* subject only Reference(MINSALPaciente)
+
 * component 0..2 MS
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
@@ -49,9 +51,6 @@ Description: "MINSAL Situacion Discapacidad"
   * code MS
     * coding 1..1 MS
     * coding = CSComponenteDiscapacidad#01 "Origen de la discapacidad"
-      * code 1..1 MS
-      * system 1..1 MS
-      * display 0..1 MS
   * code from VSComponenteDiscapacidad
   * valueCodeableConcept 1..1 MS
     * coding 1..1 MS

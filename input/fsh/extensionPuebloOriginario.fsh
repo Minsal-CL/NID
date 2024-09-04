@@ -21,5 +21,5 @@ Context: Patient
 
 Invariant:   mpi-PueblosOriginarios
 Description: "Si pertenece a un pueblo originario debe especificar, cúal"
-Expression:  "extension.where(url = 'pertenece' and value.ofType(boolean).where(true)) implies extension.where(url = 'perteneciente').exists()"
+Expression:  "extension.where(url = 'pertenece' and value.ofType(boolean).where(true)).exists() implies extension.where(url = 'perteneciente').exists()"
 Severity:    #error

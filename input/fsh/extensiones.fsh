@@ -93,12 +93,13 @@ Title: "Religión"
 Description: "Religión"
 Context: Patient
 * value[x] only CodeableConcept
+* value[x] from VSReligion (required)
 * value[x] ^short = "Religión del paciente"
 * url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
 * value[x].coding.system 1..1
 * value[x].coding.display 0..1
 * value[x].coding.code 1..1
-* value[x].coding.code from VSReligion (required)
+* value[x].coding.code 
 * value[x].coding.system ^short = "URI del system para validar"
 * value[x].coding.display ^short = "Nombre de la religión"
 * value[x].coding.code ^short = "Nombre de la religión"
@@ -109,11 +110,11 @@ Title:       "País de origen del paciente"
 Description: "País de origen del paciente"
 Context:     Patient
 * value[x] only CodeableConcept
+* value[x] from CodPais
 * value[x] ^short = "Código de País"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
 

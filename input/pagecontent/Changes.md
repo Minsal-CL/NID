@@ -58,6 +58,11 @@ Perfil [MINSAL Paciente](StructureDefinition-MINSALPaciente.html):
   * Se incluye el dato Link por recomendación de la guía PIXm
 
 Se combinan los extensiones **Pueblos Originarios** y **Pueblo Originarios Pertenecientes** en la extensión compleja [Pueblos Originarios](StructureDefinition-PueblosOriginarios.html)
- 
+
+Se modifican los siguientes VS y CS para corregir según la norma:
+  * Valoracion Desempeno
+  * Origen Discapacidad
+  * Previsión
+
 ### Versión 0.2.0
 Primera versión publicada de la guía MPI.

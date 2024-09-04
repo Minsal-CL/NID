@@ -27,11 +27,11 @@ Description: "Valoracion Desempeno"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Sin discapacidad"
-* #02 "Discapacidad leve"
-* #03 "Discapacidad moderada"
-* #04 "Discapacidad severa"
-* #05 "Discapacidad profunda"
+* #1 "Sin discapacidad"
+* #2 "Discapacidad leve"
+* #3 "Discapacidad moderada"
+* #4 "Discapacidad severa"
+* #5 "Discapacidad profunda"
 
 /*************************************/
 ValueSet: VSOrigenDiscapacidad
@@ -63,12 +63,12 @@ Description: "Origen Discapacidad"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Origen Físico"
-* #02 "Origen sensorial visual"
-* #04 "Origen sensorial auditivo"
-* #05 "Origen mental síquico"
-* #06 "Origen mental intelectual"
-* #07 "Origen múltiple"
+* #1 "Origen Físico"
+* #2 "Origen sensorial visual"
+* #3 "Origen sensorial auditivo"
+* #4 "Origen mental síquico"
+* #5 "Origen mental intelectual"
+* #6 "Origen múltiple"
 
 /*************************************/
 
@@ -135,15 +135,18 @@ Description: "Previsión"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "FONASA"
-* #02 "Isapre"
-* #03 "Capredena"
-* #04 "Otro"
+* #1 "FONASA" "Fondo Nacional de Salud"
+* #2 "ISAPRE" "Instituciones de Salud Previsional"
+* #3 "CAPREDENA" "Caja de Previsión de la Defensa Nacional"
+* #4 "DIPRECA" "Dirección de Previsión de Carabineros, PDI y Gendarmería"
+* #5 "SISA" "Sistema de Salud de las Fuerzas Armadas (Ejército, Armada y Fuerza Aérea)."
+* #96 "NINGUNA" "Ningúna Previsión"
+* #99 "DESCONOCIDO" "Desconoce su Previsión"
 
 /***********************************/
 ValueSet: VSTramosFONASA
 Id: VSTramosFONASA
-Title: "Tramos devFONASA"
+Title: "Tramos de FONASA"
 Description: "Tramos de FONASA"
 * ^experimental = false
 * ^version = "0.1"
