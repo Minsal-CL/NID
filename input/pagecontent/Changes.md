@@ -27,6 +27,8 @@ Se crea perfil [MINSAL Bundle Resultado Consulta](StructureDefinition-BundleSear
 
 Perfil [MINSAL Cobertura](StructureDefinition-MINSALCobertura.html):
   * Se cambia la referencia de **Organization** al perfil de la core **OrganizacionCL**
+  * Se incluye el dato type para definir la leyt previsional
+  * Se utiliza el class para definir el tipo de Tramo de FONASA o el tipo de plan de isapre
 
 Perfil [MINSAL Agrupacion por marcas](StructureDefinition-MINSALAgrupacionPorMarcas.html)
   * Se depreca el MS al characteristic
@@ -34,17 +36,20 @@ Perfil [MINSAL Agrupacion por marcas](StructureDefinition-MINSALAgrupacionPorMar
 
 Perfil [MINSAL Nivel Educacional](StructureDefinition-MINSALNivelEducacional.html)
   * Se agrega dependencia al ObservacionCL de la Core de HL7
+  * Se cambia la referencia del subject a perfil **Minsal Paciente**
   * Se crea el CS y VS para diferenciar los componentes
   * Se agrega la categoría de social-history
   * Se agrega el code como tipo de obsercación y obliga a Nivel Educacional
 
 Perfil [MINSAL Ocupación](StructureDefinition-MINSALOcupacion.html)
   * Se agrega dependencia al ObservacionCL de la Core de HL7
+  * Se cambia la referencia del subject a perfil **Minsal Paciente**
   * Se agrega la categoría de social-history
   * Se agrega el code como tipo de obsercación y obliga a Ocupación
 
 Perfil [MINSAL Situacion Discapacidad](StructureDefinition-MINSALSituacionDiscapacidad.html)
   * Se agrega dependencia al ObservacionCL de la Core de HL7
+  * Se cambia la referencia del subject a perfil **Minsal Paciente**
   * Se agrega la categoría de social-history
   * Se agrega el code como tipo de obsercación y obliga a Situación de Discapacidad
   * Se crea invariante para obligar el uso de los componenetes en caso de ser Verdadero
