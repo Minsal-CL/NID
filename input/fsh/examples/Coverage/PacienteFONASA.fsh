@@ -1,7 +1,7 @@
-Instance: CoberturaFONASAEjemplp
+Instance: CoberturaFONASAEjemplo
 InstanceOf: MINSALCobertura
 Usage: #example
-Title: "CoberturaFONASAEjemplp"
+Title: "Ejemplo de Cobertura FONASA"
 Description: "Ejemplo de la cobertura FONASA de un paciente"
 
 * status = #active
