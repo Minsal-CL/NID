@@ -1,6 +1,6 @@
 ### Alcance
 
-Esta guía de implementación aborda el proceso asociado a la identificación de un usuario en su interacción con el sistema de salud mediante las transacciones de información entre el sistema local y el Indice Maestro de Paciente o MPI (del ingles Master Patient Index). El MPI es una componente de la Arquitectura Nacional de Interoperabilidad que permite administrar y mantener la identidad en los registros de las personas que reciben servicios de salud dentro del territorio nacional de manera unívoca.
+Núcleo de Interoperabilidad de Datos - MINSAL (NID - MINSAL), busca abordar varios casos transversales dentro de la “Arquitectura Nacional de Interoperabilidad”, entre esos se encuentra el uso del Indicé Maestro Paciente o MPI (del ingles Master Patient Index). Que permite administrar y mantener la identidad en los registros de las personas que reciben servicios de salud dentro del territorio nacional de manera unívoca. 
 
 ### Antecedentes
 
@@ -8,17 +8,19 @@ Es fundamental para cualquier prestador de salud  gestionar con precisión los d
 
 ### Descripción
 
-El MPI representa el pilar fundamental de la interoperabilidad en el ámbito de la salud. Facilita el intercambio seguro de datos de pacientes entre diversas organizaciones, sistemas y partes interesadas del sector sanitario. Sin un MPI robusto, los esfuerzos por lograr la interoperabilidad pueden verse obstaculizados por incoherencias y errores en los datos.
+El MPI dentro de las funciones de la guía NID, representa el pilar fundamental de la interoperabilidad en el ámbito de la salud. Facilita el intercambio seguro de datos de pacientes entre diversas organizaciones, sistemas y partes interesadas del sector sanitario. Sin un MPI robusto, los esfuerzos por lograr la interoperabilidad pueden verse obstaculizados por incoherencias y errores en los datos.
 La identificación precisa de los pacientes es esencial para garantizar su seguridad. El MPI ayuda a prevenir errores en la medicación, diagnósticos equivocados y otros eventos adversos que pueden ocurrir cuando los proveedores de atención médica carecen de un historial completo y preciso del paciente.
 Además, el MPI reduce los costos administrativos al simplificar el proceso de registro de pacientes. Las organizaciones sanitarias pueden evitar la entrada de datos redundantes y mejorar la eficiencia en el intercambio de información.
 
-### Objetivos de la Implementación de un MPI
+### Objetivos de la Implementación del "Núcleo de Interoperabilidad de Datos - MINSAL"
 
 #### General
 
-* Generar un sistema seguro e interoperable de identificación unívoca de pacientes, para soportar la gestión (carga, consulta e identificación cruzada de duplicados) de la información de descripción de un paciente de manera fidedigna y de calidad.
+* Ser la guía de recursos transversable dentro del Ministerio de Salud de Chile, incluyendo sistemas de información unívoca de pacientes, prestadores y organizaciones dentro del sistema de salud.
 
 #### Específicos
+
+* Generar un sistema seguro e interoperable de identificación unívoca de pacientes, para soportar la gestión (carga, consulta e identificación cruzada de duplicados) de la información de descripción de un paciente de manera fidedigna y de calidad. 
 
 * Apoyar los esfuerzos de gobierno de datos garantizando que los datos de los pacientes sean coherentes y fiables. Esto es importante para cumplir con las regulaciones nacionales de privacidad de datos.
 * Ayudar a prestar una atención centrada en el paciente al proporcionar a los profesionales sanitarios una visión completa y precisa del historial médico de un paciente, independientemente de dónde se hayan originado los datos.
