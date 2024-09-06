@@ -1,5 +1,7 @@
 ### Versión 0.3.0
 
+Se cambia el nombre a guía Núcle de Interoperabilidad de Datos del Ministerio de Salud (NID-Minsal)
+
 Se generan las dependencias a las guías [PIXm](https://profiles.ihe.net/ITI/PIXm/index.html) y [PDQm](https://profiles.ihe.net/ITI/PDQm/).
 
 Se crea el CapabilityStatement del Servidor:
@@ -26,43 +28,44 @@ Se crean los parametros y perfiles para la operación **$match**:
 Se crea perfil [MINSAL Bundle Resultado Consulta](StructureDefinition-BundleSearchMPI.html) para los resultados de busquedas mediante consultas. 
 
 Perfil [MINSAL Cobertura](StructureDefinition-MINSALCobertura.html):
-  * Se cambia la referencia de **Organization** al perfil de la core **OrganizacionCL**
-  * Se incluye el dato type para definir la leyt previsional
-  * Se utiliza el class para definir el tipo de Tramo de FONASA, el tipo de plan de isapre, el Leyes previsionales, leyes reparatorias
+  * Se cambia la referencia de **Organization** al perfil de la core **OrganizacionCL**.
+  * Se incluye el dato type para definir la leyt previsional.
+  * Se utiliza el class para definir el tipo de Tramo de FONASA, el tipo de plan de isapre, el Leyes previsionales, leyes reparatorias.
+  * Se crea la extensión **Valor de la Clase** para mantener el valor de manera codificada y responder las necesidades nacionales.
 
 Perfil [MINSAL Agrupacion por marcas](StructureDefinition-MINSALAgrupacionPorMarcas.html)
-  * Se depreca el MS al characteristic
+  * Se depreca el MS al characteristic.
   * Se da MS al Code y obligatoriedad para definir el tipo de Agrupación.
 
 Perfil [MINSAL Nivel Educacional](StructureDefinition-MINSALNivelEducacional.html)
-  * Se agrega dependencia al ObservacionCL de la Core de HL7
-  * Se cambia la referencia del subject a perfil **Minsal Paciente**
-  * Se crea el CS y VS para diferenciar los componentes
-  * Se agrega la categoría de social-history
-  * Se agrega el code como tipo de obsercación y obliga a Nivel Educacional
+  * Se agrega dependencia al ObservacionCL de la Core de HL7.
+  * Se cambia la referencia del subject a perfil **Minsal Paciente**.
+  * Se crea el CS y VS para diferenciar los componentes.
+  * Se agrega la categoría de social-history.
+  * Se agrega el code como tipo de obsercación y obliga a Nivel Educacional.
 
 Perfil [MINSAL Ocupación](StructureDefinition-MINSALOcupacion.html)
-  * Se agrega dependencia al ObservacionCL de la Core de HL7
-  * Se cambia la referencia del subject a perfil **Minsal Paciente**
-  * Se agrega la categoría de social-history
-  * Se agrega el code como tipo de obsercación y obliga a Ocupación
+  * Se agrega dependencia al ObservacionCL de la Core de HL7.
+  * Se cambia la referencia del subject a perfil **Minsal Paciente**.
+  * Se agrega la categoría de social-history.
+  * Se agrega el code como tipo de obsercación y obliga a Ocupación.
 
 Perfil [MINSAL Situacion Discapacidad](StructureDefinition-MINSALSituacionDiscapacidad.html)
-  * Se agrega dependencia al ObservacionCL de la Core de HL7
-  * Se cambia la referencia del subject a perfil **Minsal Paciente**
-  * Se agrega la categoría de social-history
-  * Se agrega el code como tipo de obsercación y obliga a Situación de Discapacidad
-  * Se crea invariante para obligar el uso de los componenetes en caso de ser Verdadero
+  * Se agrega dependencia al ObservacionCL de la Core de HL7.
+  * Se cambia la referencia del subject a perfil **Minsal Paciente**.
+  * Se agrega la categoría de social-history.
+  * Se agrega el code como tipo de obsercación y obliga a Situación de Discapacidad.
+  * Se crea invariante para obligar el uso de los componenetes en caso de ser Verdadero.
 
 Perfil [MINSAL Acompañante](StructureDefinition-MINSALAcompanante.html)
-  * Se crea invariante para obligar el uso de un dato given o family o text en caso de utilizar el dato name
+  * Se crea invariante para obligar el uso de un dato given o family o text en caso de utilizar el dato name.
   
 Perfil [MINSAL Paciente](StructureDefinition-MINSALPaciente.html):
-  * Se convalida Paciente LE con MINSAL Paciente
-  * Se crea el parametro de busqueda de [SegundoApellido](SearchParameter-mpi-paciente-segundoApellido.html)
-  * Se incluye el dato Link por recomendación de la guía PIXm
+  * Se convalida Paciente LE con MINSAL Paciente.
+  * Se crea el parametro de busqueda de [SegundoApellido](SearchParameter-mpi-paciente-segundoApellido.html).
+  * Se incluye el dato Link por recomendación de la guía PIXm.
 
-Se combinan los extensiones **Pueblos Originarios** y **Pueblo Originarios Pertenecientes** en la extensión compleja [Pueblos Originarios](StructureDefinition-PueblosOriginarios.html)
+Se combinan los extensiones **Pueblos Originarios** y **Pueblo Originarios Pertenecientes** en la extensión compleja [Pueblos Originarios](StructureDefinition-PueblosOriginarios.html).
 
 Se modifican los siguientes VS y CS para corregir según la norma:
   * Valoracion Desempeno

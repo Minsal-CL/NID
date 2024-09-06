@@ -1012,7 +1012,128 @@ Description: "Código asociados a el detalle de las ocupaciones de un paciente"
 * #9624	"Acarreadores de agua y recolectores de leña"
 * #9629	"Otras ocupaciones elementales no clasificadas previamente"
 
+/********************************************************/
+
+CodeSystem: CSClasesDeCobertura
+Id: CSClasesDeCobertura
+Title: "Clase de Cobertura de Salud"
+Description: "Permitira definir los distintos tipos de clases requeridos para la cobertura. Los tramos de FONASA, Planes de Isapre, Otras leyes previsionales, Leyes de priorización y de reparación."
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^caseSensitive = false
+* ^experimental = false
+
+* #1 "Tramos de FONASA"
+* #2 "Plan de ISAPRE"
+* #3 "Otras Leyes Previsionales"
+* #4 "Leyes de Reparación" 
+* #5 "Leyes de Priorización"
+
+ValueSet: VSClasesDeCobertura
+Id: VSClasesDeCobertura
+Title: "Clase de Cobertura de Salud"
+Description: "Permitira definir los distintos tipos de clases requeridos para la cobertura. Los tramos de FONASA, Planes de Isapre, Otras leyes previsionales, Leyes de priorización y de reparación."
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false
+
+* codes from system CSClasesDeCobertura
+
+/********************************************************/
+
+CodeSystem:  CSLeyPrevisionales
+Id: CSLeyPrevisionales
+Title: "Leyes Previsionales"
+Description: "Código asociados a Leyes Previsonales que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false 
+* ^caseSensitive = true
 
 
+* #1 "Ley Nº18.490: Accidentes de Transporte"
+* #2 "Ley Nº 16.744: Accidentes del Trabajo y Enfermedades Profesionales"
+* #3 "Ley Nº 16.744: Accidente Escolar"
+* #4 "Ley Nº 19.650/99 de Urgencia"
+* #6 "Ley Nº 19.966 Régimen General de Garantías en Salud GES" 
+* #7 "Ley Nº20.850 Ricarte Soto"
+* #8 "Ley N° 21.030 de Despenalización de la Interrupción Voluntaria del Embarazo en Tres Causales."
+* #96 "Ninguna"
+* #97 "No recuerda"
 
 
+ValueSet:  VSLeyPrevisionales
+Id: VSLeyPrevisionales
+Title: "Leyes Previsionales"
+Description: "Código asociados a Leyes Previsonales que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false 
+
+* codes from system  CSLeyPrevisionales
+
+/********************************************************/
+
+CodeSystem:  CSLeyReparacion
+Id: CSLeyReparacion
+Title: "Leyes Reparación"
+Description: "Código asociados a Leyes de Reparación que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false 
+
+* ^caseSensitive = true
+
+* #1 "Antuco"
+* #2 "Prilonco"
+* #3 "Dirigente Vecinal"
+* #4 "Prais"
+
+ValueSet:  VSLeyReparacion
+Id: VSLeyReparacion
+Title: "Leyes Reparación"
+Description: "Código asociados a Leyes de Reparación que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
+
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false
+
+* codes from system  CSLeyReparacion
+
+/********************************************************/

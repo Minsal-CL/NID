@@ -1,8 +1,8 @@
 Instance: MinsalPacienteEjemplo
 InstanceOf: MINSALPaciente
 Usage: #example
-Title: "Minsal Paciente Ejemplo MPI"
-Description: "Minsal Paciente Ejemplo MPI"
+Title: "Paciente Ejemplo MPI"
+Description: "Paciente Ejemplo MPI"
 
 * extension[IdentidadDeGenero] = identidadGeneroPac1
 * extension[SexoBiologico] = SexoBiologicoPac1

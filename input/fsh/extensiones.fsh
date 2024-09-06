@@ -119,46 +119,59 @@ Context:     Patient
   * display 0..1 MS
 
 
-Extension: DirigenteVecinal 
-Id: DirigenteVecinal 
-Title: "Dirigente Vecinal"
-Description: "Dirigente Vecinal"
-Context: Coverage
+// Extension: DirigenteVecinal 
+// Id: DirigenteVecinal 
+// Title: "Dirigente Vecinal"
+// Description: "Dirigente Vecinal"
+// Context: Coverage
 
-//* value[x] only Boolean
-//* valueReference = Reference()
-* valueBoolean ^short = "Dirigente Vecinal"
-
-
-Extension: Prilonco 
-Id: Prilonco 
-Title: "Prilonco"
-Description: "Prilonco"
-Context: Coverage
-
-//* value[x] only Boolean
-//* valueReference = Reference()
-* valueBoolean ^short = "Prilonco"
+// //* value[x] only Boolean
+// //* valueReference = Reference()
+// * valueBoolean ^short = "Dirigente Vecinal"
 
 
-Extension: Antuco
-Id: Antuco
-Title: "Antuco"
-Description: "Antuco"
-Context: Coverage
+// Extension: Prilonco 
+// Id: Prilonco 
+// Title: "Prilonco"
+// Description: "Prilonco"
+// Context: Coverage
 
-//* value[x] only Boolean
-//* valueReference = Reference()
-* valueBoolean ^short = "Antuco"
+// //* value[x] only Boolean
+// //* valueReference = Reference()
+// * valueBoolean ^short = "Prilonco"
 
 
-Extension: Prais
-Id: Prais
-Title: "PRAIS"
-Description: "Programa de Reparación Atención Integral"
-Context: Coverage
+// Extension: Antuco
+// Id: Antuco
+// Title: "Antuco"
+// Description: "Antuco"
+// Context: Coverage
 
-//* value[x] only Boolean
-//* valueReference = Reference()
-* valueBoolean ^short = "PRAIS"
+// //* value[x] only Boolean
+// //* valueReference = Reference()
+// * valueBoolean ^short = "Antuco"
+
+
+// Extension: Prais
+// Id: Prais
+// Title: "PRAIS"
+// Description: "Programa de Reparación Atención Integral"
+// Context: Coverage
+
+// //* value[x] only Boolean
+// //* valueReference = Reference()
+// * valueBoolean ^short = "PRAIS"
+
+/********************************************************/
+Extension: ValorDeLaClase
+Id: ValorDeLaClase
+Title: "Valor de la Clase"
+Description: "Da el valor de class del Coverage, de manera codificada"
+Context: Coverage.class.value
+
+* value[x] 1..1
+* value[x] ^short = "Valor de la Clase del Coverage"
+* value[x] only Coding
+
+/********************************************************/
 

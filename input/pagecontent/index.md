@@ -16,11 +16,9 @@ Además, el MPI reduce los costos administrativos al simplificar el proceso de r
 
 #### General
 
-* Ser la guía de recursos transversable dentro del Ministerio de Salud de Chile, incluyendo sistemas de información unívoca de pacientes, prestadores y organizaciones dentro del sistema de salud.
+* Generar un sistema seguro e interoperable de identificación unívoca de pacientes, para soportar la gestión (carga, consulta e identificación cruzada de duplicados) de la información de descripción de un paciente de manera fidedigna y de calidad. 
 
 #### Específicos
-
-* Generar un sistema seguro e interoperable de identificación unívoca de pacientes, para soportar la gestión (carga, consulta e identificación cruzada de duplicados) de la información de descripción de un paciente de manera fidedigna y de calidad. 
 
 * Apoyar los esfuerzos de gobierno de datos garantizando que los datos de los pacientes sean coherentes y fiables. Esto es importante para cumplir con las regulaciones nacionales de privacidad de datos.
 * Ayudar a prestar una atención centrada en el paciente al proporcionar a los profesionales sanitarios una visión completa y precisa del historial médico de un paciente, independientemente de dónde se hayan originado los datos.
