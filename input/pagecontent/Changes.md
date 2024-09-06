@@ -28,7 +28,7 @@ Se crea perfil [MINSAL Bundle Resultado Consulta](StructureDefinition-BundleSear
 Perfil [MINSAL Cobertura](StructureDefinition-MINSALCobertura.html):
   * Se cambia la referencia de **Organization** al perfil de la core **OrganizacionCL**
   * Se incluye el dato type para definir la leyt previsional
-  * Se utiliza el class para definir el tipo de Tramo de FONASA o el tipo de plan de isapre
+  * Se utiliza el class para definir el tipo de Tramo de FONASA, el tipo de plan de isapre, el Leyes previsionales, leyes reparatorias
 
 Perfil [MINSAL Agrupacion por marcas](StructureDefinition-MINSALAgrupacionPorMarcas.html)
   * Se depreca el MS al characteristic
