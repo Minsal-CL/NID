@@ -38,15 +38,25 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * gender 1..1 MS
 
 //* address.extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1
-* address.extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud." 
-* address.use 1..1 MS
+* address
+  * extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud."
+  * extension contains SituacionCalle named SituacionCalle 0..1 MS
 
-* address.line 1..1 MS
-* address.line ^short = "Calle o avenida, numero y casa o dpto"
-* address.line ^definition = "Calle o avenida, numero y casa o dpto"
-* address.period 0..1 MS
-* address.period ^short = "Periodo de tiempo durante el  cual es válida la dirección entregada"
-* address.extension contains SituacionCalle named SituacionCalle 0..1 MS
+  * use 0..1 MS
+  * line 0..1 MS
+  * line ^short = "Calle o avenida, numero y casa o dpto"
+  * line ^definition = "Calle o avenida, numero y casa o dpto"
+  * city.extension 1..1 MS
+  * city.extension[comunas] 1..1 MS
+  * district.extension 1..1 MS
+  * district.extension[provincias] 1..1 MS
+  * state.extension 1..1 MS
+  * state.extension[regiones] 1..1 MS
+  * country.extension 1..1 MS
+  * country.extension[paises] 1..1 MS
+  * country.extension 1..1 MS
+  * period 0..1 MS
+  * period ^short = "Periodo de tiempo durante el  cual es válida la dirección entregada"
 
 * birthDate 1..1 MS
 

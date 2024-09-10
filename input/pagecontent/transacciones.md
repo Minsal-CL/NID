@@ -80,7 +80,7 @@ Como ejemplo
 <br>
 
 ```
-GET {{mpi}}/Patient/$ihe-pix?sourceIdentifier=2.16.840.1.113883.2.22.0.2.102100.50.10%AC1696435881599
+GET {{mpi}}/Patient/$ihe-pix?sourceIdentifier=urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10%AC1696435881599
 ```
 <br>
 
@@ -179,22 +179,14 @@ El parámetro format no es necesario
 ```
 GET {{mpi}}/Patient?format=json&active=true
 ```
-
-* Por Ciudad o País
-```
-GET {{mpi}}/Patient?address-city=santiago
-```
-
 * Por Fecha de Nacimiento
 ```
 GET {{mpi}}/Patient?birthdate=1981-11-10
 ```
-
 * Por Apellido
 ```
-GET {{mpi}}/Patient?family=rochefort
+GET {{mpi}}/Patient?family=martinez
 ```
-
 * Por Nombre
 ```
 GET {{mpi}}/Patient?given=Andres
@@ -205,19 +197,281 @@ GET {{mpi}}/Patient?_id=AC1696435881599
 ```
 * Por Nombre Completo
 ```
-GET {{mpi}}/Patient?name=andres martinez rochefort
+GET {{mpi}}/Patient?name=Andres Martinez 
 ```
 * Por Telecom
 ```
 GET {{mpi}}/Patient?telecom=5694332547
 ```
-
+* Por SegundoApellido
+```
+GET {{mpi}}/Patient?segundo-apellido=rochefort
+```
 <br>
 
 ##### Respuesta
 
-La respuesta del sistema que suple es un recurso **Bundle** de tipo **SearchSet** en donde se indica la cantidad de recursos encontrados con los parámetros coincidentes y cada uno de los éstos incluídos como entrada<>
+La respuesta del sistema que suple es un recurso [Bundle](StructureDefinition-BundleSearchMPI.html) de tipo **SearchSet** en donde se indica la cantidad de recursos encontrados con los parámetros coincidentes y cada uno de los éstos incluídos como entrada<>
 <br>
+```
+GET {{mpi}}/Patient?identifier=15335473-1&birthdate=1981-11-10&name=andres%20martinez
+```
+```
+{
+    "resourceType": "Bundle",
+    "id": "EjemploBusqueda",
+    "meta": {
+        "profile": [
+            "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/BundleSearchMPI"
+        ]
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://interoperabilidad.minsal.cl/fhir/ig/nid/Patient?identifier=15335473-1&birthdate=1981-11-10&name=andres%20martinez"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "https://interoperabilidad.minsal.cl/fhir/ig/nid/Patient/AC1696435881599",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "AC1696435881599",
+                "meta": {
+                    "profile": [
+                        "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/MINSALPaciente"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
+                                    "code": "1",
+                                    "display": "Masculino"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/administrative-gender",
+                                    "code": "male",
+                                    "display": "male"
+                                }
+                            ],
+                            "text": "Masculino"
+                        }
+                    },
+                    {
+                        "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "code": "152",
+                                    "display": "Chile"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/PaisOrigenMPI",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "code": "032",
+                                    "display": "Argentina"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/Religion",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/nid/CodeSystem/CSReligion",
+                                    "code": "9",
+                                    "display": "Ninguna, ateo, agnóstico"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/PueblosAfrodescendiente",
+                        "valueBoolean": false
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "pertenece",
+                                "valueBoolean": false
+                            }
+                        ],
+                        "url": "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/PueblosOriginarios"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "official",
+                        "type": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                                "code": "152",
+                                                "display": "Chile"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "coding": [
+                                {
+                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+                                    "code": "01",
+                                    "display": "RUN"
+                                }
+                            ]
+                        },
+                        "value": "12216373-3"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Martinez",
+                        "_family": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+                                    "valueString": "rochefort"
+                                }
+                            ]
+                        },
+                        "given": [
+                            "Andres"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+5694332547",
+                        "use": "mobile"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1981-11-10",
+                "deceasedBoolean": false,
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://interoperabilidad.minsal.cl/fhir/ig/nid/StructureDefinition/SituacionCalle",
+                                "valueBoolean": false
+                            }
+                        ],
+                        "use": "home",
+                        "line": [
+                            "Calle Los Cedros 1234, Casa 15"
+                        ],
+                        "_city": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                                                "code": "13110",
+                                                "display": "La Florida"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "_district": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+                                                "code": "131",
+                                                "display": "Santiago"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "_state": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                                                "code": "13",
+                                                "display": "Metropolitana de Santiago"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "_country": {
+                            "extension": [
+                                {
+                                    "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+                                    "valueCodeableConcept": {
+                                        "coding": [
+                                            {
+                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                                "code": "152",
+                                                "display": "Chile"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "https://interoperabilidad.minsal.cl/fhir/ig/nid/CodeSystem/CSEstadoCivil",
+                            "code": "01",
+                            "display": "Soltero(a)"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}
+```
 <br>
 
 

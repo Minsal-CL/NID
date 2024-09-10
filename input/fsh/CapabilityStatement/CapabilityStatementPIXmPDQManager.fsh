@@ -15,8 +15,8 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
   * family
   * given
   * identifier
-  * segundoApellido
-  * segundoApellido:exact
+  * segundo-apellido
+  * segundo-apellido:exact
 * **DEBE** soportar los _revinclude que permitan traer la información adicional requerida.
 * **DEBE** soportar el uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) descrita en está guía.
 * **DEBE** soportar el uso de la operación [$match](OperationDefinition-MPI.PDQm.match.html) descrita en está guía. 
@@ -173,7 +173,7 @@ El servidor como administrador PIXm ofrece la capacidad de consultar la \"Refere
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
-    * name = "segundoApellido"
+    * name = "segundo-apellido"
     * definition = Canonical(mpi-paciente-segundoApellido)
     * type = #string
     * documentation = "Segundo apellido del paciente"
@@ -181,7 +181,7 @@ El servidor como administrador PIXm ofrece la capacidad de consultar la \"Refere
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
-    * name = "segundoApellido:exact"
+    * name = "segundo-apellido:exact"
     * definition = Canonical(mpi-paciente-segundoApellido)
     * type = #string
     * documentation = "Segundo apellido del paciente"

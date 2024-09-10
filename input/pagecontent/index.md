@@ -12,7 +12,7 @@ El MPI dentro de las funciones de la guía NID, representa el pilar fundamental 
 La identificación precisa de los pacientes es esencial para garantizar su seguridad. El MPI ayuda a prevenir errores en la medicación, diagnósticos equivocados y otros eventos adversos que pueden ocurrir cuando los proveedores de atención médica carecen de un historial completo y preciso del paciente.
 Además, el MPI reduce los costos administrativos al simplificar el proceso de registro de pacientes. Las organizaciones sanitarias pueden evitar la entrada de datos redundantes y mejorar la eficiencia en el intercambio de información.
 
-### Objetivos de la Implementación del "Núcleo de Interoperabilidad de Datos - MINSAL"
+### Objetivos de la Implementación del MPI
 
 #### General
 
@@ -25,7 +25,7 @@ Además, el MPI reduce los costos administrativos al simplificar el proceso de r
 * Reducir los registros duplicados y mejorar la precisión de los datos
 * Ahorrar de costos para las organizaciones sanitarias y los aseguradores.
 
-### Objetivos de esta Guía de Implementación
+### Objetivos del "Núcleo de Interoperabilidad de Datos - MINSAL"
 
 #### General
 

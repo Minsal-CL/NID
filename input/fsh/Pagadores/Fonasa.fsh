@@ -12,14 +12,6 @@ Description: "Información del Fondo Nacional de Salud"
   * system = #phone
   * value = "600 360 3000"
 * address = CLAddressFonasa
-* contact
-  * purpose
-    * text = "Representante Legal"
-  * name
-    * family = "Ayala"
-    * family.extension = SegundoApellidoFonasa
-    * given[0] = "Oscar"
-    * given[1] = "Andres"
 
 Instance: CLAddressFonasa
 InstanceOf: ClAddress
@@ -58,9 +50,3 @@ InstanceOf: CodigoPaises
 Usage: #inline
 
 * valueCodeableConcept = CSCodPaises#152 "Chile"
-
-Instance: SegundoApellidoFonasa
-InstanceOf: SegundoApellido
-Usage: #inline
-
-* valueString = "Vasquez"

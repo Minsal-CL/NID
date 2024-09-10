@@ -15,7 +15,7 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
   * family
   * given
   * identifier
-  * segundoApellido
+  * segundo-apellido
 * **PUEDE** soportar los _revinclude que permitan traer la información adicional requerida.
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -133,7 +133,7 @@ El Proveedor de Demografía del Indice Maestro Paciente (PDQm) ofrece la capacid
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #MAY
-    * name = "segundoApellido"
+    * name = "segundo-apellido"
     * definition = Canonical(mpi-paciente-segundoApellido)
     * type = #string
     * documentation = "Segundo apellido del paciente"
