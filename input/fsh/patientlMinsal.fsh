@@ -64,6 +64,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * telecom.system 1..1 MS
 * telecom.system ^short = "phone | email"
 * telecom.system ^definition = "Sistema de contacto"
+* telecom.system from VSSistemasComunicacion
 * telecom.value 1..1 MS
 * telecom.value ^short = "Valor de contacto"
 * telecom.rank MS

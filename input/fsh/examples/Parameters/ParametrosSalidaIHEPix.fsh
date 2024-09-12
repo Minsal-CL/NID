@@ -1,26 +1,18 @@
 Instance: ParametroSalidaIhe-PIXm
-InstanceOf: PIXmQueryParametersOut
+InstanceOf: ParametrosSalidaPixmMpi
 Usage: #example
 Title: "Parametros de Salida para la operación $ihe-pix"
-Description: "Ejemplo de un recurso Parameter que sirve de resultado de la busqueda de un paciente según un identificador en distintos sistemas dentro del MPI"
+Description: "Ejemplo de un recurso Parameter que sirve de resultado de la busqueda de un paciente dentro del MPI con la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html)."
 
 * parameter[targetIdentifier][0]
   * name = "targetIdentifier"
   * valueIdentifier
     * use = #official
-    * system = "urn:oid:1.3.6.1.4.1.21367.13.20.3000"
-    * value = "IHEBLUE-994"
-* parameter[targetIdentifier][1]
-  * name = "targetIdentifier"
-  * valueIdentifier
-    * use = #official
-    * system = "urn:oid:1.3.6.1.4.1.21367.13.20.2000"
-    * value = "IHEGREEN-994"
+    * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
+    * value = "16182522-0"
 * parameter[targetId][0]
   * name = "targetId"
-  * valueReference
-    * reference = "Patient/Patient-MohrAlice-Blue"
+  * valueReference = Reference(MinsalPacienteEjemplo)
 * parameter[targetId][1]
   * name = "targetId"
-  * valueReference
-    * reference = "Patient/Patient-MohrAlice-Green"
+  * valueReference = Reference(DuplicadoMPIPaciente)

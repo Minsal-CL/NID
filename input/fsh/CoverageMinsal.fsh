@@ -17,7 +17,7 @@ Description: "Recurso para almacenar la cobertura del paciente"
   * ^short = "active | cancelled | draft | entered-in-error"
   * ^definition = "Estado del beneficiario del plan" 
 * type 1..1 MS
-  * ^short = "Tipo de segur. (FONASA, ISAPRE u Otros)"
+  * ^short = "Tipo de seguro. (FONASA, ISAPRE u Otros)"
 * type from VSPrevision (required)
 * beneficiary 1..1 MS
   * ^short = "Referencia al beneficiario del plan de salud"
@@ -55,10 +55,14 @@ Description: "Recurso para almacenar la cobertura del paciente"
    
 * class[plan]
   * ^short = "Nombre del plan de isapre"
+  * type from VSClasesDeCobertura (extensible)
   * type = CSClasesDeCobertura#2 "Plan de ISAPRE"
+  * value MS
+  * value ^short = "Nombre del plan de isapre."
 
 * class[leyesPrev]
   * ^short = "Nombre de la ley previsional"
+  * type from VSClasesDeCobertura (extensible)
   * type = CSClasesDeCobertura#3 "Otras Leyes Previsionales"
   * value.extension 1..1
   * value.extension contains ValorDeLaClase named valorClase 1..1 MS

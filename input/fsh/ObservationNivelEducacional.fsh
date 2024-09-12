@@ -2,7 +2,7 @@ Profile: MINSALNivelEducacional
 Parent: ObservacionCL
 Id: MINSALNivelEducacional
 Title: "MINSAL Nivel Educacional"
-Description: "MINSAL Nivel Educacional"
+Description: "Nivel Educacional como dato estadistico para el ingreso de un paciente en el sistema."
 
 
 * status MS
@@ -11,7 +11,7 @@ Description: "MINSAL Nivel Educacional"
   * coding 1..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 1..1 MS
+    * display 0..1 MS
   * coding = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 
 * code MS
@@ -35,23 +35,22 @@ Description: "MINSAL Nivel Educacional"
   * ^short = "Último curso aprobado"
   * ^definition = "Último curso aprobado"
   * code MS
-    * coding 1..1 MS
-    * coding = CSNivelEducacionalDesc#01 "Último curso aprobado"
+  * code = CSNivelEducacionalDesc#01 "Último curso aprobado"
   * code from VSNivelEducacionalDesc
+  * value[x] only integer
   * valueInteger 1..1 MS
 
 * component[UltimoNivelAprobado] 
   * ^short = "Último nivel aprobado"
   * ^definition = "Último nivel aprobado"
   * code MS
-    * coding 1..1 MS
-    * coding = CSNivelEducacionalDesc#02 "Último nivel aprobado"
+  * code = CSNivelEducacionalDesc#02 "Último nivel aprobado"
   * code from VSNivelEducacionalDesc
   * valueCodeableConcept 1..1 MS
     * coding 1..1 MS
       * code 1..1 MS
       * system 1..1 MS
-      * display 0..1 MS
+  * value[x] only CodeableConcept
   * valueCodeableConcept from VSUNivelAprob
 
 

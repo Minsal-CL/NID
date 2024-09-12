@@ -55,7 +55,7 @@ Por el momento consideraremos solo una trasaccion para un único caso de uso de 
 
 ##### Solicitud
 
-La operación se desarrolla basada en un **HTTP GET** del *Consumidor* al *Gestor* usando la operacion **FHIR $ihe-pix**
+La operación se desarrolla basada en un **HTTP GET** del *Consumidor* al *Gestor* usando la operacion **FHIR** [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html)
 <br>
 
 La URL para la operación se muestra a continuación:

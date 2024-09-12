@@ -8,12 +8,12 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante l
   * ^short = "Tipo de Bundle, para el caso de uso es un \"searchset\""
 * type = #searchset
 
-* total 1..1 MS
+* total MS
   * ^short = "Numero total de resultados"
     
 * entry MS
   * ^short = "Entrada de los resultados de la busqueda"
-  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.type = #type
   * ^slicing.discriminator.path = "resource"
   * ^slicing.rules = #closed
   * ^slicing.description = "Diferenciación de los resultados de la busqueda"

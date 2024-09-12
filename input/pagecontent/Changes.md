@@ -64,6 +64,7 @@ Perfil [MINSAL Paciente](StructureDefinition-MINSALPaciente.html):
   * Se convalida Paciente LE con MINSAL Paciente.
   * Se crea el parametro de busqueda de [SegundoApellido](SearchParameter-mpi-paciente-segundoApellido.html).
   * Se incluye el dato Link por recomendación de la guía PIXm.
+  * Se crea un nuevo VS llamado [Medios de Comunicación con el Paciente](ValueSet-VSSistemasComunicacion.html) para reducir los system del telecom a los requeridos por norma.
 
 Se combinan los extensiones **Pueblos Originarios** y **Pueblo Originarios Pertenecientes** en la extensión compleja [Pueblos Originarios](StructureDefinition-PueblosOriginarios.html).
 

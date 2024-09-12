@@ -2,7 +2,7 @@ Profile: MINSALSituacionDiscapacidad
 Parent: ObservacionCL
 Id: MINSALSituacionDiscapacidad
 Title: "MINSAL Situacion Discapacidad"
-Description: "MINSAL Situacion Discapacidad"
+Description: "Describe de manera simplificada la situacion de discapacidad de un paciente."
 
 /*
 * extension contains OrigenDiscapacidad named OrigenDiscapacidad 1..1 MS
@@ -18,16 +18,11 @@ Description: "MINSAL Situacion Discapacidad"
 * status MS
 * category MS
   * coding 1..1 MS
-    * code 1..1 MS
-    * system 0..1 MS
-    * display 1..1 MS
   * coding = http://terminology.hl7.org/CodeSystem/observation-category#social-history
 
 * code MS
 * code from VSTipoObservacion
   * coding 1..1 MS
-    * code 1..1 MS
-    * system 0..1 MS
   * coding = CSTipoObservacion#03 "Situacion Discapacidad"
 
 * value[x] only boolean
@@ -42,16 +37,16 @@ Description: "MINSAL Situacion Discapacidad"
 * component ^slicing.rules = #closed
 * component ^slicing.ordered = true
 * component ^slicing.description = "Slice para diferenciar ultimo curso aprobado de ultimo nivel aprobado"
-* component contains 
+* component contains
+   OrigenDiscapacidad 0..1 MS and
    ValoracionDiscapacidad 0..1 MS
-   and OrigenDiscapacidad 0..1 MS
 
 * component[OrigenDiscapacidad]
   * ^short = "Define el origen de la discapacidad"
   * code MS
-    * coding 1..1 MS
-    * coding = CSComponenteDiscapacidad#01 "Origen de la discapacidad"
+  * code = CSComponenteDiscapacidad#01 "Origen de la discapacidad"
   * code from VSComponenteDiscapacidad
+  * value[x] only CodeableConcept
   * valueCodeableConcept 1..1 MS
     * coding 1..1 MS
       * code 1..1 MS
@@ -62,12 +57,9 @@ Description: "MINSAL Situacion Discapacidad"
 * component[ValoracionDiscapacidad]
   * ^short = "Define la valoracion del desempeño en la discapacidad"
   * code MS
-    * coding 1..1 MS
-    * coding = CSComponenteDiscapacidad#02 "Evaluación Valoración de Desempeño en Comunidad (IVADEC-DIF)"
-      * code 1..1 MS
-      * system 1..1 MS
-      * display 0..1 MS
+  * code = CSComponenteDiscapacidad#02 "Evaluación Valoración de Desempeño en Comunidad (IVADEC-DIF)"
   * code from VSComponenteDiscapacidad
+  * value[x] only CodeableConcept
   * valueCodeableConcept 1..1 MS
     * coding 1..1 MS
       * code 1..1 MS

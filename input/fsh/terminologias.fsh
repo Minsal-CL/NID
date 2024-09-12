@@ -1124,7 +1124,6 @@ Id: VSLeyReparacion
 Title: "Leyes Reparación"
 Description: "Código asociados a Leyes de Reparación que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
 
-
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2023-01-15"
@@ -1137,3 +1136,21 @@ Description: "Código asociados a Leyes de Reparación que modifican o eximen lo
 * codes from system  CSLeyReparacion
 
 /********************************************************/
+
+ValueSet: VSSistemasComunicacion
+Id: VSSistemasComunicacion
+Title: "Medios de Comunicación con el Paciente"
+Description: "Este es un filtro del \"system\" del telecom del paciente solo para que se ocupen los indicados por normativa"
+
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false
+
+* $contact-point-system#phone
+* $contact-point-system#email
+* $contact-point-system#other

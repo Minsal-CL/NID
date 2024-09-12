@@ -2,7 +2,7 @@ Profile:     ParametrosEntradaPixmMpi
 Parent:      PIXmQueryParametersIn
 Id:          ParametrosEntradaPixmMpi
 Title:       "MINSAL Parametros Entrada PIXm"
-Description: "Estos son los parametros de entrada para el $ihe-pix del PIXm"
+Description: "Estos son los parametros de entrada para el [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) del PIXm"
 
 * parameter[sourceIdentifier] 1..1 MS
   * ^short = "Identificador de busqueda, el cual será utilizado para realizar el cruse de referencia."

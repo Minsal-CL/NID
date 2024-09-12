@@ -2,7 +2,7 @@ Instance: MinsalPacienteEjemplo
 InstanceOf: MINSALPaciente
 Usage: #example
 Title: "Paciente Ejemplo MPI"
-Description: "Paciente Ejemplo MPI"
+Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
 
 * extension[IdentidadDeGenero] = identidadGeneroPac1
 * extension[SexoBiologico] = SexoBiologicoPac1
@@ -17,7 +17,8 @@ Description: "Paciente Ejemplo MPI"
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac1
     * coding = CSTipoIdentificador#01 "RUN"
-  * value = "12216373-3"
+  * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
+  * value = "16182522-0"
 
 * identifier[1]
   * use = #official

@@ -57,6 +57,7 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 * telecom.system 1..1 MS
 * telecom.system ^short = "phone | email"
 * telecom.system ^definition = "Sistema de contacto"
+* telecom.system from VSSistemasComunicacion
 * telecom.value 1..1 MS
 * telecom.value ^short = "Valor de contacto"
 * telecom.rank MS
@@ -69,7 +70,7 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 * maritalStatus MS
 * maritalStatus ^short = "Estado civil del paciente"
 
-* deceased[x] 1..1 MS
+* deceased[x] MS
 * deceased[x] ^short = "Puede indicar si el paciente esta fallecido o no o en su defecto, agregar la fecha de fallecimiento."
 * deceased[x] ^definition = "Puede indicar si el paciente esta fallecido o no o en su defecto, agregar la fecha de fallecimiento."
 

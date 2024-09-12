@@ -11,6 +11,11 @@ Description: "Información sobre una persona que participa en la atención a un 
 * name obeys mpi-rela-1
 * name 1..1 MS
 * telecom 1..1 MS
+  * system 1..1 MS
+  * system ^short = "phone | email"
+  * system ^definition = "Sistema de contacto"
+  * system from VSSistemasComunicacion
+  * value 1..1 MS
 * period 1..1 MS
 * address 1..1 MS
 * relationship 1..1 MS
