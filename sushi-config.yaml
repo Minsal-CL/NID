@@ -6,7 +6,7 @@
 id: hl7.fhir.cl.minsal.nid-mpi
 canonical: https://interoperabilidad.minsal.cl/fhir/ig/nid
 name: Nid_Mpi_Minsal 
-title: NID - MINSAL
+title: NID - MINSAL
 description: Núcleo de Interoperabilidad de Datos - MINSAL 
 status: draft # draft | active | retired | unknown
 version: 0.3.0
