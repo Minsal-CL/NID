@@ -17,7 +17,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac1
     * coding = CSTipoIdentificador#01 "RUN"
-  * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
+  * system = "urn:oid:2.16.840.1.113883.2.22.1.152.787300"
   * value = "16182522-0"
 
 * identifier[1]
@@ -25,6 +25,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac1
     * coding = CSTipoIdentificador#05 "PPN"
+  * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
   * value = "ACL123456789876"
 
 * active = true

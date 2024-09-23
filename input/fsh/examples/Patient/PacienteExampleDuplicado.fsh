@@ -17,7 +17,7 @@ Description: "Este paciente se encuentra duplicado pero con información adicion
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac2
     * coding = CSTipoIdentificador#01 "RUN"
-  * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
+  * system = "urn:oid:2.16.840.1.113883.2.22.1.152.787300"
   * value = "16182522-0"
 
 * active = true

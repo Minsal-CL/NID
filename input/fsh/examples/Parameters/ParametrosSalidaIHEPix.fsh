@@ -9,7 +9,7 @@ Description: "Ejemplo de un recurso Parameter que sirve de resultado de la busqu
   * valueIdentifier
     * use = #official
     * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
-    * value = "16182522-0"
+    * value = "ACL123456789876"
 * parameter[targetId][0]
   * name = "targetId"
   * valueReference = Reference(MinsalPacienteEjemplo)
