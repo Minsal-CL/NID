@@ -2,6 +2,8 @@
 
 Se cambia el nombre a guía Núcle de Interoperabilidad de Datos del Ministerio de Salud (NID-Minsal)
 
+Se agrega más información complementaria en la página de transacciones.
+
 Se generan las dependencias a las guías [PIXm](https://profiles.ihe.net/ITI/PIXm/index.html) y [PDQm](https://profiles.ihe.net/ITI/PDQm/).
 
 Se crea el CapabilityStatement del Servidor:
