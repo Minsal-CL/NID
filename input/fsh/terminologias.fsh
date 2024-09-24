@@ -330,14 +330,14 @@ ValueSet: PueblosOriginariosVS
 Id: PueblosOriginariosVS
 Title: "Pueblos Originarios de Chile"
 Description: "Pueblos Originarios de Chile"
-* ^experimental = true
+* ^experimental = false
 * include codes from system PueblosOriginariosCS
 
 CodeSystem: PueblosOriginariosCS
 Id: PueblosOriginariosCS
 Title: "Pueblos Originarios de Chile"
 Description:  "Pueblos Originarios de Chile"
-* ^experimental = true
+* ^experimental = false
 * ^caseSensitive = true
 * #01	"Mapuche"
 * #02	"Aymara"
@@ -434,7 +434,7 @@ Title: "Último nivel aprobado"
 Description: "Código del último nivel aprobado"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = true
+* ^experimental = false
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
@@ -448,7 +448,7 @@ Id: CSUNivelAprob
 Title: "Último nivel aprobado"
 Description: "Código del último nivel aprobado"
 * ^caseSensitive = true
-* ^experimental = true //dependera del uso que le den al codesystem
+* ^experimental = false //dependera del uso que le den al codesystem
 * ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
