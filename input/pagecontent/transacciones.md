@@ -83,7 +83,7 @@ GET {{mpi}}/Patient/$ihe-pix?sourceIdentifier=urn:oid:2.16.840.1.113883.2.22.0.2
 ```
 <br>
 
-Para el caso de **POST**, se debe hacer uso de un recurso [Patameter](StructureDefinition-ParametrosEntradaPixmMpi.htm) en el *body*. Utilizando el ejemplo anterior debería quedar de la siguiente manera:
+Para el caso de **POST**, se debe hacer uso de un recurso [Parameter](StructureDefinition-ParametrosEntradaPixmMpi.html) en el *body*. Utilizando el ejemplo anterior debería quedar de la siguiente manera:
 <br>
 ```
 POST [base]/Patient/$ihe-pix
