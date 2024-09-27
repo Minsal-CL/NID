@@ -1155,6 +1155,8 @@ Description: "Este es un filtro del \"system\" del telecom del paciente solo par
 * $contact-point-system#email
 * $contact-point-system#other
 
+/******************************************
+
 CodeSystem: CSEspecialidadFarma
 Id: CSEspecialidadFarma
 Title: "Especialidades Farmaceúticas o Química Farmaceúticas"
@@ -1449,3 +1451,4 @@ Description: "TituloProfesional"
 * #99  "DESCONOCIDA"
 
 
+**************/
