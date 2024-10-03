@@ -1,7 +1,7 @@
 Profile: MINSALCobertura
 Parent: Coverage
 Id: MINSALCobertura
-Title: "MINSAL Cobertura de Salud del paciente"
+Title: "MINSAL Cobertura de Salud del Paciente"
 Description: "Recurso para almacenar la cobertura del paciente"
 
 //VScalificacionPrevisional

@@ -20,7 +20,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier.type ^short = "Tipo de documento"
 * identifier.type ^definition = "Tipo de documento"
 * identifier.type ^comment = "Tipo de documento"
-* identifier.type from VSTipoIdentificador
+* identifier.type from VSTiposIdentificadorPaciente
 * identifier.type ^binding.description = "Identificadores definidos por DEIS"
   * coding 1..1   
     * system 0..1
@@ -39,6 +39,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 //* address.extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1
 * address
+  * ^short = "Tipo de dato para agregar la dirección de un paciente"
   * extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud."
   * extension contains SituacionCalle named SituacionCalle 0..1 MS
 

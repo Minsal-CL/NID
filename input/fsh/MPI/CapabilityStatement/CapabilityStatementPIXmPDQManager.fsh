@@ -1,4 +1,4 @@
-Instance: MPI-IHE-PIXm-PDQm-Manager
+Instance: MPI.IHE.PIXm.PDQm.Manager
 InstanceOf: CapabilityStatement
 Title: "Administrador del Indice Maestro Paciente"
 Usage: #definition
@@ -9,7 +9,7 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
 * Uso **PUEDE** devolver el recurso en JSON o XML
 * **DEBE** Soportar Perfil MINSAL Paciente
 * **DEBE** Soportar los perfiles MPI MINSAL que permiten completar con la información normativa requerida. 
-* Los parametros de busquedas **DEBERIAN** ser:
+* Los parametros de búsquedas **DEBEN** ser:
   * _id
   * active
   * family

@@ -3,13 +3,13 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.cl.minsal.nid-mpi
+id: hl7.fhir.cl.minsal.nid-mpi-hpd
 canonical: https://interoperabilidad.minsal.cl/fhir/ig/nid
-name: Nid_Mpi_Minsal 
-title: NID - MINSAL
-description: Núcleo de Interoperabilidad de Datos - MINSAL 
+name: Nid_Mpi_Hpd_Minsal 
+title: Núcleo de Interoperabilidad de Datos (NID) - MINSAL
+description: Núcleo de Interoperabilidad de Datos del Ministerio de Salud de Chile
 status: draft # draft | active | retired | unknown
-version: 0.3.0
+version: 0.4.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: draft  # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -25,10 +25,19 @@ publisher:
 #
 dependencies:
   #hl7.fhir.cl.clcore: 1.8.6
-  #hl7.fhir.cl.clcore: 1.9.0
-  hl7.fhir.cl.clcore: dev
-  ihe.iti.pixm: 3.0.4
-  ihe.iti.pdqm: 3.0.0
+  hl7.fhir.cl.clcore: 
+    id: clcore
+    uri: https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore
+    version: 1.9.1
+  #hl7.fhir.cl.clcore: dev
+  ihe.iti.pixm: 
+    id: IHE_PIXm
+    uri: https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm
+    version: 3.0.4
+  ihe.iti.pdqm: 
+    id: IHE_PDQm
+    uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
+    version: 3.0.0
 
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -51,13 +60,17 @@ dependencies:
 pages:
   index.md:
     title: Inicio
-  negocio.md:
-    title: Especificaciones de Negocio
-  transacciones.md:
-    title: Transacciones MPI
+  negocioMPI.md:
+    title: Especificaciones de Negocio "Indice Maestro de Pacientes"
+  negocioHPD.md:
+    title: Especificaciones de Negocio "Directorio de Proveedores de Atención Médica"
+  transaccionesBusquedasMPI.md:
+    title: Casos de Uso y Transacciones "Indice Maestro de Pacientes"
+  transaccionesBusquedasHPD.md:
+    title: Casos de Uso y Transacciones "Directorio de Proveedores de Atención Médica"
   artifacts.html:
     title: Artefactos Generados
-  Changes.md:
+  changes.md:
     title: Historial de Cambios
   
 #   implementation.xml:
@@ -90,11 +103,14 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Inicio: index.html
-  Especificaciones de Negocio: negocio.html
+  Especificaciones de Negocio: 
+    Negocio MPI: negocioMPI.html
+    Negocio HPD: negocioHPD.html 
   Especificaciones Técnicas:
-    Transacciones: transacciones.html
+    Busquedas de Pacientes: transaccionesBusquedasMPI.html
+    Busqueda de Profesionales: transaccionesBusquedasHPD.html
   Artefactos: artifacts.html
-  Historial de Cambios: Changes.html
+  Historial de Cambios: changes.html
   
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -120,9 +136,29 @@ menu:
 # of profile URLs. If a value is an id or name, SUSHI will replace
 # it with the correct canonical when generating the IG JSON.
 #
-# global:
-#   Patient: http://example.org/fhir/StructureDefinition/my-patient-profile
-#   Encounter: http://example.org/fhir/StructureDefinition/my-encounter-profile
+global:
+  Coverage:
+    - MINSALCobertura
+  Group:
+    - MINSALAgrupacionPorMarcas
+  Patient: 
+    - MINSALPaciente
+  Practitioner:
+    - MINSALPractitionerAdministrativo
+    - MINSALPrestadorProfesional
+  Organization:
+    - MINSALPrestadorOrganizacional
+  Observation:
+    - MINSALSituacionDiscapacidad
+    - MINSALNivelEducacional
+    - MINSALOcupacion
+  RelatedPerson:
+    - MINSALAcompanante
+      
+#   Practitioner: PrestadorCL
+#   Organization: OrganizacionCL
+#   Observation: ObservacionCL
+  
 #
 #
 # The resources property corresponds to IG.definition.resource.
@@ -163,32 +199,200 @@ menu:
 # is specified by id or name, SUSHI will replace it with the correct
 # URL when generating the IG JSON.
 #
-# groups:
-#   #description: Aquí se agrupan todos los perfiles y recursos requeridos para el cumplimiento de la guía "Indice Maestro Paciente" del Ministerio de Salud de Chile
-#   CapabilityStatementsServer:
-#     name: Capability Statements (Servidor)
-#     description: Describe el funcionamiento que debería cumplir la API del MPI
-#     resources:
-#       - MPI-IHE-PIXm-PDQm-Manager
-#   CapabilityStatementsClient:
-#     name: Capability Statements (Cliente)
-#     description: Describe las iteracciones posibles de los clientes, para consumir la API del MPI
-#     resources:
-#       - MPI.IHE.PDQm.Search.Cliente
-#       - MPI.IHE.PDQm.Search.Cliente.Match
-#       - MPI.IHE.PIXm.Buscador
-#       - MPI.IHE.PIXm.Origen
-#   PerfilesMPI:
-#     name: Perfiles MPI
-#     description: Estos son las indicaciones de cada recuros para almacenar la información del Paciente y otra relación 
-#     resources:
-#       - MINSALPaciente
-#       - MINSALSituacionDiscapacidad
-#       - MINSALNivelEducacional
-#       - MINSALOcupacion
-#       - MINSALAcompanante
-#       - MINSALCobertura
+groups:
   
+  PerfilesNID:
+    name: "Estructuras: Perfiles NID"
+    description: Estos son las indicaciones de los recursos transversales para todas las guías de implementación del Ministerio de Salud. 
+    resources:
+      - MINSALPaciente
+      - MINSALSituacionDiscapacidad
+      - MINSALNivelEducacional
+      - MINSALOcupacion
+      - MINSALAcompanante
+      - MINSALCobertura
+      - MINSALAgrupacionPorMarcas
+      - MINSALPractitionerAdministrativo
+      - MINSALPrestadorProfesional
+      - MINSALPrestadorOrganizacional
+
+  ExtensionesNID-Paciente:
+    name: "Estructuras: Extensiones Para MPI"
+    description: Estas son extensiones necesarias para el paciente y sus recursos relacionados.
+    resources:
+      - PaisOrigenMPI
+      - PueblosAfrodescendiente
+      - Religion
+      - SituacionCalle
+      - ValorDeLaClase
+      - PueblosOriginarios
+  
+  ExtensionesNID-Profesional:
+    name: "Estructuras: Extensiones Para HPD"
+    description: Estas son extensiones necesarias para los profesionales y sus recursos.
+    resources:
+      - Mencion
+  
+  TerminologiasCsPaciente:
+    name: "Terminologías: \"Code Systems\" MPI"
+    description: Estas son terminologías necesarias para el paciente y sus recursos relacionados.
+    resources:
+      - CSValoracionDesempeno
+      - CSOrigenDiscapacidad
+      - CSComponenteDiscapacidad
+      - CSPrevision
+      - CSTramosFONASA
+      - CSNivelEducacionalDesc
+      - CSIdentidadDeGenero
+      - CSEstadoCivil
+      - PueblosOriginariosCS
+      - CSReligion
+      - CScalificacionPrevisional
+      - CSUNivelAprob
+      - CSTipoObservacion
+      - CSGrupoMarcas
+      - CSOcupacionesDet
+      - CSClasesDeCobertura
+      - CSLeyPrevisionales
+      - CSLeyReparacion
+  
+  TerminologiasVSPaciente:
+    name: "Terminologías: \"Value Set\" MPI"
+    description: Estas son terminologías necesarias para el paciente y sus recursos relacionados.
+    resources:
+      - VSValoracionDesempeno
+      - VSOrigenDiscapacidad
+      - VSComponenteDiscapacidad
+      - VSPrevision
+      - VSTramosFONASA
+      - VSNivelEducacionalDesc
+      - VSIdentidadDeGenero
+      - VSEstadoCivil
+      - PueblosOriginariosVS
+      - VSReligion
+      - VScalificacionPrevisional
+      - VSUNivelAprob
+      - VSTipoObservacion
+      - VSGrupoMarcas
+      - VSOcupacionesDet
+      - VSClasesDeCobertura
+      - VSLeyPrevisionales
+      - VSLeyReparacion
+      - VSSistemasComunicacion
+      - VSTiposIdentificadorPaciente
+
+  TerminologiasCsProf:
+    name: "Terminologías: \"Code Systems\" HPD"
+    description: Estas son terminologías necesarias para el profesional y sus recursos relacionados.
+    resources:
+      - CSEspecialidadFarma
+      - CSEspecialidadBioqca
+      - CSEspecialidadMed
+      - CSEspecialidadOdont
+      - CSTituloProfesional
+  
+  TerminologiasVSProf:
+    name: "Terminologías: \"Value Set\" HPD"
+    description: Estas son terminologías necesarias para el profesional y sus recursos relacionados.
+    resources:
+      - VSEspecialidadFarma
+      - VSEspecialidadBioqca
+      - VSEspecialidadMed
+      - VSEspecialidadOdont
+      - VSIdentificadorPrestador
+      - VSTituloProfesional
+
+  CapabilityStatementsServer-MPI:
+    name: "Capability Statements: Servidor MPI"
+    description: Describe el funcionamiento que debería cumplir la API del "Índice Maestro de Pacientes"
+    resources:
+      - MPI.IHE.PIXm.PDQm.Manager
+
+  CapabilityStatementsClient-MPI:
+    name: "Capability Statements: Clientes MPI"
+    description: Describe las iteracciones posibles de los clientes, para consumir la API del "Índice Maestro de Pacientes"
+    resources:
+      - MPI.IHE.PDQm.Search.Cliente
+      - MPI.IHE.PDQm.Search.Cliente.Match
+      - MPI.IHE.PIXm.Buscador
+      - MPI.IHE.PIXm.Origen
+
+  CapabilityStatementsServer-HPD:
+    name: "Capability Statements: Servidor HPD"
+    description: Describe el funcionamiento que debería cumplir la API del "Directorio de Provedores de Atención Médica"
+    resources:
+      - NID.IHE.HPD.Manager
+
+  CapabilityStatementsClient-HPD:
+    name: "Capability Statements: Clientes HPD"
+    description: Describe las iteracciones posibles que debería cumplir el cliente con la API del "Directorio de Provedores de Atención Médica".
+    resources:
+      - NID.IHE.HPD.Consumer
+      - NID.IHE.HPD.Source
+  
+  PDQmSearch-MPI:
+    name: "Recursos: PDQm para Busquedas del Índice Maestro de Paciente"
+    description: Son distintos recursos requeridos para poder realizar las operaciones de búsquedas mediantes parametros
+    resources:
+      - mpi-paciente-segundoApellido
+      - BundleSearchMPI
+  
+  PDQmMatch-MPI:
+    name: "Recursos: PDQm para Operación $match del Índice Maestro de Paciente"
+    description: Son distintos recursos requeridos para poder realizar busquedas de pacientes utilizando la operación $match
+    resources:
+      - MPI.PDQm.match
+      - ParametrosEntradaPDQmMpi
+      - MINSALPacienteBusqueda
+      - BundleSearchMPIMatch
+  
+  PIXm-MPI:
+    name: "Recursos: PIXm para Operación $ihe-pix del Índice Maestro de Paciente"
+    description: Son distintos recursos requeridos para poder realizar la operación $ihe-pix de referencia cruzada de pacientes
+    resources:
+      - MPI.PIXm.pix
+      - ParametrosEntradaPixmMpi
+      - ParametrosSalidaPixmMpi
+  
+  HPD:
+    name: "Recursos: Busquedas para  Directorio de Proveedores de Atención Médica"
+    description: Son distintos recursos requeridos para realizar las operaciones de búsquedas del Directorio de Proveedores de Atención Médica
+    resources:
+      - BundleSearchProfHPD
+      - BundleSearchINSHPD
+  
+  EjemplosMPI:
+    name: "Instancias de Ejemplos del MPI"
+    description: Son ejemplos de instancias para revisar la estructura y la funcionalidad de la guía
+    resources:
+      - EjemploBusqueda
+      - EjemploBusquedaMatch
+      - EjemploBusquedaMatchOutcomeOperation
+      - CoberturaFONASAEjemplo
+      - AgrupacionMarcas
+      - EjemploSituacionDiscapacidad
+      - EjemploOcupacion
+      - EjemploNivelEducacional
+      - ParametroEntradaIhe-PDQm
+      - ParametroEntradaIhe-PIXm
+      - ParametroSalidaIhe-PIXm
+      - DuplicadoMPIPaciente
+      - EjemploPacienteBusqueda
+      - MinsalPacienteEjemplo
+      - EjemploAcompanate
+      - FONASA
+  
+  EjemplosHPD:
+    name: "Instancias de Ejemplos del HPD"
+    description: Son ejemplos de instancias para revisar la estructura y la funcionalidad de la guía
+    resources:
+      - EjemploBusquedaProf
+      - EjemploPractiProf
+      - EjemploBusquedaAdm
+      - EjemploPractiAdmin
+      - EjemploBusquedaOrg
+      - OrganizationLEEjemplo
+
 #  GroupB:
 #    name: recursos del lado B para ver que onda
 #    description: Descripciones de lado B

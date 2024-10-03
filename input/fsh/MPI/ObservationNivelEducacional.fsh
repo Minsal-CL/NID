@@ -44,6 +44,7 @@ Description: "Nivel Educacional como dato estadistico para el ingreso de un paci
   * ^short = "Último nivel aprobado"
   * ^definition = "Último nivel aprobado"
   * code MS
+    * ^short = "Código de identificación del último nivel aprobado"
   * code = CSNivelEducacionalDesc#02 "Último nivel aprobado"
   * code from VSNivelEducacionalDesc
   * valueCodeableConcept 1..1 MS
@@ -51,6 +52,7 @@ Description: "Nivel Educacional como dato estadistico para el ingreso de un paci
       * code 1..1 MS
       * system 1..1 MS
   * value[x] only CodeableConcept
+    * ^short = "Valor del componenete"
   * valueCodeableConcept from VSUNivelAprob
 
 

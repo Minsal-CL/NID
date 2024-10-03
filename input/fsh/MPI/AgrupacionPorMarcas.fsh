@@ -1,8 +1,8 @@
 Profile: MINSALAgrupacionPorMarcas
 Parent: Group
 Id: MINSALAgrupacionPorMarcas
-Title: "MINSAL Agrupacion por marcas"
-Description: "Agrupacion por marcas"
+Title: "MINSAL Agrupación por marcas"
+Description: "Agrupación por marcas"
 
 * type MS
 * type = #person
@@ -14,8 +14,9 @@ Description: "Agrupacion por marcas"
   * ^short = "Define el tipo de grupo"
 * code from VSGrupoMarcas
 
-* member 1..* MS
+* member 1..* MS 
   * entity 1..1 MS
+    * ^short = "Referencia a los pacientes miembros del grupo"
 * member.entity only Reference(MINSALPaciente)
 
 /*

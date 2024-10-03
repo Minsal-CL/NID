@@ -24,8 +24,7 @@ Title: "Situacion Calle"
 Description: "Situacion Calle"
 Context: Address
 
-//* value[x] only Boolean
-//* valueReference = Reference()
+* value[x] only boolean
 * valueBoolean ^short = "Situacion Calle"
 
 Extension: PueblosAfrodescendiente
@@ -172,24 +171,5 @@ Context: Coverage.class.value
 * value[x] 1..1
 * value[x] ^short = "Valor de la Clase del Coverage"
 * value[x] only Coding
-
-/********************************************************/
-
-Extension: Mencion
-Id:   Mencion
-Title:  "Mención profesional añadida al título profesional"
-Description: "Mención profesional obtenida junto con el título, dato que se agrega en texto lible"
-Context: Practitioner.qualification
-
-* value[x] only string
-
-/********************************************************/
-
-
-
-/********************************************************/
-
-
-
 
 /********************************************************/

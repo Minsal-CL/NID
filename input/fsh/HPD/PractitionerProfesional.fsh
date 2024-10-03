@@ -1,11 +1,11 @@
-Alias: $SegundoApellido = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido
-Alias: $cl-address = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address
-
-Profile: MINSALPrestadorProfesional
-Parent: PrestadorCL
-Id: MINSALPrestadorProfesional
-Title: "Prestador Profesional"
+Profile:     MINSALPrestadorProfesional
+Parent:      PrestadorCL
+Id:          MINSALPrestadorProfesional
+Title:       "Prestador Profesional"
 Description: "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
+
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 0..1 MS
 * extension[SexoBiologico] 0..0 
@@ -86,7 +86,6 @@ Corresponde a tres slices:"
     * ^short = "Ranking de preferencia en el uso del contacto"
     * ^definition = "Ranking de preferencia en el uso del contacto"
 
-* address only $cl-address
 * address 0..1 MS
 * address.use 1..1 MS
 * address.use = #work
