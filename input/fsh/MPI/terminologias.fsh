@@ -1155,11 +1155,11 @@ Description: "Este es un filtro del \"system\" del telecom del paciente solo par
 * $contact-point-system#email
 * $contact-point-system#other
 
+
 ValueSet: VSTiposIdentificadorPaciente
 Id: VSTiposIdentificadorPaciente
 Title: "Tipos de Identificadores de Paciente"
 Description: "Tipos de Identificadores de Paciente"
-
 * ^version = "0.1"
 * ^status = #active
 * ^date = "2024-09-25"
@@ -1181,4 +1181,3 @@ Description: "Tipos de Identificadores de Paciente"
 * CSTipoIdentificador#11 "IPE" 
 * CSTipoIdentificador#12 "Número de Ficha Clínica Sistema Local" 
 * CSTipoIdentificador#14 "OTRO"
-
