@@ -155,7 +155,7 @@ global:
   RelatedPerson:
     - MINSALAcompanante
       
-#   Practitioner: PrestadorCL
+
 #   Organization: OrganizacionCL
 #   Observation: ObservacionCL
   
