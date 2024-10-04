@@ -14,7 +14,7 @@ Las transacciones descritas a continuación se basan en el modelamiento de inter
 </div>
 <br>
 
-### Profesionales Indivicuales y Administrativos
+### Profesionales Individuales y Administrativos
 
 #### Solicitud de Búsqueda
 

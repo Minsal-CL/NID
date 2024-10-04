@@ -26,7 +26,7 @@ Description: "Ejemplo de un profesional que entrega servicios de salud"
   * family = "Gonzalez"
   * family.extension[segundoApellido] = SegundoApellidoPractitionerProfesionalEjemplo
 
-* gender = #male
+* gender = #female
 * birthDate = "1991-04-01"
 
 * qualification[TituloProfesional]
