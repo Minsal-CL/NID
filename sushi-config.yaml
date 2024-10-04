@@ -61,14 +61,14 @@ pages:
   index.md:
     title: Inicio
   negocioMPI.md:
-    title: Especificaciones de Negocio "Indice Maestro de Pacientes"
+    title: Especificaciones de Negocio "Índice Maestro de Pacientes"
   negocioHPD.md:
     title: Especificaciones de Negocio "Directorio de Proveedores de Atención Médica"
   transaccionesBusquedasMPI.md:
-    title: Casos de Uso y Transacciones "Indice Maestro de Pacientes"
+    title: Casos de Uso y Transacciones "Índice Maestro de Pacientes"
   transaccionesBusquedasHPD.md:
     title: Casos de Uso y Transacciones "Directorio de Proveedores de Atención Médica"
-  changes.md:
+  changes.html:
     title: Historial de Cambios
   artifacts.html:
     title: Artefactos Generados

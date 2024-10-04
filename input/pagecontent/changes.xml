@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog>
+    <!-- Versiones anteriores -->
+    <change>
+        <version>0.2.0</version>
+        <author>Franco Ulloa</author>
+        <date>2024-09-01</date>
+        <description>Primera versión publicada de la guía MPI.</description>
+    </change>
+    
+    <!-- Nueva versión 0.3.0 -->
+    <change>
+        <version>0.3.0</version>
+        <author>Franco Ulloa</author>
+        <date>2024-10-04</date>
+        <description>
+            Se cambia el nombre a guía Núcle de Interoperabilidad de Datos del Ministerio de Salud (NID-Minsal).
+            Se agrega más información complementaria en la página de transacciones.
+            Se generan las dependencias a las guías <a href="https://profiles.ihe.net/ITI/PIXm/index.html">PIXm</a> y <a href="https://profiles.ihe.net/ITI/PDQm/">PDQm</a>.
+            Se crea el CapabilityStatement del Servidor:
+            - <a href="CapabilityStatement-MPI.IHE.PIXm.PDQm.Manager.html">Administrador del Indice Maestro Paciente</a>
+            Se crean los CapabilityStatement de Cliente: 
+            - <a href="CapabilityStatement-MPI.IHE.PDQm.Search.Cliente.html">Indice Maestro Paciente: "Cliente Buscador de Datos Demográficos (PDQm)"</a>
+            - <a href="CapabilityStatement-MPI.IHE.PIXm.Buscador.html">Indice Maestro Paciente: "Cliente Buscador PIXm"</a>
+            - <a href="CapabilityStatement-MPI.IHE.PIXm.Origen.html">Indice Maestro Paciente: "Cliente de Origen PIXm"</a>
+            - <a href="CapabilityStatement-MPI.IHE.PDQm.Search.Cliente.Match.html">Indice Maestro Paciente: "Cliente Buscador de Datos Demográficos (PDQm) con implementación de Match"</a>
+            Se define la operación <code>$ihe-pix</code> para está guía.
+            Se define la operación <code>$match</code> para está guía.
+            Se crean los parametros de la operación <strong>$ihe-pix</strong>:
+            * <a href="StructureDefinition-ParametrosSalidaPixmMpi.html">MINSAL Parametros Entrada PIXm</a>
+            * <a href="StructureDefinition-ParametrosSalidaPixmMpi.html">MINSAL Parametros Salida PIXm</a>
+            Se crean los parametros y perfiles para la operación <strong>$match</strong>:
+            * <a href="StructureDefinition-ParametrosEntradaPDQmMpi.html">MINSAL Parametros Entrada $match PDQM</a>
+            * <a href="StructureDefinition-MINSALPacienteBusqueda.html">MINSAL Paciente Busqueda</a>
+            * <a href="StructureDefinition-BundleSearchMPIMatch.html">MINSAL Bundle Resultado Operación $match</a>
+            Se crea perfil <a href="StructureDefinition-BundleSearchMPI.html">MINSAL Bundle Resultado Consulta</a> para los resultados de búsquedas mediante consultas.
+            Perfil <a href="StructureDefinition-MINSALCobertura.html">MINSAL Cobertura</a>:
+            * Se cambia la referencia de **Organization** al perfil de la core **OrganizacionCL**.
+            * Se incluye el dato type para definir la ley previsional.
+            * Se utiliza el class para definir el tipo de Tramo de FONASA, el tipo de plan de isapre, el Leyes previsionales, leyes reparatorias.
+            * Se crea la extensión **Valor de la Clase** para mantener el valor de manera codificada y responder las necesidades nacionales.
+            Perfil <a href="StructureDefinition-MINSALAgrupacionPorMarcas.html">MINSAL Agrupacion por marcas</a>:
+            * Se depreca el MS al characteristic.
+            * Se da MS al Code y obligatoriedad para definir el tipo de Agrupación.
+            Perfil <a href="StructureDefinition-MINSALNivelEducacional.html">MINSAL Nivel Educacional</a>:
+            * Se agrega dependencia al ObservacionCL de la Core de HL7.
+            * Se cambia la referencia del subject a perfil **Minsal Paciente**.
+            * Se crea el CS y VS para diferenciar los componentes.
+            * Se agrega la categoría de social-history.
+            * Se agrega el code como tipo de observación y obliga a Nivel Educacional.
+            Perfil <a href="StructureDefinition-MINSALOcupacion.html">MINSAL Ocupación</a>:
+            * Se agrega dependencia al ObservacionCL de la Core de HL7.
+            * Se cambia la referencia del subject a perfil **Minsal Paciente**.
+            * Se agrega la categoría de social-history.
+            * Se agrega el code como tipo de observación y obliga a Ocupación.
+            Perfil <a href="StructureDefinition-MINSALSituacionDiscapacidad.html">MINSAL Situacion Discapacidad</a>:
+            * Se agrega dependencia al ObservacionCL de la Core de HL7.
+            * Se cambia la referencia del subject a perfil **Minsal Paciente**.
+            * Se agrega la categoría de social-history.
+            * Se agrega el code como tipo de observación y obliga a Situación de Discapacidad.
+            * Se crea invariante para obligar el uso de los componentes en caso de ser Verdadero.
+            Perfil <a href="StructureDefinition-MINSALAcompanante.html">MINSAL Acompañante</a>:
+            * Se crea invariante para obligar el uso de un dato given o family o text en caso de utilizar el dato name.
+            Perfil <a href="StructureDefinition-MINSALPaciente.html">MINSAL Paciente</a>:
+            * Se convalida Paciente LE con MINSAL Paciente.
+            * Se crea el parametro de busqueda de <a href="SearchParameter-mpi-paciente-segundoApellido.html">SegundoApellido</a>.
+            * Se incluye el dato Link por recomendación de la guía PIXm.
+            * Se crea un nuevo VS llamado <a href="ValueSet-VSSistemasComunicacion.html">Medios de Comunicación con el Paciente</a> para reducir los system del telecom a los requeridos por norma.
+            Se combinan las extensiones **Pueblos Originarios** y **Pueblo Originarios Pertenecientes** en la extensión compleja <a href="StructureDefinition-PueblosOriginarios.html">Pueblos Originarios</a>.
+            Se modifican los siguientes VS y CS para corregir según la norma:
+            * Valoracion Desempeno
+            * Origen Discapacidad
+            * Previsión
+        </description>
+    </change>
+</changelog>
