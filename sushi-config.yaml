@@ -156,9 +156,7 @@ global:
     - MINSALOcupacion
   RelatedPerson:
     - MINSALAcompanante
-
-#   Observation: ObservacionCL
-  
+    
 #
 #
 # The resources property corresponds to IG.definition.resource.
