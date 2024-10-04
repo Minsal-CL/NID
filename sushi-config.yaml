@@ -154,9 +154,7 @@ global:
     - MINSALOcupacion
   RelatedPerson:
     - MINSALAcompanante
-      
 
-#   Organization: OrganizacionCL
 #   Observation: ObservacionCL
   
 #
