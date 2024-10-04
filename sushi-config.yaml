@@ -68,8 +68,8 @@ pages:
     title: Casos de Uso y Transacciones "Índice Maestro de Pacientes"
   transaccionesBusquedasHPD.md:
     title: Casos de Uso y Transacciones "Directorio de Proveedores de Atención Médica"
-  # changes.md:
-  #   title: Historial de Cambios
+  changes.md:
+    title: Historial de Cambios
   artifacts.html:
     title: Artefactos Generados
   # toc.html:
@@ -113,7 +113,7 @@ menu:
     Busquedas de Pacientes: transaccionesBusquedasMPI.html
     Busqueda de Profesionales: transaccionesBusquedasHPD.html
   Artefactos: artifacts.html
-  # Historial de Cambios: changes.html
+  Historial de Cambios: changes.html
   
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
