@@ -68,12 +68,10 @@ pages:
     title: Casos de Uso y Transacciones "Índice Maestro de Pacientes"
   transaccionesBusquedasHPD.md:
     title: Casos de Uso y Transacciones "Directorio de Proveedores de Atención Médica"
-  changes.md:
-    title: Historial de Cambios
   artifacts.html:
     title: Artefactos Generados
-  # toc.html:
-  #   title: Tabla de Contenido
+  changes.md:
+    title: Historial de Cambios
   
   
 #   implementation.xml:
