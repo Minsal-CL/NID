@@ -3,8 +3,8 @@ Parent:      Bundle
 Id:          BundleSearchProfHPD
 Title:       "MINSAL Bundle Resultado Consulta: Prestadores Profesional y Administrativos"
 Description: """
-Bundle resultado de una busqueda de un recurso \"Practitioner\" mediante parametros.
-Se debe incluir el parametro de \"_profile\" e incluir la url canonica del perfil [Prestador Administrativo](StructureDefinition-MINSALPractitionerAdministrativo.html) o [Prestador Profesional](StructureDefinition-MINSALPrestadorProfesional.html), esto permite especificar la busqueda según cada tipo de profesional.
+Bundle resultado de una busqueda de un recurso \"Practitioner\" mediante parámetros.
+Se debe incluir el Parámetro de \"_profile\" e incluir la url canonica del perfil [Prestador Administrativo](StructureDefinition-MINSALPractitionerAdministrativo.html) o [Prestador Profesional](StructureDefinition-MINSALPrestadorProfesional.html), esto permite especificar la busqueda según cada tipo de profesional.
 """
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft

@@ -2,7 +2,7 @@ Profile:     BundleSearchMPI
 Parent:      Bundle
 Id:          BundleSearchMPI
 Title:       "MINSAL Bundle Resultado Consulta: Pacientes"
-Description: "Bundle resultado de una busqueda de un recurso paciente mediante parametros"
+Description: "Bundle resultado de una busqueda de un recurso paciente mediante parámetros"
 
 * type 1..1 MS
   * ^short = "Tipo de Bundle, para el caso de uso es un \"searchset\""

@@ -7,7 +7,7 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 
 * Uso de FHIR R4
 * Uso **PUEDE** traer el recurso en JSON o XML
-* Los parametros de entrada y salida deben ser conforme a los perfiles MPI Paciente
+* Los parámetros de entrada y salida deben ser conforme a los perfiles MPI Paciente
 * Invoca la operación $match en un endpoint FHIR
 """
 

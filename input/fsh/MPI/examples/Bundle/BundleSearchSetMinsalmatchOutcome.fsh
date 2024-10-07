@@ -2,7 +2,7 @@ Instance: EjemploBusquedaMatchOutcomeOperation
 InstanceOf: BundleSearchMPIMatch
 Usage: #example
 Title: "Ejemplo de una Busqueda Match con OperationOutcome"
-Description: "Ejemplo del resultado de una busqueda de paciente según el parametro de busqueda de una operación [$match](OperationDefinition-MPI.PDQm.match.html), el cual entrego un OperationOutcome por timeout."
+Description: "Ejemplo del resultado de una busqueda de paciente según el parámetro de busqueda de una operación [$match](OperationDefinition-MPI.PDQm.match.html), el cual entrego un OperationOutcome por timeout."
 
 * type = #searchset
 * link 

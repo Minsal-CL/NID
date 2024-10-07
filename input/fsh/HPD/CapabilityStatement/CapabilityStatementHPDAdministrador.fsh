@@ -8,13 +8,13 @@ El CapabilityStatement del administador del directorio de proveedores de atenci�
 * Uso de FHIR R4
 * Uso **PUEDE** devolver el recurso en JSON o XML
 * **DEBE** Soportar Perfil \"Prestador Administrativo\", \"Prestador Individual\" y \"Prestador Organizacional\"
-* Los parametros de búsquedas de los Perfiles Practitioner **DEBEN** ser:
+* Los parámetros de búsquedas de los Perfiles Practitioner **DEBEN** ser:
   * _id
   * identifier
   * family
   * given
   * identifier
-* Los parametros de búsquedas del Perfil Organization **DEBEN** ser:
+* Los parámetros de búsquedas del Perfil Organization **DEBEN** ser:
   * _id
   * identifier
   * name

@@ -2,7 +2,7 @@ Profile: MINSALPacienteBusqueda
 Parent: PacienteCl
 Id: MINSALPacienteBusqueda
 Title: "MINSAL Paciente Busqueda"
-Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de Pacientes\". Este es utilizado en la operación $match como parametro de entrada."
+Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de Pacientes\". Este es utilizado en la operación $match como parámetro de entrada."
 
 * extension contains PaisOrigenMPI named PaisOrigen 0..1 MS
 * extension contains Religion named Religion 0..1 MS

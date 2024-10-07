@@ -2,7 +2,7 @@ Instance: EjemploBusqueda
 InstanceOf: BundleSearchMPI
 Usage: #example
 Title: "Ejemplo de una Busqueda"
-Description: "Ejemplo del resultado de una busqueda de paciente según los parametros de run, nacimiento y nombre"
+Description: "Ejemplo del resultado de una busqueda de paciente según los parámetros de run, nacimiento y nombre"
 
 * type = #searchset
 * total = 1

@@ -2,7 +2,7 @@ Instance: EjemploBusquedaMatch
 InstanceOf: BundleSearchMPIMatch
 Usage: #example
 Title: "Ejemplo de una Busqueda Match"
-Description: "Ejemplo del resultado de una busqueda de paciente según el parametro de busqueda de una operación [$match](OperationDefinition-MPI.PDQm.match.html)."
+Description: "Ejemplo del resultado de una busqueda de paciente según el parámetro de busqueda de una operación [$match](OperationDefinition-MPI.PDQm.match.html)."
 
 * type = #searchset
 * total = 1

@@ -329,7 +329,7 @@ groups:
   
   PDQmSearch-MPI:
     name: "Recursos: PDQm para Busquedas del Índice Maestro de Paciente"
-    description: Son distintos recursos requeridos para poder realizar las operaciones de búsquedas mediantes parametros
+    description: Son distintos recursos requeridos para poder realizar las operaciones de búsquedas mediantes parámetros
     resources:
       - mpi-paciente-segundoApellido
       - BundleSearchMPI

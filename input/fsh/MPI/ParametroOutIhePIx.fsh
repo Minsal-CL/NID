@@ -1,8 +1,8 @@
 Profile:     ParametrosSalidaPixmMpi
 Parent:      PIXmQueryParametersOut
 Id:          ParametrosSalidaPixmMpi
-Title:       "MINSAL Parametros Salida PIXm"
-Description: "Estos son los parametros de Salida para el [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) del PIXm"
+Title:       "MINSAL Parámetros Salida PIXm"
+Description: "Estos son los parámetros de Salida para el [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) del PIXm"
 
 
 * parameter[targetId] 0..* MS

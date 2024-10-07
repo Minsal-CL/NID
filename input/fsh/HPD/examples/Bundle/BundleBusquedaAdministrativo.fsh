@@ -2,7 +2,7 @@ Instance:    EjemploBusquedaAdm
 InstanceOf:  BundleSearchProfHPD
 Usage:       #example
 Title:       "Ejemplo de una Búsqueda de Prestador Administrativo"
-Description: "Ejemplo del resultado de una búsqueda de administrativo según los parametros de run, nacimiento y nombre"
+Description: "Ejemplo del resultado de una búsqueda de administrativo según los parámetros de run, nacimiento y nombre"
 
 * type = #searchset
 * total = 1

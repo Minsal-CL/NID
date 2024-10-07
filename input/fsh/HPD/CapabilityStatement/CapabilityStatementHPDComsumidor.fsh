@@ -7,13 +7,13 @@ El CapabilityStatement de los requisitos del consumidor del directorio de provee
 * Uso de FHIR R4
 * Uso **PUEDE** traer el recurso en JSON o XML
 * Soportar Perfiles de Prestador Administrativo, Prestador Profesional y Prestador Institucional
-* Los parametros de búsquedas de los Perfiles Practitioner **PUEDEN** ser:
+* Los parámetros de búsquedas de los Perfiles Practitioner **PUEDEN** ser:
   * _id
   * identifier
   * family
   * given
   * identifier
-* Los parametros de búsquedas del Perfil Organization **PUEDEN** ser:
+* Los parámetros de búsquedas del Perfil Organization **PUEDEN** ser:
   * _id
   * identifier
   * name

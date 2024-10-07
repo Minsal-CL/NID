@@ -9,7 +9,7 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 * Uso **PUEDE** traer el recurso en JSON o XML
 * Soportar Perfil MINSAL Paciente
 * Soportar los perfiles MPI MINSAL que permiten completar con la información normativa requerida. 
-* Los parametros de búsquedas **PUEDEN** ser:
+* Los parámetros de búsquedas **PUEDEN** ser:
   * _id
   * active
   * family

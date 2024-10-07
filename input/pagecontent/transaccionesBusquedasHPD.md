@@ -27,7 +27,7 @@ La especificación es como se muestra:
 [base]/Practitioner?_profile=[uriPerfil]&<parameters>
 ```
 
-Para nuestro caso se determinan un set de parámetros de búsqueda aceptables para realizar la operacion, e incluir el parametro "_profile" para buscar según la url canonica o referencia interna del [Prestador Administrativo](StructureDefinition-MINSALPractitionerAdministrativo.html) o [Prestador Profesional](StructureDefinition-MINSALPrestadorProfesional.html):
+Para nuestro caso se determinan un set de parámetros de búsqueda aceptables para realizar la operacion, e incluir el parámetro "_profile" para buscar según la url canonica o referencia interna del [Prestador Administrativo](StructureDefinition-MINSALPractitionerAdministrativo.html) o [Prestador Profesional](StructureDefinition-MINSALPrestadorProfesional.html):
 
 * Por identificador
 ```

@@ -1,15 +1,15 @@
 Profile:     ParametrosEntradaPDQmMpi
 Parent:      Parameters
 Id:          ParametrosEntradaPDQmMpi
-Title:       "MINSAL Parametros Entrada $match PDQM"
-Description: "Estos son los parametros de entrada para la operación [$match](OperationDefinition-MPI.PDQm.match.html) del PDQm"
+Title:       "MINSAL Parámetros Entrada $match PDQM"
+Description: "Estos son los parámetros de entrada para la operación [$match](OperationDefinition-MPI.PDQm.match.html) del PDQm"
 
 * implicitRules 0..0
 * parameter.modifierExtension 0..0
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed
-* parameter ^slicing.description = "Definición de cada parametro de entrada para la operación $match del PDQm"
+* parameter ^slicing.description = "Definición de cada Parámetro de entrada para la operación $match del PDQm"
 * parameter ^slicing.ordered = true
 * parameter ^short = "Parámetro de Operación"
 
