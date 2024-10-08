@@ -59,6 +59,7 @@ Se crean los CapabilityStatement de Cliente:
   * [Indice Maestro Paciente: "Cliente Buscador de Datos Demográficos (PDQm) con implementación de Match"](CapabilityStatement-MPI.IHE.PDQm.Search.Cliente.Match.html)
 
 Se define la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) para está guía.
+
 Se define la operación [$match](OperationDefinition-MPI.PDQm.match.html) para está guía.
 
 Se crean los parametros de la operación **$ihe-pix**:
