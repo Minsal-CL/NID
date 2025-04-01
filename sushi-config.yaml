@@ -227,7 +227,7 @@ groups:
       - Religion
       - SituacionCalle
       - ValorDeLaClase
-      - PueblosOriginarios
+      - PueblosOriginariosMPI
   
   ExtensionesNID-Profesional:
     name: "Estructuras: Extensiones Para HPD"

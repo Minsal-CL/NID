@@ -91,7 +91,7 @@ Usage: #inline
 * valueBoolean = false
 
 Instance: PuebloOriginarioPac1
-InstanceOf: PuebloOriginario
+InstanceOf: PueblosOriginariosMPI
 Usage: #inline
 
 * extension[pertenece].valueBoolean = false
