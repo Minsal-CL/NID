@@ -4,6 +4,11 @@ Se cambia el nombre de la extensión de pueblos originarios
 
 Se elimina obligatoriedad en la extensión identidad de genero 
 
+En el perfil [Prestador Institucional](StructureDefinition-MINSALPrestadorOrganizacional.html):
+
+  - identifier 1..1 -> 0..*
+  - name 0..1 -> 1..1 
+
 ### Versión 0.4.6 
 
 Se crea la estructura de dato de NIDAddress necesario para considerar lo mínimo requerido para la dirección del paciente.
