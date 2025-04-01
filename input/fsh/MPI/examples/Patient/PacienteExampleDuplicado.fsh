@@ -10,7 +10,7 @@ Description: "Este paciente se encuentra duplicado pero con información adicion
 * extension[PaisOrigen] = PaisOrigenMPIPac1
 * extension[Religion] = ReligionPac1
 * extension[PueblosAfrodescendiente] = PueblosAfrodescendientePac1
-* extension[PueblosOriginarios] = PueblosOriginariosPac1
+* extension[PuebloOriginario] = PuebloOriginarioPac1
 
 * identifier[0]
   * use = #official

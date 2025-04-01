@@ -6,9 +6,9 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 
 * extension contains PaisOrigenMPI named PaisOrigen 0..1 MS
 * extension contains Religion named Religion 0..1 MS
-//* extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 0..1 MS
+//* extension contains PuebloOriginarioPerteneciente named PuebloOriginarioPerteneciente 0..1 MS
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
-* extension contains PueblosOriginarios named PueblosOriginarios 0..1 MS
+* extension contains PueblosOriginariosMPI named PuebloOriginario 0..1 MS
 * extension[nacionalidad] 0..1 MS
 * extension[IdentidadDeGenero] 0..1 MS
 

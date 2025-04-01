@@ -1,8 +1,8 @@
 {
     "package-id": "hl7.fhir.cl.minsal.nid",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "desc": "Versión de desarrollo",
-    "path": "https://interoperabilidad.minsal.cl/fhir/ig/nid/0.4.6",
+    "path": "https://interoperabilidad.minsal.cl/fhir/ig/nid/0.4.7",
     "mode": "working",
     "changes": "changes.html",
     "status": "draft",

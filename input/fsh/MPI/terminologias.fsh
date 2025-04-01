@@ -334,7 +334,7 @@ Description: "Pueblos Originarios de Chile"
 * include codes from system PueblosOriginariosCS
 
 CodeSystem: PueblosOriginariosCS
-Id: PueblosOriginariosCS
+Id: PuebloOriginarioCS
 Title: "Pueblos Originarios de Chile"
 Description:  "Pueblos Originarios de Chile"
 * ^experimental = false

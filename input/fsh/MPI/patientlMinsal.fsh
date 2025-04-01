@@ -6,13 +6,13 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * obeys mpi-pat-enlaceEstado 
 
-* extension contains PaisOrigenMPI named PaisOrigen 1..1 MS
+* extension contains PaisOrigenMPI named PaisOrigen 0..1 MS
 * extension contains Religion named Religion 0..1 MS
 //* extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
-* extension contains PueblosOriginarios named PueblosOriginarios 0..1 MS
-* extension[nacionalidad] 1..1 MS
-* extension[IdentidadDeGenero] 1..1 MS
+* extension contains PueblosOriginariosMPI named PuebloOriginario 0..1 MS
+* extension[nacionalidad] 0..1 MS
+* extension[IdentidadDeGenero] 0..1 MS
 
 * identifier 1..* MS
 * identifier ^short = "Identificador de paciente"
@@ -25,13 +25,14 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
   * coding 1..1   
     * system 0..1
     * code 1..1
-* identifier.type.extension[paisEmisionDocumento] 1..1 MS
+* identifier.type.extension[paisEmisionDocumento] 0..1 MS
 * identifier.value 1..1 MS
 * identifier.value ^short = "Valor del identificador" 
 
 * active MS
   * ^short = "Si el registro de este paciente está en uso activo."
 
+* name 1..* MS	
 * name obeys mpi-pat-nombre
 
 * gender ^short = "Sexo Registral del paciente"
@@ -42,7 +43,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * birthDate 1..1 MS
 
-* telecom 1..* MS
+* telecom 0..* MS
 * telecom.system 1..1 MS
 * telecom.system ^short = "phone | email"
 * telecom.system ^definition = "Sistema de contacto"
@@ -87,6 +88,6 @@ Severity:    #error
 /*
 Invariant:   mpi-pat-PueblosOriginarios
 Description: "Si la extensión \"PueblosOriginariosPerteneciente\" es verdadera **DEBE** completar la extensión \"PueblosOriginarios\""
-Expression:  "extension.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente' and value.ofType(boolean).where(true)) implies extension.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginarios').exists()"
+Expression:  "extension.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/mpi/StructureDefinition/PueblosOriginariosPerteneciente' and value.ofType(boolean).where(true)) implies extension.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/mpi/StructureDefinition/PuebloOriginario').exists()"
 Severity:    #error
 */

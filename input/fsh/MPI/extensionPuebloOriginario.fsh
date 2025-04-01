@@ -1,5 +1,5 @@
-Extension: PueblosOriginarios
-Id: PueblosOriginarios
+Extension: PueblosOriginariosMPI
+Id: PueblosOriginariosMPI
 Title: "Pueblos Originarios"
 Description: "Extensión para describir si el paciente pertenece algún pueblo originario"
 Context: Patient

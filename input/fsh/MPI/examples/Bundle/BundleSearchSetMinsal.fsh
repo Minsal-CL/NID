@@ -25,7 +25,7 @@ Usage: #inline
 * extension[PaisOrigen] = PaisOrigenMPIPacBus1
 * extension[Religion] = ReligionPacBus1
 * extension[PueblosAfrodescendiente] = PueblosAfrodescendientePacBus1
-* extension[PueblosOriginarios] = PueblosOriginariosPacBus1
+* extension[PuebloOriginario] = PuebloOriginarioPacBus1
 
 * identifier[0]
   * use = #official
@@ -96,8 +96,8 @@ Usage: #inline
 
 * valueBoolean = false
 
-Instance: PueblosOriginariosPacBus1
-InstanceOf: PueblosOriginarios
+Instance: PuebloOriginarioPacBus1
+InstanceOf: PuebloOriginario
 Usage: #inline
 
 * extension[pertenece].valueBoolean = false
