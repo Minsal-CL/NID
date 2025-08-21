@@ -348,7 +348,7 @@ GET {{hpd}}/Organization?identifier=120101&name=Hospital
                     "coding": [
                       {
                         "code": "152",
-                        "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                        "system": "urn:iso:std:iso:3166",
                         "display": "Chile"
                       }
                     ]

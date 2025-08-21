@@ -62,7 +62,7 @@ Instance: PaisEmisionPac2
 InstanceOf: PaisDireccion
 Usage: #inline
 
-*  valueCodeableConcept = CSCodPaises#152 "Chile"
+*  valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: segundoApellidoPac2
 InstanceOf: SegundoApellido

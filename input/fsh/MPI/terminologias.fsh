@@ -303,6 +303,13 @@ Description: "Estado Civil"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * codes from system CSEstadoCivil
+// * v3-MaritalStatus#S
+// * v3-MaritalStatus#M
+// * v3-MaritalStatus#W
+// * v3-MaritalStatus#D
+// * v3-MaritalStatus#A
+// * v3-MaritalStatus#T
+// * v3-NullFlavor#UNK
 
 CodeSystem: CSEstadoCivil
 Id: CSEstadoCivil

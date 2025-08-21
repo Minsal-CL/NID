@@ -827,7 +827,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"
+        "valueSet" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/urn:iso:std:iso:3166"
       },
       "mapping" : [{
         "identity" : "v2",

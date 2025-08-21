@@ -69,13 +69,13 @@ Instance: PaisDireccionPac1
 InstanceOf: PaisDireccion
 Usage: #inline
 
-*  valueCodeableConcept = CSCodPaises#152 "Chile"
+*  valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: PaisOrigenMPIPac1
 InstanceOf: PaisOrigenMPI
 Usage: #inline
 
-*  valueCodeableConcept = CSCodPaises#858 "Uruguay"
+*  valueCodeableConcept = urn:iso:std:iso:3166#858 "Uruguay"
 
 
 Instance: ReligionPac1
@@ -100,7 +100,7 @@ Instance: PaisEmisionPac1
 InstanceOf: PaisDireccion
 Usage: #inline
 
-*  valueCodeableConcept = CSCodPaises#152 "Chile"
+*  valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: segundoApellidoPac1
 InstanceOf: SegundoApellido
@@ -156,4 +156,4 @@ Instance: CodigoPaisesPac1
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = CSCodPaises#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"

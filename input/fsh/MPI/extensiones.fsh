@@ -109,7 +109,7 @@ Title:       "País de origen del paciente"
 Description: "País de origen del paciente"
 Context:     Patient
 * value[x] only CodeableConcept
-* value[x] from CodPais
+* value[x] from CodPaises
 * value[x] ^short = "Código de País"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS

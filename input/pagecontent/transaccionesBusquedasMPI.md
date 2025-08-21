@@ -285,7 +285,7 @@ GET {{mpi}}/Patient?identifier=15335473-1&birthdate=1981-11-10&name=andres%20mar
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "system": "urn:iso:std:iso:3166",
                                     "code": "152",
                                     "display": "Chile"
                                 }
@@ -297,7 +297,7 @@ GET {{mpi}}/Patient?identifier=15335473-1&birthdate=1981-11-10&name=andres%20mar
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "system": "urn:iso:std:iso:3166",
                                     "code": "032",
                                     "display": "Argentina"
                                 }
@@ -340,7 +340,7 @@ GET {{mpi}}/Patient?identifier=15335473-1&birthdate=1981-11-10&name=andres%20mar
                                     "valueCodeableConcept": {
                                         "coding": [
                                             {
-                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                                "system": "urn:iso:std:iso:3166",
                                                 "code": "152",
                                                 "display": "Chile"
                                             }
@@ -454,7 +454,7 @@ GET {{mpi}}/Patient?identifier=15335473-1&birthdate=1981-11-10&name=andres%20mar
                                     "valueCodeableConcept": {
                                         "coding": [
                                             {
-                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                                "system": "urn:iso:std:iso:3166",
                                                 "code": "152",
                                                 "display": "Chile"
                                             }
@@ -637,7 +637,7 @@ Ejemplo de un $match exitoso:
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "system": "urn:iso:std:iso:3166",
                                     "code": "152",
                                     "display": "Chile"
                                 }
@@ -649,7 +649,7 @@ Ejemplo de un $match exitoso:
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                    "system": "urn:iso:std:iso:3166",
                                     "code": "032",
                                     "display": "Argentina"
                                 }
@@ -692,7 +692,7 @@ Ejemplo de un $match exitoso:
                                     "valueCodeableConcept": {
                                         "coding": [
                                             {
-                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                                "system": "urn:iso:std:iso:3166",
                                                 "code": "152",
                                                 "display": "Chile"
                                             }
@@ -806,7 +806,7 @@ Ejemplo de un $match exitoso:
                                     "valueCodeableConcept": {
                                         "coding": [
                                             {
-                                                "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                                                "system": "urn:iso:std:iso:3166",
                                                 "code": "152",
                                                 "display": "Chile"
                                             }

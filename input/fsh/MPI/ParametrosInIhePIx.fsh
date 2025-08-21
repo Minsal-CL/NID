@@ -20,5 +20,3 @@ Description: "Estos son los parametros de entrada para el [$ihe-pix](OperationDe
     * ^short = "Nombre para la definición"
   * valueUri 0..1 MS
     * ^short = "URI del valor"
-    * value 1..1 MS
-      * ^short = "Valor del URI"

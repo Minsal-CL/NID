@@ -868,8 +868,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"^^xsd:anyURI ;
-           fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais>
+           fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/urn:iso:std:iso:3166"^^xsd:anyURI ;
+           fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/urn:iso:std:iso:3166>
          ]
        ] ;
        fhir:mapping ( [

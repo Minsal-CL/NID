@@ -4,6 +4,16 @@ Id:          BundleSearchMPI
 Title:       "MINSAL Bundle Resultado Consulta: Pacientes"
 Description: "Bundle resultado de una busqueda de un recurso paciente mediante parámetros"
 
+
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+* ^extension[=].valueCanonical = Canonical(QueryPatientResourceResponseMessage)
+
 * type 1..1 MS
   * ^short = "Tipo de Bundle, para el caso de uso es un \"searchset\""
 * type = #searchset
@@ -21,9 +31,9 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante p
   * fullUrl 1..1 MS
     * ^short = "uri de identificación del resultado"
 * entry contains
-  paciente 0..*
+  paciente 0..* MS
 
-* entry[paciente]
+* entry[paciente] 
   * ^short = "Paciente"
   * resource MS
     * ^short = "Información sobre un individuo que reciva servicio de cuidados de salud"

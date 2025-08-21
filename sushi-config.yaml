@@ -9,7 +9,7 @@ name: Minsal-NucleoInteroperabilidadDatos
 title: Núcleo de Interoperabilidad de Datos (NID) - MINSAL
 description: Núcleo de Interoperabilidad de Datos del Ministerio de Salud de Chile
 status: draft # draft | active | retired | unknown
-version: 0.4.7
+version: 0.4.8
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: draft  # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -27,16 +27,18 @@ dependencies:
   hl7.fhir.cl.clcore: 
     id: clcore
     uri: https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore
-    version: 1.9.2
+    version: 1.9.3
   #hl7.fhir.cl.clcore: dev
+
   ihe.iti.pixm: 
     id: IHE_PIXm
     uri: https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm
     version: 3.0.4
+
   ihe.iti.pdqm: 
     id: IHE_PDQm
     uri: https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm
-    version: 3.0.0
+    version: 3.1.0
 
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -89,7 +91,8 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-# parameters:
+parameters:
+  pin-canonicals: pin-multiples
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
@@ -282,6 +285,12 @@ groups:
       - VSLeyReparacion
       - VSSistemasComunicacion
       - VSTiposIdentificadorPaciente
+  
+  TerminologiasCMPaciente:
+    name: "Terminologías: \"Concept Map\" MPI"
+    description: Estas son terminologías necesarias para el paciente y sus recursos relacionados.
+    resources:
+      - MPIMaritalStatusMap
 
   TerminologiasCsProf:
     name: "Terminologías: \"Code Systems\" HPD"

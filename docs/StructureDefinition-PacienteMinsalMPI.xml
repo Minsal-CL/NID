@@ -822,7 +822,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"/>
+        <valueSet value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/urn:iso:std:iso:3166"/>
       </binding>
       <mapping>
         <identity value="v2"/>

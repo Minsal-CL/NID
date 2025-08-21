@@ -22,7 +22,7 @@ Usage: #definition
 * type = true
 * instance = false
 * inputProfile = Canonical(ParametrosEntradaPDQmMpi)
-* outputProfile = Canonical(BundleSearchMPIMatch)
+//* outputProfile = Canonical(BundleSearchMPIMatch)
 * parameter[0]
   * name = #resource
   * use = #in
@@ -54,3 +54,4 @@ Usage: #definition
 Nota: dado que este es el único parámetro de salida, es un recurso y tiene el nombre 'return'. El resultado de esta operación se devuelve directamente como un recurso.
 """
   * type = #Bundle
+  * targetProfile[0] = Canonical(BundleSearchMPIMatch)
