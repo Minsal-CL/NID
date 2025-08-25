@@ -3,7 +3,7 @@ Id: VSValoracionDesempeno
 Title: "Valoracion Desempeño"
 Description: "Valoracion Desempeño"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -19,7 +19,7 @@ Title: "Valoracion Desempeno"
 Description: "Valoracion Desempeno"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -39,7 +39,7 @@ Id: VSOrigenDiscapacidad
 Title: "Origen Discapacidad"
 Description: "Origen Discapacidad"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -55,7 +55,7 @@ Title: "Origen Discapacidad"
 Description: "Origen Discapacidad"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -77,7 +77,7 @@ Id:       VSComponenteDiscapacidad
 Title:       "Componentes de Observación de Discapacidad"
 Description: "Diferenciación entre los componentes de la observación de discapacidad"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2024-08-28"
 * ^contact.name = "MINSAL CHILE"
@@ -95,7 +95,7 @@ Description: "Diferenciación entre los componentes de la observación de discap
 * ^experimental = false
 * ^caseSensitive = true
 * ^status = #active
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^date = "2024-08-28"
 * ^contact.name = "MINSAL CHILE"
 * ^contact.telecom.system = #email
@@ -111,7 +111,7 @@ Id: VSPrevision
 Title: "Previsión"
 Description: "Previsión"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -127,7 +127,7 @@ Title: "Previsión"
 Description: "Previsión"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -149,7 +149,7 @@ Id: VSTramosFONASA
 Title: "Tramos de FONASA"
 Description: "Tramos de FONASA"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -165,7 +165,7 @@ Title: "Tramos de FONASA"
 Description: "Tramos de FONASA"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -184,7 +184,7 @@ Id: VSNivelEducacionalDesc
 Title: "Nivel Educacional Descripción"
 Description: "Codificación del Nivel Educacional para diferenciar entre los componenetes de la observación"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -200,7 +200,7 @@ Title: "Nivel Educacional Descripción"
 Description: "Codificación del Nivel Educacional para diferenciar entre los componenetes de la observación"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -257,7 +257,7 @@ Id: VSIdentidadDeGenero
 Title: "Identidad De Género"
 Description: "Identidad De Género"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -273,7 +273,7 @@ Title: "Identidad De Género"
 Description: "Identidad De Género"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -294,7 +294,7 @@ Id: VSEstadoCivil
 Title: "Estado Civil"
 Description: "Estado Civil"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -317,7 +317,7 @@ Title: "Estado Civil"
 Description: "Estado Civil"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -363,7 +363,7 @@ Id: VSReligion
 Title: "Religión"
 Description: "Religión"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -379,7 +379,7 @@ Title: "Religión"
 Description: "Religión"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -405,7 +405,7 @@ Id: VScalificacionPrevisional
 Title: "Calificación Previsional"
 Description: "Calificación Previsional"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -421,7 +421,7 @@ Title: "Calificación Previsional"
 Description: "Calificación Previsional"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -479,7 +479,7 @@ Id: VSTipoObservacion
 Title: "Tipo de Observacion"
 Description: "Codificación para identificar las distintas observaciones existentes dentro del MPI"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -495,7 +495,7 @@ Title: "Tipo Observacion"
 Description: "Codificación para identificar las distintas observaciones existentes dentro del MPI"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -515,7 +515,7 @@ Id: VSGrupoMarcas
 Title: "Grupo Marcas"
 Description: "Diferenciación entre los posibles grupos dentro del MPI"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -531,7 +531,7 @@ Title: "Grupo Marcas"
 Description: "Diferenciación entre los posibles grupos dentro del MPI"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1026,7 +1026,7 @@ Id: CSClasesDeCobertura
 Title: "Clase de Cobertura de Salud"
 Description: "Permitira definir los distintos tipos de clases requeridos para la cobertura. Los tramos de FONASA, Planes de Isapre, Otras leyes previsionales, Leyes de priorización y de reparación."
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1047,7 +1047,7 @@ Id: VSClasesDeCobertura
 Title: "Clase de Cobertura de Salud"
 Description: "Permitira definir los distintos tipos de clases requeridos para la cobertura. Los tramos de FONASA, Planes de Isapre, Otras leyes previsionales, Leyes de priorización y de reparación."
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1065,7 +1065,7 @@ Id: CSLeyPrevisionales
 Title: "Leyes Previsionales"
 Description: "Código asociados a Leyes Previsonales que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1092,7 +1092,7 @@ Id: VSLeyPrevisionales
 Title: "Leyes Previsionales"
 Description: "Código asociados a Leyes Previsonales que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1110,7 +1110,7 @@ Id: CSLeyReparacion
 Title: "Leyes Reparación"
 Description: "Código asociados a Leyes de Reparación que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1131,7 +1131,7 @@ Id: VSLeyReparacion
 Title: "Leyes Reparación"
 Description: "Código asociados a Leyes de Reparación que modifican o eximen los montos de copagos de las prestaciones específica, señaladas en la ley respectiva"
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1149,7 +1149,7 @@ Id: VSSistemasComunicacion
 Title: "Medios de Comunicación con el Paciente"
 Description: "Este es un filtro del \"system\" del telecom del paciente solo para que se ocupen los indicados por normativa"
 
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1167,7 +1167,7 @@ ValueSet: VSTiposIdentificadorPaciente
 Id: VSTiposIdentificadorPaciente
 Title: "Tipos de Identificadores de Paciente"
 Description: "Tipos de Identificadores de Paciente"
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2024-09-25"
 * ^contact.name = "MINSAL CHILE"

@@ -33,6 +33,8 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 * format[+] = #xml
 * format[+] = #application/fhir+json
 * format[+] = #application/fhir+xml
+* version = "0.4.8"
+
 
 * implementationGuide[0] = "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"
 * implementationGuide[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

@@ -16,8 +16,9 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante p
 
 * type 1..1 MS
   * ^short = "Tipo de Bundle, para el caso de uso es un \"searchset\""
-* type = #searchset
-
+  * ^fixedCode = #searchset
+// * type = #searchset
+  
 * total 1..1 MS
   * ^short = "Numero total de resultados"
     

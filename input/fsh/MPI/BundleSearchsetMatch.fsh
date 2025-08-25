@@ -4,6 +4,17 @@ Id:          BundleSearchMPIMatch
 Title:       "MINSAL Bundle Resultado Operación Match"
 Description: "Bundle resultado de una busqueda de un recurso paciente mediante la operación [$match](OperationDefinition-MPI.PDQm.match.html)"
 
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+* ^extension[=].valueCanonical = Canonical(MatchParametersOut)
+
+* implicitRules 0..0
+
 * type 1..1 MS
   * ^short = "Tipo de Bundle, para el caso de uso es un \"searchset\""
 * type = #searchset
@@ -21,8 +32,8 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante l
   * request 0..0
   * response 0..0
 * entry contains
-  paciente 0..* and 
-  operationOutcome 0..*
+  paciente 0..* MS and 
+  operationOutcome 0..* MS
 * entry[paciente]
   * resource MS
     * ^short = "Información sobre un individuo que reciva servicio de cuidados de salud"

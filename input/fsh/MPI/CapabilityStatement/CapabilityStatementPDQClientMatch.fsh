@@ -16,6 +16,8 @@ El CapabilityStatement de los requisitos del Actor Consumidor de Demografía del
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
 
+* version = "0.4.8"
+
 * name = "MPI_IHE_PDQm_Search_Cliente_Match"
 * status = #draft
 * experimental = false

@@ -10,6 +10,9 @@ Description:    "Mapeo de estados civiles entre el ValueSet DEIS y el ValueSet M
 * experimental = true
 * sourceCanonical = Canonical(VSEstadoCivil)
 * targetCanonical = VSMaritalStatus
+
+* version = "0.4.8"
+
 * group[0]
   * source = Canonical(CSEstadoCivil)
   * target = v3-MaritalStatus

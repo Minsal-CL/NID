@@ -9,6 +9,7 @@ Description: "Regresa los pacientes que cumplan con el criterio de segundo apell
 * name = "Paciente_Segundo_Apellido_NID"
 * base = #Patient
 * type = #string
+* version = "0.4.8"
 * expression = "Patient.name.family.extension('https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido').value"
 * xpathUsage = #normal
 * multipleOr = true

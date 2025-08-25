@@ -4,7 +4,7 @@ Title: "Especialidades Farmaceúticas o Química Farmaceúticas"
 Description: "Especialidades Farmaceúticas o Química Farmaceúticas"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -24,7 +24,7 @@ Id: VSEspecialidadFarma
 Title: "Especialidades Farmaceúticas o Química Farmaceúticas"
 Description: "Especialidades Farmaceúticas o Química Farmaceúticas"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -41,7 +41,7 @@ Title: "Especialidades y Subespecialidades Bioquímicas"
 Description: "Especialidades y Subespecialidades Bioquímicas"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -59,7 +59,7 @@ Id: VSEspecialidadBioqca
 Title: "Especialidades y Subespecialidades Bioquímicas"
 Description: "Especialidades y Subespecialidades Bioquímicas"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -75,7 +75,7 @@ Id: VSEspecialidadMed
 Title: "Especialidades Médicas"
 Description: "Especialidades Médicas"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -91,7 +91,7 @@ Title: "Especialidades Médicas"
 Description: "Especialidades Médicas"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -175,7 +175,7 @@ Title: "Especialidades Odontológicas"
 Description: "Especialidades Odontológicas"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -203,7 +203,7 @@ Id: VSEspecialidadOdont
 Title: "Especialidades Odontológicas"
 Description: "Especialidades Odontológicas"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -218,7 +218,7 @@ Id: VSIdentificadorPrestador
 Title: "Identificador del Prestador"
 Description: "Identificador del Prestador Profesional o Administrativo"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -235,7 +235,7 @@ Id: VSTituloProfesional
 Title: "Título Profesional"
 Description: "Título del Prestador Profesional"
 * ^experimental = false
-* ^version = "0.1"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -251,7 +251,7 @@ Title: "Título Profesional"
 Description: "Título del Prestador Profesional"
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.4.8"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"

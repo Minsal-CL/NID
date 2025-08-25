@@ -15,6 +15,7 @@ Usage: #definition
 * name = "MPI_PDQM_Matches"
 * status = #draft
 * kind = #operation
+* version = "0.4.8"
 * date = "2024-08-27"
 * code = #match
 * resource = #Patient

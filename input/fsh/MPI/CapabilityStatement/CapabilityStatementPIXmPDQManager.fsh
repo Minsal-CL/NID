@@ -26,6 +26,8 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
 
+* version = "0.4.8"
+
 * name = "MPI_IHE_PIXm_Consumidor"
 * status = #draft
 * experimental = false

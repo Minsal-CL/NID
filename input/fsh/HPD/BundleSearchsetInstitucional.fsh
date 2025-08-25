@@ -24,7 +24,7 @@ Description: "Bundle resultado de una busqueda de un recurso \"Organization\" me
   * fullUrl 1..1 MS
     * ^short = "uri de identificación del resultado"
 * entry contains
-  organizacion 0..*
+  organizacion 0..* MS
 
 * entry[organizacion]
   * ^short = "Prestador Institucional"

@@ -24,6 +24,7 @@ El CapabilityStatement de los requisitos del consumidor del directorio de provee
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
 
+* version = "0.4.8"
 * name = "MPI_IHE_PDQm_Search_Cliente"
 * status = #draft
 * experimental = false

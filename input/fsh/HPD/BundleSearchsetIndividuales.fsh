@@ -26,7 +26,7 @@ Se debe incluir el Parámetro de \"_profile\" e incluir la url canonica del perf
   * fullUrl 1..1 MS
     * ^short = "uri de identificación del resultado"
 * entry contains
-  profesional 0..*
+  profesional 0..* MS
 
 * entry[profesional]
   * ^short = "profesional"

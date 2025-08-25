@@ -13,7 +13,8 @@ El CapabilityStatement del Actor Cliente Buscador MPI expresa los requisitos que
 * extension[=].valueInteger = 1
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
-//* version = "0.2.2"
+* version = "0.4.8"
+
 * name = "MPI_IHE_PIXm_Buscador"
 * status = #draft
 * experimental = false

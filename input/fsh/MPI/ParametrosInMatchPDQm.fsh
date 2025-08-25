@@ -4,6 +4,16 @@ Id:          ParametrosEntradaPDQmMpi
 Title:       "MINSAL Parámetros Entrada $match PDQM"
 Description: "Estos son los parámetros de entrada para la operación [$match](OperationDefinition-MPI.PDQm.match.html) del PDQm"
 
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+* ^extension[=].valueCanonical = Canonical(MatchParametersIn)
+
+
 * implicitRules 0..0
 * parameter.modifierExtension 0..0
 * parameter ^slicing.discriminator.type = #value
@@ -35,6 +45,8 @@ Description: "Estos son los parámetros de entrada para la operación [$match](O
   * value[x] 1..1 
   * value[x] only boolean
     * ^short = "Si el parámetro es un tipo de dato"
+  * resource 0..0
+  * part 0..0
 
 * parameter[count]
   * name 1..1
@@ -43,3 +55,5 @@ Description: "Estos son los parámetros de entrada para la operación [$match](O
   * value[x] 1..1
     * ^short = "Si el parámetro es un tipo de dato"
   * value[x] only integer
+  * resource 0..0
+  * part 0..0

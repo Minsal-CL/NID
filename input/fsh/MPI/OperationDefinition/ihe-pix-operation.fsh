@@ -13,6 +13,9 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
 * base = "https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix"
+
+* version = "0.4.8"
+
 * name = "MPI_PIXM_pix"
 * status = #draft
 * kind = #operation

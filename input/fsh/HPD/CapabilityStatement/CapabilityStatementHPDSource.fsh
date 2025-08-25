@@ -14,6 +14,7 @@ El CapabilityStatement del origen del directorio de proveedores de atención mé
 * extension[=].valueInteger = 1
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #draft
+* version = "0.4.8"
 
 * name = "NID_IHE_HPD_Manager"
 * status = #draft

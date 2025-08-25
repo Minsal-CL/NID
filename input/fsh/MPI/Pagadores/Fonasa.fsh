@@ -1,6 +1,6 @@
 Instance: FONASA
 InstanceOf: OrganizacionCL
-Usage: #definition
+Usage: #example
 Title: "FONASA"
 Description: "Información del Fondo Nacional de Salud"
 
