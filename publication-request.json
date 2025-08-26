@@ -1,8 +1,8 @@
 {
     "package-id": "hl7.fhir.cl.minsal.nid",
-    "version": "0.4.8",
+    "version": "0.4.8-testing",
     "desc": "Versión de desarrollo",
-    "path": "https://interoperabilidad.minsal.cl/fhir/ig/nid/0.4.8-ci-build",
+    "path": "https://interoperabilidad.minsal.cl/fhir/ig/nid/0.4.8-testing",
     "mode": "working",
     "changes": "changes.html",
     "status": "draft",
