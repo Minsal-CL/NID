@@ -85,13 +85,13 @@ Se crean los CapabilityStatement de Cliente:
   * [Indice Maestro Paciente: "Cliente de Origen PIXm"](CapabilityStatement-MPI.IHE.PIXm.Origen.html)
   * [Indice Maestro Paciente: "Cliente Buscador de Datos Demográficos (PDQm) con implementación de Match"](CapabilityStatement-MPI.IHE.PDQm.Search.Cliente.Match.html)
 
-Se define la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) para está guía.
+Se define la operación [$ihe-pix](https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix) para está guía.
 
 Se define la operación [$match](OperationDefinition-MPI.PDQm.match.html) para está guía.
 
 Se crean los parametros de la operación **$ihe-pix**:
-  * [MINSAL Parametros Entrada PIXm](StructureDefinition-ParametrosSalidaPixmMpi.html)
-  * [MINSAL Parametros Salida PIXm](StructureDefinition-ParametrosSalidaPixmMpi.html)
+  * **MINSAL Parametros Entrada PIXm**
+  * **MINSAL Parametros Salida PIXm**
 
 Se crean los parametros y perfiles para la operación **$match**:
   * [MINSAL Parametros Entrada $match PDQM](StructureDefinition-ParametrosEntradaPDQmMpi.html)

@@ -18,7 +18,7 @@ El CapabilityStatement del administador del Indice Maestro Paciente debe cumplir
   * segundo-apellido
   * segundo-apellido:exact
 * **DEBE** soportar los _revinclude que permitan traer la información adicional requerida.
-* **DEBE** soportar el uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html) descrita en está guía.
+* **DEBE** soportar el uso de la operación [$ihe-pix](https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix) descrita en está guía.
 * **DEBE** soportar el uso de la operación [$match](OperationDefinition-MPI.PDQm.match.html) descrita en está guía. 
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"

@@ -7,7 +7,7 @@ El CapabilityStatement del Actor Cliente Buscador MPI expresa los requisitos que
 
 * Uso de FHIR R4
 * Uso de estructura JSON o XML
-* Uso de la operación [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html)
+* Uso de la operación [$ihe-pix](https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix)
 """
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
