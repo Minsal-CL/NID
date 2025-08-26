@@ -192,7 +192,7 @@ El servidor como administrador PIXm ofrece la capacidad de consultar la \"Refere
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
     * name = "ihe-pix"
-    * definition = Canonical(MPI.PIXm.pix)
+    * definition = "https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix"
   * operation[+]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

@@ -52,4 +52,4 @@ El cliente PIXm realiza consultas para la Referencia Cruzada de Identidad del Pa
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
     * name = "ihe-pix"
-    * definition = Canonical(MPI.PIXm.pix)
+    * definition = "https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix"

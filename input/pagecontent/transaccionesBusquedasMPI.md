@@ -45,7 +45,7 @@ Por el momento consideraremos solo una trasaccion para un único caso de uso de 
 
 ##### Solicitud
 
-La operación se desarrolla basada en un **HTTP GET** o **HTTP POST** del *Consumidor* al *Gestor* usando la operacion **FHIR** [$ihe-pix](OperationDefinition-MPI.PIXm.pix.html)
+La operación se desarrolla basada en un **HTTP GET** o **HTTP POST** del *Consumidor* al *Gestor* usando la operacion **FHIR** [$ihe-pix](https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix)
 <br>
 
 La URL para la operación se muestra a continuación:
@@ -73,7 +73,7 @@ GET {{mpi}}/Patient/$ihe-pix?sourceIdentifier=urn:oid:2.16.840.1.113883.2.22.0.2
 ```
 <br>
 
-Para el caso de **POST**, se debe hacer uso de un recurso [Parameter](StructureDefinition-ParametrosEntradaPixmMpi.html) en el *body*. Utilizando el ejemplo anterior debería quedar de la siguiente manera:
+Para el caso de **POST**, se debe hacer uso de un recurso [Parameter](https://profiles.ihe.net/ITI/PIXm/3.0.4/StructureDefinition-IHE.PIXm.Query.Parameters.In.html) en el *body*. Utilizando el ejemplo anterior debería quedar de la siguiente manera:
 <br>
 ```
 POST [base]/Patient/$ihe-pix
@@ -98,7 +98,7 @@ Esta operación hará búsqueda de todos los identificadores existentes para el 
 
 ##### Respuesta
 
-La respuesta se desarrolla basada en un recurso [Parameters](StructureDefinition-ParametrosSalidaPixmMpi.html) en donde cada parámetro de respuesta es un *targetIdentifier* con el valor del identificador y el dominio al cual pertenece
+La respuesta se desarrolla basada en un recurso [Parameters](https://profiles.ihe.net/ITI/PIXm/3.0.4/StructureDefinition-IHE.PIXm.Query.Parameters.Out.html) en donde cada parámetro de respuesta es un *targetIdentifier* con el valor del identificador y el dominio al cual pertenece
 <br>
 
 ```
