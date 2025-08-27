@@ -16,7 +16,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
   * use = #official
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac1
-    * coding = CSTipoIdentificador#01 "RUN"
+    * coding = CSTipoIdentificador#1 "RUN"
   * system = "urn:oid:2.16.840.1.113883.2.22.1.152.787300"
   * value = "16182522-0"
 
@@ -24,7 +24,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
   * use = #official
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac1
-    * coding = CSTipoIdentificador#05 "PPN"
+    * coding = CSTipoIdentificador#5 "PPN"
   * system = "urn:oid:2.16.840.1.113883.2.22.0.2.102100.50.10"
   * value = "ACL123456789876"
 
@@ -55,7 +55,7 @@ Instance: identidadGeneroPac1
 InstanceOf: IdentidadDeGenero
 Usage: #inline
 
-*  valueCodeableConcept = CSIdentidaddeGenero#2 "Femenina"
+*  valueCodeableConcept = CSIdentidadDeGenero#2 "Femenina"
 
 Instance: SexoBiologicoPac1
 InstanceOf: SexoBiologico

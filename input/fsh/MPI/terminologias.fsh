@@ -213,44 +213,49 @@ Description: "Codificación del Nivel Educacional para diferenciar entre los com
 
 
 /************************************/
-//ValueSet: VSTipoIdentificador
-//Id: VSTipoIdentificador
-//Title: "Tipo Identificador"
-//Description: "Tipo Identificador"
-//* ^experimental = false
-//* ^version = "1.0.0"
-//* ^status = #active
-//* ^date = "2023-07-03T00:00:00-03:00"
-//* ^contact.name = "MINSAL TIC/Interoperabilidad"
-//* ^contact.telecom.system = #email
-//* ^contact.telecom.value = "interoperabilidad@minsal.cl"
-//* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-//
-//* codes from system CSTipoIdentificador
-//
-//CodeSystem: CSTipoIdentificador
-//Id: CSTipoIdentificador
-//Title: "Tipo Identificador"
-//Description: "Tipo Identificador"
-//* ^experimental = false
-//* ^caseSensitive = true
-//* ^version = "1.0.0"
-//* ^status = #active
-//* ^date = "2023-07-03T00:00:00-03:00"
-//* ^contact.name = "MINSAL TIC/Interoperabilidad"
-//* ^contact.telecom.system = #email
-//* ^contact.telecom.value = "interoperabilidad@minsal.cl"
-//* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-//
-//* #01 "Run"
-//* #02 "Run materno/progenitor(a)"
-//* #03 "Número de Folio de comprobante de parto"
-//* #04 "Número de pasaporte"
-//* #05 "Número de documento identificador de país de origen"
-//* #06 "Número de identificador FONASA"
-//* #07 "Identificador Provisorio Escolar"
-//* #08 "Identificador Provisorio Apoderado"
-//* #09 "Registro Único de Contribuyentes"
+ValueSet: VSTipoIdentificador
+Id: VSTipoIdentificador
+Title: "Tipo Identificador"
+Description: "Tipo Identificador"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-03T00:00:00-03:00"
+* ^contact.name = "MINSAL TIC/Interoperabilidad"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "interoperabilidad@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoIdentificador
+
+CodeSystem: CSTipoIdentificador
+Id: CSTipoIdentificador
+Title: "Tipo Identificador"
+Description: "Tipo Identificador"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2023-07-03T00:00:00-03:00"
+* ^contact.name = "MINSAL TIC/Interoperabilidad"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "interoperabilidad@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "RUN" "Rol Único Nacional"
+* #2 "RUN Provisorio" "RUN provisorio (Artículo 44)"
+* #3 "RUN Madre" "RUN Madre (para recién nacido)"
+* #4 "Número Folio" "Número Folio Comprobante de Parto chileno"
+* #5 "PPN" "Pasaporte"
+* #6 "Documento de identificación del país de origen" "Documento de identificación del país de origen"
+* #7 "Acta de nacimiento del país de origen" "Acta de nacimiento del país de origen"
+* #8 "NIP" "Número de Identificación Provisorio (NIP)"
+* #9 "NIC" "Número Identificatorio para cotizar (NIC)"
+* #10 "IPA" "Identificación Provisoria del Apoderado (IPA)"
+* #11 "IPE" "Identificación Provisoria del Escolar (IPE)"
+* #12 "Número de Ficha Clínica Sistema Local" "Número de Ficha Clínica Sistema Local"
+* #13 "RNPI" "Registro Nacional de Prestadores Individuales"
+* #14 "OTRO" "Otro tipo de identificador"
 
 ValueSet: VSIdentidadDeGenero
 Id: VSIdentidadDeGenero
@@ -281,13 +286,13 @@ Description: "Identidad De Género"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Masculino"
-* #02 "Femenino"
-* #03 "Transgénero masculino"
-* #04 "Transgénero femenino"
-* #05 "No binarie"
-* #06 "otra"
-* #07 "No revelado"
+* #1 "Masculino"
+* #2 "Femenino"
+* #3 "Transgénero masculino"
+* #4 "Transgénero femenino"
+* #5 "No binarie"
+* #6 "otra"
+* #7 "No revelado"
 
 ValueSet: VSEstadoCivil
 Id: VSEstadoCivil
@@ -1176,14 +1181,14 @@ Description: "Tipos de Identificadores de Paciente"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^experimental = false
 
-* CSTipoIdentificador#01 "RUN" 
-* CSTipoIdentificador#02 "RUN Provisorio" 
-* CSTipoIdentificador#03 "RUN Madre" 
-* CSTipoIdentificador#04 "Número Folio" 
-* CSTipoIdentificador#05 "PPN" 
-* CSTipoIdentificador#06 "Documento de identificación del país de origen" 
-* CSTipoIdentificador#07 "Acta de nacimiento del país de origen" 
-* CSTipoIdentificador#08 "NIP" 
+* CSTipoIdentificador#1 "RUN" 
+* CSTipoIdentificador#2 "RUN Provisorio" 
+* CSTipoIdentificador#3 "RUN Madre" 
+* CSTipoIdentificador#4 "Número Folio" 
+* CSTipoIdentificador#5 "PPN" 
+* CSTipoIdentificador#6 "Documento de identificación del país de origen" 
+* CSTipoIdentificador#7 "Acta de nacimiento del país de origen" 
+* CSTipoIdentificador#8 "NIP" 
 * CSTipoIdentificador#10 "IPA" 
 * CSTipoIdentificador#11 "IPE" 
 * CSTipoIdentificador#12 "Número de Ficha Clínica Sistema Local" 

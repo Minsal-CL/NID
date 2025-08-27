@@ -41,7 +41,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[run].value ^short = "Número de RUN"
 * identifier[run].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guion para diferencia el dígito verificador"
 //* identifier[run].system = "http://registrocivil.cl/run"
-* identifier[run].type.coding.code = #01
+* identifier[run].type.coding.code = #1
 
 * identifier[rnpi]
   * use MS
@@ -67,7 +67,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier[pasaporte].system ^comment = "Se define el endPoint al cual debe apuntar a la API"
 * identifier[pasaporte].value ^short = "Valor identificador"
 * identifier[pasaporte].value ^definition = "Valor identificador"
-* identifier[pasaporte].type.coding.code = #05
+* identifier[pasaporte].type.coding.code = #5
 
 * identifier[otro]
   * use MS

@@ -167,7 +167,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 
 * generalPractitioner 0..* MS
-* generalPractitioner only Reference(OrganizacionCL or PrestadorCL or CoreRolClinicoCl)
+* generalPractitioner only Reference(OrganizacionCL2 or PrestadorCL2)
 * generalPractitioner ^short = "Proveedor de Salud designado como principal"
 * generalPractitioner ^definition = "Proveedor de Salud designado como principal"
   * reference MS

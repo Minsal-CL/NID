@@ -31,7 +31,7 @@ Usage: #inline
   * use = #official
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPacBus1
-    * coding = CSTipoIdentificador#01 "RUN"
+    * coding = CSTipoIdentificador#1 "RUN"
   * value = "12216373-3"
 
 * active = true
@@ -61,7 +61,7 @@ Instance: identidadGeneroPacBus1
 InstanceOf: IdentidadDeGenero
 Usage: #inline
 
-*  valueCodeableConcept = CSIdentidaddeGenero#1 "Masculino"
+*  valueCodeableConcept = CSIdentidadDeGenero#1 "Masculino"
 
 Instance: SexoBiologicoPacBus1
 InstanceOf: SexoBiologico

@@ -226,8 +226,9 @@ Description: "Identificador del Prestador Profesional o Administrativo"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system CSTipoIdentificador where concept is-a #01 "Rol Único Nacional o RUN"
-* include codes from system CSTipoIdentificador where concept is-a #13 "Registro Nacional de Prestadores Individuales"
+* include codes from system CSTipoIdentificador where concept is-a #1 
+* include codes from system CSTipoIdentificador where concept is-a #13
+
 
 
 ValueSet: VSTituloProfesional

@@ -24,7 +24,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 //* extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
 * extension contains PueblosOriginariosMPI named PuebloOriginario 0..1 MS
-* extension contains patient-motherMaidenName named MothersMaidenName 0..0 MS
+// * extension contains patient-motherMaidenName named MothersMaidenName 0..0 MS
 * extension[nacionalidad]
 * extension[IdentidadDeGenero] 0..1 MS
 
@@ -114,7 +114,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
   * ^short = "Enlace que tiene el recurso Minsal Paciente con otro que sea la misma persona"
   * other 1..1 MS
     * ^short = "Relación mediante identifier o referencia al recurso"
-  * other only Reference(PacienteCl or MINSALPaciente or MINSALAcompanante)
+  * other only Reference(PacienteCl2 or MINSALPaciente or MINSALAcompanante)
   * type 1..1 MS
     * ^short = "replaced-by | replaces | refer | seealso"
     * ^definition = "Tipo de enlace"

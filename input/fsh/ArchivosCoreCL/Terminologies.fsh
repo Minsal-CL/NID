@@ -857,45 +857,22 @@ Description: "Tipo Identificador"
 * #12 "Número de Ficha Clínica Sistema Local" "Número de Ficha Clínica Sistema Local"
 * #13 "RNPI" "Registro Nacional de Prestadores Individuales"
 * #14 "OTRO" "Otro tipo de identificador"
-/*
-ValueSet: VSIdentidaddeGenero
-Id: VSIdentidaddeGenero
-Title: "Identidad de Genero"
-Description: "Identidad de Genero"
+
+ValueSet: VSCodigoslenguaje
+Id: VSCodigoslenguaje
+Title: "Codigos Lenguaje"
+Description:  "Códigos de leguaje"
 * ^language = #es
 * ^experimental = false
 
 * ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
+* ^date = "2022-06-10T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
 * ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
+* ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSIdentidaddeGenero
-
-CodeSystem: CSIdentidaddeGenero
-Id: CSIdentidaddeGenero
-Title: "Identidad de Genero"
-Description: "Identidad de Genero"
-* ^language = #es
-* ^experimental = false
-* ^caseSensitive = true
-
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "Masculino"
-* #2 "Femenina"
-* #3 "Transgénero Masculino"
-* #4 "Transgénero Femenina"
-* #5 "No binarie"
-* #6 "Otra"
-* #7 "No Revelado"
+* codes from system urn:ietf:bcp:47
 
 ValueSet: VSSexoListadoDeis
 Id: VSSexoListadoDeis
@@ -933,7 +910,7 @@ Description: "Sexo Listado Deis"
 * #3 "Intersexual"
 * #93 "No Informado"
 * #99 "Desconocido"
-*/
+
 /*
 ValueSet: VSPrevision
 Id: VSPrevision

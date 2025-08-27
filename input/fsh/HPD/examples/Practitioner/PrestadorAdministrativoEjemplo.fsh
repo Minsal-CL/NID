@@ -8,7 +8,7 @@ Description: "Ejemplo de un profesional que es administrativo"
   * use = #official
   * type 
     * extension = paisEmisionDocumentoProfesionalAdministrativoEjemplo
-    * coding = CSTipoIdentificador#01 "RUN"
+    * coding = CSTipoIdentificador#1 "RUN"
   * value = "90000000-6"
   * assigner
     * display = "Republica de Chile"

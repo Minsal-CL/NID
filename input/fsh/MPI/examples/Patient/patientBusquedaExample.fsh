@@ -7,7 +7,7 @@ Description: "Este un ejemplo del recurso \"MINSAL Paciente Busqueda\", el cual 
 * identifier[0]
   * use = #official
   * type
-    * coding = CSTipoIdentificador#01 "RUN"
+    * coding = CSTipoIdentificador#1 "RUN"
   * value = "12216373-3"
 
 * active = true

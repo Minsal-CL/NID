@@ -10,7 +10,7 @@ Context: Patient, Practitioner
 
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Identidad De Género"
-* valueCodeableConcept from  VSIdentidaddeGenero (preferred)
+* valueCodeableConcept from  VSIdentidadDeGenero (preferred)
 
 Extension: SexoBiologico
 Id: SexoBiologico

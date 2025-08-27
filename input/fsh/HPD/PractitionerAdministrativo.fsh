@@ -22,10 +22,10 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
-      * system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
+      * system = Canonical(CSTipoIdentificador)
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
-      * code = #01
+      * code = #1
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador"
   * value 1..1 MS

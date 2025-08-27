@@ -33,7 +33,7 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 * identifier.type ^short = "Tipo de documento"
 * identifier.type ^definition = "Tipo de documento"
 * identifier.type ^comment = "Tipo de documento"
-* identifier.type from VSTipoIdentificador
+* identifier.type from VSTiposIdentificadorPaciente
 * identifier.type ^binding.description = "Identificadores definidos por DEIS"
 * identifier.type.extension[paisEmisionDocumento] 0..1 MS
 * identifier.value 0..1 MS
