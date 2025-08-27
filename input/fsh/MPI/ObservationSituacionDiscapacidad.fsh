@@ -1,5 +1,5 @@
 Profile: MINSALSituacionDiscapacidad
-Parent: ObservacionCL
+Parent: Observation
 Id: MINSALSituacionDiscapacidad
 Title: "MINSAL Situacion Discapacidad"
 Description: "Describe de manera simplificada la situacion de discapacidad de un paciente."

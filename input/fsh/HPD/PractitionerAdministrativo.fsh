@@ -1,5 +1,5 @@
 Profile:     MINSALPractitionerAdministrativo
-Parent:      PrestadorCL
+Parent:      PrestadorCL2
 Id:          MINSALPractitionerAdministrativo
 Title:       "Prestador Administrativo"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."

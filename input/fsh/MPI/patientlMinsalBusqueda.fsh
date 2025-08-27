@@ -1,5 +1,5 @@
 Profile: MINSALPacienteBusqueda
-Parent: PacienteCl
+Parent: PacienteCl2
 Id: MINSALPacienteBusqueda
 Title: "MINSAL Paciente Busqueda"
 Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de Pacientes\". Este es utilizado en la operación $match como parámetro de entrada."
@@ -46,8 +46,8 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 * gender ^short = "Sexo Registral del paciente"
 * gender 0..1 MS
 
-* address
-  * extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud."
+* address only ClAddress2
+  * extension[geoLocation] ^short = "Dirección absoluta, es decir, latitud y longitud."
   * extension contains SituacionCalle named SituacionCalle 0..1 MS
 
   * use 0..1 MS

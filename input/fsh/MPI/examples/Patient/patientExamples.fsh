@@ -6,7 +6,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
 
 * extension[IdentidadDeGenero] = identidadGeneroPac1
 * extension[SexoBiologico] = SexoBiologicoPac1
-* extension[nacionalidad] = PaisDireccionPac1
+* extension[nacionalidad] = NacioncalidadPac1
 * extension[PaisOrigen] = PaisOrigenMPIPac1
 * extension[Religion] = ReligionPac1
 * extension[PueblosAfrodescendiente] = PueblosAfrodescendientePac1
@@ -125,7 +125,7 @@ Instance: ClAddressPac1
 InstanceOf: NIDAddress
 Usage: #inline
 
-* extension[Geolocalizacion] = geolocalizacionPac1
+* extension[geoLocation] = geolocalizacionPac1
 * extension[SituacionCalle] = SituacionCallePac1
 * use = #home
 * line[0] = "Avenida Las Torres 3456, Departamento 702"
@@ -157,3 +157,9 @@ InstanceOf: CodigoPaises
 Usage: #inline
 
 * valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+
+Instance: NacioncalidadPac1
+InstanceOf: Nacionalidad
+Usage: #inline
+
+* extension[code].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"

@@ -2,7 +2,7 @@ Instance: MPI.PDQm.match
 InstanceOf: OperationDefinition
 Title: "MPI PDQm $Match"
 Description: """
-Operación compatible con la operación [$match](http://hl7.org/fhir/R4/patient-operation-match.html) del estandar y la del operación [$match](https://profiles.ihe.net/ITI/PDQm/OperationDefinition-PDQmMatch.html) del PDQm. Los únicos cambios son restringir los parámetros de entrada para usar el perfil de [Paciente MPI Busqueda](./StructureDefinition-MINSALPacienteBusqueda.html) para el perfil de Entrada de $match y restringir los parámetros de salida para usar el perfil de [Paciente MPI](./StructureDefinition-MINSALPaciente.html).
+Operación compatible con la operación [$match](http://hl7.org/fhir/R4/patient-operation-match.html) del estandar y la del operación [$match](https://profiles.ihe.net/ITI/PDQm/OperationDefinition-PDQmMatch.html) del PDQm. Los únicos cambios son restringir los parámetros de entrada para usar el perfil de [Paciente MPI Busqueda](./StructureDefinition-MINSALPacienteBusqueda.html) para el perfil de Entrada de $match y restringir los parámetros de salida para usar el perfil de [Paciente MPI](./StructureDefinition-MINSALPaciente.html) cuya respuesta es el [MINSAL Bundle Resultado Operación Match](./StructureDefinition-BundleSearchMPIMatch.html).
 
 """  
 Usage: #definition
@@ -48,11 +48,11 @@ Usage: #definition
 * parameter[+]
   * name = #return
   * use = #out
-  * min = 0
-  * max = "*"
+  * min = 1
+  * max = "1"
   * documentation = """Un bundle contiene un conjunto de registros de Paciente que representan posibles coincidencias; opcionalmente, **PUEDE** contener también un OperationOutcome con información adicional sobre los resultados de la búsqueda (como advertencias o mensajes informativos, como un conteo de registros que estaban cerca pero fueron eliminados). Si la operación no tuvo éxito, entonces **PUEDE** devolverse un OperationOutcome junto con un código de estado BadRequest (por ejemplo, problema de seguridad o propiedades insuficientes en el fragmento de paciente, verificar contra el perfil).
 
 Nota: dado que este es el único parámetro de salida, es un recurso y tiene el nombre 'return'. El resultado de esta operación se devuelve directamente como un recurso.
 """
   * type = #Bundle
-  * targetProfile[0] = Canonical(BundleSearchMPIMatch)
+  // * targetProfile[0] = Canonical(BundleSearchMPIMatch)

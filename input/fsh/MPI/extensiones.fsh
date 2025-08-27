@@ -39,6 +39,15 @@ Context: Patient
 * valueBoolean ^short = "Pueblos Afrodescendiente"
 * valueBoolean ^definition = "Pueblos Afrodescendiente"
 
+// Extension: NacionalidadNID
+// Id: NacionalidadNID
+// Parent: PaisDireccion
+// Title: "Nacionalidad"
+// Description: "Nacionalidad del paciente"
+// Context: Patient
+
+// * value[x] only CodeableConcept
+// * value[x] from VSCodigosPaisesNID (required)
 
 /*
 Extension: PueblosOriginariosPerteneciente
@@ -109,7 +118,7 @@ Title:       "País de origen del paciente"
 Description: "País de origen del paciente"
 Context:     Patient
 * value[x] only CodeableConcept
-* value[x] from CodPaises
+* value[x] from VSCodigosPaisesNID (required)
 * value[x] ^short = "Código de País"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS

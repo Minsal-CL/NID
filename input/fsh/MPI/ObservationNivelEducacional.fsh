@@ -1,5 +1,5 @@
 Profile: MINSALNivelEducacional
-Parent: ObservacionCL
+Parent: Observation
 Id: MINSALNivelEducacional
 Title: "MINSAL Nivel Educacional"
 Description: "Nivel Educacional como dato estadistico para el ingreso de un paciente en el sistema."

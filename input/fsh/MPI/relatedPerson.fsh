@@ -28,7 +28,7 @@ Description: "Información sobre una persona que participa en la atención a un 
     * ^short = "Los datos reales del punto de contacto"
 * address 0..1 MS
   * ^short = "Dirección donde se puede contactar o visitar a la persona relacionada"
-* address only ClAddress
+* address only ClAddress2
 * period 0..1 MS
   * ^short = "Periodo de tiempo durante el cual se considera válida esta relación"
 

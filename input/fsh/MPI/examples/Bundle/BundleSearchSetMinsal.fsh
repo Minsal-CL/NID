@@ -121,7 +121,7 @@ Usage: #inline
 * valueBoolean = false 
 
 Instance: ClAddressPacBus1
-InstanceOf: ClAddress
+InstanceOf: NIDAddress
 Usage: #inline
 
 * extension[SituacionCalle] = SituacionCallePacBus1

@@ -1,5 +1,5 @@
 Profile:     MINSALOcupacion
-Parent:      ObservacionCL
+Parent:      Observation
 Id:          MINSALOcupacion
 Title:       "MINSAL Ocupación"
 Description: "Ocupación laboral de un paciente, como dato estadistico requerido para el ingreso del paciente al sistema."

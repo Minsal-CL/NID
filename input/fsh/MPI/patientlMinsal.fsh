@@ -1,5 +1,5 @@
 Profile: MINSALPaciente
-Parent: PacienteCl
+Parent: PacienteCl2
 Id: MINSALPaciente
 Title: "MINSAL Paciente"
 Description: "Paciente definido para el Registro Maestro de Pacientes"
@@ -25,7 +25,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
 * extension contains PueblosOriginariosMPI named PuebloOriginario 0..1 MS
 * extension contains patient-motherMaidenName named MothersMaidenName 0..0 MS
-* extension[nacionalidad] 0..1 MS
+* extension[nacionalidad]
 * extension[IdentidadDeGenero] 0..1 MS
 
 * implicitRules 0..0

@@ -1,5 +1,5 @@
 Instance: FONASA
-InstanceOf: OrganizacionCL
+InstanceOf: OrganizacionCL2
 Usage: #example
 Title: "FONASA"
 Description: "Información del Fondo Nacional de Salud"
@@ -14,7 +14,7 @@ Description: "Información del Fondo Nacional de Salud"
 * address = CLAddressFonasa
 
 Instance: CLAddressFonasa
-InstanceOf: ClAddress
+InstanceOf: ClAddress2
 Usage: #inline
 
 * line[0] = "MONJITAS 665"

@@ -6,4 +6,5 @@ Thumbs.db
 /temp
 /template
 /PruebaNID.http
+/NIDTerminology.http
 *.code-workspace

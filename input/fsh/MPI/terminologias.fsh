@@ -1158,9 +1158,9 @@ Description: "Este es un filtro del \"system\" del telecom del paciente solo par
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^experimental = false
 
-* $contact-point-system#phone
-* $contact-point-system#email
-* $contact-point-system#other
+* include $contact-point-system#phone "Phone"
+* include $contact-point-system#email "Email"
+* include $contact-point-system#other "Other"
 
 
 ValueSet: VSTiposIdentificadorPaciente
@@ -1188,3 +1188,37 @@ Description: "Tipos de Identificadores de Paciente"
 * CSTipoIdentificador#11 "IPE" 
 * CSTipoIdentificador#12 "Número de Ficha Clínica Sistema Local" 
 * CSTipoIdentificador#14 "OTRO"
+
+
+ValueSet: VSCodigosPaisesNID
+Id: vs-codigos-paises-nid
+Title: "Códigos de Países para NID"
+Description: "códigos de países según norma ISO 3166-1, para uso en NID (Identificador Nacional de Paciente)"
+
+* ^version = "0.4.8"
+* ^status = #active
+* ^date = "2024-09-25"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false
+
+* include codes from system urn:iso:std:iso:3166 where code regex /[0-9]{3}/
+* include codes from system CsPaisDesconocido
+
+CodeSystem:  CsPaisDesconocido
+Id:          cs-pais-desconocido
+Title:       "País Desconocido"
+Description: "Código para país desconocido"
+
+* ^version = "0.4.8"
+* ^status = #active
+* ^date = "2024-09-25"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^experimental = false
+
+* #999 "Desconocido"

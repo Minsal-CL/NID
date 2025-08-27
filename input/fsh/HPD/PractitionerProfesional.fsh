@@ -1,5 +1,5 @@
 Profile:     MINSALPrestadorProfesional
-Parent:      PrestadorCL
+Parent:      PrestadorCL2
 Id:          MINSALPrestadorProfesional
 Title:       "Prestador Profesional"
 Description: "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."

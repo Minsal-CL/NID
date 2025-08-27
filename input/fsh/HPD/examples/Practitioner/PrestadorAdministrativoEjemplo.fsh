@@ -39,7 +39,7 @@ Usage: #inline
 * valueString = "Sandoval"
 
 Instance: ClAddressPractitionerProfesionalAdministrativoEjemplo
-InstanceOf: ClAddress
+InstanceOf: ClAddress2
 Usage: #Inline
 
 * use = #work
