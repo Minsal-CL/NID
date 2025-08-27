@@ -13,8 +13,8 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
 * ^extension[=].valueCanonical = Canonical(PIXmPatient)
 
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
-* ^extension[=].valueCanonical = Canonical(PDQmPatient)
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+// * ^extension[=].valueCanonical = Canonical(PDQmPatient)
 
 
 * obeys mpi-pat-enlaceEstado 

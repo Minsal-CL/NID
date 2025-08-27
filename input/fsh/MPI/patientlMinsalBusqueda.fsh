@@ -22,7 +22,7 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 * extension[nacionalidad] 0..1 MS
 * extension[IdentidadDeGenero] 0..1 MS
 
-* extension contains patient-motherMaidenName named MothersMaidenName 0..0 MS
+// * extension contains patient-motherMaidenName named MothersMaidenName 0..0 MS
 * implicitRules 0..0
 * modifierExtension 0..0
 
