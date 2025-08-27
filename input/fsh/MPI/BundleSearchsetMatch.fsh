@@ -10,8 +10,8 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante l
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
 
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
-* ^extension[=].valueCanonical = Canonical(MatchParametersOut)
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+// * ^extension[=].valueCanonical = Canonical(MatchParametersOut)
 
 * implicitRules 0..0
 
@@ -34,7 +34,7 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante l
 * entry contains
   paciente 0..* MS and 
   operationOutcome 0..* MS
-* entry[patient]
+* entry[paciente]
   * resource MS
     * ^short = "Información sobre un individuo que reciva servicio de cuidados de salud"
   * resource only MINSALPaciente

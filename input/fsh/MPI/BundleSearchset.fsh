@@ -11,8 +11,8 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante p
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
 
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
-* ^extension[=].valueCanonical = Canonical(QueryPatientResourceResponseMessage)
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+// * ^extension[=].valueCanonical = Canonical(QueryPatientResourceResponseMessage)
 
 * type 1..1 MS
   * ^short = "Tipo de Bundle, para el caso de uso es un \"searchset\""
@@ -32,9 +32,9 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante p
   * fullUrl 1..1 MS
     * ^short = "uri de identificación del resultado"
 * entry contains
-  patien 0..* MS
+  paciente 0..* MS
 
-* entry[patient] 
+* entry[paciente] 
   * ^short = "Paciente"
   * resource MS
     * ^short = "Información sobre un individuo que reciva servicio de cuidados de salud"

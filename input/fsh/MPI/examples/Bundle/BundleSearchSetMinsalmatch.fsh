@@ -9,7 +9,7 @@ Description: "Ejemplo del resultado de una busqueda de paciente según el parám
 * link 
   * relation = #self
   * url  = "https://interoperabilidad.minsal.cl/fhir/ig/nid/Patient/$match"
-* entry[patient]
+* entry[paciente]
   * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/nid/Patient/AC1696435881599"
   * resource = AC1696435881599
   * search
