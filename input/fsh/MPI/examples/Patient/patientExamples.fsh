@@ -45,7 +45,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
 
 * birthDate = "1995-12-12"
 
-* address =  ClAddressPac1
+// * address =  ClAddressPac1
 
 * deceasedBoolean = false
 
@@ -108,55 +108,55 @@ Usage: #inline
 
 *  valueString = "Muñoz"
 
-Instance: geolocalizacionPac1
-InstanceOf: Geolocation
-Usage: #inline
+// Instance: geolocalizacionPac1
+// InstanceOf: Geolocation
+// Usage: #inline
 
-* extension[latitude].valueDecimal = -33.4265
-* extension[longitude].valueDecimal = -70.56652
+// * extension[latitude].valueDecimal = -33.4265
+// * extension[longitude].valueDecimal = -70.56652
 
-Instance: SituacionCallePac1
-InstanceOf: SituacionCalle
-Usage: #inline
+// Instance: SituacionCallePac1
+// InstanceOf: SituacionCalle
+// Usage: #inline
 
-* valueBoolean = false 
+// * valueBoolean = false 
 
-Instance: ClAddressPac1
-InstanceOf: NIDAddress
-Usage: #inline
+// Instance: ClAddressPac1
+// InstanceOf: NIDAddress
+// Usage: #inline
 
-* extension[geoLocation] = geolocalizacionPac1
-* extension[SituacionCalle] = SituacionCallePac1
-* use = #home
-* line[0] = "Avenida Las Torres 3456, Departamento 702"
-* city.extension = ComunasClPac1
-* district.extension = ProvinciasClPac1
-* state.extension = RegionesClPac1
-* country.extension = CodigoPaisesPac1
+// * extension[geoLocation] = geolocalizacionPac1
+// * extension[SituacionCalle] = SituacionCallePac1
+// * use = #home
+// * line[0] = "Avenida Las Torres 3456, Departamento 702"
+// * city.extension = ComunasClPac1
+// * district.extension = ProvinciasClPac1
+// * state.extension = RegionesClPac1
+// * country.extension = CodigoPaisesPac1
 
-Instance: ComunasClPac1
-InstanceOf: ComunasCl
-Usage: #inline
+// Instance: ComunasClPac1
+// InstanceOf: ComunasCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodComunasCL#13118 "Macul"
+// * valueCodeableConcept = CSCodComunasCL#13118 "Macul"
 
-Instance: ProvinciasClPac1
-InstanceOf: ProvinciasCl
-Usage: #inline
+// Instance: ProvinciasClPac1
+// InstanceOf: ProvinciasCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+// * valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
 
-Instance: RegionesClPac1
-InstanceOf: RegionesCl
-Usage: #inline
+// Instance: RegionesClPac1
+// InstanceOf: RegionesCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+// * valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
 
-Instance: CodigoPaisesPac1
-InstanceOf: CodigoPaises
-Usage: #inline
+// Instance: CodigoPaisesPac1
+// InstanceOf: CodigoPaises
+// Usage: #inline
 
-* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+// * valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: NacioncalidadPac1
 InstanceOf: Nacionalidad

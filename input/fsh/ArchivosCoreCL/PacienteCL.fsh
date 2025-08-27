@@ -119,7 +119,6 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * birthDate ^short = "Fecha de nacimiento del Paciente."
 * birthDate ^definition = "Fecha de nacimiento del Paciente."
 
-* address only Address or ClAddress2
 * address MS
 
 * contact MS 

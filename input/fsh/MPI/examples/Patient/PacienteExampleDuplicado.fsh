@@ -41,8 +41,8 @@ Description: "Este paciente se encuentra duplicado pero con información adicion
 
 * birthDate = "1995-12-12"
 
-* address[0] =  ClAddressPac2
-* address[1] = ClAddressNueva
+// * address[0] =  ClAddressPac2
+// * address[1] = ClAddressNueva
 
 * deceasedBoolean = false
 
@@ -70,37 +70,37 @@ Usage: #inline
 
 *  valueString = "Muñoz"
 
-Instance: ClAddressPac2
-InstanceOf: NIDAddress
-Usage: #inline
+// Instance: ClAddressPac2
+// InstanceOf: NIDAddress
+// Usage: #inline
 
-* extension[geoLocation] = geolocalizacionPac1
-* extension[SituacionCalle] = SituacionCallePac1
-* use = #home
-* line[0] = "Avenida Las Torres 3456, Departamento 702"
-* city.extension = ComunasClPac1
-* district.extension = ProvinciasClPac1
-* state.extension = RegionesClPac1
-* country.extension = CodigoPaisesPac1
-* period.start = "2020-04-12"
-* period.end = "2021-04-12"
+// * extension[geoLocation] = geolocalizacionPac1
+// * extension[SituacionCalle] = SituacionCallePac1
+// * use = #home
+// * line[0] = "Avenida Las Torres 3456, Departamento 702"
+// * city.extension = ComunasClPac1
+// * district.extension = ProvinciasClPac1
+// * state.extension = RegionesClPac1
+// * country.extension = CodigoPaisesPac1
+// * period.start = "2020-04-12"
+// * period.end = "2021-04-12"
 
-Instance: ClAddressNueva
-InstanceOf: NIDAddress
-Usage: #inline
+// Instance: ClAddressNueva
+// InstanceOf: NIDAddress
+// Usage: #inline
 
-* extension[SituacionCalle] = SituacionCallePac1
-* use = #home
-* line[0] = "Pasaje El Roble 567, Casa 8"
-* city.extension = ComunasClPac2
-* district.extension = ProvinciasClPac1
-* state.extension = RegionesClPac1
-* country.extension = CodigoPaisesPac1
-* period.start = "2021-04-12"
+// * extension[SituacionCalle] = SituacionCallePac1
+// * use = #home
+// * line[0] = "Pasaje El Roble 567, Casa 8"
+// * city.extension = ComunasClPac2
+// * district.extension = ProvinciasClPac1
+// * state.extension = RegionesClPac1
+// * country.extension = CodigoPaisesPac1
+// * period.start = "2021-04-12"
 
-Instance: ComunasClPac2
-InstanceOf: ComunasCl
-Usage: #inline
+// Instance: ComunasClPac2
+// InstanceOf: ComunasCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodComunasCL#13119 "Maipú"
+// * valueCodeableConcept = CSCodComunasCL#13119 "Maipú"
 

@@ -34,7 +34,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom.value ^definition = "Valor del contacto como por ejemplo el número de teléfono fijo o de móvil o el email de Organización"
 
 * address MS
-* address only Address or ClAddress2
+* address only Address
 
 
 * contact MS

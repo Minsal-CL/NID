@@ -58,7 +58,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * gender 1..1 MS
 
 //* address.extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1
-* address only NIDAddress
+// * address only Address 
 
 * birthDate 1..1 MS
 
