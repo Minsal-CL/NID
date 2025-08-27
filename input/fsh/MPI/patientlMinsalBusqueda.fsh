@@ -11,8 +11,8 @@ Description: "Paciente definido para la busqueda dentro del \"Indice Maestro de 
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
 
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
-* ^extension[=].valueCanonical = Canonical(PDQmMatchInput)
+// * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile"
+// * ^extension[=].valueCanonical = Canonical(PDQmMatchInput)
 
 * extension contains PaisOrigenMPI named PaisOrigen 0..1 MS
 * extension contains Religion named Religion 0..1 MS

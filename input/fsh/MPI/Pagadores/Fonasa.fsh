@@ -11,42 +11,42 @@ Description: "Información del Fondo Nacional de Salud"
 * telecom
   * system = #phone
   * value = "600 360 3000"
-* address = CLAddressFonasa
+// * address = CLAddressFonasa
 
-Instance: CLAddressFonasa
-InstanceOf: ClAddress2
-Usage: #inline
+// Instance: CLAddressFonasa
+// InstanceOf: ClAddress2
+// Usage: #inline
 
-* line[0] = "MONJITAS 665"
-* city = "Santiago"
-* city.extension = ComunasClFonasa
-* district = "Santiago"
-* district.extension = ProvinciasClFonasa
-* state = "Metropolitana de Santiago"
-* state.extension = RegionesClFonasa
-* country = "Chile"
-* country.extension = CodigoPaisesFonasa
+// * line[0] = "MONJITAS 665"
+// * city = "Santiago"
+// * city.extension = ComunasClFonasa
+// * district = "Santiago"
+// * district.extension = ProvinciasClFonasa
+// * state = "Metropolitana de Santiago"
+// * state.extension = RegionesClFonasa
+// * country = "Chile"
+// * country.extension = CodigoPaisesFonasa
 
-Instance: ComunasClFonasa
-InstanceOf: ComunasCl
-Usage: #inline
+// Instance: ComunasClFonasa
+// InstanceOf: ComunasCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodComunasCL#13101 "Santiago Centro"
+// * valueCodeableConcept = CSCodComunasCL#13101 "Santiago Centro"
 
-Instance: ProvinciasClFonasa
-InstanceOf: ProvinciasCl
-Usage: #inline
+// Instance: ProvinciasClFonasa
+// InstanceOf: ProvinciasCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+// * valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
 
-Instance: RegionesClFonasa
-InstanceOf: RegionesCl
-Usage: #inline
+// Instance: RegionesClFonasa
+// InstanceOf: RegionesCl
+// Usage: #inline
 
-* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+// * valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
 
-Instance: CodigoPaisesFonasa
-InstanceOf: CodigoPaises
-Usage: #inline
+// Instance: CodigoPaisesFonasa
+// InstanceOf: CodigoPaises
+// Usage: #inline
 
-* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+// * valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
