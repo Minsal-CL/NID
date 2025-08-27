@@ -34,7 +34,7 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante l
 * entry contains
   paciente 0..* MS and 
   operationOutcome 0..* MS
-* entry[paciente]
+* entry[patient]
   * resource MS
     * ^short = "Información sobre un individuo que reciva servicio de cuidados de salud"
   * resource only MINSALPaciente
