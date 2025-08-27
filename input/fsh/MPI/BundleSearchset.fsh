@@ -32,9 +32,9 @@ Description: "Bundle resultado de una busqueda de un recurso paciente mediante p
   * fullUrl 1..1 MS
     * ^short = "uri de identificación del resultado"
 * entry contains
-  paciente 0..* MS
+  patien 0..* MS
 
-* entry[paciente] 
+* entry[patient] 
   * ^short = "Paciente"
   * resource MS
     * ^short = "Información sobre un individuo que reciva servicio de cuidados de salud"
