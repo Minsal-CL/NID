@@ -39,7 +39,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier.type ^comment = "Tipo de documento"
 * identifier.type from VSTiposIdentificadorPaciente
 * identifier.type ^binding.description = "Identificadores definidos por DEIS"
-  * coding 1..1   
+  * coding 1.. 
     * system 0..1
     * code 1..1
 * identifier.type.extension[paisEmisionDocumento] 0..1 MS
