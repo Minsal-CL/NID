@@ -21,7 +21,7 @@ Description: "Ejemplo de un paciente dentro del Indice Maestro del Paciente."
   * value = "16182522-0"
 
 * identifier[1]
-  * use = #official
+  * use = #secondary
   * type
     * extension[paisEmisionDocumento] = PaisEmisionPac1
     * coding = CSTipoIdentificador#5 "PPN"
