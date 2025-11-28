@@ -1,13 +1,11 @@
 Profile: NIDAddress
-Parent:  ClAddress2
+Parent:  ClAddress
 Id:      NIDAddress
 Title:   "Dirección del Paciente"
 Description: "Dirección especificada para el paciente Minsal."
 
-
-
 * . ^short = "Tipo de dato para agregar la dirección de un paciente"
-* extension[geoLocation] ^short = "Dirección absoluta, es decir, latitud y longitud."
+* extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud."
 * extension contains SituacionCalle named SituacionCalle 0..1 MS
 
 * use 0..1 MS

@@ -180,5 +180,3 @@ Context: Coverage.class.value
 * value[x] 1..1
 * value[x] ^short = "Valor de la Clase del Coverage"
 * value[x] only Coding
-
-/********************************************************/

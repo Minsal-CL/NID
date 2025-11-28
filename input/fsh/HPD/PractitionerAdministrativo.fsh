@@ -1,5 +1,5 @@
 Profile:     MINSALPractitionerAdministrativo
-Parent:      PrestadorCL2
+Parent:      PrestadorCL
 Id:          MINSALPractitionerAdministrativo
 Title:       "Prestador Administrativo"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
@@ -22,10 +22,10 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
-      * system = Canonical(CSTipoIdentificador)
+      * system = $CSTipoDeIdentificadorHL7Core
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
-      * code = #1
+      * code = #01
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador"
   * value 1..1 MS

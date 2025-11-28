@@ -1,5 +1,5 @@
 Profile:     MINSALPrestadorProfesional
-Parent:      PrestadorCL2
+Parent:      PrestadorCL
 Id:          MINSALPrestadorProfesional
 Title:       "Prestador Profesional"
 Description: "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
@@ -27,10 +27,10 @@ Corresponde a tres slices:"
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
-      * system = Canonical(CSTipoIdentificador)
+      * system = $CSTipoDeIdentificadorHL7Core
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
-      * code = #1
+      * code = #01
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador"
   * value 1..1 MS
@@ -52,7 +52,7 @@ Corresponde a tres slices:"
       * system 0..1 MS
       * code 1..1 MS
       * code = #13
-      * system  = Canonical(CSTipoIdentificador)
+      * system  = $CSTipoDeIdentificadorHL7Core
       * system ^short = "Sistema de codificación para el código de tipo de identificador"
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador. Será #98 para RNPI"

@@ -61,7 +61,7 @@ Instance: identidadGeneroPacBus1
 InstanceOf: IdentidadDeGenero
 Usage: #inline
 
-*  valueCodeableConcept = CSIdentidadDeGenero#1 "Masculino"
+*  valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero#1 "Masculino"
 
 Instance: SexoBiologicoPacBus1
 InstanceOf: SexoBiologico

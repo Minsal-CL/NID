@@ -1,5 +1,5 @@
 Profile: MINSALPaciente
-Parent: PacienteCl2
+Parent: PacienteCl
 Id: MINSALPaciente
 Title: "MINSAL Paciente"
 Description: "Paciente definido para el Registro Maestro de Pacientes"
@@ -58,7 +58,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * gender 1..1 MS
 
 //* address.extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1
-// * address only Address 
+* address only NIDAddress
 
 * birthDate 1..1 MS
 
@@ -114,7 +114,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
   * ^short = "Enlace que tiene el recurso Minsal Paciente con otro que sea la misma persona"
   * other 1..1 MS
     * ^short = "Relación mediante identifier o referencia al recurso"
-  * other only Reference(PacienteCl2 or MINSALPaciente or MINSALAcompanante)
+  * other only Reference(PacienteCl or MINSALPaciente or MINSALAcompanante)
   * type 1..1 MS
     * ^short = "replaced-by | replaces | refer | seealso"
     * ^definition = "Tipo de enlace"

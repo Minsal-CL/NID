@@ -29,7 +29,7 @@ Description: "Recurso para almacenar la cobertura del paciente"
   * ^short = "Desde cuando es beneficiario. En caso de finalizar el contrato debe incluirse el \"end\"."
 * payor 1..1 MS
   * ^short = "Entidad que paga el seguro. (FONASA, Alguna Isapre u otros)"
-* payor only Reference(OrganizacionCL2)
+* payor only Reference(OrganizacionCL)
 
 * class MS
 * class ^slicing.discriminator[0].type = #value

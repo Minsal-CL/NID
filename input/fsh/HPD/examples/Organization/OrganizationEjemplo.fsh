@@ -18,7 +18,7 @@ Description: "Ejemplo de un prestador institucional"
 
 
 Instance: ClAddressOrganizacionEj1
-InstanceOf: ClAddress2
+InstanceOf: ClAddress
 Usage: #inline
 
 * line[0] = "Ricardo Vicuña 147"

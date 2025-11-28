@@ -1,0 +1,1 @@
+Alias: $CSTipoDeIdentificadorHL7Core = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador

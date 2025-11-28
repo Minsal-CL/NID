@@ -2,9 +2,9 @@
 
 Para realizar el cumplimiento de la norma 231, de estandares de información en salud y los datos mínimos de Paciente, se hace uso de las siguientes extensiones:
  
-  - [Identidad DeGenero](https://hl7chile.cl/fhir/ig/clcore/1.9.3/StructureDefinition-IdentidadDeGenero.html)
-  - [Sexo Biológico](https://hl7chile.cl/fhir/ig/clcore/1.9.3/StructureDefinition-SexoBiologico.html)
-  - [Nacionalidad](https://hl7chile.cl/fhir/ig/clcore/1.9.3/StructureDefinition-CodigoPaises.html)
+  - [Identidad DeGenero](https://hl7chile.cl/fhir/ig/clcore/1.9.4/StructureDefinition-IdentidadDeGenero.html)
+  - [Sexo Biológico](https://hl7chile.cl/fhir/ig/clcore/1.9.4/StructureDefinition-SexoBiologico.html)
+  - [Nacionalidad](https://hl7chile.cl/fhir/ig/clcore/1.9.4/StructureDefinition-CodigoPaises.html)
   - [Pais Origen](StructureDefinition-PaisOrigenMPI.html)
   - [Religión](StructureDefinition-Religion.html)
   - [Pueblos Afrodescendiente](StructureDefinition-PueblosAfrodescendiente.html)

@@ -8,7 +8,7 @@ Description: "Ejemplo de un profesional que es administrativo"
   * use = #official
   * type 
     * extension = paisEmisionDocumentoProfesionalAdministrativoEjemplo
-    * coding = CSTipoIdentificador#1 "RUN"
+    * coding = $CSTipoDeIdentificadorHL7Core#01 "RUN"
   * value = "90000000-6"
   * assigner
     * display = "Republica de Chile"
@@ -39,7 +39,7 @@ Usage: #inline
 * valueString = "Sandoval"
 
 Instance: ClAddressPractitionerProfesionalAdministrativoEjemplo
-InstanceOf: ClAddress2
+InstanceOf: ClAddress
 Usage: #Inline
 
 * use = #work

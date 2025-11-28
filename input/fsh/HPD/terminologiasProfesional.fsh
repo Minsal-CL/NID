@@ -213,6 +213,27 @@ Description: "Especialidades Odontológicas"
 
 * codes from system CSEspecialidadOdont
 
+
+// CodeSystem: CSTipoIdentificadorProfesionales
+// Id: CSTipoIdentificadorProfesionales
+// Title: "Tipo Identificador Profesionales"
+// Description: "Tipo Identificador para profesionales de la salud o administrativos"
+// * ^experimental = false
+// * ^caseSensitive = true
+// * ^version = "1.0.0"
+// * ^status = #active
+// * ^date = "2023-07-03T00:00:00-03:00"
+// * ^contact.name = "MINSAL TIC/Interoperabilidad"
+// * ^contact.telecom.system = #email
+// * ^contact.telecom.value = "interoperabilidad@minsal.cl"
+// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+// * #01 "RUN" "Rol Único Nacional"
+// * #05 "PPN" "Pasaporte"
+// * #06 "Documento de identificación del país de origen" "Documento de identificación del país de origen"
+// * #13 "RNPI" "Registro Nacional de Prestadores Individuales"
+// * #14 "OTRO" "Otro tipo de identificador"
+
 ValueSet: VSIdentificadorPrestador
 Id: VSIdentificadorPrestador
 Title: "Identificador del Prestador"
@@ -226,8 +247,8 @@ Description: "Identificador del Prestador Profesional o Administrativo"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system CSTipoIdentificador where concept is-a #1 
-* include codes from system CSTipoIdentificador where concept is-a #13
+* include codes from system $CSTipoDeIdentificadorHL7Core where concept is-a #01 
+* include codes from system $CSTipoDeIdentificadorHL7Core where concept is-a #13
 
 
 

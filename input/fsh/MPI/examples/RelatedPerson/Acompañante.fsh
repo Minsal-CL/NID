@@ -20,7 +20,7 @@ Description: "Padre de una paciente dentro del Maestro Paciente"
 * relationship = http://terminology.hl7.org/CodeSystem/v2-0131#C "Emergency Contact"
 
 // Instance: ClAddressNueva2
-// InstanceOf: ClAddress2
+// InstanceOf: ClAddress
 // Usage: #inline
 
 // * extension[SituacionCalle] = SituacionCallePac1

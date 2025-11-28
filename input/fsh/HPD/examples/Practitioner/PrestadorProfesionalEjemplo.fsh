@@ -6,14 +6,14 @@ Description: "Ejemplo de un profesional que entrega servicios de salud"
 
 *  identifier[run]
   * use = #official
-  * type.coding = CSTipoIdentificador#1 "RUN"
+  * type.coding = $CSTipoDeIdentificadorHL7Core#01 "RUN"
   * type.text = "Rol Único Nacional"
   * value = "19949350-7"
   * assigner.display = "Republica de Chile"
 
 * identifier[rnpi]
   * use = #secondary
-  * type.coding = CSTipoIdentificador#13 "RNPI"
+  * type.coding = $CSTipoDeIdentificadorHL7Core#13 "RNPI"
   * type.text = "Registro Nacional de Prestadores Individuales"
   * value = "1234543"
   * assigner.display = "Intendencia de prestadores individuales - Superintendencia de Salud"

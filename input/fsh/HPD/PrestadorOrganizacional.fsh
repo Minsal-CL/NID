@@ -1,5 +1,5 @@
 Profile:     MINSALPrestadorOrganizacional
-Parent:      OrganizacionCL2
+Parent:      OrganizacionCL
 Id:          MINSALPrestadorOrganizacional
 Title:       "Prestador Institucional"
 Description: "Organization según [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
