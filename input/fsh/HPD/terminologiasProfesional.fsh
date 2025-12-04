@@ -247,10 +247,11 @@ Description: "Identificador del Prestador Profesional o Administrativo"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* include codes from system $CSTipoDeIdentificadorHL7Core where concept is-a #01 
-* include codes from system $CSTipoDeIdentificadorHL7Core where concept is-a #13
+// * include codes from system $CSTipoDeIdentificadorHL7Core where concept is-a #01 
+// * include codes from system $CSTipoDeIdentificadorHL7Core where concept is-a #13
 
-
+* $CSTipoDeIdentificadorHL7Core#01
+* $CSTipoDeIdentificadorHL7Core#13
 
 ValueSet: VSTituloProfesional
 Id: VSTituloProfesional

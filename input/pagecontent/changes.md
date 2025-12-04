@@ -1,3 +1,11 @@
+### Versión  0.4.9
+
+Correción del ValueSet [Identificador del Prestador](ValueSet-VSIdentificadorPrestador.html) porque no permitia validar en servidores terminológicos.
+
+### Versión 0.4.8
+
+Actualización de la core de la 1.9.2 a la 1.9.4
+
 ### Versión 0.4.7
 
 Se cambia el nombre de la extensión de pueblos originarios

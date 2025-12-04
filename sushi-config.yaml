@@ -9,7 +9,7 @@ name: Minsal-NucleoInteroperabilidadDatos
 title: Núcleo de Interoperabilidad de Datos (NID) - MINSAL
 description: Núcleo de Interoperabilidad de Datos del Ministerio de Salud de Chile
 status: draft # draft | active | retired | unknown
-version: 0.4.8-ci-build
+version: 0.4.9
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: draft  # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
