@@ -1,3 +1,4 @@
+<!--
 #### Uso de Extensiones:
 
 Para realizar el cumplimiento de la norma 231, de estandares de información en salud y los datos mínimos de Paciente, se hace uso de las siguientes extensiones:
@@ -13,3 +14,5 @@ Para realizar el cumplimiento de la norma 231, de estandares de información en 
 #### Estado Marital
 
 Para cumplir con los perfile IHE de Paciente PDQm y PIXm, los cuales requiere el uso del ValueSet ["Marital Status"](http://hl7.org/fhir/ValueSet/marital-status) se generó el [Mapeo de estados civiles entre el ValueSet DEIS y el ValueSet MaritalStatus de FHIR](ConceptMap-MPIMaritalStatusMap.html) para que el dato MaritalStatus del paciente pueda incluir ambos códigos, tanto el solicitado por el DEIS, como por los perfiles IHE.
+
+-->

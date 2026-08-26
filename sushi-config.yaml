@@ -6,8 +6,8 @@
 id: hl7.fhir.cl.minsal.nid
 canonical: https://interoperabilidad.minsal.cl/fhir/ig/nid
 name: Minsal-NucleoInteroperabilidadDatos
-title: Núcleo de Interoperabilidad de Datos (NID) - MINSAL
-description: Núcleo de Interoperabilidad de Datos del Ministerio de Salud de Chile
+title: NID - Núcleo de Interoperabílidad de Datos
+description: Núcleo de Interoperabílidad de Datos del Ministerio de Salud de Chile
 status: draft # draft | active | retired | unknown
 version: 0.4.9
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -24,13 +24,21 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  # hl7.fhir.cl.clcore: 
-  #   id: clcore
-  #   uri: https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore
-  #   version: 1.9.3
-  hl7.fhir.cl.clcore: 1.9.4
-  
-  hl7.fhir.cl.clips: 0.4.0
+  hl7.fhir.cl.clcore: 
+    id: clcore
+    uri: https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore
+    version: dev
+  #hl7.fhir.cl.clcore: 2.0.0
+
+  #hl7.fhir.cl.minsal.eis: 0.2.0
+  hl7.fhir.cl.minsal.eis: 
+    id: EstandaresdeInformaciondeSalud
+    uri: https://interoperabilidad.minsal.cl/fhir/ig/eis/ImplementationGuide/hl7.fhir.cl.minsal.eis
+    version: dev
+
+
+
+  #hl7.fhir.cl.clips: 0.4.0
 
   ihe.iti.pixm: 
     id: IHE_PIXm

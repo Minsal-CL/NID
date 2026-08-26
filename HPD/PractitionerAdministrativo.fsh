@@ -25,7 +25,7 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
       * system = $CSTipoDeIdentificadorHL7Core
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
-      * code = #01
+      * code = #1
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador"
   * value 1..1 MS

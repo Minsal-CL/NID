@@ -101,7 +101,7 @@ Title: "Religión"
 Description: "Religión"
 Context: Patient
 * value[x] only CodeableConcept
-* value[x] from VSReligion (required)
+//* value[x] from VSReligion (required)
 * value[x] ^short = "Religión del paciente"
 * url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
 * value[x].coding.system 1..1
@@ -118,7 +118,7 @@ Title:       "País de origen del paciente"
 Description: "País de origen del paciente"
 Context:     Patient
 * value[x] only CodeableConcept
-* value[x] from VSCodigosPaisesNID (required)
+//* value[x] from VSCodigosPaisesNID (required)
 * value[x] ^short = "Código de País"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
@@ -126,8 +126,7 @@ Context:     Patient
   * system 0..1 MS
   * display 0..1 MS
 
-
-// Extension: DirigenteVecinal 
+// Extension: DirigenteVecinal
 // Id: DirigenteVecinal 
 // Title: "Dirigente Vecinal"
 // Description: "Dirigente Vecinal"
