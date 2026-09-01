@@ -73,8 +73,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[RUN].value ^definition = "Valor numérico, máximo 9 dígitos"
 * identifier[RUN].system ^short = "Sistema de identificación del paciente"
 * identifier[RUN].system ^definition = "Sistema de identificación del paciente"
-* identifier[RUN].system ^binding.strength = #required
-* identifier[RUN].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/run"
+* identifier[RUN].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/run"
 
 * identifier[RUNMaterno] only $deis.id.digito
 * identifier[RUNMaterno] ^short = "RUN Materno / Progenitor(a) del paciente"
@@ -87,8 +86,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[RUNMaterno].value ^definition = "Valor numérico, máximo 9 dígitos"
 * identifier[RUNMaterno].system ^short = "Sistema de identificación del paciente"
 * identifier[RUNMaterno].system ^definition = "Sistema de identificación del paciente"
-* identifier[RUNMaterno].system ^binding.strength = #required
-* identifier[RUNMaterno].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/runMaterno"
+* identifier[RUNMaterno].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/runMaterno"
 
 * identifier[Pasaporte] ^short = "Número de pasaporte del paciente"
 //* identifier[Pasaporte] obeys mpi-id-pasaporte-formato
@@ -103,8 +101,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[Pasaporte].period.end ^definition = "Formato de referencia \"DD-MM-AAAA\""
 * identifier[Pasaporte].system ^short = "Sistema de identificación del paciente"
 * identifier[Pasaporte].system ^definition = "Sistema de identificación del paciente"
-* identifier[Pasaporte].system ^binding.strength = #required
-* identifier[Pasaporte].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/pasaporte"
+* identifier[Pasaporte].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/pasaporte"
 
 * identifier[DocumentoPaisOrigen] ^short = "Documento identificador de país de origen"
 //* identifier[DocumentoPaisOrigen] obeys mpi-id-documento-pais-origen-formato
@@ -115,8 +112,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[DocumentoPaisOrigen].value ^definition = "Valor alfanumérico"
 * identifier[DocumentoPaisOrigen].system ^short = "Sistema de identificación del paciente"
 * identifier[DocumentoPaisOrigen].system ^definition = "Sistema de identificación del paciente"
-* identifier[DocumentoPaisOrigen].system ^binding.strength = #required
-* identifier[DocumentoPaisOrigen].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/documentoPaisOrigen"
+* identifier[DocumentoPaisOrigen].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/documentoPaisOrigen"
 
 * identifier[NIP] ^short = "Número de Identificador Provisorio FONASA (NIP)"
 * identifier[NIP] only $deis.id.digito
@@ -129,8 +125,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[NIP].value ^definition = "Valor alfanumérico"
 * identifier[NIP].system ^short = "Sistema de identificación del paciente"
 * identifier[NIP].system ^definition = "Sistema de identificación del paciente"
-* identifier[NIP].system ^binding.strength = #required
-* identifier[NIP].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/nip"
+* identifier[NIP].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/nip"
 
 * identifier[HistoriaClinica] ^short = "Número de Historia Clínica"
 //* identifier[HistoriaClinica] obeys mpi-id-historia-clinica-formato
@@ -141,8 +136,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[HistoriaClinica].value ^definition = "Valor alfanumérico"
 * identifier[HistoriaClinica].system ^short = "Sistema de identificación del paciente"
 * identifier[HistoriaClinica].system ^definition = "Sistema de identificación del paciente"
-* identifier[HistoriaClinica].system ^binding.strength = #required
-* identifier[HistoriaClinica].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/historiaClinica"
+* identifier[HistoriaClinica].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/historiaClinica"
 
 * identifier[IPE] ^short = "Identificación Provisoria del Estudiante (IPE)"
 * identifier[IPE] only $deis.id.digito
@@ -155,8 +149,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[IPE].value ^definition = "Valor alfanumérico"
 * identifier[IPE].system ^short = "Sistema de identificación del paciente"
 * identifier[IPE].system ^definition = "Sistema de identificación del paciente"
-* identifier[IPE].system ^binding.strength = #required
-* identifier[IPE].system ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/ipe"
+* identifier[IPE].system  = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/ipe"
 
 
 
