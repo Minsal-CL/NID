@@ -65,91 +65,142 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier[RUN] 0..1
 * identifier[RUN] ^short = "RUN del paciente"
 //* identifier[RUN] obeys mpi-id-run-formato
+* identifier[RUN].type 1..1 MS
+* identifier[RUN].type.extension[PaisEmisor] 1..1 MS
+* identifier[RUN].type.coding 1..1 MS
+* identifier[RUN].type.coding.system 1..1 MS
+* identifier[RUN].type.coding.code 1..1 MS
 * identifier[RUN].type.coding = TipoIdentificadorCS#1
 * identifier[RUN].type ^binding.strength = #required
 * identifier[RUN].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
 * identifier[RUN].extension[digitoVerificador] 1..1 MS
+* identifier[RUN].value 1..1 MS
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor numérico, máximo 9 dígitos"
+* identifier[RUN].system 1..1 MS
 * identifier[RUN].system ^short = "Sistema de identificación del paciente"
 * identifier[RUN].system ^definition = "Sistema de identificación del paciente"
-* identifier[RUN].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/run"
+* identifier[RUN].system = "urn:oid:2.16.840.1.113883.2.22.1.152.1"
 
 * identifier[RUNMaterno] only $deis.id.digito
 * identifier[RUNMaterno] ^short = "RUN Materno / Progenitor(a) del paciente"
 //* identifier[RUNMaterno] obeys mpi-id-run-materno-formato
+* identifier[RUNMaterno].type 1..1 MS
+* identifier[RUNMaterno].type.extension contains $paisEmisionDoc named PaisEmisor 1..1 MS
+* identifier[RUNMaterno].type.coding 1..1 MS
+* identifier[RUNMaterno].type.coding.system 1..1 MS
+* identifier[RUNMaterno].type.coding.code 1..1 MS
 * identifier[RUNMaterno].type.coding = TipoIdentificadorCS#2
 * identifier[RUNMaterno].type ^binding.strength = #required
 * identifier[RUNMaterno].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
 * identifier[RUNMaterno].extension[digitoVerificador] 1..1 MS
+* identifier[RUNMaterno].value 1..1 MS
 * identifier[RUNMaterno].value ^short = "Número de RUN Materno / Progenitor(a)"
 * identifier[RUNMaterno].value ^definition = "Valor numérico, máximo 9 dígitos"
+* identifier[RUNMaterno].system 1..1 MS
 * identifier[RUNMaterno].system ^short = "Sistema de identificación del paciente"
 * identifier[RUNMaterno].system ^definition = "Sistema de identificación del paciente"
-* identifier[RUNMaterno].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/runMaterno"
+* identifier[RUNMaterno].system = "urn:oid:2.16.840.1.113883.2.22.1.152.3"
 
+* identifier[Pasaporte] only $deis.id
 * identifier[Pasaporte] ^short = "Número de pasaporte del paciente"
 //* identifier[Pasaporte] obeys mpi-id-pasaporte-formato
+* identifier[Pasaporte].type 1..1 MS
+* identifier[Pasaporte].type.extension contains $paisEmisionDoc named PaisEmisor 1..1 MS
+* identifier[Pasaporte].type.coding 1..1 MS
+* identifier[Pasaporte].type.coding.system 1..1 MS
+* identifier[Pasaporte].type.coding.code 1..1 MS
 * identifier[Pasaporte].type.coding = TipoIdentificadorCS#3
 * identifier[Pasaporte].type ^binding.strength = #required
 * identifier[Pasaporte].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
-* identifier[Pasaporte].type.extension[PaisEmisor] 1..1 MS
+* identifier[Pasaporte].value 1..1 MS
 * identifier[Pasaporte].value ^short = "Número de pasaporte"
 * identifier[Pasaporte].value ^definition = "Valor alfanumérico"
 * identifier[Pasaporte].period.end 1..1 MS
 * identifier[Pasaporte].period.end ^short = "Fecha de caducidad del pasaporte"
 * identifier[Pasaporte].period.end ^definition = "Formato de referencia \"DD-MM-AAAA\""
+* identifier[Pasaporte].system 1..1 MS
 * identifier[Pasaporte].system ^short = "Sistema de identificación del paciente"
 * identifier[Pasaporte].system ^definition = "Sistema de identificación del paciente"
-* identifier[Pasaporte].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/pasaporte"
+* identifier[Pasaporte].system = "urn:oid:2.16.840.1.113883.2.22.1.152.5"
 
+* identifier[DocumentoPaisOrigen] only $deis.id
 * identifier[DocumentoPaisOrigen] ^short = "Documento identificador de país de origen"
 //* identifier[DocumentoPaisOrigen] obeys mpi-id-documento-pais-origen-formato
+* identifier[DocumentoPaisOrigen].type 1..1 MS
+* identifier[DocumentoPaisOrigen].type.extension contains $paisEmisionDoc named PaisEmisor 1..1 MS
+* identifier[DocumentoPaisOrigen].type.coding 1..1 MS
+* identifier[DocumentoPaisOrigen].type.coding.system 1..1 MS
+* identifier[DocumentoPaisOrigen].type.coding.code 1..1 MS
 * identifier[DocumentoPaisOrigen].type.coding = TipoIdentificadorCS#4
 * identifier[DocumentoPaisOrigen].type ^binding.strength = #required
 * identifier[DocumentoPaisOrigen].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
+* identifier[DocumentoPaisOrigen].value 1..1 MS
 * identifier[DocumentoPaisOrigen].value ^short = "Número de documento de país de origen"
 * identifier[DocumentoPaisOrigen].value ^definition = "Valor alfanumérico"
+* identifier[DocumentoPaisOrigen].system 1..1 MS
 * identifier[DocumentoPaisOrigen].system ^short = "Sistema de identificación del paciente"
 * identifier[DocumentoPaisOrigen].system ^definition = "Sistema de identificación del paciente"
-* identifier[DocumentoPaisOrigen].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/documentoPaisOrigen"
+* identifier[DocumentoPaisOrigen].system = "urn:oid:2.16.840.1.113883.2.22.1.152.6"
 
 * identifier[NIP] ^short = "Número de Identificador Provisorio FONASA (NIP)"
 * identifier[NIP] only $deis.id.digito
 //* identifier[NIP] obeys mpi-id-nip-formato
+* identifier[NIP].type 1..1 MS
+* identifier[NIP].type.extension contains $paisEmisionDoc named PaisEmisor 1..1 MS
+* identifier[NIP].type.coding 1..1 MS
+* identifier[NIP].type.coding.system 1..1 MS
+* identifier[NIP].type.coding.code 1..1 MS
 * identifier[NIP].type.coding = TipoIdentificadorCS#5
 * identifier[NIP].type ^binding.strength = #required
 * identifier[NIP].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
 * identifier[NIP].extension[digitoVerificador] 1..1 MS
+* identifier[NIP].value 1..1 MS
 * identifier[NIP].value ^short = "Número NIP"
 * identifier[NIP].value ^definition = "Valor alfanumérico"
+* identifier[NIP].system 1..1 MS
 * identifier[NIP].system ^short = "Sistema de identificación del paciente"
 * identifier[NIP].system ^definition = "Sistema de identificación del paciente"
-* identifier[NIP].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/nip"
+* identifier[NIP].system = "urn:oid:2.16.840.1.113883.2.22.1.152.8"
 
+* identifier[HistoriaClinica] only $deis.id
 * identifier[HistoriaClinica] ^short = "Número de Historia Clínica"
 //* identifier[HistoriaClinica] obeys mpi-id-historia-clinica-formato
+* identifier[HistoriaClinica].type 1..1 MS
+* identifier[HistoriaClinica].type.extension contains $paisEmisionDoc named PaisEmisor 1..1 MS
+* identifier[HistoriaClinica].type.coding 1..1 MS
+* identifier[HistoriaClinica].type.coding.system 1..1 MS
+* identifier[HistoriaClinica].type.coding.code 1..1 MS
 * identifier[HistoriaClinica].type.coding = TipoIdentificadorCS#6
 * identifier[HistoriaClinica].type ^binding.strength = #required
 * identifier[HistoriaClinica].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
+* identifier[HistoriaClinica].value 1..1 MS
 * identifier[HistoriaClinica].value ^short = "Número de historia clínica"
 * identifier[HistoriaClinica].value ^definition = "Valor alfanumérico"
+* identifier[HistoriaClinica].system 1..1 MS
 * identifier[HistoriaClinica].system ^short = "Sistema de identificación del paciente"
 * identifier[HistoriaClinica].system ^definition = "Sistema de identificación del paciente"
-* identifier[HistoriaClinica].system = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/historiaClinica"
+* identifier[HistoriaClinica].system = "urn:oid:2.16.840.1.113883.2.22.1.152.12"
 
 * identifier[IPE] ^short = "Identificación Provisoria del Estudiante (IPE)"
 * identifier[IPE] only $deis.id.digito
 //* identifier[IPE] obeys mpi-id-ipe-formato
+* identifier[IPE].type 1..1 MS
+* identifier[IPE].type.extension contains $paisEmisionDoc named PaisEmisor 1..1 MS
+* identifier[IPE].type.coding 1..1 MS
+* identifier[IPE].type.coding.system 1..1 MS
+* identifier[IPE].type.coding.code 1..1 MS
 * identifier[IPE].type.coding = TipoIdentificadorCS#7
 * identifier[IPE].type ^binding.strength = #required
 * identifier[IPE].type ^binding.valueSet = "https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-tipo-identificador-vs"
 * identifier[IPE].extension[digitoVerificador] 1..1 MS
+* identifier[IPE].value 1..1 MS
 * identifier[IPE].value ^short = "Número IPE"
 * identifier[IPE].value ^definition = "Valor alfanumérico"
+* identifier[IPE].system 1..1 MS
 * identifier[IPE].system ^short = "Sistema de identificación del paciente"
 * identifier[IPE].system ^definition = "Sistema de identificación del paciente"
-* identifier[IPE].system  = "https://interoperabilidad.minsal.cl/fhir/ig/nid/paciente/identificador/ipe"
+* identifier[IPE].system  = "urn:oid:2.16.840.1.113883.2.22.1.152.11"
 
 
 
@@ -167,8 +218,10 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * birthDate 1..1 MS
 
-* telecom ^slicing.discriminator.type = #value
-* telecom ^slicing.discriminator.path = "system"
+* telecom ^slicing.discriminator[0].type = #value
+* telecom ^slicing.discriminator[0].path = "system"
+* telecom ^slicing.discriminator[1].type = #value
+* telecom ^slicing.discriminator[1].path = "use"
 * telecom ^slicing.rules = #open
 * telecom ^slicing.ordered = false
 * telecom ^slicing.description = "Se diferencian los medios de contacto: teléfono fijo, teléfono móvil y correo electrónico"
@@ -206,6 +259,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * telecom[correoElectronico] ^short = "Correo electrónico del paciente"
 //* telecom[correoElectronico] obeys mpi-correo-formato
 * telecom[correoElectronico].system = #email
+* telecom[correoElectronico].use = #home
 * telecom[correoElectronico].value ^short = "Dirección de correo electrónico"
 * telecom[correoElectronico].value ^definition = "Formato \"texto@dominio\""
 /*
